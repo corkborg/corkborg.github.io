@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
+    <title>塩の惑星</title>
+    <link href="https://corkborg.github.io/corkborg.github.io/feed.xml" rel="self" />
+    <link href="https://corkborg.github.io/corkborg.github.io" />
+    <updated>2023-07-09T17:05:11+09:00</updated>
+    <author>
+        <name>ミズソバ</name>
+    </author>
+    <id>https://corkborg.github.io/corkborg.github.io</id>
+
+    <entry>
+        <title>テスト記事</title>
+        <author>
+            <name>ミズソバ</name>
+        </author>
+        <link href="https://corkborg.github.io/corkborg.github.io/tesutoji-shi.html"/>
+        <id>https://corkborg.github.io/corkborg.github.io/tesutoji-shi.html</id>
+        <media:content url="https://corkborg.github.io/corkborg.github.io/media/posts/5/P1040322.JPG" medium="image" />
+
+        <updated>2023-07-09T17:05:11+09:00</updated>
+            <summary>
+                <![CDATA[
+                        <img src="https://corkborg.github.io/corkborg.github.io/media/posts/5/P1040322.JPG" alt="" />
+                    Publieeでテスト記事を作って見た
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                    <p><img src="https://corkborg.github.io/corkborg.github.io/media/posts/5/P1040322.JPG" class="type:primaryImage" alt="" /></p>
+                
+  <p>
+    Publieeでテスト記事を作って見た
+  </p>
+            ]]>
+        </content>
+    </entry>
+</feed>
