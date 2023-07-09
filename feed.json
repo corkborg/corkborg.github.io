@@ -2,20 +2,20 @@
     "version": "https://jsonfeed.org/version/1",
     "title": "塩の惑星",
     "description": "",
-    "home_page_url": "https://corkborg.github.io/corkborg.github.io",
-    "feed_url": "https://corkborg.github.io/corkborg.github.io/feed.json",
+    "home_page_url": "https://corkborg.github.io",
+    "feed_url": "https://corkborg.github.io/feed.json",
     "user_comment": "",
     "author": {
         "name": "ミズソバ"
     },
     "items": [
         {
-            "id": "https://corkborg.github.io/corkborg.github.io/tesutoji-shi.html",
-            "url": "https://corkborg.github.io/corkborg.github.io/tesutoji-shi.html",
+            "id": "https://corkborg.github.io/tesutoji-shi.html",
+            "url": "https://corkborg.github.io/tesutoji-shi.html",
             "title": "テスト記事",
             "summary": "Publieeでテスト記事を作って見た",
             "content_html": "\n  <p>\n    Publieeでテスト記事を作って見た\n  </p>",
-            "image": "https://corkborg.github.io/corkborg.github.io/media/posts/5/P1040322.JPG",
+            "image": "https://corkborg.github.io/media/posts/5/P1040322.JPG",
             "author": {
                 "name": "ミズソバ"
             },
