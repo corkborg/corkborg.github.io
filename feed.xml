@@ -3,7 +3,7 @@
     <title>塩の惑星</title>
     <link href="https://corkborg.github.io/feed.xml" rel="self" />
     <link href="https://corkborg.github.io" />
-    <updated>2023-08-10T15:54:01+09:00</updated>
+    <updated>2023-08-10T16:35:18+09:00</updated>
     <author>
         <name>ミズソバ</name>
     </author>
@@ -126,17 +126,17 @@ zomboid    </span><span class="pun">|</span><span class="pln"> LOG  </span><s
             <category term="Mac"/>
             <category term="AppleSilicon"/>
 
-        <updated>2023-08-09T02:54:00+09:00</updated>
+        <updated>2023-08-10T16:35:18+09:00</updated>
             <summary>
                 <![CDATA[
                         <img src="https://corkborg.github.io/media/posts/6/image2.png" alt="" />
-                    Arma3というのは軍にシミュレータなどを卸している会社が作っている非常に硬派でリアルなFPSです。 Steamで見る感じArma3はMacに対応しているようです？システム要件を見てみると驚くことにApple Siliconに対応しているという記述があります。 M1 MacBook&hellip;
+                    Arma3というのは軍にシミュレータなどを卸している会社が作っている非常に硬派でリアルなFPSです。 Steamで見る感じArma3はMacに対応しているようです。システム要件を見てみると驚くことにApple Siliconに対応しているという記述があります。 M1 MacBook&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
                     <p><img src="https://corkborg.github.io/media/posts/6/image2.png" class="type:primaryImage" alt="" /></p>
-                <p>Arma3というのは軍にシミュレータなどを卸している会社が作っている非常に硬派でリアルなFPSです。<br>Steamで見る感じArma3はMacに対応しているようです？システム要件を見てみると驚くことにApple Siliconに対応しているという記述があります。</p>
+                <p>Arma3というのは軍にシミュレータなどを卸している会社が作っている非常に硬派でリアルなFPSです。<br>Steamで見る感じArma3はMacに対応しているようです。システム要件を見てみると驚くことにApple Siliconに対応しているという記述があります。</p>
 <p><img loading="lazy" src="https://blogger.googleusercontent.com/img/a/AVvXsEifRZZObgQK2ZOp_G-o92P-R7max4h8ctVpa6lGZAStf29yKP4BFbjGm5JHvhA3vJgqWr_Je3l4AVNwxjbIt0sjKrQpkaxZ2N5ufJzfZvPVixNKO9pG_K5znVH0rpSjUcCbnHoTacwU1Jcr33xQc6QydTLL9r8VlD3tq7mrBOCXI82oicfL9BdGMNipuz8" data-is-external-image="true"></p>
 <p>M1 MacBook AirでArma3を遊ぶ気はないものの一応インストールして動くか検証してみることにしました。</p>
 <h2>インストール</h2>
