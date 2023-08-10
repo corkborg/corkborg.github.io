@@ -3,34 +3,272 @@
     <title>塩の惑星</title>
     <link href="https://corkborg.github.io/feed.xml" rel="self" />
     <link href="https://corkborg.github.io" />
-    <updated>2023-07-09T17:05:11+09:00</updated>
+    <updated>2023-08-10T15:54:01+09:00</updated>
     <author>
         <name>ミズソバ</name>
     </author>
     <id>https://corkborg.github.io</id>
 
     <entry>
-        <title>テスト記事</title>
+        <title>Project ZomboidのサーバをUbuntuとDockerで立てる方法</title>
         <author>
             <name>ミズソバ</name>
         </author>
-        <link href="https://corkborg.github.io/tesutoji-shi.html"/>
-        <id>https://corkborg.github.io/tesutoji-shi.html</id>
-        <media:content url="https://corkborg.github.io/media/posts/5/P1040322.JPG" medium="image" />
+        <link href="https://corkborg.github.io/how-to-create-multiplayer-server-project-zomboid/index.html"/>
+        <id>https://corkborg.github.io/how-to-create-multiplayer-server-project-zomboid/index.html</id>
+        <media:content url="https://corkborg.github.io/media/posts/7/image-6.png" medium="image" />
+            <category term="ゲーム"/>
+            <category term="Steam"/>
+            <category term="Linux"/>
 
-        <updated>2023-07-09T17:05:11+09:00</updated>
+        <updated>2023-08-10T15:54:01+09:00</updated>
             <summary>
                 <![CDATA[
-                        <img src="https://corkborg.github.io/media/posts/5/P1040322.JPG" alt="" />
-                    Publieeでテスト記事を作って見た
+                        <img src="https://corkborg.github.io/media/posts/7/image-6.png" alt="" />
+                    Project Zomboidはゾンビがはびこり始めた世界でどう生き残るかというサバイバル2Dゲームです。このゲームはマルチプレイに対応しているのですがサーバを立てるのが少々面倒くさいです。今回はDockerとUbuntuの環境でサーバを立てる方法を紹介します。 Project Zomboidのサーバを運用していたのは１年位前なのでうろ覚えなところもあります。 今回の記事ではUbuntu&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
-                    <p><img src="https://corkborg.github.io/media/posts/5/P1040322.JPG" class="type:primaryImage" alt="" /></p>
+                    <p><img src="https://corkborg.github.io/media/posts/7/image-6.png" class="type:primaryImage" alt="" /></p>
+                <p>Project Zomboidはゾンビがはびこり始めた世界でどう生き残るかというサバイバル2Dゲームです。このゲームはマルチプレイに対応しているのですがサーバを立てるのが少々面倒くさいです。今回はDockerとUbuntuの環境でサーバを立てる方法を紹介します。</p>
+<p>Project Zomboidのサーバを運用していたのは１年位前なのでうろ覚えなところもあります。</p>
+<h2>環境</h2>
+<p>今回の記事ではUbuntu 20.04にDocker CEをインストールした環境で、Dockerコンテナ上にサーバ構築を行っていきます。</p>
+<h2>サーバファイルの用意</h2>
+<div>SteamではLinux環境向けにゲームサーバを用意するためのコマンドSteamCMDというものが用意されています。</div>
+<div>zomboidもこれに対応しているのでSteamCMDに対して専用コマンドを打っていくとゲームサーバの環境の準備ができるようになっています。</div>
+<div> </div>
+<div>適当なディレクトリ、３つのファイルを用意します</div>
+<h3>update_zomboid.txt</h3>
+<div>
+<div>このファイルはSteamCMD向けの指示コマンドが列挙されたシェルファイルのようなものです。</div>
+<div>380870というのはProject Zomboidを表すSteam固有のidです。</div>
+<div>このファイルでは/opt/pzserverというディレクトリにサーバファイルを展開するように指示してます。</div>
+<pre>@ShutdownOnFailedCommand 1<br>@NoPromptForPassword 1<br>force_install_dir /opt/pzserver/<br>login anonymous<br>app_update 380870 validate<br>quit</pre>
+</div>
+<div>SteamCMDの詳細な使い方はValve公式のガイドを<br><a href="https://developer.valvesoftware.com/wiki/SteamCMD">https://developer.valvesoftware.com/wiki/SteamCMD</a></div>
+<div>
+<h4>Dockerfile</h4>
+<div>サーバのイメージを作成するためのファイルです。</div>
+<div>イメージ内でupdate_zomboid.txtを実行しておいて初期化を済ませておきます。</div>
+<pre class="prettyprint prettyprinted"><span class="pln">FROM steamcmd</span><span class="pun">/</span><span class="pln">steamcmd</span><span class="pun">:</span><span class="pln">ubuntu</span><span class="pun">-</span><span class="lit">20</span><span class="pln">
+
+RUN mkdir </span><span class="pun">/</span><span class="pln">opt</span><span class="pun">/</span><span class="pln">pzserver
+WORKDIR </span><span class="pun">/</span><span class="pln">opt</span><span class="pun">/</span><span class="pln">pzserver
+COPY update_zomboid</span><span class="pun">.</span><span class="pln">txt </span><span class="pun">/</span><span class="pln">opt</span><span class="pun">/</span><span class="pln">update_zomboid</span><span class="pun">.</span><span class="pln">txt
+RUN steamcmd </span><span class="pun">+</span><span class="pln">runscript </span><span class="pun">/</span><span class="pln">opt</span><span class="pun">/</span><span class="pln">update_zomboid</span><span class="pun">.</span><span class="pln">txt
+ENTRYPOINT </span><span class="pun">[</span><span class="str">"/bin/bash"</span> <span class="pun">,</span> <span class="str">"-l"</span><span class="pun">]<br></span></pre>
+<h4>docker-compose.yaml</h4>
+<p>実際のサーバをどう動作させるか定義するためのファイルです。<br>セーブデータをUbuntuのsaveディレクトリに保存するように指定しています（saveディレクトリを作成しておいてください）。<br>zomboidではUDPの16261と16262ポートを使用するので開放させておきます。</p>
+<pre class="prettyprint lang-yaml prettyprinted"><span class="pln">version</span><span class="pun">:</span> <span class="str">'3'</span><span class="pln">
+services</span><span class="pun">:</span><span class="pln">
+    zomboid</span><span class="pun">:</span><span class="pln">
+        build</span><span class="pun">:</span> <span class="pun">.</span><span class="pln">
+        container_name</span><span class="pun">:</span><span class="pln"> zomboid
+        volumes</span><span class="pun">:</span>
+          <span class="pun">-</span> <span class="pun">./</span><span class="pln">save</span><span class="pun">:</span><span class="str">/root/</span><span class="typ">Zomboid</span><span class="pln">
+        ports</span><span class="pun">:</span>
+          <span class="pun">-</span> <span class="str">"16261:16261/udp"</span>
+          <span class="pun">-</span> <span class="str">"16262:16262/udp"</span><span class="pln">
+        command</span><span class="pun">:</span> <span class="str">/opt/</span><span class="pln">pzserver</span><span class="pun">/</span><span class="pln">start</span><span class="pun">-</span><span class="pln">server</span><span class="pun">.</span><span class="pln">sh</span></pre>
+<h2> テスト起動</h2>
+<p>一回テスト起動します。</p>
+<pre class="prettyprint prettyprinted"><span class="pln">docker</span><span class="pun">-</span><span class="pln">compose build
+docker</span><span class="pun">-</span><span class="pln">compose up</span></pre>
+<div>
+<div>こんな感じのログが出力されたら成功です。</div>
+<div>
+<pre class="prettyprint prettyprinted"><span class="pln">zomboid    </span><span class="pun">|</span><span class="pln"> LOG  </span><span class="pun">:</span> <span class="typ">Network</span><span class="pln">     </span><span class="pun">,</span> <span class="lit">1688801808085</span><span class="pun">&gt;</span> <span class="lit">4</span><span class="pun">,</span><span class="lit">060</span><span class="pun">,</span><span class="lit">110</span><span class="pun">,</span><span class="lit">023</span><span class="pun">&gt;</span> <span class="pun">***</span><span class="pln"> SERVER STARTED </span><span class="pun">****</span><span class="pln">
+zomboid    </span><span class="pun">|</span><span class="pln"> LOG  </span><span class="pun">:</span> <span class="typ">Network</span><span class="pln">     </span><span class="pun">,</span> <span class="lit">1688801808085</span><span class="pun">&gt;</span> <span class="lit">4</span><span class="pun">,</span><span class="lit">060</span><span class="pun">,</span><span class="lit">110</span><span class="pun">,</span><span class="lit">023</span><span class="pun">&gt;</span> <span class="pun">***</span> <span class="typ">Steam</span> <span class="kwd">is</span><span class="pln"> enabled</span></pre>
+<div>
+<div>Steam is enabledが出ていない場合サーバは起動していますが、Steam版のZomboidで遊ぶことができなかったような気がします。</div>
+<div> </div>
+<div>一回サーバを落とします（ctrl + c とかdocker-compose downとか）。</div>
+<div> </div>
+<div>
+<h2>サーバ設定の編集</h2>
+<div>セーブデータ内の下記ファイルを編集してサーバ設定を作ります。</div>
+<div>手順通り作業しているのであれば下記のパスにあるはずです。</div>
+<div> </div>
+<pre>save/Server/servertest.ini</pre>
+<div> </div>
+<div>（なんか色々な設定が必要だった気がするのですが覚えていません。）</div>
+<div> </div>
+<h2>ポート開放</h2>
+<p>UDPの16261と16262ポートがインターネット側からアクセスできるようにファイアウォールやルータの設定を変更します。</p>
+<h2>サーバ起動</h2>
+<div>サーバを起動します。</div>
+<div>Project Zomboidを起動してアクセスできることを確認しましょう。</div>
+<div>
+<pre class="prettyprint prettyprinted"><span class="pln">docker　</span><span class="pln">compose up </span><span class="pun">-</span><span class="pln">d</span></pre>
+</div>
+<h2> まとめ</h2>
+<p> steamcmdコマンドつかってproject zomboidのマルチプレイヤーサーバを立てることができました。</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>Arma3はApple Siliconにネイティブ対応している？M1 MacBook Airで試してみた</title>
+        <author>
+            <name>ミズソバ</name>
+        </author>
+        <link href="https://corkborg.github.io/arma3-support-apple-silicon-m1-macbook-air/index.html"/>
+        <id>https://corkborg.github.io/arma3-support-apple-silicon-m1-macbook-air/index.html</id>
+        <media:content url="https://corkborg.github.io/media/posts/6/image2.png" medium="image" />
+            <category term="ゲーム"/>
+            <category term="Steam"/>
+            <category term="Mac"/>
+            <category term="AppleSilicon"/>
+
+        <updated>2023-08-09T02:54:00+09:00</updated>
+            <summary>
+                <![CDATA[
+                        <img src="https://corkborg.github.io/media/posts/6/image2.png" alt="" />
+                    Arma3というのは軍にシミュレータなどを卸している会社が作っている非常に硬派でリアルなFPSです。 Steamで見る感じArma3はMacに対応しているようです？システム要件を見てみると驚くことにApple Siliconに対応しているという記述があります。 M1 MacBook&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                    <p><img src="https://corkborg.github.io/media/posts/6/image2.png" class="type:primaryImage" alt="" /></p>
+                <p>Arma3というのは軍にシミュレータなどを卸している会社が作っている非常に硬派でリアルなFPSです。<br>Steamで見る感じArma3はMacに対応しているようです？システム要件を見てみると驚くことにApple Siliconに対応しているという記述があります。</p>
+<p><img loading="lazy" src="https://blogger.googleusercontent.com/img/a/AVvXsEifRZZObgQK2ZOp_G-o92P-R7max4h8ctVpa6lGZAStf29yKP4BFbjGm5JHvhA3vJgqWr_Je3l4AVNwxjbIt0sjKrQpkaxZ2N5ufJzfZvPVixNKO9pG_K5znVH0rpSjUcCbnHoTacwU1Jcr33xQc6QydTLL9r8VlD3tq7mrBOCXI82oicfL9BdGMNipuz8" data-is-external-image="true"></p>
+<p>M1 MacBook AirでArma3を遊ぶ気はないものの一応インストールして動くか検証してみることにしました。</p>
+<h2>インストール</h2>
+<div>Arma3をインストールするには50GB程度の空き容量が必要。</div>
+<div>私の場合256GBのMacなので少し大きめに感じる。</div>
+<h3>実際に動かしてみた結果</h3>
+<p><img src="https://blogger.googleusercontent.com/img/a/AVvXsEhob6z9J1qVu68tmlvz_QzW2X17ngYxzFSjxRhpCYwdF2nB7QQDKd49UTf8gZeCNtwTT4yc4AV6hpMcsrmcmMwJPrPajiQG-CqQdDN50aocWd3OJQdXXPHBlktOVRdHPUZuwixeSG7P_djcfjBk3xwedfkjWdXFT6jDUDqHD--mMTj4G4IdFfhWqqVomHI" data-is-external-image="true"><br>起動時に試験的なApple siliconのネイティブ版で起動するかどうか聞かれるので、ネイティブ版で起動します。<img loading="lazy" src="https://blogger.googleusercontent.com/img/a/AVvXsEgw5ZWuHqBRcQSacRJrzCbdTOz2jeXUGfgLamkjLb98tPw2P0W0WQeJ20zWxH4LEB5K5Lcff1oLPRLqPy-STFj8AVHvPeu7jj39vG5-uwbsyGNgqomGOyCM7IsaRfjChk97lcoWcyX-TwzcOQu5BmS8S1knwDqXHnzK421Ii4jIlD-PGrPDYG002J_4xRI" data-is-external-image="true"><br>ゲームが起動しました。<br><img loading="lazy" src="https://blogger.googleusercontent.com/img/a/AVvXsEjMuv9N2LyueOBaPD6qInpr9n1sCy2jx2KxLeo9k31iTTuTP_Q2E6jMrWfmZdZf5Gl0Hcxqam2tTxeW2TN7Qcve1z0JjR8J1t-jMpz9AKbIiAbXK0hy_sD-EoP-bWhVLyhV9u-AANk95R9Eq5nDmt-RyXcJ7gwHYXcuTcBsvGQTGM9RYVg2N9Iopxh2itU" data-is-external-image="true"><br>Apple siliconのネイティブで動いている事を確認しました。</p>
+<p>カクツキはないので意外と遊べそうな感触でした。ただ、画質があまり良くないです。Arma2に毛が生えたくらいの画質です。</p>
+<p>以下、ゲームプレイのスクリーンショットです。</p>
+<div class="gallery-wrapper"><div class="gallery"  data-is-empty="true" data-translation="Add images">
+<figure class="post__image"><img loading="lazy"  src="https://corkborg.github.io/media/posts/6/image-3.png" alt="" width="1600" height="997" sizes="(max-width: 1200px) 100vw, 1200px" srcset="https://corkborg.github.io/media/posts/6/responsive/image-3-xs.png 300w ,https://corkborg.github.io/media/posts/6/responsive/image-3-sm.png 480w ,https://corkborg.github.io/media/posts/6/responsive/image-3-md.png 749w ,https://corkborg.github.io/media/posts/6/responsive/image-3-xl.png 1200w"></figure>
+</div></div>
+<h2>感想</h2>
+<div>Apple siliconの中でも最弱性能のM1 MacBook Airでもカクつくことがなく普通に遊べそうな感じでした。正直にいうと今回の検証は起動はするもののうまく遊べない結果を予想していたので意外でした。</div>
+<div>筐体が結構暑くなるのでファンの無いAirで長時間遊ぶとどうなるかは未知数です。</div>
+<div> </div>
+<div>上位モデルのMacであればもっと良い画質で遊べるかもしれないです。</div>
+<p> </p>
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>Steam版のFactorioがApple siliconに対応しているか検証してみた</title>
+        <author>
+            <name>ミズソバ</name>
+        </author>
+        <link href="https://corkborg.github.io/steam-version-factorio-support-applesilicon/index.html"/>
+        <id>https://corkborg.github.io/steam-version-factorio-support-applesilicon/index.html</id>
+            <category term="ゲーム"/>
+            <category term="Steam"/>
+            <category term="Factorio"/>
+            <category term="AppleSilicon"/>
+
+        <updated>2023-08-08T11:54:19+09:00</updated>
+            <summary>
+                <![CDATA[
+                    以前の記事で公式版のfactorioがApple Siliconに対応していることを確認した。 Steam版のFactorioがApple siliconに対応しているか検証してみた 前回の記事ではMacにわざわざSteamをインストールするのが面倒くさかったのと、SteamのストアではFactorioがApple&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <p>以前の記事で公式版のfactorioがApple Siliconに対応していることを確認した。</p>
+<p class="post-title entry-title"><a href="https://corkborg.github.io/factorio-support-applesilicon/index.html">Steam版のFactorioがApple siliconに対応しているか検証してみた</a></p>
+<p>前回の記事ではMacにわざわざSteamをインストールするのが面倒くさかったのと、SteamのストアではFactorioがApple Siliconに対応している旨がないので対応していないかもしれないので公式版を使用した。</p>
+<p>別のゲームをやりたくてSteamをインストールしたのでついでにFactorioについて検証してみたところうまく行ったのでメモ。</p>
+<p><img loading="lazy" src="https://blogger.googleusercontent.com/img/a/AVvXsEhTsSuRqWzoGLmxGJj5n2U1G0q9F-J6gltitpudp-eXd2KLq5L2EYraMJtPhTf8XUIwiaQ1FNChocNoMHn8kESTQxUMuOl6_JS0RNyCexrWI9nXCi6jv6BlR2dmAC25aB-eCyvlZzKTw5i4iXsp-SLYxTHum4T1fbZkpZWJLIQdplZPwPYR0-mysuAzKUU" data-is-external-image="true"></p>
+<h2>動作状況</h2>
+<p><img loading="lazy" src="https://blogger.googleusercontent.com/img/a/AVvXsEhwd8ZxytS41RS6w28YclrUpHETRq8fS3f8fimZ4QJDM_UYerpg01iSWr33OuemgjLz6dI-_q3ilvsEvGwIFkHCCsNX3kTMIrz90ItYjPSUfTsmoeD7RjVu1F9dIHcK2wQKQU-oHty2NKBXBU2afauEplpdrQr2EZfjdubZxkK62WylO6mUR-MTett-1m4" data-is-external-image="true"></p>
+<p><img loading="lazy" src="https://blogger.googleusercontent.com/img/a/AVvXsEhgFexoJznfBrt0p0RLH7ok_rZ0YIBKNN9uK_8hLEZESexFyCZ7bDIyIAXlUeTEYptRM-zmhYUbrceDeaM8qXTEV_wdUyqIagIURiIMlytnQNAJEmdd0RP93GgahkKOiL1OR4Q2TSY8kb2-6RYPSL4vYvESaJiiUNMeLTyBa8cyyui4T_popFIHFAsn-uk" data-is-external-image="true"></p>
+<div class="separator">アクティビティモニタで確認した所Apple Siliconのネイティブで動いていることがわかった。</div>
+<div class="separator">結論、Steam版でも公式版のFactorioでもApple siliconのネイティブで動作することができる。</div>
+<p> </p>
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>FactorioがApple siliconに対応したようなのでM1 Macで遊んでみた</title>
+        <author>
+            <name>ミズソバ</name>
+        </author>
+        <link href="https://corkborg.github.io/factorio-support-applesilicon/index.html"/>
+        <id>https://corkborg.github.io/factorio-support-applesilicon/index.html</id>
+        <media:content url="https://corkborg.github.io/media/posts/1/image.png" medium="image" />
+            <category term="ゲーム"/>
+            <category term="Mac"/>
+            <category term="Factorio"/>
+            <category term="AppleSilicon"/>
+
+        <updated>2023-08-08T11:52:05+09:00</updated>
+            <summary>
+                <![CDATA[
+                        <img src="https://corkborg.github.io/media/posts/1/image.png" alt="" />
+                    Factorioのリリースノートを読んでいたらApple Siliconに対応したと思われるアップデートを見かけた。 そこで、私が日常的に使用しているM1 MacBook Airでも遊べるか確認してみることにした。&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                    <p><img src="https://corkborg.github.io/media/posts/1/image.png" class="type:primaryImage" alt="" /></p>
                 
   <p>
-    Publieeでテスト記事を作って見た
+    Factorioのリリースノートを読んでいたらApple Siliconに対応したと思われるアップデートを見かけた。<br>そこで、私が日常的に使用しているM1 MacBook Airでも遊べるか確認してみることにした。<br><a href="https://www.factorio.com/blog/post/fff-371" target="_blank">https://www.factorio.com/blog/post/fff-371</a><br>
+  </p>
+
+    <h2 id="insutoru">
+      インストール
+    </h2>
+
+  <p>
+    MacにSteamをインストールするのはめんどくさかったので、Factorioの公式サイトからゲーム本体のダウンロードを行った。<br>この操作はFactorio購入済みのSteamアカウントとFactorioの公式アカウントとの連携を行えば誰でも行うことができる。<br><a href="https://www.factorio.com/download" target="_blank">https://www.factorio.com/download</a><br><br>ダウンロードしたファイルは適当にインストールする。
+  </p>
+
+    <h2 id="gemupurei">
+      ゲームプレイ
+    </h2>
+
+  <p>
+    遊ぶことができた。<br>
+  </p>
+
+    <figure class="post__image post__image--center">
+      <img loading="lazy" src="https://corkborg.github.io/media/posts/1/image-1.png" height="992" width="1600" alt=""  sizes="(max-width: 1200px) 100vw, 1200px" srcset="https://corkborg.github.io/media/posts/1/responsive/image-1-xs.png 300w ,https://corkborg.github.io/media/posts/1/responsive/image-1-sm.png 480w ,https://corkborg.github.io/media/posts/1/responsive/image-1-md.png 749w ,https://corkborg.github.io/media/posts/1/responsive/image-1-xl.png 1200w">
+      
+    </figure>
+
+    <figure class="post__image post__image--center">
+      <img loading="lazy" src="https://corkborg.github.io/media/posts/1/image-2.png" height="27" width="879" alt=""  sizes="(max-width: 1200px) 100vw, 1200px" srcset="https://corkborg.github.io/media/posts/1/responsive/image-2-xs.png 300w ,https://corkborg.github.io/media/posts/1/responsive/image-2-sm.png 480w ,https://corkborg.github.io/media/posts/1/responsive/image-2-md.png 749w ,https://corkborg.github.io/media/posts/1/responsive/image-2-xl.png 1200w">
+      <figcaption>アクティビティモニターで確認したFactorio。Apple Siliconネイティブで動作している</figcaption>
+    </figure>
+
+  <p>
+    Apple Siliconに対応したゲームは少ないので助かる。
+  </p>
+
+    <h2 id="sonohou">
+      その後
+    </h2>
+
+    <figure class="post__image post__image--center">
+      <img loading="lazy" src="https://corkborg.github.io/media/posts/1/sukurinsiyotuto-2023-07-07-23.09.48.png" height="640" width="1600" alt="Factorio"  sizes="(max-width: 1200px) 100vw, 1200px" srcset="https://corkborg.github.io/media/posts/1/responsive/sukurinsiyotuto-2023-07-07-23.09.48-xs.png 300w ,https://corkborg.github.io/media/posts/1/responsive/sukurinsiyotuto-2023-07-07-23.09.48-sm.png 480w ,https://corkborg.github.io/media/posts/1/responsive/sukurinsiyotuto-2023-07-07-23.09.48-md.png 749w ,https://corkborg.github.io/media/posts/1/responsive/sukurinsiyotuto-2023-07-07-23.09.48-xl.png 1200w">
+      
+    </figure>
+
+  <p>
+    
+  </p>
+
+  <p>
+    久しぶりのFactorioにすっかりハマってしまい。Macで20時間くらい遊びました。<br>Apple SIlicon MacでのFactorioプレイは問題なさそうです。
+  </p>
+
+  <p>
+    
   </p>
             ]]>
         </content>
