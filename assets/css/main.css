@@ -139,7 +139,7 @@ article.post-only {
 }
 
 #post-entry pre {
-   overflow: hidden;
+   overflow: scroll;
 }
 
 article.post-list {
