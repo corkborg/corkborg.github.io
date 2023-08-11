@@ -130,8 +130,16 @@ article {
 }
 
 article.post-only {
-   width: 100%;
+   width: 100vw;
    padding: 10px 30px;
+}
+.tags-image {
+   height: 350px;
+   object-fit: cover;
+}
+
+#post-entry pre {
+   overflow: hidden;
 }
 
 article.post-list {
@@ -195,6 +203,14 @@ article.post-list a, article.post-list a:visited {
 
 .post-navigation-link {
    margin: 2px auto;
+}
+
+#post-tags {
+   margin-left: 4px;
+}
+
+.post-tag+ .post-tag::before {
+   content: ", ";
 }
 
 aside {
