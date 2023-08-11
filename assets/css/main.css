@@ -7,7 +7,7 @@ a {
    color: var(--main-text-color);
 }
 a:visited {
-color: #585656;
+   color: #585656;
 }
 
 :root {
@@ -54,8 +54,20 @@ header {
    text-align: center;
 }
 
-#logo img {
+#footer-lower {
+   display: grid;
+   justify-content: space-between;
+   grid-template-columns: 1fr 2fr 1fr;
+ 
+   background-color: #0d0d0e;
+   text-align: center;
+}
+
+.main-logo img {
    height: 80px;
+}
+#footer-lower .main-logo img {
+   height: 60px;
 }
 
 #main-wrapper {
@@ -176,7 +188,14 @@ article.post-list a, article.post-list a:visited {
    text-decoration: none;
 }
 
+#post-navigation {
+   margin-top: 10px;
+   display: grid;
+}
 
+.post-navigation-link {
+   margin: 2px auto;
+}
 
 aside {
    /*grid-area: sidebar;*/
