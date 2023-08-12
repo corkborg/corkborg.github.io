@@ -209,9 +209,15 @@ article.post-list a, article.post-list a:visited {
    margin-left: 4px;
 }
 
-.post-tag+ .post-tag::before {
-   content: ", ";
+.post-tag::before {
+   content: "#";
 }
+
+/*.post-tag+ .post-tag::before {
+   content: ", ";
+}*/
+
+
 
 aside {
    /*grid-area: sidebar;*/
