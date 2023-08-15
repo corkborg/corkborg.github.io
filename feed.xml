@@ -3,7 +3,7 @@
     <title>塩の惑星</title>
     <link href="https://corkborg.github.io/feed.xml" rel="self" />
     <link href="https://corkborg.github.io" />
-    <updated>2023-08-13T00:24:55+09:00</updated>
+    <updated>2023-08-15T13:43:30+09:00</updated>
     <author>
         <name>ミズソバ</name>
     </author>
@@ -22,17 +22,17 @@
             <category term="Mac"/>
             <category term="AppleSilicon"/>
 
-        <updated>2023-08-13T00:24:55+09:00</updated>
+        <updated>2023-08-15T13:43:30+09:00</updated>
             <summary>
                 <![CDATA[
                         <img src="https://corkborg.github.io/media/posts/8/image-8.png" alt="" />
-                    意外とApple Siliconで遊べるゲームが多そうなので手持ちのSteamゲームをM1 MacBook Airにインストール&amp;起動してみて遊ぶことができるか確認してみるました。 調査してみた所、ネイティブ対応してない（Intel&hellip;
+                    意外とApple Siliconで遊べるゲームが多そうなので手持ちのSteamゲームをM1 MacBook Airにインストール&amp;起動してみて遊ぶことができるか確認してみました。 調査してみた所、ネイティブ対応してない（Intel&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
                     <p><img src="https://corkborg.github.io/media/posts/8/image-8.png" class="type:primaryImage" alt="" /></p>
-                <p>意外とApple Siliconで遊べるゲームが多そうなので手持ちのSteamゲームをM1 MacBook Airにインストール&amp;起動してみて遊ぶことができるか確認してみるました。</p>
+                <p>意外とApple Siliconで遊べるゲームが多そうなので手持ちのSteamゲームをM1 MacBook Airにインストール&amp;起動してみて遊ぶことができるか確認してみました。</p>
 <p>調査してみた所、ネイティブ対応してない（Intel Macまでの対応の）ゲームでもRosetta2をインストールしておけば基本は遊ぶことができるようです（<a href="https://support.apple.com/ja-jp/HT211861" target="_blank" rel="noopener">公式のRossetta2のインストール記事</a>）。</p>
 <p>記事中のスクショは実際にM1 MacBook Airで遊んだときのものです。</p>
 <p>2023年７月の情報です。</p>
@@ -410,18 +410,17 @@ zomboid    </span><span class="pun">|</span><span class="pln"> LOG  </span><s
             <category term="Factorio"/>
             <category term="AppleSilicon"/>
 
-        <updated>2023-08-12T02:54:38+09:00</updated>
+        <updated>2023-08-15T13:41:42+09:00</updated>
             <summary>
                 <![CDATA[
-                    以前の記事で公式版のfactorioがApple Siliconに対応していることを確認した。 Steam版のFactorioがApple siliconに対応しているか検証してみた 前回の記事ではMacにわざわざSteamをインストールするのが面倒くさかったのと、SteamのストアではFactorioがApple&hellip;
+                    以前の記事で公式版のfactorioがApple Siliconに対応していることを確認した。 Steam版のFactorioがApple siliconに対応しているか検証してみた 前回の記事ではSteam版FactorioではApple&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
                 <p>以前の記事で公式版のfactorioがApple Siliconに対応していることを確認した。</p>
 <p class="post-title entry-title"><a href="https://corkborg.github.io/factorio-support-applesilicon/">Steam版のFactorioがApple siliconに対応しているか検証してみた</a></p>
-<p>前回の記事ではMacにわざわざSteamをインストールするのが面倒くさかったのと、SteamのストアではFactorioがApple Siliconに対応している旨がないので対応していないかもしれないので公式版を使用した。</p>
-<p>別のゲームをやりたくてSteamをインストールしたのでついでにFactorioについて検証してみたところうまく行ったのでメモ。</p>
+<p>前回の記事ではSteam版FactorioではApple Siliconに対応している旨の記載がなかったので避けて検証を行った。今回はSteam版のFactorioについて検証してみたところうまく行ったのでメモ。</p>
 <p><img loading="lazy" src="https://blogger.googleusercontent.com/img/a/AVvXsEhTsSuRqWzoGLmxGJj5n2U1G0q9F-J6gltitpudp-eXd2KLq5L2EYraMJtPhTf8XUIwiaQ1FNChocNoMHn8kESTQxUMuOl6_JS0RNyCexrWI9nXCi6jv6BlR2dmAC25aB-eCyvlZzKTw5i4iXsp-SLYxTHum4T1fbZkpZWJLIQdplZPwPYR0-mysuAzKUU" data-is-external-image="true"></p>
 <h2>動作状況</h2>
 <p><img loading="lazy" src="https://blogger.googleusercontent.com/img/a/AVvXsEhwd8ZxytS41RS6w28YclrUpHETRq8fS3f8fimZ4QJDM_UYerpg01iSWr33OuemgjLz6dI-_q3ilvsEvGwIFkHCCsNX3kTMIrz90ItYjPSUfTsmoeD7RjVu1F9dIHcK2wQKQU-oHty2NKBXBU2afauEplpdrQr2EZfjdubZxkK62WylO6mUR-MTett-1m4" data-is-external-image="true"></p>
