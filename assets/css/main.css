@@ -140,6 +140,7 @@ article.post-only {
 
 #post-entry pre {
    overflow: scroll;
+   white-space: pre-wrap;
 }
 
 article.post-list {
