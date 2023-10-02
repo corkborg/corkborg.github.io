@@ -3,7 +3,7 @@
     <title>塩の惑星</title>
     <link href="https://corkborg.github.io/feed.xml" rel="self" />
     <link href="https://corkborg.github.io" />
-    <updated>2023-10-01T20:24:58+09:00</updated>
+    <updated>2023-10-02T11:32:04+09:00</updated>
     <author>
         <name>ミズソバ</name>
     </author>
@@ -18,10 +18,10 @@
         <id>https://corkborg.github.io/wd14-tagger-standalone/</id>
             <category term="生成AI"/>
 
-        <updated>2023-10-01T20:24:58+09:00</updated>
+        <updated>2023-10-02T11:32:04+09:00</updated>
             <summary>
                 <![CDATA[
-                    stable-diffusion-webui-wd14-taggerというものを使うとイラストの中に書かれた要素を分析してテキストで出力してくれます。生成AI向けにLoraを作る際やいろんな用途で使える便利なプラグインです。 今回はこのwebui向けのプラグインを単体で動かしてみました。 元のモデル作者であるSmilingWolfさんのリポジトリをみてもよく分からなかったので、stable-diffusion-webui-wd14-taggerから動作に必要なコードだけを抜き出して動かしてみました。 今回のために作ったコードは下記です。 作りがだいぶ雑なので内容に手を加えることで目的にあった動作をさせられると思います。&hellip;
+                    stable-diffusion-webui-wd14-taggerというものを使うとイラストの中に書かれた要素を分析してテキストで出力してくれます。生成AI向けにLoraを作る際やいろんな用途で使える便利なプラグインです。 今回はこのwebui向けのプラグインを単体で動かしてみました。 元のモデル作者であるSmilingWolfさんのリポジトリをみてもよく分からなかったので、stable-diffusion-webui-wd14-taggerから動作に必要なコードだけを抜き出して動かしてみました。 今回のために作ったコードは下記です。 作りがだいぶ雑なのでなにか不備があれば内容に手を加えてもらうのが良いと思います。&hellip;
                 ]]>
             </summary>
         <content type="html">
@@ -30,7 +30,7 @@
 <p><a href="https://github.com/picobyte/stable-diffusion-webui-wd14-tagger" title="https://github.com/picobyte/stable-diffusion-webui-wd14-tagger" target="_blank" rel="noopener noreferrer">stable-diffusion-webui-wd14-tagger</a>というものを使うとイラストの中に書かれた要素を分析してテキストで出力してくれます。生成AI向けにLoraを作る際やいろんな用途で使える便利なプラグインです。<br>今回はこのwebui向けのプラグインを単体で動かしてみました。</p>
 <h2>動かし方</h2>
 <p>元のモデル作者であるSmilingWolfさんのリポジトリをみてもよく分からなかったので、<a href="https://github.com/picobyte/stable-diffusion-webui-wd14-tagger" title="https://github.com/picobyte/stable-diffusion-webui-wd14-tagger" target="_blank" rel="noopener noreferrer">stable-diffusion-webui-wd14-tagger</a>から動作に必要なコードだけを抜き出して動かしてみました。</p>
-<p>今回のために作ったコードは下記です。<br>作りがだいぶ雑なので内容に手を加えることで目的にあった動作をさせられると思います。<br><a href="https://github.com/corkborg/wd14-tagger-standalone" target="_blank" rel="noopener noreferrer">https://github.com/corkborg/wd14-tagger-standalone</a></p>
+<p>今回のために作ったコードは下記です。<br>作りがだいぶ雑なのでなにか不備があれば内容に手を加えてもらうのが良いと思います。<br><a href="https://github.com/corkborg/wd14-tagger-standalone" target="_blank" rel="noopener noreferrer">https://github.com/corkborg/wd14-tagger-standalone</a></p>
 <h3>モデルの変更方法</h3>
 <p>run.pyで初期化しているWaifuDiffusionInterrogatorにhuggingface上のモデル名を渡すと自動でダウンロードされます。そのためここを書き換える事で任意のモデルを使用する事ができます。</p>
 <pre>interrogator = WaifuDiffusionInterrogator(<br>    'wd14-convnextv2-v2',<br>    repo_id='SmilingWolf/wd-v1-4-convnextv2-tagger-v2',<br>    revision='v2.0'<br>)</pre>
