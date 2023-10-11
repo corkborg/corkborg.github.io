@@ -3,7 +3,7 @@
     <title>塩の惑星</title>
     <link href="https://corkborg.github.io/feed.xml" rel="self" />
     <link href="https://corkborg.github.io" />
-    <updated>2023-10-11T17:50:08+09:00</updated>
+    <updated>2023-10-11T17:56:57+09:00</updated>
     <author>
         <name>ミズソバ</name>
     </author>
@@ -18,7 +18,7 @@
         <id>https://corkborg.github.io/wd14-tagger-standalone/</id>
             <category term="生成AI"/>
 
-        <updated>2023-10-11T17:50:08+09:00</updated>
+        <updated>2023-10-11T17:56:57+09:00</updated>
             <summary>
                 <![CDATA[
                     stable-diffusion-webui-wd14-taggerというものを使うとイラストの中に書かれた要素を分析してテキストで出力してくれます。生成AI向けにLoraを作る際やいろんな用途で使える便利なプラグインです。 今回はこのwebui向けのプラグインを単体で動かしてみました。 元のモデル作者であるSmilingWolfさんのリポジトリをみてもよく分からなかったので、stable-diffusion-webui-wd14-taggerから動作に必要なコードだけを抜き出して動かしてみました。 今回のために作ったコードは下記です。 作りがだいぶ雑なのでなにか不備があれば内容に手を加えてもらうのが良いと思います。&hellip;
@@ -33,24 +33,26 @@
 <p>今回のために作ったコードは下記です。<br>作りがだいぶ雑なのでなにか不備があれば内容に手を加えてもらうのが良いと思います。<br><a href="https://github.com/corkborg/wd14-tagger-standalone" target="_blank" rel="noopener noreferrer">https://github.com/corkborg/wd14-tagger-standalone</a></p>
 <p>Windowsでの動かし方は下記です（Macで動作確認したのでそっちでも動きます）</p>
 <pre>git clone <a href="https://github.com/corkborg/wd14-tagger-standalone.git">https://github.com/corkborg/wd14-tagger-standalone.git</a><br>cd wd14-tagger-standalone<br><br># 必要なライブラリのインストール<br>python3 -m venv venv<br>venv/Scripts/activate<br>pip install -r requirements.txt<br><br># ヘルプの確認<br>python3 run.py --help<br><br># シングルファイルの推論<br>python3 run.py --file path¥image.jpg<br><br># 複数ファイルでの推論<br>python3 run.py --dir path</pre>
-<h3>モデルの変更方法</h3>
-<p>run.pyで初期化しているWaifuDiffusionInterrogatorにhuggingface上のモデル名を渡すと自動でダウンロードされます。そのためここを書き換える事で任意のモデルを使用する事ができます。</p>
-<pre>interrogator = WaifuDiffusionInterrogator(<br>    'wd14-convnextv2-v2',<br>    repo_id='SmilingWolf/wd-v1-4-convnextv2-tagger-v2',<br>    revision='v2.0'<br>)</pre>
-<p>ここらへんのコードを参考にすると良いと思います。<br><a href="https://github.com/picobyte/stable-diffusion-webui-wd14-tagger/blob/master/tagger/utils.py" target="_blank" rel="noopener noreferrer">https://github.com/picobyte/stable-diffusion-webui-wd14-tagger/blob/master/tagger/utils.py</a></p>
-<p>ここに書かれている物よりも高性能なモデルも存在するようです。<br><a href="https://note.com/den2_nova/n/ndd9e2570572b" target="_blank" rel="noopener noreferrer">https://note.com/den2_nova/n/ndd9e2570572b</a></p>
-<h3>スレッショルドなど</h3>
-<p>ここのコードで一律35%以上の一致率のタグだけを残しています。<br>変更することができます。</p>
-<div>
-<pre>tags = Interrogator.postprocess_tags(result[1], threshold=0.35)</pre>
-</div>
 <h2>動作確認</h2>
 <p>こちらのサイトさんからずんだモンさんの画像をダウンロードしました。<br><a href="#INTERNAL_LINK#/post/null">https://zunko.jp/</a></p>
 <p><img loading="lazy" src="https://zunko.jp/images/chara_zm.png" width="214" height="302" data-is-external-image="true"></p>
 <p>こんな感じになりました。</p>
 <pre>&gt;  venv/bin/python run.py chara_zm.png<br>1girl 0.9774133563041687<br>green_hair 0.9474836587905884<br>solo 0.9398633241653442<br>short_sleeves 0.8664116859436035<br>green_footwear 0.8559225797653198<br>shirt 0.8352453112602234<br>green_shorts 0.8336561918258667<br>white_shirt 0.8312864899635315<br>smile 0.7939807176589966<br>full_body 0.7641559839248657<br>suspenders 0.7595807313919067<br>shorts 0.7565829753875732<br>puffy_sleeves 0.7426384091377258<br>open_mouth 0.7329846024513245<br>puffy_shorts 0.7179946303367615<br>white_background 0.6777039170265198<br>looking_at_viewer 0.6681153774261475<br>puffy_short_sleeves 0.6424634456634521<br>standing 0.6409584283828735<br>orange_eyes 0.6313596963882446<br>:d 0.6026382446289062<br>simple_background 0.4987953007221222<br>yellow_eyes 0.4950907528400421<br>suspender_shorts 0.4660169184207916<br>boots 0.3825642764568329<br>{'general': 0.7158641219139099, 'sensitive': 0.3011893630027771, 'questionable': 0.0005881786346435547, 'explicit': 0.00012153387069702148}</pre>
 <p><a href="#INTERNAL_LINK#/post/null"></a>単体で使うことができました。</p>
-<h2>高速化</h2>
+<h2>その他</h2>
+<h3>モデルの変更方法</h3>
+<p>run.pyで初期化しているWaifuDiffusionInterrogatorにhuggingface上のモデル名を渡すと自動でダウンロードされます。そのためここを書き換える事で任意のモデルを使用する事ができます。</p>
+<pre>interrogator = WaifuDiffusionInterrogator(<br>    'wd14-convnextv2-v2',<br>    repo_id='SmilingWolf/wd-v1-4-convnextv2-tagger-v2',<br>    revision='v2.0'<br>)</pre>
+<p>ここらへんのコードを参考にすると良いと思います。<br><a href="https://github.com/picobyte/stable-diffusion-webui-wd14-tagger/blob/master/tagger/utils.py" target="_blank" rel="noopener noreferrer">https://github.com/picobyte/stable-diffusion-webui-wd14-tagger/blob/master/tagger/utils.py</a></p>
+<p>現在はより高性能なモデルも存在するようです。<br><a href="https://note.com/den2_nova/n/ndd9e2570572b" target="_blank" rel="noopener noreferrer">https://note.com/den2_nova/n/ndd9e2570572b</a></p>
+<h3>スレッショルドなど</h3>
+<p>ここのコードで一律35%以上の一致率のタグだけを残しています。<br>これはコマンドライン引数で変更することができます。</p>
+<div>
+<pre># 25%に変更<br>python3 run.py --threthold 0.25 --file image.jpg</pre>
+</div>
+<h3>高速化</h3>
 <p>今回は用意したコードは適当なのでCPU上で推論処理を動かしています。<br>m1 macでは一瞬で返ってくるのでそんなに問題ないとは思っているのですが、もっと早く動かしたい場合はGPUなどを使うように改造したほうが良いかもしれないです。</p>
+<p> </p>
 <p> </p>
             ]]>
         </content>
