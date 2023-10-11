@@ -141,6 +141,8 @@ article.post-only {
 #post-entry pre {
    overflow: scroll;
    white-space: pre-wrap;
+   background: #ebeeee;
+   padding: 10px;
 }
 
 article.post-list {
