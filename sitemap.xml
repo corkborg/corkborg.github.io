@@ -31,6 +31,18 @@
 <image:loc>https://corkborg.github.io/media/posts/1/image.png</image:loc>
 <image:title><![CDATA[]]></image:title>
 </image:image>
+<image:image>
+<image:loc>https://corkborg.github.io/media/posts/1/image-1.png</image:loc>
+<image:title><![CDATA[]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://corkborg.github.io/media/posts/1/image-2.png</image:loc>
+<image:title><![CDATA[]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://corkborg.github.io/media/posts/1/sukurinsiyotuto-2023-07-07-23.09.48.png</image:loc>
+<image:title><![CDATA[Factorio]]></image:title>
+</image:image>
 </url>
 <url>
 <loc>https://corkborg.github.io/how-to-create-multiplayer-server-project-zomboid/</loc>
@@ -54,6 +66,6 @@
 </url>
 <url>
 <loc>https://corkborg.github.io/wd14-tagger-standalone/</loc>
-<lastmod>2023-10-11T17:56:57+09:00</lastmod>
+<lastmod>2023-10-15T00:39:36+09:00</lastmod>
 </url>
 </urlset>
