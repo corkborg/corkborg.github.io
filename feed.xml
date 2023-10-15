@@ -3,7 +3,7 @@
     <title>塩の惑星</title>
     <link href="https://corkborg.github.io/feed.xml" rel="self" />
     <link href="https://corkborg.github.io" />
-    <updated>2023-10-15T00:39:36+09:00</updated>
+    <updated>2023-10-15T14:57:57+09:00</updated>
     <author>
         <name>ミズソバ</name>
     </author>
@@ -18,16 +18,16 @@
         <id>https://corkborg.github.io/wd14-tagger-standalone/</id>
             <category term="生成AI"/>
 
-        <updated>2023-10-15T00:39:36+09:00</updated>
+        <updated>2023-10-15T14:57:57+09:00</updated>
             <summary>
                 <![CDATA[
-                    stable-diffusion-webui-wd14-taggerというものはSmilingWolfという方が作った使うとイラストの中に書かれた要素を分析してテキストで出力するモデルをwebuiで動かせるようにしたプラグインです。 イラストの要素分析は生成AI向けにLoraを作る際やいろんな用途で使える便利な機能でwebui抜きに動作捺せたかったので単体で動かしてみました。 原理的には元のモデル作者であるSmilingWolfさんの学習スクリプトを参考にすれば単体で動かせるはずですが見てもあまり分からなかったので、stable-diffusion-webui-wd14-taggerの方から動作に必要なコードだけを抜き出して動かしてみました。 今回のために作ったコードは下記です。 作りがだいぶ雑なのでなにか不備があれば内容に手を加えてもらうのが良いと思います。&hellip;
+                    stable-diffusion-webui-wd14-taggerというものはSmilingWolfという方が作った使うとイラストの中に書かれた要素を分析してテキストで出力するモデルをwebuiで動かせるようにしたプラグインです。 イラストの要素分析は生成AI向けにLoraを作る時などいろんな用途で使える便利な機能でwebui抜きに動作させたかったので単体で動かしてみました。 原理的には元のモデル作者であるSmilingWolfさんの学習スクリプトを参考にすれば単体で動かせるはずですが見てもあまり分からなかったので、stable-diffusion-webui-wd14-taggerの方から動作に必要なコードだけを抜き出して動かしてみました。 今回のために作ったコードは下記です。 作りがだいぶ雑なのでなにか不備があれば内容に手を加えてもらうのが良いと思います。&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
                 <p> </p>
-<p><a href="https://github.com/picobyte/stable-diffusion-webui-wd14-tagger" title="https://github.com/picobyte/stable-diffusion-webui-wd14-tagger" target="_blank" rel="noopener noreferrer">stable-diffusion-webui-wd14-tagger</a>というものはSmilingWolfという方が作った使うとイラストの中に書かれた要素を分析してテキストで出力するモデルをwebuiで動かせるようにしたプラグインです。<br>イラストの要素分析は生成AI向けにLoraを作る際やいろんな用途で使える便利な機能でwebui抜きに動作捺せたかったので単体で動かしてみました。</p>
+<p><a href="https://github.com/picobyte/stable-diffusion-webui-wd14-tagger" title="https://github.com/picobyte/stable-diffusion-webui-wd14-tagger" target="_blank" rel="noopener noreferrer">stable-diffusion-webui-wd14-tagger</a>というものはSmilingWolfという方が作った使うとイラストの中に書かれた要素を分析してテキストで出力するモデルをwebuiで動かせるようにしたプラグインです。<br>イラストの要素分析は生成AI向けにLoraを作る時などいろんな用途で使える便利な機能でwebui抜きに動作させたかったので単体で動かしてみました。</p>
 <h2>動かし方</h2>
 <p>原理的には元のモデル作者であるSmilingWolfさんの学習スクリプトを参考にすれば単体で動かせるはずですが見てもあまり分からなかったので、<a href="https://github.com/picobyte/stable-diffusion-webui-wd14-tagger" title="https://github.com/picobyte/stable-diffusion-webui-wd14-tagger" target="_blank" rel="noopener noreferrer">stable-diffusion-webui-wd14-tagger</a>の方から動作に必要なコードだけを抜き出して動かしてみました。</p>
 <p>今回のために作ったコードは下記です。<br>作りがだいぶ雑なのでなにか不備があれば内容に手を加えてもらうのが良いと思います。<br><a href="https://github.com/corkborg/wd14-tagger-standalone" target="_blank" rel="noopener noreferrer">https://github.com/corkborg/wd14-tagger-standalone</a></p>
