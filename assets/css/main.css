@@ -269,7 +269,9 @@ img {
    font-family: var(--serif-font);
    font-weight: bold;
    border-bottom-style: solid;
-   border-bottom-color: var(--main-accent-color);
+   /*border-bottom-color: var(--main-accent-color);*/
+   border-image: linear-gradient(to right, #df5c45 0%, #df5c45 20%, #895d4f 50%, #df5c45 80%, #df5c45 100%);
+   border-image-slice: 1;
 }
 
 .u-icon {
