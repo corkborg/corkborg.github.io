@@ -13,17 +13,17 @@ a:visited {
 :root {
    --main-bg-color: rgb(223 227 228);
    --main-content-color: rgb(251, 252, 252);
-   --main-text-color: #313131;
+   --main-text-color: rgb(26 26 26);
    --main-accent-color: #df5c45;
    --serif-font: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
-   --sans-serif-font: "Helvetica Neue", "Helvetica", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", sans-serif;
+   --sans-serif-font: "新ゴ L","Shin Go Light",'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;
 }
 
 /*** Layout ***/
 body {
    font-family: var(--sans-serif-font);
    font-size: 1rem;
-   font-weight: 400;
+   font-weight: normal;
    margin: 0;
    line-height: 1.6;
    color: var(--main-text-color);
