@@ -3,7 +3,7 @@
     <title>塩の惑星</title>
     <link href="https://corkborg.github.io/feed.xml" rel="self" />
     <link href="https://corkborg.github.io" />
-    <updated>2023-11-07T15:06:32+09:00</updated>
+    <updated>2023-11-07T15:09:42+09:00</updated>
     <author>
         <name>ミズソバ</name>
     </author>
@@ -75,7 +75,7 @@
         <id>https://corkborg.github.io/wd14-tagger-standalone/</id>
             <category term="生成AI"/>
 
-        <updated>2023-11-07T15:06:32+09:00</updated>
+        <updated>2023-11-07T15:09:42+09:00</updated>
             <summary>
                 <![CDATA[
                     stable-diffusion-webui-wd14-taggerというものはSmilingWolfという方が作ったモデルを使ったwebui向けのプラグインで、使うとイラストの中に書かれた要素を分析して出力することができます。 イラストの要素分析は生成AI向けにLoraを作る時などいろんな用途で使える便利な機能でwebui抜きに動作させたかったので単体で動かしてみました。 原理的には元のモデル作者であるSmilingWolfさんの学習スクリプトを参考にすれば単体で動かせるはずですが見てもあまり分からなかったので、stable-diffusion-webui-wd14-taggerの方から動作に必要なコードだけを抜き出して動かしてみました。 （機械学習まわりがTensorflowよりもPytorchのほうが取り扱いやすかったのもあります） 今回のために作ったコードは下記です。&hellip;
@@ -87,7 +87,7 @@
 <p>イラストの要素分析は生成AI向けにLoraを作る時などいろんな用途で使える便利な機能でwebui抜きに動作させたかったので単体で動かしてみました。</p>
 <h2>動かし方</h2>
 <p>原理的には元のモデル作者であるSmilingWolfさんの学習スクリプトを参考にすれば単体で動かせるはずですが見てもあまり分からなかったので、<a href="https://github.com/picobyte/stable-diffusion-webui-wd14-tagger" title="https://github.com/picobyte/stable-diffusion-webui-wd14-tagger" target="_blank" rel="noopener noreferrer">stable-diffusion-webui-wd14-tagger</a>の方から動作に必要なコードだけを抜き出して動かしてみました。<br>（機械学習まわりがTensorflowよりもPytorchのほうが取り扱いやすかったのもあります）</p>
-<p>今回のために作ったコードは下記です。<br>作りがだいぶ雑なのでなにか不備があれば内容に手を加えてもらうのが良いと思います。<br><a href="https://github.com/corkborg/wd14-tagger-standalone" target="_blank" rel="noopener noreferrer">https://github.com/corkborg/wd14-tagger-standalone</a></p>
+<p>今回のために作ったコードは下記です。<br>簡素なコードになっているのでコードを修正することで機能追加することができると思います。<br><a href="https://github.com/corkborg/wd14-tagger-standalone" target="_blank" rel="noopener noreferrer">https://github.com/corkborg/wd14-tagger-standalone</a></p>
 <p>Windowsでの動かし方は下記です（開発時はMacを使っていたのでそっちでも動きます）<br>Python3やgitコマンドが事前にインストールされている必要があります。</p>
 <pre>git clone <a href="https://github.com/corkborg/wd14-tagger-standalone.git">https://github.com/corkborg/wd14-tagger-standalone.git</a><br>cd wd14-tagger-standalone<br><br># 必要なライブラリのインストール<br>python3 -m venv venv<br>venv/Scripts/activate<br>pip install -r requirements.txt<br><br># ヘルプの確認<br>python3 run.py --help<br><br># シングルファイルの推論<br>python3 run.py --file path¥image.jpg<br><br># 複数ファイルでの推論<br>python3 run.py --dir path</pre>
 <h2>動作確認</h2>
@@ -107,12 +107,12 @@
 <p>ここらへんのコードを参考にすると良いと思います。<br><a href="https://github.com/picobyte/stable-diffusion-webui-wd14-tagger/blob/master/tagger/utils.py" target="_blank" rel="noopener noreferrer">https://github.com/picobyte/stable-diffusion-webui-wd14-tagger/blob/master/tagger/utils.py</a></p>
 <p>現在はより高性能なモデルも存在するようです。<br><a href="https://note.com/den2_nova/n/ndd9e2570572b" target="_blank" rel="noopener noreferrer">https://note.com/den2_nova/n/ndd9e2570572b</a></p>
 <h3>スレッショルドなど</h3>
-<p>デフォルトでは一律35%以上の一致率のタグだけを残しています。<br>これはコマンドライン引数で変更することができます。</p>
+<p>デフォルトではwebuiと同じく一律35%以上の一致率のタグだけを残しています。<br>これはコマンドライン引数で変更することができます。</p>
 <div>
 <pre># 25%に変更<br>python3 run.py --threthold 0.25 --file image.jpg</pre>
 </div>
 <h3>高速化</h3>
-<p>今回は用意したコードは適当なのでCPU上で推論処理を動かしています。<br>m1 macでは一瞬で返ってくるのでそんなに問題ないとは思っているのですが、もっと早く動かしたい場合はGPUなどを使うように改造したほうが良いかもしれないです。</p>
+<p>今回は用意したコードはCPU上で推論処理を動かしています。<br>m1 macでも一瞬で返ってくるのでそんなに問題ないとは思っているのですが、もっと早く動かしたい場合はGPUなどを使うように改造したほうが良いかもしれないです。</p>
 <p> </p>
 <p> </p>
             ]]>
