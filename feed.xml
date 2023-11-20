@@ -3,12 +3,59 @@
     <title>塩の惑星</title>
     <link href="https://corkborg.github.io/feed.xml" rel="self" />
     <link href="https://corkborg.github.io" />
-    <updated>2023-11-20T02:51:38+09:00</updated>
+    <updated>2023-11-21T03:15:21+09:00</updated>
     <author>
         <name>ミズソバ</name>
     </author>
     <id>https://corkborg.github.io</id>
 
+    <entry>
+        <title>リバース：1999をMacにインストールして遊んでみた</title>
+        <author>
+            <name>ミズソバ</name>
+        </author>
+        <link href="https://corkborg.github.io/install-reverse1999-on-mac/"/>
+        <id>https://corkborg.github.io/install-reverse1999-on-mac/</id>
+        <media:content url="https://corkborg.github.io/media/posts/18/sukurinsiyotuto-2023-11-20-13.24.24.png" medium="image" />
+            <category term="ゲーム"/>
+            <category term="Mac"/>
+            <category term="AppleSilicon"/>
+
+        <updated>2023-11-21T03:15:21+09:00</updated>
+            <summary>
+                <![CDATA[
+                        <img src="https://corkborg.github.io/media/posts/18/sukurinsiyotuto-2023-11-20-13.24.24.png" alt="リバース：1999" />
+                    最近、リバース1999をプレイし始めました。 このゲームはストーリー重視のソーシャルゲームでビジュアルがとても綺麗です。 いつもはスマートフォンでプレイしているのですが、大きな画面で綺麗なビジュアルを楽しみたいと思うようになりました。 普段はM1 Mac&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                    <p><img src="https://corkborg.github.io/media/posts/18/sukurinsiyotuto-2023-11-20-13.24.24.png" class="type:primaryImage" alt="リバース：1999" /></p>
+                <p>最近、リバース1999をプレイし始めました。</p>
+<p>このゲームはストーリー重視のソーシャルゲームでビジュアルがとても綺麗です。<br>いつもはスマートフォンでプレイしているのですが、大きな画面で綺麗なビジュアルを楽しみたいと思うようになりました。</p>
+<p>普段はM1 Mac Book Air作業しているのでMacでプレイできたらなと思っていました。リバース1999はAndroid、iPhone、iPad、WindowsをサポートしているのですがMacは特にサポートしていないようです。</p>
+<h2>MacにはiOSアプリをインストールする機能がある</h2>
+<figure class="post__image post__image--center"><img loading="lazy"  src="https://corkborg.github.io/media/posts/18/sukurinsiyotuto-2023-11-20-3.04.14.png" alt="Appストア画面 リバース1999検索結果" width="501" height="280" sizes="(max-width: 1200px) 100vw, 1200px" srcset="https://corkborg.github.io/media/posts/18/responsive/sukurinsiyotuto-2023-11-20-3.04.14-xs.png 300w ,https://corkborg.github.io/media/posts/18/responsive/sukurinsiyotuto-2023-11-20-3.04.14-sm.png 480w ,https://corkborg.github.io/media/posts/18/responsive/sukurinsiyotuto-2023-11-20-3.04.14-md.png 749w ,https://corkborg.github.io/media/posts/18/responsive/sukurinsiyotuto-2023-11-20-3.04.14-xl.png 1200w"></figure>
+<p>これはApple Silicon Mac（最近のMac）限定の話です。<br>MacはiOSのアプリをMacにインストールする機能が標準で存在します。<br>（<a href="https://support.apple.com/ja-jp/guide/app-store/fird2c7092da/mac" target="_blank" rel="noopener noreferrer">Apple公式: Appleシリコンを搭載したMacでiPhoneアプリおよびiPadアプリを使用する）</a></p>
+<p>リバース：1999でApp Storeを検索してみたところMacで遊べそうな雰囲気が漂っていたのでインストールしてみました。</p>
+<figure class="post__image" ><figure class="post__image post__image--center"><img loading="lazy"  src="https://corkborg.github.io/media/posts/18/sukurinsiyotuto-2023-11-20-3.12.35.png" alt="リバース1999 launchpad" width="2006" height="754" sizes="(max-width: 1200px) 100vw, 1200px" srcset="https://corkborg.github.io/media/posts/18/responsive/sukurinsiyotuto-2023-11-20-3.12.35-xs.png 300w ,https://corkborg.github.io/media/posts/18/responsive/sukurinsiyotuto-2023-11-20-3.12.35-sm.png 480w ,https://corkborg.github.io/media/posts/18/responsive/sukurinsiyotuto-2023-11-20-3.12.35-md.png 749w ,https://corkborg.github.io/media/posts/18/responsive/sukurinsiyotuto-2023-11-20-3.12.35-xl.png 1200w"></figure>
+<figcaption >Launchpadのゲームメニューに登録される</figcaption>
+</figure>
+<figure class="post__image post__image--center"><img loading="lazy"  src="https://corkborg.github.io/media/posts/18/sukurinsiyotuto-2023-11-20-3.13.07.png" alt="リバース1999  タイトル画面" width="581" height="452" sizes="(max-width: 1200px) 100vw, 1200px" srcset="https://corkborg.github.io/media/posts/18/responsive/sukurinsiyotuto-2023-11-20-3.13.07-xs.png 300w ,https://corkborg.github.io/media/posts/18/responsive/sukurinsiyotuto-2023-11-20-3.13.07-sm.png 480w ,https://corkborg.github.io/media/posts/18/responsive/sukurinsiyotuto-2023-11-20-3.13.07-md.png 749w ,https://corkborg.github.io/media/posts/18/responsive/sukurinsiyotuto-2023-11-20-3.13.07-xl.png 1200w"></figure>
+<p>起動することができました！<br>iPad版で起動しているようで3:4のウィンドウになっています。リバース：1999は16:9のゲームなので上下の余白が少し気になります。<br>ただ大きな画面でプレイできて良い感じです。</p>
+<h2>遊んでみた結果</h2>
+<p>普通に遊ぶことができ、特に問題になるような点は見つかりませんでした。</p>
+<figure class="post__image" ><figure class="post__image post__image--center"><img loading="lazy"  src="https://corkborg.github.io/media/posts/18/sukurinsiyotuto-2023-11-21-3.04.04.png" alt="リバース1999 戦闘 on Mac" width="2162" height="1640" sizes="(max-width: 1200px) 100vw, 1200px" srcset="https://corkborg.github.io/media/posts/18/responsive/sukurinsiyotuto-2023-11-21-3.04.04-xs.png 300w ,https://corkborg.github.io/media/posts/18/responsive/sukurinsiyotuto-2023-11-21-3.04.04-sm.png 480w ,https://corkborg.github.io/media/posts/18/responsive/sukurinsiyotuto-2023-11-21-3.04.04-md.png 749w ,https://corkborg.github.io/media/posts/18/responsive/sukurinsiyotuto-2023-11-21-3.04.04-xl.png 1200w"></figure>
+<figcaption >特に問題なく戦闘をすることができました</figcaption>
+</figure>
+<figure class="post__image" ><figure class="post__image post__image--center"><img loading="lazy"  src="https://corkborg.github.io/media/posts/18/sukurinsiyotuto-2023-11-20-3.19.06.png" alt="リバース1999 ウィルダネス" width="1058" height="821" sizes="(max-width: 1200px) 100vw, 1200px" srcset="https://corkborg.github.io/media/posts/18/responsive/sukurinsiyotuto-2023-11-20-3.19.06-xs.png 300w ,https://corkborg.github.io/media/posts/18/responsive/sukurinsiyotuto-2023-11-20-3.19.06-sm.png 480w ,https://corkborg.github.io/media/posts/18/responsive/sukurinsiyotuto-2023-11-20-3.19.06-md.png 749w ,https://corkborg.github.io/media/posts/18/responsive/sukurinsiyotuto-2023-11-20-3.19.06-xl.png 1200w"></figure>
+<figcaption >ウィルダネス編集画面</figcaption>
+</figure>
+<p>リバース1999をMacで遊ぶことができました。</p>
+<p> </p>
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>ATOK日本語入力のクラウド機能ではGoogle日本語入力に勝てなかった</title>
         <author>
@@ -20,7 +67,7 @@
             <category term="日本語入力"/>
             <category term="レビュー"/>
 
-        <updated>2023-11-20T02:51:38+09:00</updated>
+        <updated>2023-11-20T13:02:20+09:00</updated>
             <summary>
                 <![CDATA[
                         <img src="https://corkborg.github.io/media/posts/17/atok-2.jpg" alt="ATOK passport logo" />
@@ -40,7 +87,7 @@
 <h2 id="atoktoha">ATOKとは</h2>
 <figure class="post__image"><img loading="lazy"  src="https://corkborg.github.io/media/posts/17/ATOK_logo.jpg" alt="" width="139" height="139" sizes="(max-width: 1200px) 100vw, 1200px" srcset="https://corkborg.github.io/media/posts/17/responsive/ATOK_logo-xs.jpg 300w ,https://corkborg.github.io/media/posts/17/responsive/ATOK_logo-sm.jpg 480w ,https://corkborg.github.io/media/posts/17/responsive/ATOK_logo-md.jpg 749w ,https://corkborg.github.io/media/posts/17/responsive/ATOK_logo-xl.jpg 1200w"></figure>
 <p>今どき、ATOKの名前を知っている人はあまりいないと思います。<br>私も詳しく知らない世代なのですが、パーソナルコンピュータの初期の時期から存在する高品質の有料IMEです。</p>
-<p>昔はOSに標準搭載されたIMEも貧弱だったのでATOKのような品質の高いIMEの需要が高かったようです。<br>今の時代はWindows、Macに標準搭載のIMEでもそれなりの精度があります。そのため、ATOKは知る人ぞ知るIMEになってしまいました。</p>
+<p>昔はOSに標準搭載されたIMEが貧弱だったのでATOKのような品質の高いIMEの需要が高かったようです。<br>今の時代はWindows、Macに標準搭載のIMEでもそれなりの精度があります。そのため、ATOKは知る人ぞ知るIMEになってしまいました。</p>
 <p>ただ、ATOKは日本語入力に特化した日本企業が作っているソフトなため日本語入力の精度は現在でも非常に高いです。<br>そのため、日本語の表現に非常にこだわる方は今でもATOKを使うのがおすすめです。</p>
 <h2 id="atoknoliao-jin">ATOKの料金</h2>
 <p>ATOKはサブスクリプションモデルになっています。<br>プランには月額600円のプロフェッショナルと、月額300円のベーシックコースがあります。どちらも10台までATOKをインストールできます。</p>
@@ -335,7 +382,7 @@
             <category term="Mac"/>
             <category term="AppleSilicon"/>
 
-        <updated>2023-08-15T13:43:30+09:00</updated>
+        <updated>2023-11-20T13:56:20+09:00</updated>
             <summary>
                 <![CDATA[
                         <img src="https://corkborg.github.io/media/posts/8/image-8.png" alt="" />
@@ -350,7 +397,7 @@
 <p>記事中のスクショは実際にM1 MacBook Airで遊んだときのものです。</p>
 <p>2023年７月の情報です。</p>
 <h2>Factorio</h2>
-<p><img loading="lazy" src="https://blogger.googleusercontent.com/img/a/AVvXsEj-d6RmB8T1BaozSvcKmaZGHBugiwBjdObSasMoNLeA6SJxV1Fzd7EhVMOtgElWtJBnEkWIp0k0fiDtC4VdTK6OkUh3F9clWOS0v2JjfSVXsYVgN17tTAEaHN-SiVVPrE_Vh5JjEYeB2o2v7OE2j20-7NnfQrMCBehp9K_-FT8zl3bRT1AhvIP6kTTibI0" data-is-external-image="true"></p>
+<figure class="post__image"><img loading="lazy"  src="https://blogger.googleusercontent.com/img/a/AVvXsEj-d6RmB8T1BaozSvcKmaZGHBugiwBjdObSasMoNLeA6SJxV1Fzd7EhVMOtgElWtJBnEkWIp0k0fiDtC4VdTK6OkUh3F9clWOS0v2JjfSVXsYVgN17tTAEaHN-SiVVPrE_Vh5JjEYeB2o2v7OE2j20-7NnfQrMCBehp9K_-FT8zl3bRT1AhvIP6kTTibI0" alt="Factorio screenshot on mac" width="702" height="281" data-is-external-image="true"></figure>
 <div>漂着した惑星で材料を集めて工場を組み上げていくストラテジーゲーム。</div>
 <div><strong>Apple siliconにネイティブ対応している</strong>。</div>
 <div>タッチパッドだけでも割りと操作できる。</div>
@@ -358,7 +405,7 @@
 <div><a href="https://corkborg.github.io/factorio-support-applesilicon/" target="_blank" rel="noopener noreferrer">FactorioがApple siliconに対応したようなのでM1 Macで遊んでみた</a></div>
 <div>
 <h2>LIMBO</h2>
-<p><img loading="lazy" src="https://blogger.googleusercontent.com/img/a/AVvXsEjhVrt17Nku_JTpvKwEh_4VJ41l_ZA4DIdAfuGLIoo1CfwdKN7pVMZlw_xzg_N5SDs0h0nZva-uLC25t3Afk_E5KA4xkvKAbmfxLCw26sXi0p-UZV3qYLCS5vDcQdz2uHvNsMX3lz3kmsWGpZWBh0tCP5m8hF6zqvLaOVO2x5WdvmWoVZkuUlvSoFPMlmE" data-is-external-image="true"></p>
+<figure class="post__image"><img loading="lazy"  src="https://blogger.googleusercontent.com/img/a/AVvXsEjhVrt17Nku_JTpvKwEh_4VJ41l_ZA4DIdAfuGLIoo1CfwdKN7pVMZlw_xzg_N5SDs0h0nZva-uLC25t3Afk_E5KA4xkvKAbmfxLCw26sXi0p-UZV3qYLCS5vDcQdz2uHvNsMX3lz3kmsWGpZWBh0tCP5m8hF6zqvLaOVO2x5WdvmWoVZkuUlvSoFPMlmE" alt="LIMBO screenshot on mac" width="702" height="319" data-is-external-image="true"></figure>
 <div class="separator">モノクロの世界を探索する2Dアクションゲーム。</div>
 <div class="separator">積みゲーしていたので内容は詳しくわからないが人気がある。</div>
 <div class="separator"><strong>Apple siliconにネイティブ対応している</strong>。</div>
@@ -366,13 +413,13 @@
 <div>
 <h2>Into the Breach</h2>
 </div>
-<div><img loading="lazy" src="https://blogger.googleusercontent.com/img/a/AVvXsEj30vzdF6iA8no11EWMj0akNUYbkESySfF73OCgszkD3cSy5VGDnMWuOs6myto_tH7oeuF1GWZSVMiRtIJmT4FHEsEe995ENd8KFPn_tPhj9BRY3iIiOa9IOF4QsIlfwdkFL0fcWUBc8OeQZnIqktCl6jPJ1PFJHky3I5aNbF0CoB_33PGqZzVuGB9dals" data-is-external-image="true"></div>
+<div><figure class="post__image"><img loading="lazy"  src="https://blogger.googleusercontent.com/img/a/AVvXsEj30vzdF6iA8no11EWMj0akNUYbkESySfF73OCgszkD3cSy5VGDnMWuOs6myto_tH7oeuF1GWZSVMiRtIJmT4FHEsEe995ENd8KFPn_tPhj9BRY3iIiOa9IOF4QsIlfwdkFL0fcWUBc8OeQZnIqktCl6jPJ1PFJHky3I5aNbF0CoB_33PGqZzVuGB9dals" alt="Into the Breach screenshot on mac" width="702" height="395" data-is-external-image="true"></figure></div>
 <div> </div>
 <div>巨大エイリアンをメカで倒すターン制ストラテジーゲーム。</div>
 <div>小さいマップでシンプルながらよく考える必要があり詰将棋のように面白い。</div>
 <p><strong>Apple siliconにネイティブ対応している</strong>。<br>キーボード+タッチパッドで十分遊べる。</p>
 <h2>Timberborn</h2>
-<p><img loading="lazy" src="https://blogger.googleusercontent.com/img/a/AVvXsEjfUH7Q76co0-f5SDqmFsvEjlIGNBUxXG54DtFytRUeoA0b8rAjLD1iGOW__fOmUKvOvpJxerKDHDwDK-swy2bHgKwreoL4T5JISkIiqH1x7on9iCyig9gM4zRV-40_ujDe8Iy6Rwg_txjPGjtqo3pSRXEqsUZIN2Q_kCF6ZTQbTPo8XTLdMce3-B8p4S8" data-is-external-image="true"></p>
+<figure class="post__image"><img loading="lazy"  src="https://blogger.googleusercontent.com/img/a/AVvXsEjfUH7Q76co0-f5SDqmFsvEjlIGNBUxXG54DtFytRUeoA0b8rAjLD1iGOW__fOmUKvOvpJxerKDHDwDK-swy2bHgKwreoL4T5JISkIiqH1x7on9iCyig9gM4zRV-40_ujDe8Iy6Rwg_txjPGjtqo3pSRXEqsUZIN2Q_kCF6ZTQbTPo8XTLdMce3-B8p4S8" alt="Timberborn screenshot on mac" width="702" height="318" data-is-external-image="true"></figure>
 <div>ビーバー達の街を建設して発展させていくストラテジーゲーム。似たようなゲームは多いがこのゲームの特徴は季節があり治水要素がある所。</div>
 <div>季節に合わせて治水をうまく行わないと農作物がうまく育たたなくてビーバー達が餓死してしまう。</div>
 <div>
@@ -380,14 +427,14 @@
 <div>キーボード+タッチパッドでも十分遊べそうだがマウスがあると快適。</div>
 <div>
 <h2>Kung Fury: Street Rage</h2>
-<p><img loading="lazy" src="https://blogger.googleusercontent.com/img/a/AVvXsEg6KtRY7hIYR0_fbbzgNod7pfWmyb5l_V6LgFpTAukb83p1c-LkRFAxew0EmRwAQe1R_oRm-28c34bWAMLIRFcHiDueI41yIfpfZsPC3nMkoSckTWBJkXr-f8saxLIq5VBpN63NdLVSZlJH_0EmvxvDcw_iL83m7jvGQPnZLapW_JNwfieC2ZY5FwDut18" data-is-external-image="true"></p>
+<figure class="post__image"><img loading="lazy"  src="https://blogger.googleusercontent.com/img/a/AVvXsEg6KtRY7hIYR0_fbbzgNod7pfWmyb5l_V6LgFpTAukb83p1c-LkRFAxew0EmRwAQe1R_oRm-28c34bWAMLIRFcHiDueI41yIfpfZsPC3nMkoSckTWBJkXr-f8saxLIq5VBpN63NdLVSZlJH_0EmvxvDcw_iL83m7jvGQPnZLapW_JNwfieC2ZY5FwDut18" alt="Kung Fury: Street Rage screenshot on mac" width="702" height="439" data-is-external-image="true"></figure>
 <div>KungFuryという80年代コンセプトの<a href="https://www.youtube.com/watch?v=bS5P_LAqiVg" target="_blank" rel="noopener">無料公開のギャグ映画</a>をもとにしたミニ格闘ゲーム。</div>
 <div>２つのキーだけで遊べるシンプルさだがゲーム性があり爽快感があるという面白いタイトル。</div>
 <div><strong>Apple siliconにネイティブ対応している</strong>。</div>
 <div>キーボードだけで遊ぶことができるのでMac Bookにおすすめ。</div>
 <div>
 <h2>Ultimate Chicken Horse</h2>
-<p><img loading="lazy" src="https://blogger.googleusercontent.com/img/a/AVvXsEgBFOk2FKu-v4ZYDo2szEQI8sv4BPSXHX0KQ6Jy33P-Es-_LV6Jm5qjKaeUT83A0kwNWnenSoYLxSc6fbKiFtPPem2lg2Ysqg4H_BlT5puIJKWYgNryVYOhnYqCmmiCw2xl0MLvv8M__CSCBrOfmq1tZ_VhP55C9SPZPF-wD4ee_kje1dx4gnYpGxQqR28" data-is-external-image="true"></p>
+<figure class="post__image"><img loading="lazy"  src="https://blogger.googleusercontent.com/img/a/AVvXsEgBFOk2FKu-v4ZYDo2szEQI8sv4BPSXHX0KQ6Jy33P-Es-_LV6Jm5qjKaeUT83A0kwNWnenSoYLxSc6fbKiFtPPem2lg2Ysqg4H_BlT5puIJKWYgNryVYOhnYqCmmiCw2xl0MLvv8M__CSCBrOfmq1tZ_VhP55C9SPZPF-wD4ee_kje1dx4gnYpGxQqR28" alt="Ultimate Chicken Horse screenshot on mac" width="702" height="375" data-is-external-image="true"></figure>
 <div>4人で戦いながら最速のステージのクリアを目指すゲーム。</div>
 <div>アイテムをステージに設置する要素があり、協力したり裏切ったりする面白いパーティゲーム。</div>
 <p><strong>Apple siliconにネイティブ対応している</strong>。</p>
@@ -409,13 +456,13 @@
 <div>タッチパッドでも操作できないこともないが、右クリックでのドラッグをよく使用するのでマウスがあったほうが快適。</div>
 <div>
 <h2>Cities: Skylines</h2>
-<p><img loading="lazy" src="https://blogger.googleusercontent.com/img/a/AVvXsEgl2MaJpF6f6tziCrGAuvxyEi7DOhsF6A4nFw5uZTqYu-YE45hjc-oHUKzjmHmJ9AmUStN85R5DhV0RIB-Tswp28haeA_ZVUYZf1Ulfd2UIcqV2hDrEoUea458_EfRc9amugqRm3GZ4dO_uCf7pluVfjfpB9Ni5Ok4HdFnvqMlDa9tI7kqCkmRKeJ1sIVQ" data-is-external-image="true"></p>
+<figure class="post__image"><img loading="lazy"  src="https://blogger.googleusercontent.com/img/a/AVvXsEgl2MaJpF6f6tziCrGAuvxyEi7DOhsF6A4nFw5uZTqYu-YE45hjc-oHUKzjmHmJ9AmUStN85R5DhV0RIB-Tswp28haeA_ZVUYZf1Ulfd2UIcqV2hDrEoUea458_EfRc9amugqRm3GZ4dO_uCf7pluVfjfpB9Ni5Ok4HdFnvqMlDa9tI7kqCkmRKeJ1sIVQ" alt="Cities: Skylines screenshot on mac" width="702" height="438" data-is-external-image="true"></figure>
 <div>街を設計して運営するサンドボックスシミュレーションゲーム。</div>
 <div><strong>Apple siliconにはネイティブ対応していない</strong>が普通に遊ぶことはできそうだった。</div>
 <div>中ボタンを押す必要があるためマウスを必要とする。</div>
 <div>
 <h2>Besiege</h2>
-<p><img loading="lazy" src="https://blogger.googleusercontent.com/img/a/AVvXsEiODWKTl9Yu13wRSfkqup82escM0A6waTMlg3Fgh0_OGs4udSi0cb46qRT1m7ZSjlOOIX49lV8qUuwhsNg0_q9_reWN47-Z0SjQDa5VqQKqCHKi2gmPck4T40BinRSTbEUYzuF7Mc_UoN3-N2Sx_9xk-dTHFdCc3on_ixsG-2nQ1YdA5VXVXFJVTNI_otY" data-is-external-image="true"></p>
+<figure class="post__image"><img loading="lazy"  src="https://blogger.googleusercontent.com/img/a/AVvXsEiODWKTl9Yu13wRSfkqup82escM0A6waTMlg3Fgh0_OGs4udSi0cb46qRT1m7ZSjlOOIX49lV8qUuwhsNg0_q9_reWN47-Z0SjQDa5VqQKqCHKi2gmPck4T40BinRSTbEUYzuF7Mc_UoN3-N2Sx_9xk-dTHFdCc3on_ixsG-2nQ1YdA5VXVXFJVTNI_otY" alt="besiege screenshot on mac" width="702" height="333" data-is-external-image="true"></figure>
 <div>
 <div>好きなように攻城兵器を開発して家や城などを攻略するサンドボックスゲーム。</div>
 </div>
@@ -423,17 +470,17 @@
 <div><strong>Apple siliconにはネイティブ対応していない</strong>が普通に遊ぶことができそうだった。</div>
 <div>
 <h2>RimWorld</h2>
-<p><img loading="lazy" src="https://blogger.googleusercontent.com/img/a/AVvXsEgzaNZowqZsaThh41eZzVnj0WpPHkeDgZfKHQs7YgXlpq3w2gtPTX1Ort4I8N1cAoWTFlRc6zEvbMMq0Zzt1ixuxBtacRi4eaGjUfDSDhjOjmEbz0YOYPbIgVucmRLhHXsUu0tuYdl7TNwFrrdd85f5rH0yX3nEgolAJ8cFc2G-g1EGAqz5M2fcnFiCjiE" data-is-external-image="true"></p>
+<figure class="post__image"><img loading="lazy"  src="https://blogger.googleusercontent.com/img/a/AVvXsEgzaNZowqZsaThh41eZzVnj0WpPHkeDgZfKHQs7YgXlpq3w2gtPTX1Ort4I8N1cAoWTFlRc6zEvbMMq0Zzt1ixuxBtacRi4eaGjUfDSDhjOjmEbz0YOYPbIgVucmRLhHXsUu0tuYdl7TNwFrrdd85f5rH0yX3nEgolAJ8cFc2G-g1EGAqz5M2fcnFiCjiE" alt="RimWorld screenshot on mac" width="702" height="372" data-is-external-image="true"></figure>
 <div>惑星に入植した住人達がコミュニティを築き協力しあうストラテジーゲーム。</div>
 <div><strong>Apple siliconにはネイティブ対応してい</strong>ないものの普通に遊ぶことができた。</div>
 <div>
 <h2>NEEDY GIRL OVERDOSE</h2>
-<p><img loading="lazy" src="https://blogger.googleusercontent.com/img/a/AVvXsEgn9h94CZ4n3S4ZUIuPN7PCHSCrK6YWyp3YnAZo7DQFAC8Zx5UAPELuSlhQ1WW8_H0aJZYTL96dAhY41WQv31mmoCItj9jO-_gukWmR4h0IsHShdTwlrbm6s9CcH75Kc9GHiTrOuWBCjMD01Jx9mrbXNLWRrmqFOJyGUsFmLsD9D3ZlN8c05M5-yWssMQ8" data-is-external-image="true"></p>
+<figure class="post__image"><img loading="lazy"  src="https://blogger.googleusercontent.com/img/a/AVvXsEgn9h94CZ4n3S4ZUIuPN7PCHSCrK6YWyp3YnAZo7DQFAC8Zx5UAPELuSlhQ1WW8_H0aJZYTL96dAhY41WQv31mmoCItj9jO-_gukWmR4h0IsHShdTwlrbm6s9CcH75Kc9GHiTrOuWBCjMD01Jx9mrbXNLWRrmqFOJyGUsFmLsD9D3ZlN8c05M5-yWssMQ8" alt="NEEDY GIRL OVERDOSE screenshot on mac" width="702" height="355" data-is-external-image="true"></figure>
 <div>病みがちなYoutuberを目指す彼女を救うために何回もループしてYoutuberを育成するシミュレーションゲーム。</div>
 <div><strong>Apple siliconにはネイティブ対応していない</strong>ものの起動することはできた。遊ぶこともおそらく可能だが一部文字がズレていて見ずらい時がある。</div>
 <div>
 <h2>FEZ</h2>
-<p><img loading="lazy" src="https://blogger.googleusercontent.com/img/a/AVvXsEi_lSYf6aoCa5DkRzzHo0eY9bmfk3pFiNlZhboLot6-utZzCAf6AqRe4qOPGjhFeSPfBc6RWU2cDvZcndqFaVy-9DKCp5orlcDPyxbArz-TyyULBxROv3MsgLHaqOwQsH6awamAWwGqbo_L4YxhPOp8y4BP8ovaV4FHpqpp-XBN1Mnap36AuXYA37ikjrU" data-is-external-image="true"></p>
+<figure class="post__image"><img loading="lazy"  src="https://blogger.googleusercontent.com/img/a/AVvXsEi_lSYf6aoCa5DkRzzHo0eY9bmfk3pFiNlZhboLot6-utZzCAf6AqRe4qOPGjhFeSPfBc6RWU2cDvZcndqFaVy-9DKCp5orlcDPyxbArz-TyyULBxROv3MsgLHaqOwQsH6awamAWwGqbo_L4YxhPOp8y4BP8ovaV4FHpqpp-XBN1Mnap36AuXYA37ikjrU" alt="FEZ screenshot on mac" width="702" height="336" data-is-external-image="true"></figure>
 <div>
 <div>立体の広がりを持つ2D探索アクションゲーム。</div>
 <div>ステージを回転させたりすることができ、それによって見つかる要素などがあり非常に面白い。</div>
@@ -573,16 +620,16 @@
             <category term="Steam"/>
             <category term="Linux"/>
 
-        <updated>2023-08-12T02:54:31+09:00</updated>
+        <updated>2023-11-20T13:52:22+09:00</updated>
             <summary>
                 <![CDATA[
-                        <img src="https://corkborg.github.io/media/posts/7/image-6.png" alt="" />
+                        <img src="https://corkborg.github.io/media/posts/7/image-6.png" alt="project zomboid" />
                     Project Zomboidはゾンビがはびこり始めた世界でどう生き残るかというサバイバル2Dゲームです。このゲームはマルチプレイに対応しているのですがサーバを立てるのが少々面倒くさいです。今回はDockerとUbuntuの環境でサーバを立てる方法を紹介します。 Project Zomboidのサーバを運用していたのは１年位前なのでうろ覚えなところもあります。 今回の記事ではUbuntu&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
-                    <p><img src="https://corkborg.github.io/media/posts/7/image-6.png" class="type:primaryImage" alt="" /></p>
+                    <p><img src="https://corkborg.github.io/media/posts/7/image-6.png" class="type:primaryImage" alt="project zomboid" /></p>
                 <p>Project Zomboidはゾンビがはびこり始めた世界でどう生き残るかというサバイバル2Dゲームです。このゲームはマルチプレイに対応しているのですがサーバを立てるのが少々面倒くさいです。今回はDockerとUbuntuの環境でサーバを立てる方法を紹介します。</p>
 <p>Project Zomboidのサーバを運用していたのは１年位前なのでうろ覚えなところもあります。</p>
 <h2>環境</h2>
@@ -757,7 +804,7 @@ zomboid    </span><span class="pun">|</span><span class="pln"> LOG  </span><s
             <category term="Factorio"/>
             <category term="AppleSilicon"/>
 
-        <updated>2023-08-08T11:52:05+09:00</updated>
+        <updated>2023-11-20T13:58:12+09:00</updated>
             <summary>
                 <![CDATA[
                         <img src="https://corkborg.github.io/media/posts/1/image.png" alt="" />
@@ -789,12 +836,12 @@ zomboid    </span><span class="pun">|</span><span class="pln"> LOG  </span><s
   </p>
 
     <figure class="post__image post__image--center">
-      <img loading="lazy" src="https://corkborg.github.io/media/posts/1/image-1.png" height="992" width="1600" alt=""  sizes="(max-width: 1200px) 100vw, 1200px" srcset="https://corkborg.github.io/media/posts/1/responsive/image-1-xs.png 300w ,https://corkborg.github.io/media/posts/1/responsive/image-1-sm.png 480w ,https://corkborg.github.io/media/posts/1/responsive/image-1-md.png 749w ,https://corkborg.github.io/media/posts/1/responsive/image-1-xl.png 1200w">
+      <img loading="lazy" src="https://corkborg.github.io/media/posts/1/image-1.png" height="992" width="1600" alt="Factorio screenshot on mac"  sizes="(max-width: 1200px) 100vw, 1200px" srcset="https://corkborg.github.io/media/posts/1/responsive/image-1-xs.png 300w ,https://corkborg.github.io/media/posts/1/responsive/image-1-sm.png 480w ,https://corkborg.github.io/media/posts/1/responsive/image-1-md.png 749w ,https://corkborg.github.io/media/posts/1/responsive/image-1-xl.png 1200w">
       
     </figure>
 
     <figure class="post__image post__image--center">
-      <img loading="lazy" src="https://corkborg.github.io/media/posts/1/image-2.png" height="27" width="879" alt=""  sizes="(max-width: 1200px) 100vw, 1200px" srcset="https://corkborg.github.io/media/posts/1/responsive/image-2-xs.png 300w ,https://corkborg.github.io/media/posts/1/responsive/image-2-sm.png 480w ,https://corkborg.github.io/media/posts/1/responsive/image-2-md.png 749w ,https://corkborg.github.io/media/posts/1/responsive/image-2-xl.png 1200w">
+      <img loading="lazy" src="https://corkborg.github.io/media/posts/1/image-2.png" height="27" width="879" alt="FactorioのプロセスがApple siliconで動いている"  sizes="(max-width: 1200px) 100vw, 1200px" srcset="https://corkborg.github.io/media/posts/1/responsive/image-2-xs.png 300w ,https://corkborg.github.io/media/posts/1/responsive/image-2-sm.png 480w ,https://corkborg.github.io/media/posts/1/responsive/image-2-md.png 749w ,https://corkborg.github.io/media/posts/1/responsive/image-2-xl.png 1200w">
       <figcaption>アクティビティモニターで確認したFactorio。Apple Siliconネイティブで動作している</figcaption>
     </figure>
 
@@ -812,15 +859,7 @@ zomboid    </span><span class="pun">|</span><span class="pln"> LOG  </span><s
     </figure>
 
   <p>
-    
-  </p>
-
-  <p>
     久しぶりのFactorioにすっかりハマってしまい。Macで20時間くらい遊びました。<br>Apple SIlicon MacでのFactorioプレイは問題なさそうです。
-  </p>
-
-  <p>
-    
   </p>
             ]]>
         </content>
