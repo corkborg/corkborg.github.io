@@ -3,7 +3,7 @@
     <title>塩の惑星</title>
     <link href="https://corkborg.github.io/feed.xml" rel="self" />
     <link href="https://corkborg.github.io" />
-    <updated>2023-11-21T03:16:49+09:00</updated>
+    <updated>2023-11-21T20:45:44+09:00</updated>
     <author>
         <name>ミズソバ</name>
     </author>
@@ -21,7 +21,7 @@
             <category term="Mac"/>
             <category term="AppleSilicon"/>
 
-        <updated>2023-11-21T03:16:49+09:00</updated>
+        <updated>2023-11-21T03:23:03+09:00</updated>
             <summary>
                 <![CDATA[
                         <img src="https://corkborg.github.io/media/posts/18/sukurinsiyotuto-2023-11-20-13.24.24.png" alt="リバース：1999" />
@@ -36,7 +36,7 @@
 <p>普段はM1 Mac Book Air作業しているのでMacでプレイできたらなと思っていました。リバース1999はAndroid、iPhone、iPad、WindowsをサポートしているのですがMacは特にサポートしていないようです。</p>
 <h2>MacにはiOSアプリをインストールする機能がある</h2>
 <figure class="post__image post__image--center"><img loading="lazy"  src="https://corkborg.github.io/media/posts/18/sukurinsiyotuto-2023-11-20-3.04.14.png" alt="Appストア画面 リバース1999検索結果" width="501" height="280" sizes="(max-width: 1200px) 100vw, 1200px" srcset="https://corkborg.github.io/media/posts/18/responsive/sukurinsiyotuto-2023-11-20-3.04.14-xs.png 300w ,https://corkborg.github.io/media/posts/18/responsive/sukurinsiyotuto-2023-11-20-3.04.14-sm.png 480w ,https://corkborg.github.io/media/posts/18/responsive/sukurinsiyotuto-2023-11-20-3.04.14-md.png 749w ,https://corkborg.github.io/media/posts/18/responsive/sukurinsiyotuto-2023-11-20-3.04.14-xl.png 1200w"></figure>
-<p>これはApple Silicon Mac（最近のMac）限定の話です。<br>MacはiOSのアプリをMacにインストールする機能が標準で存在します。<br>（<a href="https://support.apple.com/ja-jp/guide/app-store/fird2c7092da/mac" target="_blank" rel="noopener noreferrer">Apple公式: Appleシリコンを搭載したMacでiPhoneアプリおよびiPadアプリを使用する）</a></p>
+<p>これはApple Silicon Mac（最近のMac）限定の話です。<br>MacはiOSのアプリをMacにインストールする機能が標準で存在します。<br><a href="https://support.apple.com/ja-jp/guide/app-store/fird2c7092da/mac" target="_blank" rel="noopener noreferrer">Apple公式: Appleシリコンを搭載したMacでiPhoneアプリおよびiPadアプリを使用する</a></p>
 <p>リバース：1999でApp Storeを検索してみたところMacで遊べそうな雰囲気が漂っていたのでインストールしてみました。</p>
 <figure class="post__image" ><figure class="post__image post__image--center"><img loading="lazy"  src="https://corkborg.github.io/media/posts/18/sukurinsiyotuto-2023-11-20-3.12.35.png" alt="リバース1999 launchpad" width="2006" height="754" sizes="(max-width: 1200px) 100vw, 1200px" srcset="https://corkborg.github.io/media/posts/18/responsive/sukurinsiyotuto-2023-11-20-3.12.35-xs.png 300w ,https://corkborg.github.io/media/posts/18/responsive/sukurinsiyotuto-2023-11-20-3.12.35-sm.png 480w ,https://corkborg.github.io/media/posts/18/responsive/sukurinsiyotuto-2023-11-20-3.12.35-md.png 749w ,https://corkborg.github.io/media/posts/18/responsive/sukurinsiyotuto-2023-11-20-3.12.35-xl.png 1200w"></figure>
 <figcaption >Launchpadのゲームメニューに登録される</figcaption>
@@ -51,7 +51,7 @@
 <figure class="post__image" ><figure class="post__image post__image--center"><img loading="lazy"  src="https://corkborg.github.io/media/posts/18/sukurinsiyotuto-2023-11-20-3.19.06.png" alt="リバース1999 ウィルダネス" width="1058" height="821" sizes="(max-width: 1200px) 100vw, 1200px" srcset="https://corkborg.github.io/media/posts/18/responsive/sukurinsiyotuto-2023-11-20-3.19.06-xs.png 300w ,https://corkborg.github.io/media/posts/18/responsive/sukurinsiyotuto-2023-11-20-3.19.06-sm.png 480w ,https://corkborg.github.io/media/posts/18/responsive/sukurinsiyotuto-2023-11-20-3.19.06-md.png 749w ,https://corkborg.github.io/media/posts/18/responsive/sukurinsiyotuto-2023-11-20-3.19.06-xl.png 1200w"></figure>
 <figcaption >ウィルダネス編集画面</figcaption>
 </figure>
-<p>リバース1999をMacで遊ぶことができました。</p>
+<p>リバース1999はMacでも遊ぶことができるようでした。</p>
 <p> </p>
             ]]>
         </content>
@@ -67,7 +67,7 @@
             <category term="日本語入力"/>
             <category term="レビュー"/>
 
-        <updated>2023-11-20T13:02:20+09:00</updated>
+        <updated>2023-11-21T20:45:44+09:00</updated>
             <summary>
                 <![CDATA[
                         <img src="https://corkborg.github.io/media/posts/17/atok-2.jpg" alt="ATOK passport logo" />
@@ -179,7 +179,7 @@
 </tr>
 <tr style="height: 53.3594px;">
 <td style="width: 33.2855%; height: 53.3594px;">Mac標準</td>
-<td style="width: 33.2855%; height: 53.3594px;"><strong>変換できず</strong></td>
+<td style="width: 33.2855%; height: 53.3594px;"><strong>変換できず😰</strong></td>
 <td style="width: 33.2866%; height: 53.3594px;"> </td>
 </tr>
 </tbody>
@@ -234,10 +234,10 @@
 <h3>ニュース関連の単語はGoogle日本語入力の方が強かった</h3>
 <figure class="post__image"><img loading="lazy"  src="https://corkborg.github.io/media/posts/17/sukurinsiyotuto-2023-11-20-2.08.09.png" alt="" width="267" height="127" sizes="(max-width: 1200px) 100vw, 1200px" srcset="https://corkborg.github.io/media/posts/17/responsive/sukurinsiyotuto-2023-11-20-2.08.09-xs.png 300w ,https://corkborg.github.io/media/posts/17/responsive/sukurinsiyotuto-2023-11-20-2.08.09-sm.png 480w ,https://corkborg.github.io/media/posts/17/responsive/sukurinsiyotuto-2023-11-20-2.08.09-md.png 749w ,https://corkborg.github.io/media/posts/17/responsive/sukurinsiyotuto-2023-11-20-2.08.09-xl.png 1200w"></figure>
 <p>センシティブな用語が多いので乗せませんが、ニュースや新書に載るような社会問題系の単語はGoogle日本語入力のほうが強いようでした。</p>
-<h3>工学、哲学などの専門用語はGoogle日本語入力の方が圧倒的に強かった</h3>
+<h3>工学、哲学、生物などの専門用語はGoogle日本語入力の方が圧倒的に強かった</h3>
 <figure class="post__image"><img loading="lazy"  src="https://corkborg.github.io/media/posts/17/situkariXue-huShu-Li-Zui-Shi-Hua.png" alt="" width="257" height="158" sizes="(max-width: 1200px) 100vw, 1200px" srcset="https://corkborg.github.io/media/posts/17/responsive/situkariXue-huShu-Li-Zui-Shi-Hua-xs.png 300w ,https://corkborg.github.io/media/posts/17/responsive/situkariXue-huShu-Li-Zui-Shi-Hua-sm.png 480w ,https://corkborg.github.io/media/posts/17/responsive/situkariXue-huShu-Li-Zui-Shi-Hua-md.png 749w ,https://corkborg.github.io/media/posts/17/responsive/situkariXue-huShu-Li-Zui-Shi-Hua-xl.png 1200w"></figure>
-<p>数理最適化の本、ベイズ統計学の本、純粋理性批判などの本を開いて適当に見かけた熟語を入れていったのですが圧倒的にGoogle日本語入力が強いようでした。</p>
-<p>生物系本として利己的な遺伝子（リチャードドーキンス）などでも同様の作業を軽く行ってみたのですが同様だったので、Google日本語入力は大学で学ぶような専門用語に全般に強い傾向がありそうです。</p>
+<p>数理最適化の本、ベイズ統計学の本、利己的な遺伝子、純粋理性批判などの本を開いて適当に見かけた熟語を入れて変換できるか試していったのですが圧倒的にGoogle日本語入力が強いようでした。</p>
+<p>推測するに、Google日本語入力は大学で学ぶような専門用語に強い傾向がありそうです。</p>
 <h2>まとめ</h2>
 <p>アニメ、ソシャゲ、野球、アイドル、社会問題、工学、哲学などの用語を変換する能力の調査のまとめです。</p>
 <h3>Mac標準のIME</h3>
@@ -254,8 +254,8 @@
 <p>スポーツやアイドルなどの分野ではGoogle日本語入力よりも変換できる単語が多いです。そのため、テレビなどのマスメディアで流行っている単語に強いのではないかと思います。</p>
 <p>総合的に見るとGoogle日本語入力の方が<strong>圧倒的に</strong>単語を変換する能力が高いようで、ATOKでは勝てないようでした。</p>
 <h2>感想</h2>
-<p>私は考えを文章にまとめたりすることが多く、その際に専門用語を多用するので今回の調査結果ではGoogle日本語入力の方が快適に文章が書けそうです。<br>振り返ってみると、ATOKでは文章の変換が一発で決まることが少なくて息苦しさを感じるような気もします。</p>
-<p>変換能力とは関係ないのですが、ATOKは多機能な面があり用途がわかりづらいウィンドウがマウスの周りに登場したりして非常に邪魔な点。Windows版のインターフェースが非常にダサいところが気になります。</p>
+<p>私の用途ではGoogle日本語入力の方が快適に文章が書けそうです。<br>振り返ってみると、ATOKでは文章の変換が一発で決まることが少なく息苦しさがあるような気もします。</p>
+<p>変換能力とは関係ないのですが、ATOKは多機能IMEなためか用途がわかりづらいウィンドウがマウスの周りに登場したりして邪魔な点。Windows版のインターフェースがダサいところが気になります。</p>
 <p>せっかく契約したので数ヶ月ほどATOKを使ってみようと思うのですが、最終的にはGoogle日本語入力に戻りそうです。<br><br></p>
             ]]>
         </content>
@@ -270,7 +270,7 @@
         <media:content url="https://corkborg.github.io/media/posts/12/sukurinsiyotuto-2023-10-15-19.27.01.png" medium="image" />
             <category term="旅行"/>
 
-        <updated>2023-11-07T14:56:17+09:00</updated>
+        <updated>2023-11-21T03:27:38+09:00</updated>
             <summary>
                 <![CDATA[
                         <img src="https://corkborg.github.io/media/posts/12/sukurinsiyotuto-2023-10-15-19.27.01.png" alt="さるびあ丸 3F 4F" />
@@ -290,12 +290,13 @@
 <p>一般的にフェリーは階が低いほど揺れが小さいと言われます。<br>だた、さるびあ丸の3Fと4Fではそこまで違いを感じませんでした。</p>
 <h3>3Fは廊下にベンチがある</h3>
 <figure class="post__image"><img loading="lazy"  src="https://corkborg.github.io/media/posts/12/Ming-Cheng-Wei-She-Ding-huairu.drawio.png" alt="うろ覚えのさるびあ丸のレイアウト" width="443" height="677" sizes="(max-width: 1200px) 100vw, 1200px" srcset="https://corkborg.github.io/media/posts/12/responsive/Ming-Cheng-Wei-She-Ding-huairu.drawio-xs.png 300w ,https://corkborg.github.io/media/posts/12/responsive/Ming-Cheng-Wei-She-Ding-huairu.drawio-sm.png 480w ,https://corkborg.github.io/media/posts/12/responsive/Ming-Cheng-Wei-She-Ding-huairu.drawio-md.png 749w ,https://corkborg.github.io/media/posts/12/responsive/Ming-Cheng-Wei-She-Ding-huairu.drawio-xl.png 1200w"></figure>
-<p>3Fの特２等船室では中央に大きな廊下があり、そこから個室に分かれてそれぞれの個室内に大体16個程度のベッドがあります。<br>廊下は荷物置きとベンチと食べ物をおいておくののにちょうど良い台があります。ベンチで飲食などを行うことができる所が4Fとは違います。</p>
+<p>3Fの特２等船室では中央に大きな廊下があり、そこから個室に分かれてそれぞれの個室内に大体16個程度のベッドがあります。<br>廊下は荷物置きとベンチと食べ物をおいておくののにちょうど良い台があります。そのベンチで飲食などを行うことができる所が4Fとは違います。</p>
+<p>ベンチでは知り合い同士などで飲食をしている人が多く、飲食を楽しみたい場合は3Fが若干有利です。</p>
 <h3>4Fは廊下が静かで個室にドアがある</h3>
 <p>4Fの方はも廊下からベットがいくつか配置された各個室に分かれる所は同じなのですが、受付カウンターの都合上細い廊下が2つありそこから各個室に別れます。<br>それぞれの個室にはドアがついている所が3Fと違います。</p>
 <p>3Fの廊下ではお酒とおつまみを楽しんでいる人が多く、知り合いや知らない人との交流の場になっているようです。そのため少しうるさい場合があります。</p>
 <p>4Fの方は、廊下にベンチが無いので廊下で宴会を始める人はそういないと思います。<br>他の個室で会話をしている人達がいてうるさい場合はドアを閉めて静かにする事ができます。</p>
-<p>同じ個室の人がうるさい場合は対策のしようがないですが静音性では４F が有利です。</p>
+<p>同じ個室の人がうるさい場合は対策のしようがないですが、静音性では４F が若干有利です。</p>
 <h3>大型の荷物置き場</h3>
 <p>特2等3F、４Fの個室の窓側には大型の荷物を置くための荷物置き場があります。ただこの荷物置き場は小型のキャスターバッグ4,5個置いたら満杯になる程度なので個室あたり最大16人が利用することを考えると荷物を置けない場合もあるかもしれないです。<br>その点、3Fは廊下にもいくつか大型の荷物置き場が存在するので荷物が置けない可能性が下がる可能性があります。</p>
 <p>ただ、さるびあ丸では船の中央にも誰でも使える大型の荷物置き場があるので４Fで荷物置き場に困ったとしてもどうにかなるとは思います。</p>
