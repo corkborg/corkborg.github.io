@@ -3,7 +3,7 @@
     <title>塩の惑星</title>
     <link href="https://corkborg.github.io/feed.xml" rel="self" />
     <link href="https://corkborg.github.io" />
-    <updated>2023-11-25T16:55:26+09:00</updated>
+    <updated>2023-11-25T17:00:06+09:00</updated>
     <author>
         <name>ミズソバ</name>
     </author>
@@ -454,7 +454,7 @@
         </content>
     </entry>
     <entry>
-        <title>Apple Silicon Macで遊べるゲームリスト. M1 MacBook Airで検証してみた</title>
+        <title>Apple Silicon Macで遊べるゲームリスト. M1 Macで検証してみた</title>
         <author>
             <name>ミズソバ</name>
         </author>
@@ -466,19 +466,19 @@
             <category term="Mac"/>
             <category term="AppleSilicon"/>
 
-        <updated>2023-11-25T16:55:26+09:00</updated>
+        <updated>2023-11-25T17:00:06+09:00</updated>
             <summary>
                 <![CDATA[
                         <img src="https://corkborg.github.io/media/posts/8/image-8.png" alt="" />
-                    意外とApple Siliconで遊べるゲームが多そうなので手持ちのSteamゲームをM1 MacBook Airにインストール&amp;起動してみて遊ぶことができるか確認してみました。 調査してみた所、ネイティブ対応してない（Intel&hellip;
+                    Steamを眺めた感じApple Silicon Macで遊べるゲームはそれなりにありそうです。 今回はM1 MacBook&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
                     <p><img src="https://corkborg.github.io/media/posts/8/image-8.png" class="type:primaryImage" alt="" /></p>
-                <p>意外とApple Siliconで遊べるゲームが多そうなので手持ちのSteamゲームをM1 MacBook Airにインストール&amp;起動してみて遊ぶことができるか確認してみました。</p>
-<p>調査してみた所、ネイティブ対応してない（Intel Macまでの対応の）ゲームでもRosetta2をインストールしておけば基本は遊ぶことができるようです（<a href="https://support.apple.com/ja-jp/HT211861" target="_blank" rel="noopener">公式のRossetta2のインストール記事</a>）。</p>
-<p>記事中のスクショは実際にM1 MacBook Airで遊んだときのものです。</p>
+                <p>Steamを眺めた感じApple Silicon Macで遊べるゲームはそれなりにありそうです。<br>今回はM1 MacBook Airにインストールして軽く遊んでみた結果をまとめました。</p>
+<p>Apple Silicon Macにネイティブ対応してない、Intel Mac対応ゲームでもRosettaをインストールしておけば遊ぶことができます。<br><a href="https://support.apple.com/ja-jp/HT211861" target="_blank" rel="noopener noreferrer">Apple公式: Mac に Rosetta をインストールする必要がある場合</a></p>
+<p>記事中のゲームのスクショは実際にM1 MacBook Airで遊んだときのものです。</p>
 <p>2023年７月の情報です。</p>
 <h2>Factorio</h2>
 <figure class="post__image"><img loading="lazy"  src="https://blogger.googleusercontent.com/img/a/AVvXsEj-d6RmB8T1BaozSvcKmaZGHBugiwBjdObSasMoNLeA6SJxV1Fzd7EhVMOtgElWtJBnEkWIp0k0fiDtC4VdTK6OkUh3F9clWOS0v2JjfSVXsYVgN17tTAEaHN-SiVVPrE_Vh5JjEYeB2o2v7OE2j20-7NnfQrMCBehp9K_-FT8zl3bRT1AhvIP6kTTibI0" alt="Factorio screenshot on mac" width="702" height="281" data-is-external-image="true"></figure>
