@@ -3,7 +3,7 @@
     <title>塩の惑星</title>
     <link href="https://corkborg.github.io/feed.xml" rel="self" />
     <link href="https://corkborg.github.io" />
-    <updated>2023-11-25T17:00:06+09:00</updated>
+    <updated>2023-11-26T01:45:53+09:00</updated>
     <author>
         <name>ミズソバ</name>
     </author>
@@ -21,33 +21,34 @@
             <category term="Mac"/>
             <category term="AppleSilicon"/>
 
-        <updated>2023-11-25T16:25:48+09:00</updated>
+        <updated>2023-11-26T01:45:53+09:00</updated>
             <summary>
                 <![CDATA[
                         <img src="https://corkborg.github.io/media/posts/19/DSC_0581_02.JPG" alt="電気代が安いM1 MacBook Pro" />
-                    昨今は電気代の値上げが激しいです。 私はゲーミングPCであらゆるPC作業を行っていたのですが、電力計を買って電気代を計測してみたところ、軽めの作業でも驚くほど電気を消費していることがわかりました。 このままでは電気代がものすごいことになってしまうので、軽めの作業をApple SIliconで作られたM1 MacBook&hellip;
+                    昨今は電気代の値上げが激しいです。 私はゲーミングPCであらゆるPC作業を行っていたのですが、電力計を買って電気代を計測してみたところ、軽めの作業でも驚くほど電気を消費していることがわかりました。 このままでは電気代がものすごいことになってしまうので、軽めの作業をApple SIliconのM1 MacBook&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
                     <p><img src="https://corkborg.github.io/media/posts/19/DSC_0581_02.JPG" class="type:primaryImage" alt="電気代が安いM1 MacBook Pro" /></p>
                 <p>昨今は電気代の値上げが激しいです。<br>私はゲーミングPCであらゆるPC作業を行っていたのですが、電力計を買って電気代を計測してみたところ、軽めの作業でも驚くほど電気を消費していることがわかりました。</p>
-<p>このままでは電気代がものすごいことになってしまうので、軽めの作業をApple SIliconで作られたM1 MacBook Airで行うようにしました。<br>読みどおりApple Siliconは電気代が安いので大幅に電気代を抑えることができました。</p>
+<p>このままでは電気代がものすごいことになってしまうので、軽めの作業をApple SIliconのM1 MacBook Airで行うようにしました。<br>読みどおりApple Siliconは電力消費が少ないので大幅に電気代を抑えることができました。</p>
 <p>最近は、ゲームでもMacに対応している場合は、なるべくそちらで遊ぶようにしています。<br>ただ、ゲームというの処理が重く、いくら省電力なApple Siliconといえど電力をたくさん消費しなければならないのではないか？</p>
 <p>そこで、消費電力や電気代について調査を行ってみました。</p>
 <h2>Apple Silicon Macはなぜ電気代が安い？</h2>
 <figure class="post__image post__image--center"><img loading="lazy"  src="https://corkborg.github.io/media/posts/19/Apple_new-M1-chip_11102020.jpg.news_app_ed.jpg" alt="" width="215" height="215" sizes="(max-width: 1200px) 100vw, 1200px" srcset="https://corkborg.github.io/media/posts/19/responsive/Apple_new-M1-chip_11102020.jpg.news_app_ed-xs.jpg 300w ,https://corkborg.github.io/media/posts/19/responsive/Apple_new-M1-chip_11102020.jpg.news_app_ed-sm.jpg 480w ,https://corkborg.github.io/media/posts/19/responsive/Apple_new-M1-chip_11102020.jpg.news_app_ed-md.jpg 749w ,https://corkborg.github.io/media/posts/19/responsive/Apple_new-M1-chip_11102020.jpg.news_app_ed-xl.jpg 1200w"></figure>
-<p>簡単に説明すると、Apple Silicon Macでは省電力であることが重要なスマートフォンと同じ技術を多く使用しているからです。</p>
-<p>たとえば、Macでも以前まで使用されていたIntelのCPUはPCやサーバの世界では圧倒的なシェアがありますが、スマートフォンの世界ではほとんどシェアがありません。<br>これは、Intel系のCPUの基礎設計がスマートフォンの基準に沿った消費電力まで落とせるように設計できないからです。</p>
-<p>以前は、スマートフォンのCPUはIntelに比べると非力でPC用途では無理だと思われていたました。<br>ただ、現在ではPCと遜色ない性能が出せるようになり、電力あたりの性能がIntelよりもずっと効率がよい事がわかり始めています。</p>
+<p>簡単に説明すると、Apple Silicon Macでは省電力さが重要なスマートフォンと同じ技術を多く使用しているからです。</p>
+<p>たとえば、Macで以前まで使用されていたIntelのCPUはPCやサーバの世界では圧倒的なシェアがありますが、スマートフォンの世界ではほとんどシェアがありません。<br>これは、Intel系のCPUの基礎設計がスマートフォンの基準に沿った消費電力まで落とせるように設計できないからです。</p>
+<p>以前は、スマートフォンのCPUはIntel系のものに比べると非力でPC用途では無理だと思われていました。<br>ただ、現在ではPCと遜色ない性能が出せるようになり、電力あたりの性能がIntelよりもずっと効率がよい事がわかり始めています。</p>
 <p>CPUの他にも、GPUなど様々な面でApple Silicon Macはスマートフォン譲りの省電力技術が使用されています。</p>
 <h2>検証：マインクラフトで遊んでみた</h2>
-<p>残念なことにApple Silicon Macは対応ゲームがあまり多くありません。<br>そこで、有名で検証しやすいゲームとしてマインクラフトを使用します。</p>
+<p>残念なことにApple Silicon Macに対応しているゲームはあまり多くありません。<br>そこで、有名で検証しやすいゲームとしてマインクラフトを使用します。</p>
+<p><a href="https://corkborg.github.io/steam-games-support-apple-silicon/" target="_blank" rel="noopener noreferrer"></a>Apple Siliconで遊べるゲームに興味がある方は、是非こちらも見てみてください。<br><a href="https://corkborg.github.io/factorio-support-applesilicon/" target="_blank" rel="noopener noreferrer">Apple Silicon Macで遊べるゲームリスト. M1 Macで検証してみた</a></p>
 <h4>マインクラフトの設定</h4>
 <ul>
 <li>バージョン 1.20.2 （バニラ）</li>
 <li>フルスクリーン（おおよそどちらもWQHDくらい）</li>
-<li>フレームレート：30FPS（Apple Silicon側でもフレーム落ちしないように）</li>
+<li>フレームレート：30FPS（フレーム落ちしないように余裕を持った数値に）</li>
 <li>描画距離：32チャンク</li>
 <li>演算距離：32チャンク</li>
 <li>グラフィックス：最高設定</li>
@@ -78,7 +79,7 @@
 <li>再起動後検証</li>
 </ul>
 <figure class="post__image" ><img loading="lazy" src="https://corkborg.github.io/media/posts/19/2023-11-25_15.02.47.png" alt="Apple SiliconでのMacプレイのスクショ" width="2880" height="1800" sizes="(max-width: 1200px) 100vw, 1200px" srcset="https://corkborg.github.io/media/posts/19/responsive/2023-11-25_15.02.47-xs.png 300w ,https://corkborg.github.io/media/posts/19/responsive/2023-11-25_15.02.47-sm.png 480w ,https://corkborg.github.io/media/posts/19/responsive/2023-11-25_15.02.47-md.png 749w ,https://corkborg.github.io/media/posts/19/responsive/2023-11-25_15.02.47-xl.png 1200w">
-<figcaption >Apple SiliconMacでのプレイ</figcaption>
+<figcaption >Apple Silicon Macでのプレイ</figcaption>
 </figure>
 <p>描画設定がもりもりな感じでしたが、フレームレートは28〜30FPSで安定しました。</p>
 <p>気になる消費電力は…最大40Wでした。そして、充電が完了して以降は最大30W程度の消費電力でした。<br>ゲーミングPCもなかなか悪くない数値でしたがこちらは一層省電力ですね。</p>
@@ -410,7 +411,7 @@
         <id>https://corkborg.github.io/wd14-tagger-standalone/</id>
             <category term="生成AI"/>
 
-        <updated>2023-11-07T15:09:42+09:00</updated>
+        <updated>2023-11-25T18:07:22+09:00</updated>
             <summary>
                 <![CDATA[
                     stable-diffusion-webui-wd14-taggerというものはSmilingWolfという方が作ったモデルを使ったwebui向けのプラグインで、使うとイラストの中に書かれた要素を分析して出力することができます。 イラストの要素分析は生成AI向けにLoraを作る時などいろんな用途で使える便利な機能でwebui抜きに動作させたかったので単体で動かしてみました。 原理的には元のモデル作者であるSmilingWolfさんの学習スクリプトを参考にすれば単体で動かせるはずですが見てもあまり分からなかったので、stable-diffusion-webui-wd14-taggerの方から動作に必要なコードだけを抜き出して動かしてみました。 （機械学習まわりがTensorflowよりもPytorchのほうが取り扱いやすかったのもあります） 今回のために作ったコードは下記です。&hellip;
@@ -705,37 +706,37 @@
             <category term="Steam"/>
             <category term="Linux"/>
 
-        <updated>2023-11-20T13:52:22+09:00</updated>
+        <updated>2023-11-25T17:14:18+09:00</updated>
             <summary>
                 <![CDATA[
                         <img src="https://corkborg.github.io/media/posts/7/image-6.png" alt="project zomboid" />
-                    Project Zomboidはゾンビがはびこり始めた世界でどう生き残るかというサバイバル2Dゲームです。このゲームはマルチプレイに対応しているのですがサーバを立てるのが少々面倒くさいです。今回はDockerとUbuntuの環境でサーバを立てる方法を紹介します。 Project Zomboidのサーバを運用していたのは１年位前なのでうろ覚えなところもあります。 今回の記事ではUbuntu&hellip;
+                    Project Zomboidはゾンビがはびこり始めた世界でアイテムを集めたりバリゲードを作ったりするサバイバル2Dゲームです。 このゲームはマルチプレイに対応していてこれが面白いのですが、Linuxなどで専用サーバを立てるのが少々難しいです。 今回はDockerとUbuntuの環境でサーバを立てる方法を紹介します。 今回の記事ではUbuntu&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
                     <p><img src="https://corkborg.github.io/media/posts/7/image-6.png" class="type:primaryImage" alt="project zomboid" /></p>
-                <p>Project Zomboidはゾンビがはびこり始めた世界でどう生き残るかというサバイバル2Dゲームです。このゲームはマルチプレイに対応しているのですがサーバを立てるのが少々面倒くさいです。今回はDockerとUbuntuの環境でサーバを立てる方法を紹介します。</p>
-<p>Project Zomboidのサーバを運用していたのは１年位前なのでうろ覚えなところもあります。</p>
+                <p>Project Zomboidはゾンビがはびこり始めた世界でアイテムを集めたりバリゲードを作ったりするサバイバル2Dゲームです。</p>
+<p>このゲームはマルチプレイに対応していてこれが面白いのですが、Linuxなどで専用サーバを立てるのが少々難しいです。<br>今回はDockerとUbuntuの環境でサーバを立てる方法を紹介します。</p>
 <h2>環境</h2>
-<p>今回の記事ではUbuntu 20.04にDocker CEをインストールした環境で、Dockerコンテナ上にサーバ構築を行っていきます。</p>
+<p>今回の記事ではUbuntu 20.04にDocker CEをインストールした環境で、Dockerコンテナ上にサーバ構築を行いました。<br>Dockerを使用しているのでほかのバージョンのUbuntuやLinuxでも問題なく動くと思います。</p>
+<p>Dockerが入っていない場合は下記を参考にインストールしておいてください。<br><a href="https://docs.docker.com/engine/install/ubuntu/" target="_blank" rel="noopener noreferrer">Docker公式: Install Docker Engine on Ubuntu</a></p>
 <h2>サーバファイルの用意</h2>
-<div>SteamではLinux環境向けにゲームサーバを用意するためのコマンドSteamCMDというものが用意されています。</div>
-<div>zomboidもこれに対応しているのでSteamCMDに対して専用コマンドを打っていくとゲームサーバの環境の準備ができるようになっています。</div>
-<div> </div>
-<div>適当なディレクトリ、３つのファイルを用意します</div>
+<p>SteamではLinux環境向けにゲームサーバを用意するためのSteamCMDというコマンドが用意されています。</p>
+<div>zomboidもこれに対応しているのでSteamCMDに対して専用コマンドを打っていくことでゲームサーバの準備ができるようになっています。</div>
+<p>まず、サーバを構築するディレクトリを作ってください。<br>そのあと下記の3つのファイルをディレクトリ内に作成してください。</p>
 <h3>update_zomboid.txt</h3>
 <div>
-<div>このファイルはSteamCMD向けの指示コマンドが列挙されたシェルファイルのようなものです。</div>
-<div>380870というのはProject Zomboidを表すSteam固有のidです。</div>
-<div>このファイルでは/opt/pzserverというディレクトリにサーバファイルを展開するように指示してます。</div>
+<div>このファイルは、SteamCMD向けの指示コマンドが列挙されたシェルファイルのようなものです。</div>
+<div>380870という番号はProject Zomboidを表すSteam固有のIDです。</div>
+<p>このファイルでは<code>/opt/pzserver</code>というディレクトリにサーバファイルを展開するように指示してます。</p>
 <pre>@ShutdownOnFailedCommand 1<br>@NoPromptForPassword 1<br>force_install_dir /opt/pzserver/<br>login anonymous<br>app_update 380870 validate<br>quit</pre>
 </div>
 <div>SteamCMDの詳細な使い方はValve公式のガイドを<br><a href="https://developer.valvesoftware.com/wiki/SteamCMD">https://developer.valvesoftware.com/wiki/SteamCMD</a></div>
 <div>
 <h4>Dockerfile</h4>
-<div>サーバのイメージを作成するためのファイルです。</div>
-<div>イメージ内でupdate_zomboid.txtを実行しておいて初期化を済ませておきます。</div>
+<div>サーバのイメージを作成するためのDockerファイルです。</div>
+<p>Dockerfileはサーバの構築方法を指示するものです。下記では構築時にupdate_zomboid.txtを実行して初期化を済ませるように指示しています。</p>
 <pre class="prettyprint prettyprinted"><span class="pln">FROM steamcmd</span><span class="pun">/</span><span class="pln">steamcmd</span><span class="pun">:</span><span class="pln">ubuntu</span><span class="pun">-</span><span class="lit">20</span><span class="pln">
 
 RUN mkdir </span><span class="pun">/</span><span class="pln">opt</span><span class="pun">/</span><span class="pln">pzserver
@@ -744,7 +745,8 @@ COPY update_zomboid</span><span class="pun">.</span><span class="pln">txt </span
 RUN steamcmd </span><span class="pun">+</span><span class="pln">runscript </span><span class="pun">/</span><span class="pln">opt</span><span class="pun">/</span><span class="pln">update_zomboid</span><span class="pun">.</span><span class="pln">txt
 ENTRYPOINT </span><span class="pun">[</span><span class="str">"/bin/bash"</span> <span class="pun">,</span> <span class="str">"-l"</span><span class="pun">]<br></span></pre>
 <h4>docker-compose.yaml</h4>
-<p>実際のサーバをどう動作させるか定義するためのファイルです。<br>セーブデータをUbuntuのsaveディレクトリに保存するように指定しています（saveディレクトリを作成しておいてください）。<br>zomboidではUDPの16261と16262ポートを使用するので開放させておきます。</p>
+<p>docker-compose.yamlはサーバをどう動作させるか定義するためのファイルです。</p>
+<p>セーブデータをディレクトリ内のsaveディレクトリに保存するように指定しています。<br>zomboidではUDPの16261と16262ポートを使用するので開放させておきます。</p>
 <pre class="prettyprint lang-yaml prettyprinted"><span class="pln">version</span><span class="pun">:</span> <span class="str">'3'</span><span class="pln">
 services</span><span class="pun">:</span><span class="pln">
     zomboid</span><span class="pun">:</span><span class="pln">
@@ -756,6 +758,9 @@ services</span><span class="pun">:</span><span class="pln">
           <span class="pun">-</span> <span class="str">"16261:16261/udp"</span>
           <span class="pun">-</span> <span class="str">"16262:16262/udp"</span><span class="pln">
         command</span><span class="pun">:</span> <span class="str">/opt/</span><span class="pln">pzserver</span><span class="pun">/</span><span class="pln">start</span><span class="pun">-</span><span class="pln">server</span><span class="pun">.</span><span class="pln">sh</span></pre>
+<h3>セーブディレクトリの作成</h3>
+<p>ディレクトリ内で下記を実行してセーブデータを入れるディレクトリを作ります。</p>
+<pre>mkdir save</pre>
 <h2> テスト起動</h2>
 <p>一回テスト起動します。</p>
 <pre class="prettyprint prettyprinted"><span class="pln">docker</span><span class="pun">-</span><span class="pln">compose build
@@ -774,7 +779,6 @@ zomboid    </span><span class="pun">|</span><span class="pln"> LOG  </span><s
 <h2>サーバ設定の編集</h2>
 <div>セーブデータ内の下記ファイルを編集してサーバ設定を作ります。</div>
 <div>手順通り作業しているのであれば下記のパスにあるはずです。</div>
-<div> </div>
 <pre>save/Server/servertest.ini</pre>
 <div> </div>
 <div>（なんか色々な設定が必要だった気がするのですが覚えていません。）</div>
@@ -788,7 +792,7 @@ zomboid    </span><span class="pun">|</span><span class="pln"> LOG  </span><s
 <pre class="prettyprint prettyprinted"><span class="pln">docker　</span><span class="pln">compose up </span><span class="pun">-</span><span class="pln">d</span></pre>
 </div>
 <h2> まとめ</h2>
-<p> steamcmdコマンドつかってproject zomboidのマルチプレイヤーサーバを立てることができました。</p>
+<p> steamcmdコマンド使ってproject zomboidのマルチプレイヤーサーバを立てることができました。</p>
 </div>
 </div>
 </div>
@@ -850,23 +854,25 @@ zomboid    </span><span class="pun">|</span><span class="pln"> LOG  </span><s
         </author>
         <link href="https://corkborg.github.io/steam-version-factorio-support-applesilicon/"/>
         <id>https://corkborg.github.io/steam-version-factorio-support-applesilicon/</id>
+        <media:content url="https://corkborg.github.io/media/posts/5/image.png" medium="image" />
             <category term="ゲーム"/>
             <category term="Steam"/>
             <category term="Factorio"/>
             <category term="AppleSilicon"/>
 
-        <updated>2023-08-15T13:41:42+09:00</updated>
+        <updated>2023-11-25T18:09:37+09:00</updated>
             <summary>
                 <![CDATA[
+                        <img src="https://corkborg.github.io/media/posts/5/image.png" alt="Steamでのfactorioのシステム要件" />
                     以前の記事で公式版のfactorioがApple Siliconに対応していることを確認した。 Steam版のFactorioがApple siliconに対応しているか検証してみた 前回の記事ではSteam版FactorioではApple&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
+                    <p><img src="https://corkborg.github.io/media/posts/5/image.png" class="type:primaryImage" alt="Steamでのfactorioのシステム要件" /></p>
                 <p>以前の記事で公式版のfactorioがApple Siliconに対応していることを確認した。</p>
 <p class="post-title entry-title"><a href="https://corkborg.github.io/factorio-support-applesilicon/">Steam版のFactorioがApple siliconに対応しているか検証してみた</a></p>
 <p>前回の記事ではSteam版FactorioではApple Siliconに対応している旨の記載がなかったので避けて検証を行った。今回はSteam版のFactorioについて検証してみたところうまく行ったのでメモ。</p>
-<p><img loading="lazy" src="https://blogger.googleusercontent.com/img/a/AVvXsEhTsSuRqWzoGLmxGJj5n2U1G0q9F-J6gltitpudp-eXd2KLq5L2EYraMJtPhTf8XUIwiaQ1FNChocNoMHn8kESTQxUMuOl6_JS0RNyCexrWI9nXCi6jv6BlR2dmAC25aB-eCyvlZzKTw5i4iXsp-SLYxTHum4T1fbZkpZWJLIQdplZPwPYR0-mysuAzKUU" data-is-external-image="true"></p>
 <h2>動作状況</h2>
 <p><img loading="lazy" src="https://blogger.googleusercontent.com/img/a/AVvXsEhwd8ZxytS41RS6w28YclrUpHETRq8fS3f8fimZ4QJDM_UYerpg01iSWr33OuemgjLz6dI-_q3ilvsEvGwIFkHCCsNX3kTMIrz90ItYjPSUfTsmoeD7RjVu1F9dIHcK2wQKQU-oHty2NKBXBU2afauEplpdrQr2EZfjdubZxkK62WylO6mUR-MTett-1m4" data-is-external-image="true"></p>
 <p><img loading="lazy" src="https://blogger.googleusercontent.com/img/a/AVvXsEhgFexoJznfBrt0p0RLH7ok_rZ0YIBKNN9uK_8hLEZESexFyCZ7bDIyIAXlUeTEYptRM-zmhYUbrceDeaM8qXTEV_wdUyqIagIURiIMlytnQNAJEmdd0RP93GgahkKOiL1OR4Q2TSY8kb2-6RYPSL4vYvESaJiiUNMeLTyBa8cyyui4T_popFIHFAsn-uk" data-is-external-image="true"></p>

@@ -172,6 +172,7 @@ article.post-list h2 {
    background-color: #0d0d0e;
    color: white;
    font-weight: bold;
+   box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .1);
 }
 article.post-list figure {
    margin:0;
@@ -179,6 +180,7 @@ article.post-list figure {
 
 .article-post-list-image {
    overflow: hidden;
+   box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .1);
 }
 
 .article-post-list-image img {
@@ -206,6 +208,7 @@ article.post-list footer {
 .article-post-list-footer {
    background-color: var(--main-accent-color);
    color: black;
+   box-shadow: 0 10px 25px 0 rgb(86 22 34 / 50%);
 }
 
 article.post-list a, article.post-list a:visited {
