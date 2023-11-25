@@ -3,12 +3,95 @@
     <title>塩の惑星</title>
     <link href="https://corkborg.github.io/feed.xml" rel="self" />
     <link href="https://corkborg.github.io" />
-    <updated>2023-11-21T20:45:44+09:00</updated>
+    <updated>2023-11-25T16:19:53+09:00</updated>
     <author>
         <name>ミズソバ</name>
     </author>
     <id>https://corkborg.github.io</id>
 
+    <entry>
+        <title>ゲーミングPCは電気代が高い？ゲームでのApple Silicon Macの実力を測る</title>
+        <author>
+            <name>ミズソバ</name>
+        </author>
+        <link href="https://corkborg.github.io/energy-saving-battle-gaming-pc-vs-apple-silicon-mac/"/>
+        <id>https://corkborg.github.io/energy-saving-battle-gaming-pc-vs-apple-silicon-mac/</id>
+        <media:content url="https://corkborg.github.io/media/posts/19/DSC_0581_02.JPG" medium="image" />
+            <category term="ゲーム"/>
+            <category term="Mac"/>
+            <category term="AppleSilicon"/>
+
+        <updated>2023-11-25T16:19:53+09:00</updated>
+            <summary>
+                <![CDATA[
+                        <img src="https://corkborg.github.io/media/posts/19/DSC_0581_02.JPG" alt="電気代が安いM1 MacBook Pro" />
+                    昨今は電気代の値上げが激しいです。 私はゲーミングPCであらゆるPC作業を行っていたのですが、電力計を買って電気代を計測してみたところ、軽めの作業でも驚くほど電気を消費していることがわかりました。 このままでは電気代がものすごいことになってしまうので、軽めの作業をApple SIliconで作られたM1 MacBook&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                    <p><img src="https://corkborg.github.io/media/posts/19/DSC_0581_02.JPG" class="type:primaryImage" alt="電気代が安いM1 MacBook Pro" /></p>
+                <p>昨今は電気代の値上げが激しいです。<br>私はゲーミングPCであらゆるPC作業を行っていたのですが、電力計を買って電気代を計測してみたところ、軽めの作業でも驚くほど電気を消費していることがわかりました。</p>
+<p>このままでは電気代がものすごいことになってしまうので、軽めの作業をApple SIliconで作られたM1 MacBook Airで行うようにしました。<br>読みどおりApple Siliconは電気代が安いので大幅に電気代を抑えることができました。</p>
+<p>最近は、ゲームでもMacに対応している場合は、なるべくそちらで遊ぶようにしています。<br>ただ、ゲームというの処理が重く、いくら省電力なApple Siliconといえど電力をたくさん消費しなければならないのではないか？</p>
+<p>そこで、消費電力や電気代について調査を行ってみました。</p>
+<h2>Apple Silicon Macはなぜ電気代が安い？</h2>
+<figure class="post__image post__image--center"><img loading="lazy"  src="https://corkborg.github.io/media/posts/19/Apple_new-M1-chip_11102020.jpg.news_app_ed.jpg" alt="" width="215" height="215" sizes="(max-width: 1200px) 100vw, 1200px" srcset="https://corkborg.github.io/media/posts/19/responsive/Apple_new-M1-chip_11102020.jpg.news_app_ed-xs.jpg 300w ,https://corkborg.github.io/media/posts/19/responsive/Apple_new-M1-chip_11102020.jpg.news_app_ed-sm.jpg 480w ,https://corkborg.github.io/media/posts/19/responsive/Apple_new-M1-chip_11102020.jpg.news_app_ed-md.jpg 749w ,https://corkborg.github.io/media/posts/19/responsive/Apple_new-M1-chip_11102020.jpg.news_app_ed-xl.jpg 1200w"></figure>
+<p>簡単に説明すると、Apple Silicon Macでは省電力であることが重要なスマートフォンと同じ技術を多く使用しているからです。</p>
+<p>たとえば、Macでも以前まで使用されていたIntelのCPUはPCやサーバの世界では圧倒的なシェアがありますが、スマートフォンの世界ではほとんどシェアがありません。<br>これは、Intel系のCPUの基礎設計がスマートフォンの基準に沿った消費電力まで落とせるように設計できないからです。</p>
+<p>以前は、スマートフォンのCPUはIntelに比べると非力でPC用途では無理だと思われていたました。<br>ただ、現在ではPCと遜色ない性能が出せるようになり、電力あたりの性能がIntelよりもずっと効率がよい事がわかり始めています。</p>
+<p>CPUの他にも、GPUなど様々な面でApple Silicon Macはスマートフォン譲りの省電力技術が使用されています。</p>
+<h2>検証：マインクラフトで遊んでみた</h2>
+<p>残念なことにApple Silicon Macは対応ゲームがあまり多くありません。<br>そこで、有名で検証しやすいゲームとしてマインクラフトを使用します。</p>
+<h4>マインクラフトの設定</h4>
+<ul>
+<li>バージョン 1.20.2 （バニラ）</li>
+<li>フルスクリーン</li>
+<li>フレームレート：30FPS（Apple Silicon側でもフレーム落ちしないように）</li>
+<li>描画距離：32チャンク</li>
+<li>演算距離：32チャンク</li>
+<li>グラフィックス：最高設定</li>
+<li>ワールドを新規作成して遊ぶ</li>
+</ul>
+<figure class="post__image"><img loading="lazy"  src="https://corkborg.github.io/media/posts/19/sukurinsiyotuto-2023-11-25-143618.png" alt="" width="890" height="543" sizes="(max-width: 1200px) 100vw, 1200px" srcset="https://corkborg.github.io/media/posts/19/responsive/sukurinsiyotuto-2023-11-25-143618-xs.png 300w ,https://corkborg.github.io/media/posts/19/responsive/sukurinsiyotuto-2023-11-25-143618-sm.png 480w ,https://corkborg.github.io/media/posts/19/responsive/sukurinsiyotuto-2023-11-25-143618-md.png 749w ,https://corkborg.github.io/media/posts/19/responsive/sukurinsiyotuto-2023-11-25-143618-xl.png 1200w"></figure>
+<h4>ゲーミングPCでの検証</h4>
+<p>スペックは下記のような感じです。</p>
+<ul>
+<li>Ryzen 5600G</li>
+<li>GeForce RTX 4070 Ti 12GB</li>
+<li>グラボの電力設定：標準</li>
+<li>WQHDの液晶一つ</li>
+<li>再起動後検証</li>
+</ul>
+<figure class="post__image" ><figure class="post__image"><img loading="lazy"  src="https://corkborg.github.io/media/posts/19/2023-11-25_14.42.44-2.png" alt="WindowsでのMinecraftプレイ" width="2560" height="1440" sizes="(max-width: 1200px) 100vw, 1200px" srcset="https://corkborg.github.io/media/posts/19/responsive/2023-11-25_14.42.44-2-xs.png 300w ,https://corkborg.github.io/media/posts/19/responsive/2023-11-25_14.42.44-2-sm.png 480w ,https://corkborg.github.io/media/posts/19/responsive/2023-11-25_14.42.44-2-md.png 749w ,https://corkborg.github.io/media/posts/19/responsive/2023-11-25_14.42.44-2-xl.png 1200w"></figure>
+<figcaption >FOVの設定リセットし忘れていた</figcaption>
+</figure>
+<p>フレームレートですが28〜30FPSの間で安定していました。</p>
+<p>気になる消費電力ですが…最大190W。思った以上に低い！<br>最新ゲームだと400Wくらいの電力消費しているのでマインクラフトは省電力のようでした。</p>
+<h4>Apple Silicon Macでの検証</h4>
+<p>こんな感じの条件にしました</p>
+<ul>
+<li>M1 MacBook Air</li>
+<li>マウスとキーボードを接続</li>
+<li>本体付属の液晶 2560x1600 （WQHDよりも少し大きい）</li>
+<li>少しバッテリーを消費した状態で開始</li>
+<li>再起動後検証</li>
+</ul>
+<figure class="post__image" ><img loading="lazy" src="https://corkborg.github.io/media/posts/19/2023-11-25_15.02.47.png" alt="Apple SiliconでのMacプレイのスクショ" width="2880" height="1800" sizes="(max-width: 1200px) 100vw, 1200px" srcset="https://corkborg.github.io/media/posts/19/responsive/2023-11-25_15.02.47-xs.png 300w ,https://corkborg.github.io/media/posts/19/responsive/2023-11-25_15.02.47-sm.png 480w ,https://corkborg.github.io/media/posts/19/responsive/2023-11-25_15.02.47-md.png 749w ,https://corkborg.github.io/media/posts/19/responsive/2023-11-25_15.02.47-xl.png 1200w">
+<figcaption >Apple SiliconMacでのプレイ</figcaption>
+</figure>
+<p>描画設定がもりもりな感じでしたが、フレームレートは28〜30FPSで安定しました。</p>
+<p>気になる消費電力は…最大40Wでした。そして、充電が完了して以降は最大30W程度の消費電力でした。<br>ゲーミングPCもなかなか悪くない数値でしたがこちらは一層省電力ですね。</p>
+<h2>まとめ：Apple Siliconはゲーム用途でも電気代が安い</h2>
+<p>ゲームをプレイする場合、Apple Silicon MacはゲーミングPCと比べて大体6〜4分の1程度の電力に抑えられるようでした。</p>
+<p>毎日4時間くらいゲームをプレイすると考えて計算すると…<br>現在の東京電力ではゲーミングPCで700円程度かかります。対してM1 MacBook Airだと100円から150円程度で済みます。</p>
+<p>ただ、これは純粋なゲームのみでの計算なので、ゲーム中にブラウザでYoutubeを見たりゲーム以外のアプリを起動しているもっとかかります（自分の経験ではブラウザはガンガン電力消費します）。<br>それらの作業もApple Siliconの方が省電力なので実際にはもっと差が出ると思われます。</p>
+<p> </p>
+<p> </p>
+<p> </p>
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>リバース：1999をサポートされていないMacにインストールして遊んでみた</title>
         <author>

@@ -152,6 +152,13 @@ article.post-only {
    margin-top: -10px;
 }
 
+
+#featured-image figcaption {
+   color: gray;
+   font-size: 12px;
+   text-align: center;
+}
+
 article.post-list {
    width: 400px;
    height: 450px;
