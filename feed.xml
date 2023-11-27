@@ -3,7 +3,7 @@
     <title>塩の惑星</title>
     <link href="https://corkborg.github.io/feed.xml" rel="self" />
     <link href="https://corkborg.github.io" />
-    <updated>2023-11-26T01:45:53+09:00</updated>
+    <updated>2023-11-27T14:53:57+09:00</updated>
     <author>
         <name>ミズソバ</name>
     </author>
@@ -21,7 +21,7 @@
             <category term="Mac"/>
             <category term="AppleSilicon"/>
 
-        <updated>2023-11-26T01:45:53+09:00</updated>
+        <updated>2023-11-27T14:53:57+09:00</updated>
             <summary>
                 <![CDATA[
                         <img src="https://corkborg.github.io/media/posts/19/DSC_0581_02.JPG" alt="電気代が安いM1 MacBook Pro" />
@@ -38,7 +38,7 @@
 <h2>Apple Silicon Macはなぜ電気代が安い？</h2>
 <figure class="post__image post__image--center"><img loading="lazy"  src="https://corkborg.github.io/media/posts/19/Apple_new-M1-chip_11102020.jpg.news_app_ed.jpg" alt="" width="215" height="215" sizes="(max-width: 1200px) 100vw, 1200px" srcset="https://corkborg.github.io/media/posts/19/responsive/Apple_new-M1-chip_11102020.jpg.news_app_ed-xs.jpg 300w ,https://corkborg.github.io/media/posts/19/responsive/Apple_new-M1-chip_11102020.jpg.news_app_ed-sm.jpg 480w ,https://corkborg.github.io/media/posts/19/responsive/Apple_new-M1-chip_11102020.jpg.news_app_ed-md.jpg 749w ,https://corkborg.github.io/media/posts/19/responsive/Apple_new-M1-chip_11102020.jpg.news_app_ed-xl.jpg 1200w"></figure>
 <p>簡単に説明すると、Apple Silicon Macでは省電力さが重要なスマートフォンと同じ技術を多く使用しているからです。</p>
-<p>たとえば、Macで以前まで使用されていたIntelのCPUはPCやサーバの世界では圧倒的なシェアがありますが、スマートフォンの世界ではほとんどシェアがありません。<br>これは、Intel系のCPUの基礎設計がスマートフォンの基準に沿った消費電力まで落とせるように設計できないからです。</p>
+<p>たとえば、Macで以前まで使用されていたIntelのCPUはPCやサーバの世界では圧倒的なシェアがありますが、スマートフォンの世界ではほとんどシェアがありません。<br>これは、Intel系のCPUの基礎設計がスマートフォンの基準に沿った消費電力まで落とせるようにできないからです。</p>
 <p>以前は、スマートフォンのCPUはIntel系のものに比べると非力でPC用途では無理だと思われていました。<br>ただ、現在ではPCと遜色ない性能が出せるようになり、電力あたりの性能がIntelよりもずっと効率がよい事がわかり始めています。</p>
 <p>CPUの他にも、GPUなど様々な面でApple Silicon Macはスマートフォン譲りの省電力技術が使用されています。</p>
 <h2>検証：マインクラフトで遊んでみた</h2>
@@ -84,9 +84,9 @@
 <p>描画設定がもりもりな感じでしたが、フレームレートは28〜30FPSで安定しました。</p>
 <p>気になる消費電力は…最大40Wでした。そして、充電が完了して以降は最大30W程度の消費電力でした。<br>ゲーミングPCもなかなか悪くない数値でしたがこちらは一層省電力ですね。</p>
 <h2>まとめ：Apple Siliconはゲーム用途でも電気代が安い</h2>
-<p>ゲームをプレイする場合、Apple Silicon MacはゲーミングPCと比べて大体6〜4分の1程度の電力に抑えられるようでした。</p>
-<p>毎日4時間くらいゲームをプレイすると考えて計算すると…<br>現在の東京電力ではゲーミングPCで700円程度かかります。対してM1 MacBook Airだと100円から150円程度で済みます。</p>
-<p>ただ、これは純粋なゲームのみでの計算なので、ゲーム中にブラウザでYoutubeを見たりゲーム以外のアプリを起動しているもっとかかります（自分の経験ではブラウザはガンガン電力消費します）。<br>それらの作業もApple Siliconの方が省電力なので実際にはもっと差が出ると思われます。</p>
+<p>ゲームをプレイする場合、Apple Silicon MacはゲーミングPCと比べて大体6分の1〜4分の1程度の電力に抑えられるようでした。</p>
+<p>毎日4時間くらいゲームをプレイすると考えて計算すると…<br>現在の東京電力ではゲーミングPCで月当たり700円程度かかります。対してM1 MacBook Airだと月当たり100円から150円程度で済みます。</p>
+<p>ただ、これは純粋なゲームのみを起動した状態での調査＆計算なので、ゲーム中にブラウザでYoutubeを見たりゲーム以外のアプリを起動しているともっと電気代がかかります。<br>（自分の経験ではブラウザはガンガン電力消費します）<br>それらの作業もApple Siliconの方が省電力なので実際には電気代にはもっと差が出ると思われます。</p>
 <p> </p>
 <p> </p>
 <p> </p>
@@ -94,7 +94,7 @@
         </content>
     </entry>
     <entry>
-        <title>リバース1999をサポートされていないMacにインストールして遊んでみた</title>
+        <title>リバース1999を対応してないMacにインストールして遊んでみた</title>
         <author>
             <name>ミズソバ</name>
         </author>
@@ -105,7 +105,7 @@
             <category term="Mac"/>
             <category term="AppleSilicon"/>
 
-        <updated>2023-11-25T16:29:13+09:00</updated>
+        <updated>2023-11-26T01:59:02+09:00</updated>
             <summary>
                 <![CDATA[
                         <img src="https://corkborg.github.io/media/posts/18/sukurinsiyotuto-2023-11-20-13.24.24.png" alt="リバース：1999" />
@@ -141,7 +141,7 @@
         </content>
     </entry>
     <entry>
-        <title>ATOK日本語入力のクラウド機能ではGoogle日本語入力に勝てなかった</title>
+        <title>ATOK日本語入力のクラウド機能はGoogle日本語入力に勝てなかった</title>
         <author>
             <name>ミズソバ</name>
         </author>
@@ -151,11 +151,11 @@
             <category term="日本語入力"/>
             <category term="レビュー"/>
 
-        <updated>2023-11-21T20:45:44+09:00</updated>
+        <updated>2023-11-27T14:47:13+09:00</updated>
             <summary>
                 <![CDATA[
                         <img src="https://corkborg.github.io/media/posts/17/atok-2.jpg" alt="ATOK passport logo" />
-                    Google日本語入力は専門用語、ゲーム用語、インターネット用語などを変換することに高い能力を持つ無料のIME（日本語入力ツール）です。 Google検索で得た情報などを使って収録単語を増やしていて流行り言葉が反映される速度が非常に速い特徴があります。 ただ、日本語を正しく変換する能力は若干低く、送り仮名などが上手く変換できない場合があること。堅い文章を書く際に変換候補がフランク過ぎることが気になっていました。 Google日本語入力並みの圧倒的な単語集録数があって、日本語を正しく変換できるIMEはないかと思い調べるとATOKという有料のIMEがヒットしました。 ATOKは日本語入力の精度が高い特徴があり、ATOK&hellip;
+                    Google日本語入力は専門用語、ゲーム用語、インターネット用語などを変換することに高い能力を持つ無料のIME（日本語入力ツール）です。 Google検索で得た情報などを使って収録単語を増やしていて流行り言葉が反映される速度が非常に速い特徴があります。 ただ、日本語を正しく変換する能力は若干低く、送り仮名などが上手く変換できない場合があること。堅い文章を書く際に変換候補がフランク過ぎることが気になっていました。 Google日本語入力並みの圧倒的な単語収録数があって、日本語を正しく変換できるIMEはないかと思い調べるとATOKという有料のIMEがヒットしました。 ATOKは日本語入力の精度が高い特徴があり、ATOK&hellip;
                 ]]>
             </summary>
         <content type="html">
@@ -164,10 +164,10 @@
                 <header>
 <div><span style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);">Google日本語入力は専門用語、ゲーム用語、インターネット用語などを変換することに高い能力を持つ無料のIME（日本語入力ツール）です。<br>Google検索で得た情報などを使って収録単語を増やしていて流行り言葉が反映される速度が非常に速い特徴があります。</span></div>
 <p><span style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);">ただ、日本語を正しく変換する能力は若干低く、送り仮名などが上手く変換できない場合があること。堅い文章を書く際に変換候補がフランク過ぎることが気になっていました。</span></p>
-<p>Google日本語入力並みの圧倒的な単語集録数があって、日本語を正しく変換できるIMEはないかと思い<span style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);">調べるとATOKという</span><strong style="font-family: var(--editor-font-family); font-size: inherit;">有料の</strong><span style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);">IMEがヒットしました。<br>ATOKは日本語入力の精度が高い特徴があり、ATOK Expressというクラウド機能で大量の用語を日々IMEに反映してくれるようです。<br></span><span style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);">早速、ATOKを購入してクラウド機能でGoogle日本語入力に対抗できるか調査を行いました。</span></p>
+<p>Google日本語入力並みの圧倒的な単語収録数があって、日本語を正しく変換できるIMEはないかと思い<span style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);">調べるとATOKという</span><strong style="font-family: var(--editor-font-family); font-size: inherit;">有料の</strong><span style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);">IMEがヒットしました。<br>ATOKは日本語入力の精度が高い特徴があり、ATOK Expressというクラウド機能で大量の用語を日々IMEに反映してくれるようです。<br></span><span style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);">早速、ATOKを購入してクラウド機能でGoogle日本語入力に対抗できるか調査を行いました。</span></p>
 </header>
 <div id="post-entry">
-<p>結論を言うと、多くの分野でGoogle日本語入力が圧倒的な結果になりました。<br>一応、ATOKが強い分野もあるようでした。</p>
+<p>結論を言うと、残念ながら多くの分野でGoogle日本語入力が良い結果になりました。<br>一応、ATOKが強い分野もあるようでした。</p>
 <h2 id="atoktoha">ATOKとは</h2>
 <figure class="post__image"><img loading="lazy"  src="https://corkborg.github.io/media/posts/17/ATOK_logo.jpg" alt="" width="139" height="139" sizes="(max-width: 1200px) 100vw, 1200px" srcset="https://corkborg.github.io/media/posts/17/responsive/ATOK_logo-xs.jpg 300w ,https://corkborg.github.io/media/posts/17/responsive/ATOK_logo-sm.jpg 480w ,https://corkborg.github.io/media/posts/17/responsive/ATOK_logo-md.jpg 749w ,https://corkborg.github.io/media/posts/17/responsive/ATOK_logo-xl.jpg 1200w"></figure>
 <p>今どき、ATOKの名前を知っている人はあまりいないと思います。<br>私も詳しく知らない世代なのですが、パーソナルコンピュータの初期の時期から存在する高品質の有料IMEです。</p>
@@ -336,7 +336,9 @@
 </ul>
 <h3>ATOK</h3>
 <p>スポーツやアイドルなどの分野ではGoogle日本語入力よりも変換できる単語が多いです。そのため、テレビなどのマスメディアで流行っている単語に強いのではないかと思います。</p>
-<p>総合的に見るとGoogle日本語入力の方が<strong>圧倒的に</strong>単語を変換する能力が高いようで、ATOKでは勝てないようでした。</p>
+<p>これは想像ですが、出版や報道などの業界に特化して作られているのではないかと思います。</p>
+<h3>結論</h3>
+<p>総合的に見るとGoogle日本語入力の方が単語を変換する能力が高いようでした。</p>
 <h2>感想</h2>
 <p>私の用途ではGoogle日本語入力の方が快適に文章が書けそうです。<br>振り返ってみると、ATOKでは文章の変換が一発で決まることが少なく息苦しさがあるような気もします。</p>
 <p>変換能力とは関係ないのですが、ATOKは多機能IMEなためか用途がわかりづらいウィンドウがマウスの周りに登場したりして邪魔な点。Windows版のインターフェースがダサいところが気になります。</p>
@@ -695,7 +697,7 @@
         </content>
     </entry>
     <entry>
-        <title>Project ZomboidのサーバをUbuntuとDockerで立てる方法</title>
+        <title>Project ZomboidのサーバをUbuntuとDockerで構築する方法</title>
         <author>
             <name>ミズソバ</name>
         </author>
@@ -706,7 +708,7 @@
             <category term="Steam"/>
             <category term="Linux"/>
 
-        <updated>2023-11-25T17:14:18+09:00</updated>
+        <updated>2023-11-27T14:47:53+09:00</updated>
             <summary>
                 <![CDATA[
                         <img src="https://corkborg.github.io/media/posts/7/image-6.png" alt="project zomboid" />
