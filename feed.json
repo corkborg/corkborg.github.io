@@ -11,6 +11,22 @@
     },
     "items": [
         {
+            "id": "https://corkborg.github.io/difference-en-el15/",
+            "url": "https://corkborg.github.io/difference-en-el15/",
+            "title": "EN-EL15,EN-EL15a,EN-EL15b,EN-EL15cの違い早見表",
+            "summary": "NikonのD810やZ 6など一眼レフ、一眼ミラーレスなどで使用されるバッテリーEN-EL15。 このバッテリーは現在４種類位存在して違いが分かりづらいので購入する人目線で早見表を作りました。 旅行の時はなるべく持ち物を少なくしたいと思います。 EN-EL15bとEN-EL15cはカメラ本体に給電することでバッテリーを充電することができるので持ち物を少なくすることができます。&hellip;",
+            "content_html": "<p>NikonのD810やZ 6など一眼レフ、一眼ミラーレスなどで使用されるバッテリーEN-EL15。<br>このバッテリーは現在４種類位存在して違いが分かりづらいので購入する人目線で早見表を作りました。</p>\n<table style=\"border-collapse: collapse; width: 95.4416%;\" border=\"1\">\n<tbody>\n<tr>\n<td style=\"width: 20.9179%;\">バッテリー名</td>\n<td style=\"width: 23.3471%;\">カメラ本体内充電</td>\n<td style=\"width: 17.1392%;\">バッテリー容量</td>\n<td style=\"width: 38.5969%;\">備考</td>\n</tr>\n<tr>\n<td style=\"width: 20.9179%;\"><strong>EN-EL15</strong></td>\n<td style=\"width: 23.3471%;\">未対応</td>\n<td style=\"width: 17.1392%;\">1900mAh</td>\n<td style=\"width: 38.5969%;\">旧製品なので購入しないほうが良い.<br>Z 8では使用することができない.</td>\n</tr>\n<tr>\n<td style=\"width: 20.9179%;\"><strong>EN-EL15a</strong></td>\n<td style=\"width: 23.3471%;\">未対応</td>\n<td style=\"width: 17.1392%;\">1900mAh</td>\n<td style=\"width: 38.5969%;\">旧製品なので購入しないほうが良い.<br>Z 8では使用することができない.<br>EN-EL15の改良型で一部機種で電池の減りが抑えられる.</td>\n</tr>\n<tr>\n<td style=\"width: 20.9179%;\"><strong>EN-EL15b</strong></td>\n<td style=\"width: 23.3471%;\">対応</td>\n<td style=\"width: 17.1392%;\">1900mAh</td>\n<td style=\"width: 38.5969%;\">現行品</td>\n</tr>\n<tr>\n<td style=\"width: 20.9179%;\"><strong>EN-EL15c</strong></td>\n<td style=\"width: 23.3471%;\">対応</td>\n<td style=\"width: 17.1392%;\">2280mAh</td>\n<td style=\"width: 38.5969%;\">現行品.<br>バッテリー容量が増加している.</td>\n</tr>\n</tbody>\n</table>\n<h2>旅行の時、本体内充電が便利</h2>\n<p>旅行の時はなるべく持ち物を少なくしたいと思います。<br>EN-EL15bとEN-EL15cはカメラ本体に給電することでバッテリーを充電することができるので持ち物を少なくすることができます。</p>\n<p>特にZシリーズはUSB-Cで充電することができるので、携帯電話やPCの充電器があれば大丈夫です（45W PD以上の能力がある充電器が望ましい）。</p>\n<h2>ミラーレスは電池の消費が激しい</h2>\n<p>一眼レフに比べると一眼ミラーレスは電池の消費が激しいです。</p>\n<p>私は、Nikon Z 6を使用しているのですが、一日中撮影しているとバッテリー一つでは全然持ちません。</p>\n<p>そのため、一眼ミラーレスでバッテリー購入を検討している方はなるべく容量の大きいEN-EL15cを購入することをおすすめします。</p>\n<p> </p>",
+            "image": "https://corkborg.github.io/media/posts/20/DSC_0930.JPG",
+            "author": {
+                "name": "ミズソバ"
+            },
+            "tags": [
+                   "カメラ"
+            ],
+            "date_published": "2023-12-10T19:16:18+09:00",
+            "date_modified": "2023-12-10T19:28:35+09:00"
+        },
+        {
             "id": "https://corkborg.github.io/energy-saving-battle-gaming-pc-vs-apple-silicon-mac/",
             "url": "https://corkborg.github.io/energy-saving-battle-gaming-pc-vs-apple-silicon-mac/",
             "title": "ゲーミングPCは電気代が高い？ゲームでのApple Silicon Macの実力を測る",
@@ -168,25 +184,6 @@
             ],
             "date_published": "2023-08-08T02:48:28+09:00",
             "date_modified": "2023-11-25T18:09:37+09:00"
-        },
-        {
-            "id": "https://corkborg.github.io/factorio-support-applesilicon/",
-            "url": "https://corkborg.github.io/factorio-support-applesilicon/",
-            "title": "FactorioがApple siliconに対応したようなのでM1 Macで遊んでみた",
-            "summary": "Factorioのリリースノートを読んでいたらApple Siliconに対応したと思われるアップデートを見かけた。 そこで、私が日常的に使用しているM1 MacBook Airでも遊べるか確認してみることにした。&hellip;",
-            "content_html": "\n  <p>\n    Factorioのリリースノートを読んでいたらApple Siliconに対応したと思われるアップデートを見かけた。<br>そこで、私が日常的に使用しているM1 MacBook Airでも遊べるか確認してみることにした。<br><a href=\"https://www.factorio.com/blog/post/fff-371\" target=\"_blank\">https://www.factorio.com/blog/post/fff-371</a><br>\n  </p>\n\n    <h2 id=\"insutoru\">\n      インストール\n    </h2>\n\n  <p>\n    MacにSteamをインストールするのはめんどくさかったので、Factorioの公式サイトからゲーム本体のダウンロードを行った。<br>この操作はFactorio購入済みのSteamアカウントとFactorioの公式アカウントとの連携を行えば誰でも行うことができる。<br><a href=\"https://www.factorio.com/download\" target=\"_blank\">https://www.factorio.com/download</a><br><br>ダウンロードしたファイルは適当にインストールする。\n  </p>\n\n    <h2 id=\"gemupurei\">\n      ゲームプレイ\n    </h2>\n\n  <p>\n    遊ぶことができた。<br>\n  </p>\n\n    <figure class=\"post__image post__image--center\">\n      <img loading=\"lazy\" src=\"https://corkborg.github.io/media/posts/1/image-1.png\" height=\"992\" width=\"1600\" alt=\"Factorio screenshot on mac\"  sizes=\"(max-width: 1200px) 100vw, 1200px\" srcset=\"https://corkborg.github.io/media/posts/1/responsive/image-1-xs.png 300w ,https://corkborg.github.io/media/posts/1/responsive/image-1-sm.png 480w ,https://corkborg.github.io/media/posts/1/responsive/image-1-md.png 749w ,https://corkborg.github.io/media/posts/1/responsive/image-1-xl.png 1200w\">\n      \n    </figure>\n\n    <figure class=\"post__image post__image--center\">\n      <img loading=\"lazy\" src=\"https://corkborg.github.io/media/posts/1/image-2.png\" height=\"27\" width=\"879\" alt=\"FactorioのプロセスがApple siliconで動いている\"  sizes=\"(max-width: 1200px) 100vw, 1200px\" srcset=\"https://corkborg.github.io/media/posts/1/responsive/image-2-xs.png 300w ,https://corkborg.github.io/media/posts/1/responsive/image-2-sm.png 480w ,https://corkborg.github.io/media/posts/1/responsive/image-2-md.png 749w ,https://corkborg.github.io/media/posts/1/responsive/image-2-xl.png 1200w\">\n      <figcaption>アクティビティモニターで確認したFactorio。Apple Siliconネイティブで動作している</figcaption>\n    </figure>\n\n  <p>\n    Apple Siliconに対応したゲームは少ないので助かる。\n  </p>\n\n    <h2 id=\"sonohou\">\n      その後\n    </h2>\n\n    <figure class=\"post__image post__image--center\">\n      <img loading=\"lazy\" src=\"https://corkborg.github.io/media/posts/1/sukurinsiyotuto-2023-07-07-23.09.48.png\" height=\"640\" width=\"1600\" alt=\"Factorio\"  sizes=\"(max-width: 1200px) 100vw, 1200px\" srcset=\"https://corkborg.github.io/media/posts/1/responsive/sukurinsiyotuto-2023-07-07-23.09.48-xs.png 300w ,https://corkborg.github.io/media/posts/1/responsive/sukurinsiyotuto-2023-07-07-23.09.48-sm.png 480w ,https://corkborg.github.io/media/posts/1/responsive/sukurinsiyotuto-2023-07-07-23.09.48-md.png 749w ,https://corkborg.github.io/media/posts/1/responsive/sukurinsiyotuto-2023-07-07-23.09.48-xl.png 1200w\">\n      \n    </figure>\n\n  <p>\n    久しぶりのFactorioにすっかりハマってしまい。Macで20時間くらい遊びました。<br>Apple SIlicon MacでのFactorioプレイは問題なさそうです。\n  </p>",
-            "image": "https://corkborg.github.io/media/posts/1/image.png",
-            "author": {
-                "name": "ミズソバ"
-            },
-            "tags": [
-                   "ゲーム",
-                   "Mac",
-                   "Factorio",
-                   "AppleSilicon"
-            ],
-            "date_published": "2023-07-12T16:23:05+09:00",
-            "date_modified": "2023-11-20T13:58:12+09:00"
         }
     ]
 }
