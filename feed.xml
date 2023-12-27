@@ -3,7 +3,7 @@
     <title>塩の惑星</title>
     <link href="https://corkborg.github.io/feed.xml" rel="self" />
     <link href="https://corkborg.github.io" />
-    <updated>2023-12-10T19:28:35+09:00</updated>
+    <updated>2023-12-28T03:25:07+09:00</updated>
     <author>
         <name>ミズソバ</name>
     </author>
@@ -76,7 +76,7 @@
         </content>
     </entry>
     <entry>
-        <title>ゲーミングPCは電気代が高い？ゲームでのApple Silicon Macの実力を測る</title>
+        <title>ゲーミングPCは電気代が高い！ゲームでのApple Silicon Macの実力を測る</title>
         <author>
             <name>ミズソバ</name>
         </author>
@@ -87,7 +87,7 @@
             <category term="Mac"/>
             <category term="AppleSilicon"/>
 
-        <updated>2023-11-28T16:37:37+09:00</updated>
+        <updated>2023-12-10T19:30:38+09:00</updated>
             <summary>
                 <![CDATA[
                         <img src="https://corkborg.github.io/media/posts/19/DSC_0581_02.JPG" alt="電気代が安いM1 MacBook Pro" />
@@ -479,41 +479,68 @@
         <id>https://corkborg.github.io/wd14-tagger-standalone/</id>
             <category term="生成AI"/>
 
-        <updated>2023-11-25T18:07:22+09:00</updated>
+        <updated>2023-12-28T03:25:07+09:00</updated>
             <summary>
                 <![CDATA[
-                    stable-diffusion-webui-wd14-taggerというものはSmilingWolfという方が作ったモデルを使ったwebui向けのプラグインで、使うとイラストの中に書かれた要素を分析して出力することができます。 イラストの要素分析は生成AI向けにLoraを作る時などいろんな用途で使える便利な機能でwebui抜きに動作させたかったので単体で動かしてみました。 原理的には元のモデル作者であるSmilingWolfさんの学習スクリプトを参考にすれば単体で動かせるはずですが見てもあまり分からなかったので、stable-diffusion-webui-wd14-taggerの方から動作に必要なコードだけを抜き出して動かしてみました。 （機械学習まわりがTensorflowよりもPytorchのほうが取り扱いやすかったのもあります） 今回のために作ったコードは下記です。&hellip;
+                    stable-diffusion-webui-wd14-taggerというものはSmilingWolfという方が作ったモデルを使ったwebui向けのプラグインで、使うとイラストの中に書かれた要素を分析して出力することができます。 イラストの要素分析は生成AI向けにLoraを作る時などいろんな用途で使える便利な機能でwebui抜きに動作させたかったので単体で動かせるものを用意しました。 作ったコードは下記です。Python3があれば動きます。 https://github.com/corkborg/wd14-tagger-standalone webui-wd14-taggerの方から動作に必要なコードだけを抜き出して作りました。&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
                 <p><a href="https://github.com/picobyte/stable-diffusion-webui-wd14-tagger" title="https://github.com/picobyte/stable-diffusion-webui-wd14-tagger" target="_blank" rel="noopener noreferrer">stable-diffusion-webui-wd14-tagger</a>というものはSmilingWolfという方が作ったモデルを使ったwebui向けのプラグインで、使うとイラストの中に書かれた要素を分析して出力することができます。</p>
-<p>イラストの要素分析は生成AI向けにLoraを作る時などいろんな用途で使える便利な機能でwebui抜きに動作させたかったので単体で動かしてみました。</p>
+<p>イラストの要素分析は生成AI向けにLoraを作る時などいろんな用途で使える便利な機能でwebui抜きに動作させたかったので単体で動かせるものを用意しました。</p>
+<h2>コード</h2>
+<p>作ったコードは下記です。Python3があれば動きます。<br><a href="https://github.com/corkborg/wd14-tagger-standalone" target="_blank" rel="noopener noreferrer">https://github.com/corkborg/wd14-tagger-standalone</a></p>
+<p><a href="https://github.com/picobyte/stable-diffusion-webui-wd14-tagger" title="https://github.com/picobyte/stable-diffusion-webui-wd14-tagger" target="_blank" rel="noopener noreferrer"></a>webui-wd14-taggerの方から動作に必要なコードだけを抜き出して作りました。</p>
 <h2>動かし方</h2>
-<p>原理的には元のモデル作者であるSmilingWolfさんの学習スクリプトを参考にすれば単体で動かせるはずですが見てもあまり分からなかったので、<a href="https://github.com/picobyte/stable-diffusion-webui-wd14-tagger" title="https://github.com/picobyte/stable-diffusion-webui-wd14-tagger" target="_blank" rel="noopener noreferrer">stable-diffusion-webui-wd14-tagger</a>の方から動作に必要なコードだけを抜き出して動かしてみました。<br>（機械学習まわりがTensorflowよりもPytorchのほうが取り扱いやすかったのもあります）</p>
-<p>今回のために作ったコードは下記です。<br>簡素なコードになっているのでコードを修正することで機能追加することができると思います。<br><a href="https://github.com/corkborg/wd14-tagger-standalone" target="_blank" rel="noopener noreferrer">https://github.com/corkborg/wd14-tagger-standalone</a></p>
+<p> </p>
 <p>Windowsでの動かし方は下記です（開発時はMacを使っていたのでそっちでも動きます）<br>Python3やgitコマンドが事前にインストールされている必要があります。</p>
-<pre>git clone <a href="https://github.com/corkborg/wd14-tagger-standalone.git">https://github.com/corkborg/wd14-tagger-standalone.git</a><br>cd wd14-tagger-standalone<br><br># 必要なライブラリのインストール<br>python3 -m venv venv<br>venv/Scripts/activate<br>pip install -r requirements.txt<br><br># ヘルプの確認<br>python3 run.py --help<br><br># シングルファイルの推論<br>python3 run.py --file path¥image.jpg<br><br># 複数ファイルでの推論<br>python3 run.py --dir path</pre>
+<pre>git clone <a href="https://github.com/corkborg/wd14-tagger-standalone.git">https://github.com/corkborg/wd14-tagger-standalone.git</a><br>cd wd14-tagger-standalone<br><br><code># 必要なライブラリのインストール</code><br><code>python -m venv venv</code><br><code>venv/Scripts/activate</code><br><code>pip install -r requirements.txt</code><br><br><code># コマンド使用前にはactivateを忘れずに</code><br><code>venv/Scripts/activate </code><br><br><code># ヘルプの確認</code><br><code>python run.py --help</code><br><br><code># シングルファイルの推論</code><br><code>python run.py --file path¥image.jpg</code><br><br><code># ディレクトリ内のファイルを一括推論</code><br><code>python run.py --dir path</code></pre>
 <h2>動作確認</h2>
 <p>こちらのサイトさんからずんだモンさんの画像をダウンロードしました。<br><a href="https://zunko.jp/" target="_blank" rel="noopener noreferrer">https://zunko.jp/</a></p>
 <p><img loading="lazy" src="https://zunko.jp/images/chara_zm.png" width="214" height="302" data-is-external-image="true"></p>
 <p>こんな感じになりました。</p>
-<pre>&gt;  venv/bin/python run.py --file chara_zm.png<br>1girl, green_hair, solo, short_sleeves, green_footwear, shirt, green_shorts, white_shirt, smile, full_body, suspenders, shorts, puffy_sleeves, open_mouth, puffy_shorts, white_background, looking_at_viewer, puffy_short_sleeves, standing, orange_eyes, :d, simple_background, yellow_eyes, suspender_shorts, boots</pre>
+<pre><code>&gt;  python run.py --model wd-v1-4-moat-tagger.v2 --file chara_zm.png</code><br><code>solo, green_footwear, short_sleeves, green_hair, suspenders, shirt, white_shirt, green_shorts, suspender_shorts, shorts, white_background, full_body, 1girl, smile, simple_background, open_mouth, puffy_sleeves, looking_at_viewer, puffy_short_sleeves, standing, short_hair, puffy_shorts, orange_eyes, yellow_eyes, :d, hair_between_eyes, boots</code></pre>
 <p><a href="#INTERNAL_LINK#/post/null"></a>単体で使うことができました。</p>
 <h2>一気に画像にタグ付けをする</h2>
-<p>多くの場合一枚一枚画像にタグ付けせずに一気に複数枚画像にタグ付けすると思います。</p>
+<p>多くの場合一枚一枚画像にタグ付けせずに一気に複数枚画像にタグ付けすると思います。<br>このコマンドではディレクトリを指定すると一括推論を行って画像ごとにキャプションファイルを作成します。</p>
 <p>下記の例ではgazou_fileディレクトリ内の画像すべてに対してタグの予想をおこなって画像ファイル名 + ext(拡張子)でキャプションファイルを作っています。</p>
-<pre>python3 run.py --dir ./gazou_file --ext .txt</pre>
+<pre><code>python3 run.py --dir ./gazou_file --ext .txt</code></pre>
+<h2>推論モデルの変更方法</h2>
+<p>コマンドのオプションから推論モデルを変更することができます。</p>
+<pre class="notranslate"><code>python run.py --file image.jpg --model wd14-vit.v1
+python run.py --file image.jpg --model wd14-vit.v2
+python run.py --file image.jpg --model wd14-convnext.v1
+python run.py --file image.jpg --model wd14-convnext.v2
+python run.py --file image.jpg --model wd14-convnextv2.v1
+python run.py --file image.jpg --model wd14-swinv2-v1
+python run.py --file image.jpg --model wd-v1-4-moat-tagger.v2
+python run.py --file image.jpg --model mld-caformer.dec-5-97527
+python run.py --file image.jpg --model mld-tresnetd.6-30000</code></pre>
+<p>推論モデルはいくつか存在してそれぞれのモデルで特色があります。</p>
+<h4>wd14-swinv2系</h4>
+<p>SmilingWolfさんが作成したモデルで、SwinTransformerと呼ばれる機械学習の手法で作られています。<br>SwinTransformerは後述のVisionTransformerに比べて新しい手法です</p>
+<p>SmilingWolfさんのモデルの中ではmoatと並んで新しめのモデルで<strong>おすすめです</strong>。</p>
+<h4>wd-v1-4-moat-tagger系</h4>
+<p>SmilingWolfさんが作成したモデルで、MObile convolution and ATtention（moat）という機械学習の手法で作られたモデルです。<br>Transformer系は大量の学習データが無いと精度が上がりづらいので、比較的少数の画像で学習するCNN系の手法をTransformerに応用する流れの一つのようです。</p>
+<p>SmilingWolfさんのモデルの中ではmoatと並んで新しめのモデルで<strong>おすすめです</strong>。<br>こちらの<a href="https://note.com/den2_nova/n/ndd9e2570572b">サイト</a>が参考になります。</p>
+<h4>mld系</h4>
+<p>通常使われるSmilingWolfさんのモデルとは違いkiriyamaXさんが作成したモデルです（ml-danbooruと呼ばれている？）。</p>
+<p>細かく絵の要素を読み取ろうとしてくれるので、学習したいものによってはこっちのほうが向いているかもしれないです。<br>ただ、細かく絵の要素を読み取ろうとするためか誤りも多い印象です。</p>
+<p>少し各タグの確率が高くつく傾向があるので足切り（スレッショルド）を上げたほうが良いです。</p>
+<pre>python run.py --file image.jpg --model mld-caformer.dec-5-97527 --threshold 0.5<br>python run.py --file image.jpg --model mld-tresnetd.6-30000 --threshold 0.5</pre>
+<p>リポジトリです。<br><a href="https://huggingface.co/kiriyamaX/mld-caformer">kiriyamaX/mld-caformer</a></p>
+<h4>wd14-convnext系</h4>
+<p>SmilingWolfさんが作成したモデルで、CNN系の推論モデルです。<br>SmilingWolfさんのモデルの中では昔から存在する一番標準的な方法です</p>
+<h4>wd14-vit系</h4>
+<p>SmilingWolfさんが作成したモデルで、VisionTransformer（Vit）系のモデルです。<br>機械学習の分野ではTransformerはCNNに比べて成果が上がっている手法ですがtaggerではそこまですごい差は無いように見えます。</p>
+<p>マネキンと人間を見分ける精度が良いので個人的によく使っています。</p>
 <h2>その他</h2>
-<h3>モデルの変更方法</h3>
-<p>run.pyで初期化しているWaifuDiffusionInterrogatorにhuggingface上のモデル名を渡すと自動でダウンロードされます。そのためここを書き換える事で任意のモデルを使用する事ができます。</p>
-<pre>interrogator = WaifuDiffusionInterrogator(<br>    'wd14-convnextv2-v2',<br>    repo_id='SmilingWolf/wd-v1-4-convnextv2-tagger-v2',<br>    revision='v2.0'<br>)</pre>
-<p>ここらへんのコードを参考にすると良いと思います。<br><a href="https://github.com/picobyte/stable-diffusion-webui-wd14-tagger/blob/master/tagger/utils.py" target="_blank" rel="noopener noreferrer">https://github.com/picobyte/stable-diffusion-webui-wd14-tagger/blob/master/tagger/utils.py</a></p>
-<p>現在はより高性能なモデルも存在するようです。<br><a href="https://note.com/den2_nova/n/ndd9e2570572b" target="_blank" rel="noopener noreferrer">https://note.com/den2_nova/n/ndd9e2570572b</a></p>
-<h3>スレッショルドなど</h3>
+<h3>タグの足切り</h3>
+<p>taggerでは画像に対してすべてのタグの一致率を出して確率の高い物だけを残すようになっています。<br>確率が高いと判断するタグの足切りラインをthresholdオプションで決めることができます。</p>
 <p>デフォルトではwebuiと同じく一律35%以上の一致率のタグだけを残しています。<br>これはコマンドライン引数で変更することができます。</p>
 <div>
-<pre># 25%に変更<br>python3 run.py --threthold 0.25 --file image.jpg</pre>
+<pre># 25%に変更<br>python3 run.py --threshold 0.25 --file image.jpg</pre>
 </div>
 <h3>高速化</h3>
 <p>今回は用意したコードはCPU上で推論処理を動かしています。<br>m1 macでも一瞬で返ってくるのでそんなに問題ないとは思っているのですが、もっと早く動かしたい場合はGPUなどを使うように改造したほうが良いかもしれないです。</p>
@@ -928,7 +955,7 @@ zomboid    </span><span class="pun">|</span><span class="pln"> LOG  </span><s
             <category term="Factorio"/>
             <category term="AppleSilicon"/>
 
-        <updated>2023-11-25T18:09:37+09:00</updated>
+        <updated>2023-12-10T19:42:04+09:00</updated>
             <summary>
                 <![CDATA[
                         <img src="https://corkborg.github.io/media/posts/5/image.png" alt="Steamでのfactorioのシステム要件" />
