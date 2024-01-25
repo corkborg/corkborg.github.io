@@ -3,12 +3,66 @@
     <title>塩の惑星</title>
     <link href="https://corkborg.github.io/feed.xml" rel="self" />
     <link href="https://corkborg.github.io" />
-    <updated>2023-12-28T03:25:07+09:00</updated>
+    <updated>2024-01-26T02:18:22+09:00</updated>
     <author>
         <name>ミズソバ</name>
     </author>
     <id>https://corkborg.github.io</id>
 
+    <entry>
+        <title>VDSLよりも早いauひかりマンション  タイプG（G.fast）を使ってみた感想</title>
+        <author>
+            <name>ミズソバ</name>
+        </author>
+        <link href="https://corkborg.github.io/au-hikari-gfast-type-review/"/>
+        <id>https://corkborg.github.io/au-hikari-gfast-type-review/</id>
+            <category term="レビュー"/>
+            <category term="ネット回線"/>
+
+        <updated>2024-01-26T02:18:22+09:00</updated>
+            <summary>
+                <![CDATA[
+                    集合住宅の光回線では、建物まで光ファイバーを引き込み、その回線を分配して各部屋に配線する必要があります。 回線を分配する際に一番理想的な方式は光配線方式ですが、建物によっては電話線で各部屋に分配します。 電話線で部屋に回線分配する方法にはVDSL方式とG.fast方式があります。 VDSL方式はNTTで一般的ですが回線速度が100Mbpsを下回る場合が多く、あまり回線速度が早いとは言えません。 G.fast方式は1Gbpsを目指して作られた規格です。auひかりのマンション&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <p>集合住宅の光回線では、建物まで光ファイバーを引き込み、その回線を分配して各部屋に配線する必要があります。</p>
+<p>回線を分配する際に一番理想的な方式は光配線方式ですが、建物によっては電話線で各部屋に分配します。</p>
+<p>電話線で部屋に回線分配する方法にはVDSL方式とG.fast方式があります。<br>VDSL方式はNTTで一般的ですが回線速度が100Mbpsを下回る場合が多く、あまり回線速度が早いとは言えません。</p>
+<p>G.fast方式は1Gbpsを目指して作られた規格です。auひかりのマンション タイプGで使用していて上り下りの合計が最大830Mbpsになるようです。</p>
+<figure class="post__image" ><figure class="post__image post__image--center"><img loading="lazy"  src="https://corkborg.github.io/media/posts/22/in_mansion_img_optical_fiber_05-2.webp" alt="auひかりマンション  タイプG（G.fast）" width="310" height="392" sizes="(max-width: 1200px) 100vw, 1200px" srcset="https://corkborg.github.io/media/posts/22/responsive/in_mansion_img_optical_fiber_05-2-xs.webp 300w ,https://corkborg.github.io/media/posts/22/responsive/in_mansion_img_optical_fiber_05-2-sm.webp 480w ,https://corkborg.github.io/media/posts/22/responsive/in_mansion_img_optical_fiber_05-2-md.webp 749w ,https://corkborg.github.io/media/posts/22/responsive/in_mansion_img_optical_fiber_05-2-xl.webp 1200w"></figure>
+<figcaption >auひかり公式より</figcaption>
+</figure>
+<p><br>今回、G.fast方式の回線を契約してみたので実際の使用感等を確認してみました。</p>
+<p><a href="https://www.au.com/internet/mansion/typeG/" title="マンション タイプG：auひかり マンション | au" target="_blank" rel="noopener noreferrer"></a><a href="https://www.au.com/internet/mansion/typeG/" target="_blank" rel="noopener noreferrer">マンション タイプG：auひかり マンション | au</a></p>
+<h2>回線速度</h2>
+<p>実際に回線の速度計測を行いました。</p>
+<p>auひかり タイプGでプロバイダはSo-net。<br>東京都のマンションの７階です。</p>
+<p>回線速度の計測ではおなじみのfast.comのコマンドライン版を使用しました。</p>
+<pre data-pm-slice="1 1 []"><code>$ fast --upload
+    380 Mbps ↓ / 92 Mbps ↑<br><br>$ fast --upload
+    380 Mbps ↓ / 96 Mbps ↑</code></pre>
+<p><strong>ダウンロード速度が380Mbps</strong><br><strong>アップロード速度が90Mbps</strong><br>だいたいこれくらいの速度になりました。</p>
+<p>VDSLに比べると大分良い速度が出ています。<br>ただ、光配線方式に比べると遅いですね。</p>
+<h2>回線の安定感</h2>
+<p>品質の悪い回線では通信内容が通信中に失われてしまう場合があります（パケットロス）。</p>
+<p>パケットロスが発生したかどうかこの回線で使用していた各PCで確認してみたのですが特に問題なさそうです。</p>
+<p>回線の問題に繊細なビデオ通話等も行ったのですが通信上の問題が発生することはなかったです。</p>
+<p>建物の電話線の状態によると思いますが、G.fast自体が不安定な規格ではないことがわかります。</p>
+<h2>まとめ</h2>
+<p>VDSLに比べてG.fast方式はだいぶ良いですね。電話線しか引き込めない物件であれば大分おすすめです。</p>
+<p><span style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);">ただ、G.fast方式も光配線方式に比べると遅いので引き込めるのであれば光ファイバーを引き込む工事をしてもらったほうが良さそうです。</span></p>
+<p><span style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);">私も折をみて戸建て契約で光ファイバーに切り替えようかと思っています。</span></p>
+<p>ちなみに、G.fast方式を日本で提供している事業者は今のところauひかりだけだと思います。</p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>EN-EL15,EN-EL15a,EN-EL15b,EN-EL15cの違い早見表</title>
         <author>
@@ -471,7 +525,7 @@
         </content>
     </entry>
     <entry>
-        <title>画像にタグ付けするWD14 taggerを単体で動かす</title>
+        <title>画像にタグ付けするWD14 taggerをwebui無しで動かす</title>
         <author>
             <name>ミズソバ</name>
         </author>
@@ -479,22 +533,21 @@
         <id>https://corkborg.github.io/wd14-tagger-standalone/</id>
             <category term="生成AI"/>
 
-        <updated>2023-12-28T03:25:07+09:00</updated>
+        <updated>2024-01-01T02:35:17+09:00</updated>
             <summary>
                 <![CDATA[
-                    stable-diffusion-webui-wd14-taggerというものはSmilingWolfという方が作ったモデルを使ったwebui向けのプラグインで、使うとイラストの中に書かれた要素を分析して出力することができます。 イラストの要素分析は生成AI向けにLoraを作る時などいろんな用途で使える便利な機能でwebui抜きに動作させたかったので単体で動かせるものを用意しました。 作ったコードは下記です。Python3があれば動きます。 https://github.com/corkborg/wd14-tagger-standalone webui-wd14-taggerの方から動作に必要なコードだけを抜き出して作りました。&hellip;
+                    stable-diffusion-webui-wd14-taggerはStable DiffusionでLoraを作成する際の定番プラグインで、イラストの中に書かれた要素を分析してタグとして出力することができます。 このプラグインはStable Diffusion webui向けのものなので使用するにはwebuiを起動する必要があります。&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
-                <p><a href="https://github.com/picobyte/stable-diffusion-webui-wd14-tagger" title="https://github.com/picobyte/stable-diffusion-webui-wd14-tagger" target="_blank" rel="noopener noreferrer">stable-diffusion-webui-wd14-tagger</a>というものはSmilingWolfという方が作ったモデルを使ったwebui向けのプラグインで、使うとイラストの中に書かれた要素を分析して出力することができます。</p>
-<p>イラストの要素分析は生成AI向けにLoraを作る時などいろんな用途で使える便利な機能でwebui抜きに動作させたかったので単体で動かせるものを用意しました。</p>
+                <p><a href="https://github.com/picobyte/stable-diffusion-webui-wd14-tagger" title="https://github.com/picobyte/stable-diffusion-webui-wd14-tagger" target="_blank" rel="noopener noreferrer">stable-diffusion-webui-wd14-tagger</a>はStable DiffusionでLoraを作成する際の定番プラグインで、イラストの中に書かれた要素を分析してタグとして出力することができます。</p>
+<p>このプラグインはStable Diffusion webui向けのものなので使用するにはwebuiを起動する必要があります。<br>ただ、タグをつける作業ではwebuiがなくても問題ない場合も多いので単体で動かすコマンドを用意しました。</p>
 <h2>コード</h2>
 <p>作ったコードは下記です。Python3があれば動きます。<br><a href="https://github.com/corkborg/wd14-tagger-standalone" target="_blank" rel="noopener noreferrer">https://github.com/corkborg/wd14-tagger-standalone</a></p>
 <p><a href="https://github.com/picobyte/stable-diffusion-webui-wd14-tagger" title="https://github.com/picobyte/stable-diffusion-webui-wd14-tagger" target="_blank" rel="noopener noreferrer"></a>webui-wd14-taggerの方から動作に必要なコードだけを抜き出して作りました。</p>
 <h2>動かし方</h2>
-<p> </p>
-<p>Windowsでの動かし方は下記です（開発時はMacを使っていたのでそっちでも動きます）<br>Python3やgitコマンドが事前にインストールされている必要があります。</p>
+<p>Windowsでの動かし方は下記です。（開発時はMacを使っていたのでそっちでも動きます）<br>Python3やgitコマンドが事前にインストールされている必要があります。</p>
 <pre>git clone <a href="https://github.com/corkborg/wd14-tagger-standalone.git">https://github.com/corkborg/wd14-tagger-standalone.git</a><br>cd wd14-tagger-standalone<br><br><code># 必要なライブラリのインストール</code><br><code>python -m venv venv</code><br><code>venv/Scripts/activate</code><br><code>pip install -r requirements.txt</code><br><br><code># コマンド使用前にはactivateを忘れずに</code><br><code>venv/Scripts/activate </code><br><br><code># ヘルプの確認</code><br><code>python run.py --help</code><br><br><code># シングルファイルの推論</code><br><code>python run.py --file path¥image.jpg</code><br><br><code># ディレクトリ内のファイルを一括推論</code><br><code>python run.py --dir path</code></pre>
 <h2>動作確認</h2>
 <p>こちらのサイトさんからずんだモンさんの画像をダウンロードしました。<br><a href="https://zunko.jp/" target="_blank" rel="noopener noreferrer">https://zunko.jp/</a></p>
@@ -801,18 +854,18 @@ python run.py --file image.jpg --model mld-tresnetd.6-30000</code></pre>
             <category term="Steam"/>
             <category term="Linux"/>
 
-        <updated>2023-11-27T14:47:53+09:00</updated>
+        <updated>2024-01-01T02:44:46+09:00</updated>
             <summary>
                 <![CDATA[
                         <img src="https://corkborg.github.io/media/posts/7/image-6.png" alt="project zomboid" />
-                    Project Zomboidはゾンビがはびこり始めた世界でアイテムを集めたりバリゲードを作ったりするサバイバル2Dゲームです。 このゲームはマルチプレイに対応していてこれが面白いのですが、Linuxなどで専用サーバを立てるのが少々難しいです。 今回はDockerとUbuntuの環境でサーバを立てる方法を紹介します。 今回の記事ではUbuntu&hellip;
+                    Project Zomboidはゾンビがはびこり始めた世界でアイテムを集めたりバリゲードを作ったりするサバイバル2Dゲームです。 このゲームはマルチプレイに対応していてこれが面白いのですが、Linuxなどで専用サーバを立てるのが少々難しいです。 今回は、DockerとUbuntuの環境でサーバを立てる方法を紹介します。 今回の記事ではUbuntu&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
                     <p><img src="https://corkborg.github.io/media/posts/7/image-6.png" class="type:primaryImage" alt="project zomboid" /></p>
                 <p>Project Zomboidはゾンビがはびこり始めた世界でアイテムを集めたりバリゲードを作ったりするサバイバル2Dゲームです。</p>
-<p>このゲームはマルチプレイに対応していてこれが面白いのですが、Linuxなどで専用サーバを立てるのが少々難しいです。<br>今回はDockerとUbuntuの環境でサーバを立てる方法を紹介します。</p>
+<p>このゲームはマルチプレイに対応していてこれが面白いのですが、Linuxなどで専用サーバを立てるのが少々難しいです。<br>今回は、DockerとUbuntuの環境でサーバを立てる方法を紹介します。</p>
 <h2>環境</h2>
 <p>今回の記事ではUbuntu 20.04にDocker CEをインストールした環境で、Dockerコンテナ上にサーバ構築を行いました。<br>Dockerを使用しているのでほかのバージョンのUbuntuやLinuxでも問題なく動くと思います。</p>
 <p>Dockerが入っていない場合は下記を参考にインストールしておいてください。<br><a href="https://docs.docker.com/engine/install/ubuntu/" target="_blank" rel="noopener noreferrer">Docker公式: Install Docker Engine on Ubuntu</a></p>
@@ -825,7 +878,7 @@ python run.py --file image.jpg --model mld-tresnetd.6-30000</code></pre>
 <div>このファイルは、SteamCMD向けの指示コマンドが列挙されたシェルファイルのようなものです。</div>
 <div>380870という番号はProject Zomboidを表すSteam固有のIDです。</div>
 <p>このファイルでは<code>/opt/pzserver</code>というディレクトリにサーバファイルを展開するように指示してます。</p>
-<pre>@ShutdownOnFailedCommand 1<br>@NoPromptForPassword 1<br>force_install_dir /opt/pzserver/<br>login anonymous<br>app_update 380870 validate<br>quit</pre>
+<pre><code>@ShutdownOnFailedCommand 1</code><br><code>@NoPromptForPassword 1</code><br><code>force_install_dir /opt/pzserver/</code><br><code>login anonymous</code><br><code>app_update 380870 validate</code><br><code>quit</code></pre>
 </div>
 <div>SteamCMDの詳細な使い方はValve公式のガイドを<br><a href="https://developer.valvesoftware.com/wiki/SteamCMD">https://developer.valvesoftware.com/wiki/SteamCMD</a></div>
 <div>
@@ -838,11 +891,12 @@ RUN mkdir </span><span class="pun">/</span><span class="pln">opt</span><span cla
 WORKDIR </span><span class="pun">/</span><span class="pln">opt</span><span class="pun">/</span><span class="pln">pzserver
 COPY update_zomboid</span><span class="pun">.</span><span class="pln">txt </span><span class="pun">/</span><span class="pln">opt</span><span class="pun">/</span><span class="pln">update_zomboid</span><span class="pun">.</span><span class="pln">txt
 RUN steamcmd </span><span class="pun">+</span><span class="pln">runscript </span><span class="pun">/</span><span class="pln">opt</span><span class="pun">/</span><span class="pln">update_zomboid</span><span class="pun">.</span><span class="pln">txt
-ENTRYPOINT </span><span class="pun">[</span><span class="str">"/bin/bash"</span> <span class="pun">,</span> <span class="str">"-l"</span><span class="pun">]<br></span></pre>
+ENTRYPOINT </span><span class="pun">[</span><span class="str">"/bin/bash"</span> <span class="pun">,</span> <span class="str">"-l"</span><span class="pun">]</span></pre>
+<p>Dockerfileの書き方は下記を参照してください。<br><a href="https://docs.docker.jp/engine/reference/builder.html" target="_blank" rel="noopener noreferrer">Dockerfile リファレンス - Docker公式</a></p>
 <h4>docker-compose.yaml</h4>
 <p>docker-compose.yamlはサーバをどう動作させるか定義するためのファイルです。</p>
 <p>セーブデータをディレクトリ内のsaveディレクトリに保存するように指定しています。<br>zomboidではUDPの16261と16262ポートを使用するので開放させておきます。</p>
-<pre class="prettyprint lang-yaml prettyprinted"><span class="pln">version</span><span class="pun">:</span> <span class="str">'3'</span><span class="pln">
+<pre class="prettyprint lang-yaml prettyprinted"><code><span class="pln">version</span><span class="pun">:</span> <span class="str">'3'</span><span class="pln">
 services</span><span class="pun">:</span><span class="pln">
     zomboid</span><span class="pun">:</span><span class="pln">
         build</span><span class="pun">:</span> <span class="pun">.</span><span class="pln">
@@ -852,14 +906,15 @@ services</span><span class="pun">:</span><span class="pln">
         ports</span><span class="pun">:</span>
           <span class="pun">-</span> <span class="str">"16261:16261/udp"</span>
           <span class="pun">-</span> <span class="str">"16262:16262/udp"</span><span class="pln">
-        command</span><span class="pun">:</span> <span class="str">/opt/</span><span class="pln">pzserver</span><span class="pun">/</span><span class="pln">start</span><span class="pun">-</span><span class="pln">server</span><span class="pun">.</span><span class="pln">sh</span></pre>
+        command</span><span class="pun">:</span> <span class="str">/opt/</span><span class="pln">pzserver</span><span class="pun">/</span><span class="pln">start</span><span class="pun">-</span><span class="pln">server</span><span class="pun">.</span><span class="pln">sh</span></code></pre>
+<p>docker composeの書き方は下記を参考にしてください。<br><a href="https://docs.docker.jp/compose/toc.html" target="_blank" rel="noopener noreferrer">Docker Compose - Docker公式</a></p>
 <h3>セーブディレクトリの作成</h3>
 <p>ディレクトリ内で下記を実行してセーブデータを入れるディレクトリを作ります。</p>
-<pre>mkdir save</pre>
+<pre><code>mkdir save</code></pre>
 <h2> テスト起動</h2>
 <p>一回テスト起動します。</p>
-<pre class="prettyprint prettyprinted"><span class="pln">docker</span><span class="pun">-</span><span class="pln">compose build
-docker</span><span class="pun">-</span><span class="pln">compose up</span></pre>
+<pre class="prettyprint prettyprinted"><code><span class="pln">docker</span><span class="pun">-</span><span class="pln">compose build
+docker</span><span class="pun">-</span><span class="pln">compose up</span></code></pre>
 <div>
 <div>こんな感じのログが出力されたら成功です。</div>
 <div>
@@ -875,16 +930,13 @@ zomboid    </span><span class="pun">|</span><span class="pln"> LOG  </span><s
 <div>セーブデータ内の下記ファイルを編集してサーバ設定を作ります。</div>
 <div>手順通り作業しているのであれば下記のパスにあるはずです。</div>
 <pre>save/Server/servertest.ini</pre>
-<div> </div>
-<div>（なんか色々な設定が必要だった気がするのですが覚えていません。）</div>
-<div> </div>
 <h2>ポート開放</h2>
 <p>UDPの16261と16262ポートがインターネット側からアクセスできるようにファイアウォールやルータの設定を変更します。</p>
 <h2>サーバ起動</h2>
 <div>サーバを起動します。</div>
 <div>Project Zomboidを起動してアクセスできることを確認しましょう。</div>
 <div>
-<pre class="prettyprint prettyprinted"><span class="pln">docker　</span><span class="pln">compose up </span><span class="pun">-</span><span class="pln">d</span></pre>
+<pre class="prettyprint prettyprinted"><code><span class="pln">docker </span><span class="pln">compose up </span><span class="pun">-</span><span class="pln">d</span></code></pre>
 </div>
 <h2> まとめ</h2>
 <p> steamcmdコマンド使ってproject zomboidのマルチプレイヤーサーバを立てることができました。</p>
@@ -939,41 +991,6 @@ zomboid    </span><span class="pun">|</span><span class="pln"> LOG  </span><s
 <div>筐体が結構暑くなるのでファンの無いAirで長時間遊ぶとどうなるかは未知数です。</div>
 <div> </div>
 <div>上位モデルのMacであればもっと良い画質で遊べるかもしれないです。</div>
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>Steam版のFactorioがApple siliconに対応しているか検証してみた</title>
-        <author>
-            <name>ミズソバ</name>
-        </author>
-        <link href="https://corkborg.github.io/steam-version-factorio-support-applesilicon/"/>
-        <id>https://corkborg.github.io/steam-version-factorio-support-applesilicon/</id>
-        <media:content url="https://corkborg.github.io/media/posts/5/image.png" medium="image" />
-            <category term="ゲーム"/>
-            <category term="Steam"/>
-            <category term="Factorio"/>
-            <category term="AppleSilicon"/>
-
-        <updated>2023-12-10T19:42:04+09:00</updated>
-            <summary>
-                <![CDATA[
-                        <img src="https://corkborg.github.io/media/posts/5/image.png" alt="Steamでのfactorioのシステム要件" />
-                    以前の記事で公式版のfactorioがApple Siliconに対応していることを確認した。 Steam版のFactorioがApple siliconに対応しているか検証してみた 前回の記事ではSteam版FactorioではApple&hellip;
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                    <p><img src="https://corkborg.github.io/media/posts/5/image.png" class="type:primaryImage" alt="Steamでのfactorioのシステム要件" /></p>
-                <p>以前の記事で公式版のfactorioがApple Siliconに対応していることを確認した。</p>
-<p class="post-title entry-title"><a href="https://corkborg.github.io/factorio-support-applesilicon/">Steam版のFactorioがApple siliconに対応しているか検証してみた</a></p>
-<p>前回の記事ではSteam版FactorioではApple Siliconに対応している旨の記載がなかったので避けて検証を行った。今回はSteam版のFactorioについて検証してみたところうまく行ったのでメモ。</p>
-<h2>動作状況</h2>
-<p><img loading="lazy" src="https://blogger.googleusercontent.com/img/a/AVvXsEhwd8ZxytS41RS6w28YclrUpHETRq8fS3f8fimZ4QJDM_UYerpg01iSWr33OuemgjLz6dI-_q3ilvsEvGwIFkHCCsNX3kTMIrz90ItYjPSUfTsmoeD7RjVu1F9dIHcK2wQKQU-oHty2NKBXBU2afauEplpdrQr2EZfjdubZxkK62WylO6mUR-MTett-1m4" data-is-external-image="true"></p>
-<p><img loading="lazy" src="https://blogger.googleusercontent.com/img/a/AVvXsEhgFexoJznfBrt0p0RLH7ok_rZ0YIBKNN9uK_8hLEZESexFyCZ7bDIyIAXlUeTEYptRM-zmhYUbrceDeaM8qXTEV_wdUyqIagIURiIMlytnQNAJEmdd0RP93GgahkKOiL1OR4Q2TSY8kb2-6RYPSL4vYvESaJiiUNMeLTyBa8cyyui4T_popFIHFAsn-uk" data-is-external-image="true"></p>
-<div class="separator">アクティビティモニタで確認した所Apple Siliconのネイティブで動いていることがわかった。</div>
-<div class="separator">結論、Steam版でも公式版のFactorioでもApple siliconのネイティブで動作することができる。</div>
-<p> </p>
             ]]>
         </content>
     </entry>
