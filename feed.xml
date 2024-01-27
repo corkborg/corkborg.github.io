@@ -3,7 +3,7 @@
     <title>塩の惑星</title>
     <link href="https://corkborg.github.io/feed.xml" rel="self" />
     <link href="https://corkborg.github.io" />
-    <updated>2024-01-27T14:24:19+09:00</updated>
+    <updated>2024-01-27T14:53:40+09:00</updated>
     <author>
         <name>ミズソバ</name>
     </author>
@@ -16,17 +16,20 @@
         </author>
         <link href="https://corkborg.github.io/au-hikari-gfast-type-review/"/>
         <id>https://corkborg.github.io/au-hikari-gfast-type-review/</id>
+        <media:content url="https://corkborg.github.io/media/posts/22/DSC_0981_01.JPG" medium="image" />
             <category term="レビュー"/>
             <category term="ネット回線"/>
 
-        <updated>2024-01-26T02:18:22+09:00</updated>
+        <updated>2024-01-27T14:53:40+09:00</updated>
             <summary>
                 <![CDATA[
+                        <img src="https://corkborg.github.io/media/posts/22/DSC_0981_01.JPG" alt="auひかりマンション  タイプG（G.fast）" />
                     集合住宅の光回線では、建物まで光ファイバーを引き込み、その回線を分配して各部屋に配線する必要があります。 回線を分配する際に一番理想的な方式は光配線方式ですが、建物によっては電話線で各部屋に分配します。 電話線で部屋に回線分配する方法にはVDSL方式とG.fast方式があります。 VDSL方式はNTTで一般的ですが回線速度が100Mbpsを下回る場合が多く、あまり回線速度が早いとは言えません。 G.fast方式は1Gbpsを目指して作られた規格です。auひかりのマンション&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
+                    <p><img src="https://corkborg.github.io/media/posts/22/DSC_0981_01.JPG" class="type:primaryImage" alt="auひかりマンション  タイプG（G.fast）" /></p>
                 <p>集合住宅の光回線では、建物まで光ファイバーを引き込み、その回線を分配して各部屋に配線する必要があります。</p>
 <p>回線を分配する際に一番理想的な方式は光配線方式ですが、建物によっては電話線で各部屋に分配します。</p>
 <p>電話線で部屋に回線分配する方法にはVDSL方式とG.fast方式があります。<br>VDSL方式はNTTで一般的ですが回線速度が100Mbpsを下回る場合が多く、あまり回線速度が早いとは言えません。</p>
@@ -44,9 +47,10 @@
     380 Mbps ↓ / 92 Mbps ↑<br><br>$ fast --upload
     380 Mbps ↓ / 96 Mbps ↑</code></pre>
 <p><strong>ダウンロード速度が380Mbps</strong><br><strong>アップロード速度が90Mbps</strong><br>だいたいこれくらいの速度になりました。</p>
-<p>VDSLに比べると大分良い速度が出ています。<br>ただ、光配線方式に比べると遅いですね。</p>
+<p>ダウンロード速度はVDSLに比べると大分良い速度が出ています。<br>ただ、アップロード速度は同じ程度ですね。</p>
+<p>カタログスペックに比べると数百Mbps落ちるダウンロード速度ですがG.fastは電話線の長さに応じて伝送速度が落ちるので、マンションのMDF室（分配する所）からの距離が関係しているのか思います。</p>
 <h2>回線の安定感</h2>
-<p>品質の悪い回線では通信内容が通信中に失われてしまう場合があります（パケットロス）。</p>
+<p>品質の悪い回線では通信内容が通信中に失われてしまう場合があります（パケットロスと言います）。</p>
 <p>パケットロスが発生したかどうかこの回線で使用していた各PCで確認してみたのですが特に問題なさそうです。</p>
 <p>回線の問題に繊細なビデオ通話等も行ったのですが通信上の問題が発生することはなかったです。</p>
 <p>建物の電話線の状態によると思いますが、G.fast自体が不安定な規格ではないことがわかります。</p>
@@ -54,7 +58,7 @@
 <p>VDSLに比べてG.fast方式はだいぶ良いですね。電話線しか引き込めない物件であれば大分おすすめです。</p>
 <p><span style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);">ただ、G.fast方式も光配線方式に比べると遅いので引き込めるのであれば光ファイバーを引き込む工事をしてもらったほうが良さそうです。</span></p>
 <p><span style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);">私も折をみて戸建て契約で光ファイバーに切り替えようかと思っています。</span></p>
-<p>ちなみに、G.fast方式を日本で提供している事業者は今のところauひかりだけだと思います。</p>
+<p>ちなみに、一般家庭向けにG.fast方式を日本で提供している事業者は今のところauひかりだけだと思います。</p>
 <p> </p>
 <p> </p>
 <p> </p>
