@@ -3,7 +3,7 @@
     <title>塩の惑星</title>
     <link href="https://corkborg.github.io/feed.xml" rel="self" />
     <link href="https://corkborg.github.io" />
-    <updated>2024-01-26T02:18:22+09:00</updated>
+    <updated>2024-01-27T14:24:19+09:00</updated>
     <author>
         <name>ミズソバ</name>
     </author>
@@ -73,7 +73,7 @@
         <media:content url="https://corkborg.github.io/media/posts/20/DSC_0930.JPG" medium="image" />
             <category term="カメラ"/>
 
-        <updated>2023-12-10T19:28:35+09:00</updated>
+        <updated>2024-01-27T14:24:19+09:00</updated>
             <summary>
                 <![CDATA[
                         <img src="https://corkborg.github.io/media/posts/20/DSC_0930.JPG" alt="EN-EL15b" />
@@ -121,10 +121,14 @@
 <h2>旅行の時、本体内充電が便利</h2>
 <p>旅行の時はなるべく持ち物を少なくしたいと思います。<br>EN-EL15bとEN-EL15cはカメラ本体に給電することでバッテリーを充電することができるので持ち物を少なくすることができます。</p>
 <p>特にZシリーズはUSB-Cで充電することができるので、携帯電話やPCの充電器があれば大丈夫です（45W PD以上の能力がある充電器が望ましい）。</p>
-<h2>ミラーレスは電池の消費が激しい</h2>
+<h2>ミラーレスカメラは電池の消費が激しい</h2>
 <p>一眼レフに比べると一眼ミラーレスは電池の消費が激しいです。</p>
 <p>私は、Nikon Z 6を使用しているのですが、一日中撮影しているとバッテリー一つでは全然持ちません。</p>
 <p>そのため、一眼ミラーレスでバッテリー購入を検討している方はなるべく容量の大きいEN-EL15cを購入することをおすすめします。</p>
+<h2>参考</h2>
+<p>Nikon公式サイトにはそれぞれのバッテリー容量が書かれていないので、実際のバッテリーに記載されているスペックの写真を掲載します。<br>バッテリー容量がわかると思います。</p>
+<p>※EN-EL15aだけ持っていないので掲載していません</p>
+<figure class="post__image post__image--center"><img loading="lazy"  src="https://corkborg.github.io/media/posts/20/PXL_20240127_051629149.MP.jpg" alt="EN-EL15, EN-EL15b, EN-EL15cのバッテリー容量などの詳細スペック" width="326" height="579" sizes="(max-width: 1200px) 100vw, 1200px" srcset="https://corkborg.github.io/media/posts/20/responsive/PXL_20240127_051629149.MP-xs.jpg 300w ,https://corkborg.github.io/media/posts/20/responsive/PXL_20240127_051629149.MP-sm.jpg 480w ,https://corkborg.github.io/media/posts/20/responsive/PXL_20240127_051629149.MP-md.jpg 749w ,https://corkborg.github.io/media/posts/20/responsive/PXL_20240127_051629149.MP-xl.jpg 1200w"></figure>
 <p> </p>
             ]]>
         </content>
@@ -271,7 +275,7 @@
             <category term="日本語入力"/>
             <category term="レビュー"/>
 
-        <updated>2023-11-27T14:47:13+09:00</updated>
+        <updated>2024-01-26T02:30:16+09:00</updated>
             <summary>
                 <![CDATA[
                         <img src="https://corkborg.github.io/media/posts/17/atok-2.jpg" alt="ATOK passport logo" />
