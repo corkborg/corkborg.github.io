@@ -3,7 +3,7 @@
     <title>塩の惑星</title>
     <link href="https://corkborg.github.io/feed.xml" rel="self" />
     <link href="https://corkborg.github.io" />
-    <updated>2024-01-27T14:53:40+09:00</updated>
+    <updated>2024-01-27T14:59:11+09:00</updated>
     <author>
         <name>ミズソバ</name>
     </author>
@@ -541,7 +541,7 @@
         <id>https://corkborg.github.io/wd14-tagger-standalone/</id>
             <category term="生成AI"/>
 
-        <updated>2024-01-01T02:35:17+09:00</updated>
+        <updated>2024-01-27T14:59:11+09:00</updated>
             <summary>
                 <![CDATA[
                     stable-diffusion-webui-wd14-taggerはStable DiffusionでLoraを作成する際の定番プラグインで、イラストの中に書かれた要素を分析してタグとして出力することができます。 このプラグインはStable Diffusion webui向けのものなので使用するにはwebuiを起動する必要があります。&hellip;
@@ -592,7 +592,7 @@ python run.py --file image.jpg --model mld-tresnetd.6-30000</code></pre>
 <pre>python run.py --file image.jpg --model mld-caformer.dec-5-97527 --threshold 0.5<br>python run.py --file image.jpg --model mld-tresnetd.6-30000 --threshold 0.5</pre>
 <p>リポジトリです。<br><a href="https://huggingface.co/kiriyamaX/mld-caformer">kiriyamaX/mld-caformer</a></p>
 <h4>wd14-convnext系</h4>
-<p>SmilingWolfさんが作成したモデルで、CNN系の推論モデルです。<br>SmilingWolfさんのモデルの中では昔から存在する一番標準的な方法です</p>
+<p>SmilingWolfさんが作成したモデルで、CNN系の推論モデルです。<br>画像を認識するモデルの中では昔から存在する一番標準的な手法です</p>
 <h4>wd14-vit系</h4>
 <p>SmilingWolfさんが作成したモデルで、VisionTransformer（Vit）系のモデルです。<br>機械学習の分野ではTransformerはCNNに比べて成果が上がっている手法ですがtaggerではそこまですごい差は無いように見えます。</p>
 <p>マネキンと人間を見分ける精度が良いので個人的によく使っています。</p>

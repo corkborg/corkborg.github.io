@@ -5,6 +5,7 @@
 
 a {
    color: var(--main-text-color);
+   word-break: break-all;
 }
 a:visited {
    color: #585656;
@@ -130,8 +131,14 @@ article {
 }
 
 article.post-only {
-   width: 100vw;
+   /*width: 100vw;*/
    padding: 10px 30px;
+}
+@media screen and (max-width: 700px) {
+   article.post-only {
+      /*width: 100vw;*/
+      padding: 10px 10px;
+   }
 }
 .tags-image {
    height: 350px;
@@ -147,7 +154,7 @@ article.post-only {
 
 article.post-list {
    width: 400px;
-   height: 450px;
+   height: 462px;
    font-size: 14px;
    display: grid;
    grid-template-rows: min-content min-content 1fr auto;
@@ -161,6 +168,10 @@ article.post-list h2 {
 }
 article.post-list figure {
    margin:0;
+}
+
+article.post-list figcaption {
+   display: none;
 }
 
 .article-post-list-image {
