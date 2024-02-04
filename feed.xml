@@ -3,12 +3,65 @@
     <title>塩の惑星</title>
     <link href="https://corkborg.github.io/feed.xml" rel="self" />
     <link href="https://corkborg.github.io" />
-    <updated>2024-01-30T02:03:00+09:00</updated>
+    <updated>2024-02-04T20:39:08+09:00</updated>
     <author>
         <name>ミズソバ</name>
     </author>
     <id>https://corkborg.github.io</id>
 
+    <entry>
+        <title>EdgeRouter X SFPのACアダプターを24Vの物に交換した</title>
+        <author>
+            <name>ミズソバ</name>
+        </author>
+        <link href="https://corkborg.github.io/replacement-ac-adapter-for-edgerouter-x-sfp/"/>
+        <id>https://corkborg.github.io/replacement-ac-adapter-for-edgerouter-x-sfp/</id>
+        <media:content url="https://corkborg.github.io/media/posts/24/sukurinsiyotuto-2024-02-04-20.20.00.png" medium="image" />
+            <category term="ネットワーク"/>
+
+        <updated>2024-02-04T20:39:08+09:00</updated>
+            <summary>
+                <![CDATA[
+                        <img src="https://corkborg.github.io/media/posts/24/sukurinsiyotuto-2024-02-04-20.20.00.png" alt="EdgeRouter X SFP" />
+                    EdgeRouter X SFPを使用しているのですが最近調子が悪いです。 LANケーブルを多数つなげると再起動してしまい。２本しかケーブルをつなげることができません。 ACアダプターが弱っていることが原因だと思うので交換することにしました。&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                    <p><img src="https://corkborg.github.io/media/posts/24/sukurinsiyotuto-2024-02-04-20.20.00.png" class="type:primaryImage" alt="EdgeRouter X SFP" /></p>
+                <p>EdgeRouter X SFPを使用しているのですが最近調子が悪いです。<br>LANケーブルを多数つなげると再起動してしまい。２本しかケーブルをつなげることができません。<br>ACアダプターが弱っていることが原因だと思うので交換することにしました。</p>
+<h2>EdgeRouter X SFPに元々ついてたACアダプタは電圧が低かった</h2>
+<figure class="post__image"><img loading="lazy"  src="https://corkborg.github.io/media/posts/24/PXL_20240204_102932486.MP.jpg" alt="EdgeRouter X SFPに付属していたACアダプタ 12V 1A" width="137" height="243" sizes="(max-width: 1200px) 100vw, 1200px" srcset="https://corkborg.github.io/media/posts/24/responsive/PXL_20240204_102932486.MP-xs.jpg 300w ,https://corkborg.github.io/media/posts/24/responsive/PXL_20240204_102932486.MP-sm.jpg 480w ,https://corkborg.github.io/media/posts/24/responsive/PXL_20240204_102932486.MP-md.jpg 749w ,https://corkborg.github.io/media/posts/24/responsive/PXL_20240204_102932486.MP-xl.jpg 1200w"></figure>
+<p>EdgeRouterに標準で付属しているACアダプタは日本では使えないので、輸入業者経由でEdgeRouterを買った場合適当に日本向けのACアダプタをつけてくれます。</p>
+<p>自分の物には秋月電商のACアダプタが付いてきてました。</p>
+<ul>
+<li>12V 1A MAX: 12W</li>
+</ul>
+<p>EdgeRouter X SFP自体は5Wまでしか使用しないのでこれでも動作しますが、24V 2.5AのACアダプタが本来の標準のACアダプタの性能です。<br>（Passive PoEのために24Vを使用するらしい）</p>
+<p>今回、ACアダプタの交換ついでに24Vのものに変更することにしました。</p>
+<h2>EdgeRouter X SFPのACアダプタの詳細要件</h2>
+<p>誤ったACアダプタを装着すると最悪の場合壊れてしまうので調査しました。</p>
+<ul>
+<li>24V 2.5A（ただ、機械自体は9Vから26Vまで許容可能です）</li>
+<li>ソケットはDCジャックで内径が2.1mm 外径が5mm</li>
+<li><strong style="font-family: var(--editor-font-family); font-size: inherit;">DCジャックは内側が+、外側が−のセンタープラス</strong></li>
+</ul>
+<h4>極性に注意</h4>
+<p>極性を間違えると壊れる可能性が高いので注意しましょう。ACアダプタでは独特の記号で説明されていることが多いです。</p>
+<figure class="post__image"><img loading="lazy"  src="https://corkborg.github.io/media/posts/24/sukurinsiyotuto-2024-02-04-20.37.40.png" alt="" width="198" height="48" sizes="(max-width: 1200px) 100vw, 1200px" srcset="https://corkborg.github.io/media/posts/24/responsive/sukurinsiyotuto-2024-02-04-20.37.40-xs.png 300w ,https://corkborg.github.io/media/posts/24/responsive/sukurinsiyotuto-2024-02-04-20.37.40-sm.png 480w ,https://corkborg.github.io/media/posts/24/responsive/sukurinsiyotuto-2024-02-04-20.37.40-md.png 749w ,https://corkborg.github.io/media/posts/24/responsive/sukurinsiyotuto-2024-02-04-20.37.40-xl.png 1200w"></figure>
+<p>正確な読み方については調べてみてください。<br><a href="https://www.monotaro.com/note/readingseries/testerkiso/0403/" target="_blank" rel="noopener noreferrer">外部サイト: ACアダプターのチェック - モノタロウ</a></p>
+<h4>参考</h4>
+<p>EdgeRouterのDCアダプタの口径はUbiquitiのコミュニティの情報を参照しました。(<a href="https://community.ui.com/questions/EdgeRouter-Lite-Power-Supply-replacement/9a1862ca-f4a0-48c9-a959-517c06250875" target="_blank" rel="noopener noreferrer">EdgeRouter Lite Power Supply replacement</a>)</p>
+<h3>通販で該当するACアダプタを探す</h3>
+<p>24V 2.5Aでソケットの口径と極性が一致するものを探しましょう。</p>
+<p>海渡電子さんが輸入しているMerryKing社のACアダプタを購入しました。<br><a href="https://www.amazon.co.jp/gp/product/B0BSLBCY3B" target="_blank" rel="noopener noreferrer">Kaito Denshi(海渡電子) ACアダプター 24V 2.5A 60W スイッチング 電源 DC 直流 PSE RoHS</a></p>
+<h2>動かしてみる</h2>
+<figure class="post__image"><img loading="lazy"  src="https://corkborg.github.io/media/posts/24/PXL_20240204_105832124.jpg" alt="EdgeRouter X SFPに24V 2.5AのACアダプタを接続" width="265" height="471" sizes="(max-width: 1200px) 100vw, 1200px" srcset="https://corkborg.github.io/media/posts/24/responsive/PXL_20240204_105832124-xs.jpg 300w ,https://corkborg.github.io/media/posts/24/responsive/PXL_20240204_105832124-sm.jpg 480w ,https://corkborg.github.io/media/posts/24/responsive/PXL_20240204_105832124-md.jpg 749w ,https://corkborg.github.io/media/posts/24/responsive/PXL_20240204_105832124-xl.jpg 1200w"></figure>
+<p>しっかり動きました。LANケーブルを多数繋げても落ちたりすることがなくなりました。</p>
+<p>EdgeRouterはACアダプタが弱ってくると不安定になるのでそのような場合は交換しましょう。</p>
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>VDSLよりも早いauひかりタイプG（G.fast）の計測をしてみた</title>
         <author>
@@ -18,9 +71,9 @@
         <id>https://corkborg.github.io/au-hikari-gfast-type-review/</id>
         <media:content url="https://corkborg.github.io/media/posts/22/DSC_0981_01.JPG" medium="image" />
             <category term="レビュー"/>
-            <category term="ネット回線"/>
+            <category term="ネットワーク"/>
 
-        <updated>2024-01-30T02:03:00+09:00</updated>
+        <updated>2024-02-04T20:15:30+09:00</updated>
             <summary>
                 <![CDATA[
                         <img src="https://corkborg.github.io/media/posts/22/DSC_0981_01.JPG" alt="auひかりマンション  タイプG（G.fast）" />
@@ -77,7 +130,7 @@
         <media:content url="https://corkborg.github.io/media/posts/20/DSC_0930.JPG" medium="image" />
             <category term="カメラ"/>
 
-        <updated>2024-01-29T11:35:18+09:00</updated>
+        <updated>2024-02-04T20:18:04+09:00</updated>
             <summary>
                 <![CDATA[
                         <img src="https://corkborg.github.io/media/posts/20/DSC_0930.JPG" alt="EN-EL15b" />
@@ -88,37 +141,37 @@
             <![CDATA[
                     <p><img src="https://corkborg.github.io/media/posts/20/DSC_0930.JPG" class="type:primaryImage" alt="EN-EL15b" /></p>
                 <p>NikonのD810やZ 6など一眼レフ、一眼ミラーレスなどで使用されるバッテリーEN-EL15シリーズ。<br>このバッテリーは現在４種類存在して違いが分かりづらいので購入する人目線で早見表を作りました。</p>
-<table style="border-collapse: collapse; width: 95.4416%;" border="1">
+<table style="border-collapse: collapse; width: 100%; border-color: #000000; border-style: solid;" border="1">
 <tbody>
 <tr>
-<td style="width: 20.9179%;">バッテリー名</td>
-<td style="width: 23.3471%;">カメラ本体内充電</td>
-<td style="width: 17.1392%;">バッテリー容量</td>
-<td style="width: 38.5969%;">備考</td>
+<td style="width: 20.7773%;">バッテリー名</td>
+<td style="width: 23.0194%;">カメラ本体内充電</td>
+<td style="width: 18.3857%;">バッテリー容量</td>
+<td style="width: 37.9671%;">備考</td>
 </tr>
 <tr>
-<td style="width: 20.9179%;"><strong>EN-EL15</strong></td>
-<td style="width: 23.3471%;">未対応</td>
-<td style="width: 17.1392%;">1900mAh</td>
-<td style="width: 38.5969%;">旧製品なので購入しないほうが良い.<br>Z 8では使用することができない.</td>
+<td style="width: 20.7773%;"><strong>EN-EL15</strong></td>
+<td style="width: 23.0194%;">未対応</td>
+<td style="width: 18.3857%;">1900mAh</td>
+<td style="width: 37.9671%;">旧製品なので購入しないほうが良い.<br>Z 8では使用することができない.</td>
 </tr>
 <tr>
-<td style="width: 20.9179%;"><strong>EN-EL15a</strong></td>
-<td style="width: 23.3471%;">未対応</td>
-<td style="width: 17.1392%;">1900mAh</td>
-<td style="width: 38.5969%;">旧製品なので購入しないほうが良い.<br>Z 8では使用することができない.<br>EN-EL15の改良型で、一部一眼レフで電池の減りが抑えられている.</td>
+<td style="width: 20.7773%;"><strong>EN-EL15a</strong></td>
+<td style="width: 23.0194%;">未対応</td>
+<td style="width: 18.3857%;">1900mAh</td>
+<td style="width: 37.9671%;">旧製品なので購入しないほうが良い.<br>Z 8では使用することができない.<br>EN-EL15の改良型で、一部一眼レフで電池の減りが抑えられている.</td>
 </tr>
 <tr>
-<td style="width: 20.9179%;"><strong>EN-EL15b</strong></td>
-<td style="width: 23.3471%;">対応</td>
-<td style="width: 17.1392%;">1900mAh</td>
-<td style="width: 38.5969%;">現行品.</td>
+<td style="width: 20.7773%;"><strong>EN-EL15b</strong></td>
+<td style="width: 23.0194%;">対応</td>
+<td style="width: 18.3857%;">1900mAh</td>
+<td style="width: 37.9671%;">現行品.</td>
 </tr>
 <tr>
-<td style="width: 20.9179%;"><strong>EN-EL15c</strong></td>
-<td style="width: 23.3471%;">対応</td>
-<td style="width: 17.1392%;">2280mAh</td>
-<td style="width: 38.5969%;">現行品.<br>バッテリー容量が増加していて長時間使用できる.<br>一番おすすめ.</td>
+<td style="width: 20.7773%;"><strong>EN-EL15c</strong></td>
+<td style="width: 23.0194%;">対応</td>
+<td style="width: 18.3857%;">2280mAh</td>
+<td style="width: 37.9671%;">現行品.<br>バッテリー容量が増加していて長時間使用できる.<br>一番おすすめ.</td>
 </tr>
 </tbody>
 </table>
@@ -953,52 +1006,6 @@ zomboid    </span><span class="pun">|</span><span class="pln"> LOG  </span><s
 </div>
 </div>
 </div>
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>Arma3はApple Siliconにネイティブ対応している？M1 MacBook Airで試してみた</title>
-        <author>
-            <name>ミズソバ</name>
-        </author>
-        <link href="https://corkborg.github.io/arma3-support-apple-silicon-m1-macbook-air/"/>
-        <id>https://corkborg.github.io/arma3-support-apple-silicon-m1-macbook-air/</id>
-        <media:content url="https://corkborg.github.io/media/posts/6/image2.png" medium="image" />
-            <category term="ゲーム"/>
-            <category term="Steam"/>
-            <category term="Mac"/>
-            <category term="AppleSilicon"/>
-
-        <updated>2023-10-22T01:10:59+09:00</updated>
-            <summary>
-                <![CDATA[
-                        <img src="https://corkborg.github.io/media/posts/6/image2.png" alt="" />
-                    Arma3というのは軍にシミュレータなどを卸している会社が作っている非常に硬派でリアルなFPSです。 Steamで見る感じArma3はMacに対応しているようです。システム要件を見てみると驚くことにApple Siliconに対応しているという記述があります。 M1 MacBook&hellip;
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                    <p><img src="https://corkborg.github.io/media/posts/6/image2.png" class="type:primaryImage" alt="" /></p>
-                <p>Arma3というのは軍にシミュレータなどを卸している会社が作っている非常に硬派でリアルなFPSです。<br>Steamで見る感じArma3はMacに対応しているようです。システム要件を見てみると驚くことにApple Siliconに対応しているという記述があります。</p>
-<p><img loading="lazy" src="https://blogger.googleusercontent.com/img/a/AVvXsEifRZZObgQK2ZOp_G-o92P-R7max4h8ctVpa6lGZAStf29yKP4BFbjGm5JHvhA3vJgqWr_Je3l4AVNwxjbIt0sjKrQpkaxZ2N5ufJzfZvPVixNKO9pG_K5znVH0rpSjUcCbnHoTacwU1Jcr33xQc6QydTLL9r8VlD3tq7mrBOCXI82oicfL9BdGMNipuz8" data-is-external-image="true"></p>
-<p>M1 MacBook AirでArma3を遊ぶ気はないものの一応インストールして動くか検証してみることにしました。</p>
-<h2>インストール</h2>
-<div>Arma3をインストールするには50GB程度の空き容量が必要。</div>
-<div>私の場合256GBのMacなので少し大きめに感じる。</div>
-<h3>実際に動かしてみた結果</h3>
-<p><img src="https://blogger.googleusercontent.com/img/a/AVvXsEhob6z9J1qVu68tmlvz_QzW2X17ngYxzFSjxRhpCYwdF2nB7QQDKd49UTf8gZeCNtwTT4yc4AV6hpMcsrmcmMwJPrPajiQG-CqQdDN50aocWd3OJQdXXPHBlktOVRdHPUZuwixeSG7P_djcfjBk3xwedfkjWdXFT6jDUDqHD--mMTj4G4IdFfhWqqVomHI" data-is-external-image="true"><br>起動時に試験的なApple siliconのネイティブ版で起動するかどうか聞かれるので、ネイティブ版で起動します。<img loading="lazy" src="https://blogger.googleusercontent.com/img/a/AVvXsEgw5ZWuHqBRcQSacRJrzCbdTOz2jeXUGfgLamkjLb98tPw2P0W0WQeJ20zWxH4LEB5K5Lcff1oLPRLqPy-STFj8AVHvPeu7jj39vG5-uwbsyGNgqomGOyCM7IsaRfjChk97lcoWcyX-TwzcOQu5BmS8S1knwDqXHnzK421Ii4jIlD-PGrPDYG002J_4xRI" data-is-external-image="true"><br>ゲームが起動しました。<br><img loading="lazy" src="https://blogger.googleusercontent.com/img/a/AVvXsEjMuv9N2LyueOBaPD6qInpr9n1sCy2jx2KxLeo9k31iTTuTP_Q2E6jMrWfmZdZf5Gl0Hcxqam2tTxeW2TN7Qcve1z0JjR8J1t-jMpz9AKbIiAbXK0hy_sD-EoP-bWhVLyhV9u-AANk95R9Eq5nDmt-RyXcJ7gwHYXcuTcBsvGQTGM9RYVg2N9Iopxh2itU" data-is-external-image="true"><br>Apple siliconのネイティブで動いている事を確認しました。</p>
-<p>カクツキはないので意外と遊べそうな感触でした。ただ、画質があまり良くないです。Arma2に毛が生えたくらいの画質です。</p>
-<p>以下、ゲームプレイのスクリーンショットです。遠目で見るときれいですが近くで見るとガビガビですね。</p>
-<div class="gallery-wrapper"><div class="gallery"  data-is-empty="false" data-translation="Add images" data-columns="3">
-<figure class="gallery__item"><a href="https://corkborg.github.io/media/posts/6/gallery/image-4.png" data-size="1600x810"><img loading="lazy" src="https://corkborg.github.io/media/posts/6/gallery/image-4-thumbnail.png" alt="" width="720" height="365"></a></figure>
-<figure class="gallery__item"><a href="https://corkborg.github.io/media/posts/6/gallery/image-3.png" data-size="1600x997"><img loading="lazy" src="https://corkborg.github.io/media/posts/6/gallery/image-3-thumbnail.png" alt="" width="720" height="449"></a></figure>
-<figure class="gallery__item"><a href="https://corkborg.github.io/media/posts/6/gallery/image-5.png" data-size="1600x993"><img loading="lazy" src="https://corkborg.github.io/media/posts/6/gallery/image-5-thumbnail.png" alt="" width="720" height="447"></a></figure>
-</div></div>
-<h2>感想</h2>
-<div>Apple siliconの中でも最弱性能のM1 MacBook Airでもカクつくことがなく普通に遊べそうな感じでした。正直にいうと今回の検証は起動はするもののうまく遊べない結果を予想していたので意外でした。</div>
-<div>筐体が結構暑くなるのでファンの無いAirで長時間遊ぶとどうなるかは未知数です。</div>
-<div> </div>
-<div>上位モデルのMacであればもっと良い画質で遊べるかもしれないです。</div>
             ]]>
         </content>
     </entry>
