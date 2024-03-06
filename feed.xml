@@ -3,7 +3,7 @@
     <title>塩の惑星</title>
     <link href="https://corkborg.github.io/feed.xml" rel="self" />
     <link href="https://corkborg.github.io" />
-    <updated>2024-02-28T23:22:00+09:00</updated>
+    <updated>2024-03-06T23:01:50+09:00</updated>
     <author>
         <name>ミズソバ</name>
     </author>
@@ -145,7 +145,7 @@
         <media:content url="https://corkborg.github.io/media/posts/24/sukurinsiyotuto-2024-02-04-20.20.00.png" medium="image" />
             <category term="ネットワーク"/>
 
-        <updated>2024-02-17T14:26:56+09:00</updated>
+        <updated>2024-02-28T12:31:20+09:00</updated>
             <summary>
                 <![CDATA[
                         <img src="https://corkborg.github.io/media/posts/24/sukurinsiyotuto-2024-02-04-20.20.00.png" alt="EdgeRouter X SFP" />
@@ -163,7 +163,7 @@
 <ul>
 <li>12V 1A MAX: 12W</li>
 </ul>
-<p>EdgeRouter X SFP自体は5Wまでしか使用しないのでこれでも動作しますが、24V 2.5AのACアダプタが本来の標準のACアダプタの性能です。<br>（Passive PoEのために24Vを使用するらしい）</p>
+<p>EdgeRouter X SFP本体は5Wまでしか使用しないのでこれでも動作しますが、24V 2.5AのACアダプタが本来の標準のACアダプタの性能です。<br>（Passive PoEのために24Vを使用するらしい）</p>
 <p>今回、ACアダプタの交換ついでに24Vのものに変更することにしました。</p>
 <h2>EdgeRouter X SFPのACアダプタの詳細要件</h2>
 <p>誤ったACアダプタを装着すると最悪の場合壊れてしまうので調査しました。</p>
@@ -317,7 +317,7 @@
         </content>
     </entry>
     <entry>
-        <title>ゲーミングPCは電気代が高い！電気代が安いApple Silicon Macのゲームでの省電力を検証</title>
+        <title>ゲーミングPCは電気代が高い！電気代が安いApple Silicon Macのゲームでの省電力能力を検証</title>
         <author>
             <name>ミズソバ</name>
         </author>
@@ -328,7 +328,7 @@
             <category term="Mac"/>
             <category term="AppleSilicon"/>
 
-        <updated>2024-01-29T01:23:00+09:00</updated>
+        <updated>2024-02-28T00:49:21+09:00</updated>
             <summary>
                 <![CDATA[
                         <img src="https://corkborg.github.io/media/posts/19/DSC_0581_02.JPG" alt="電気代が安いM1 MacBook Pro" />
@@ -458,30 +458,36 @@
             <category term="日本語入力"/>
             <category term="レビュー"/>
 
-        <updated>2024-01-29T01:18:22+09:00</updated>
+        <updated>2024-03-06T23:01:50+09:00</updated>
             <summary>
                 <![CDATA[
                         <img src="https://corkborg.github.io/media/posts/17/atok-2.jpg" alt="ATOK passport logo" />
-                    Google日本語入力は専門用語、ゲーム用語、インターネット用語などを変換することに高い能力を持つ無料のIME（日本語入力ツール）です。 Google検索で得た情報などを使って収録単語を増やしていて流行り言葉が反映される速度が非常に速い特徴があります。 ただ、日本語を正しく変換する能力は若干低く、送り仮名などが上手く変換できない場合があること。堅い文章を書く際に変換候補がフランク過ぎることが気になっていました。 Google日本語入力並みの圧倒的な単語収録数があって、日本語を正しく変換できるIMEはないかと思い調べるとATOKという有料のIMEがヒットしました。 ATOKは日本語入力の精度が高い特徴があり、ATOK&hellip;
+                    Google検索で得た情報などを使って収録単語を増やしていて流行り言葉が反映される速度が非常に速い特徴があります。 ただ、日本語を正しく変換する能力は若干低く、送り仮名などが上手く変換できない場合があること。堅い文章を書く際に変換候補がフランク過ぎることが気になっていました。 Google日本語入力並みの圧倒的な単語収録数があり、日本語を正しく変換できるIMEはないかと思い調べるとATOKという有料のIMEがヒットしました。 ATOKは日本語入力の精度が高い特徴があり、ATOK Expressというクラウド機能で大量の用語を日々IMEに反映してくれるようです。&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
                     <p><img src="https://corkborg.github.io/media/posts/17/atok-2.jpg" class="type:primaryImage" alt="ATOK passport logo" /></p>
-                <header>
-<div><span style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);">Google日本語入力は専門用語、ゲーム用語、インターネット用語などを変換することに高い能力を持つ無料のIME（日本語入力ツール）です。<br>Google検索で得た情報などを使って収録単語を増やしていて流行り言葉が反映される速度が非常に速い特徴があります。</span></div>
+                <p> </p>
+<div><span style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);">Google日本語入力は専門用語、ゲーム用語、インターネット用語などを変換することに高い能力を持つ無料のIME（日本語入力ツール）です。</span></div>
+<p><span style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);">Google検索で得た情報などを使って収録単語を増やしていて流行り言葉が反映される速度が非常に速い特徴があります。</span></p>
 <p><span style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);">ただ、日本語を正しく変換する能力は若干低く、送り仮名などが上手く変換できない場合があること。堅い文章を書く際に変換候補がフランク過ぎることが気になっていました。</span></p>
-<p>Google日本語入力並みの圧倒的な単語収録数があって、日本語を正しく変換できるIMEはないかと思い<span style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);">調べるとATOKという</span><strong style="font-family: var(--editor-font-family); font-size: inherit;">有料の</strong><span style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);">IMEがヒットしました。<br>ATOKは日本語入力の精度が高い特徴があり、ATOK Expressというクラウド機能で大量の用語を日々IMEに反映してくれるようです。<br></span><span style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);">早速、ATOKを購入してクラウド機能でGoogle日本語入力に対抗できるか調査を行いました。</span></p>
-</header>
+<p>Google日本語入力並みの圧倒的な単語収録数があり、日本語を正しく変換できるIMEはないかと思い<span style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);">調べるとATOKという</span><strong style="font-family: var(--editor-font-family); font-size: inherit;">有料の</strong><span style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);">IMEがヒットしました。</span></p>
+<p> </p>
+<p><span style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);">ATOKは日本語入力の精度が高い特徴があり、ATOK Expressというクラウド機能で大量の用語を日々IMEに反映してくれるようです。</span></p>
+<p><span style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);">早速、ATOKを購入してクラウド機能でGoogle日本語入力の単語収録数に対抗できるか調査を行いました。</span></p>
 <div id="post-entry">
-<p>結論を言うと、残念ながら多くの分野でGoogle日本語入力が良い結果になりました。<br>一応、ATOKが強い分野もあるようでした。</p>
 <h2 id="atoktoha">ATOKとは</h2>
 <figure class="post__image"><img loading="lazy"  src="https://corkborg.github.io/media/posts/17/ATOK_logo.jpg" alt="" width="139" height="139" sizes="(max-width: 1200px) 100vw, 1200px" srcset="https://corkborg.github.io/media/posts/17/responsive/ATOK_logo-xs.jpg 300w ,https://corkborg.github.io/media/posts/17/responsive/ATOK_logo-sm.jpg 480w ,https://corkborg.github.io/media/posts/17/responsive/ATOK_logo-md.jpg 749w ,https://corkborg.github.io/media/posts/17/responsive/ATOK_logo-xl.jpg 1200w"></figure>
-<p>今どき、ATOKの名前を知っている人はあまりいないと思います。<br>私も詳しく知らない世代なのですが、パーソナルコンピュータの初期の時期から存在する高品質の有料IMEです。</p>
-<p>昔はOSに標準搭載されたIMEが貧弱だったのでATOKのような品質の高いIMEの需要が高かったようです。<br>今の時代はWindows、Macに標準搭載のIMEでもそれなりの精度があります。そのため、ATOKは知る人ぞ知るIMEになってしまいました。</p>
-<p>ただ、ATOKは日本語入力に特化した日本企業が作っているソフトなため日本語入力の精度は現在でも非常に高いです。<br>そのため、日本語の表現に非常にこだわる方は今でもATOKを使うのがおすすめです。</p>
+<p>今どき、ATOKの名前を知っている人はあまりいないと思います。</p>
+<p>私も詳しく知らない世代なのですが、パーソナルコンピュータの初期の時期から存在する高品質の有料IMEです。</p>
+<p>昔はOSに標準搭載されたIMEが貧弱だったので、ATOKのような品質の高いIMEの需要が高かったようです。</p>
+<p>今の時代はWindows、Macに標準搭載されたIMEでもそれなりの変換精度があります。そのため、ATOKは知る人ぞ知るIMEになってしまいました。</p>
+<p>ただ、ATOKは日本語入力に特化した日本企業が作っているソフトなため日本語入力の精度は現在でも非常に高いです。</p>
+<p>そのため、日本語の表現に非常にこだわる方は今でもATOKを使うのがおすすめです。</p>
 <h2 id="atoknoliao-jin">ATOKの料金</h2>
-<p>ATOKはサブスクリプションモデルになっています。<br>プランには月額600円のプロフェッショナルと、月額300円のベーシックコースがあります。どちらも10台までATOKをインストールできます。</p>
+<p>ATOKはサブスクリプションモデルになっています。</p>
+<p>プランには月額600円のプロフェッショナルと、月額300円のベーシックコースがあります。どちらも10台までATOKをインストールできます。</p>
 <p>プロフェッショナルの方では下記のような機能がベーシックにプラスして使えます。</p>
 <ul>
 <li>iOS版のATOK</li>
@@ -489,10 +495,11 @@
 <li>IMEの辞書機能（多分変換中に定義を教えてくれるやつ）</li>
 <li>辞書の見出し語を変換対象にできる（厳しい熟語とか）</li>
 </ul>
-<p>辞書機能は広辞苑や大辞林などの辞書として使えるようです。<br>出版業界などで本格的な日本語を書くような人でなければどの機能も必要ないような気がするので300円のベーシックコースがおすすめです。</p>
+<p>辞書機能は広辞苑や大辞林などの辞書として使えるようです。ただ、出版業界などで本格的な日本語を書くような人でなければどの機能も必要ないような気がするので<strong>300円のベーシックコースがおすすめです</strong>。</p>
 <p>300 * 12ヶ月 = 3600円<br>毎日使うものだと考えると大した金額ではないですね。</p>
 <h2 id="liu-xing-riyan-xie-wobian-huan-suru">流行り言葉を変換する</h2>
-<p>Google日本語入力とATOKの比較を行います。一部Mac標準のIMEも比較しています。それぞれ学習機能を無効化しました。</p>
+<p>Google日本語入力とATOKの比較を行います。一部Mac標準のIMEも比較しています。</p>
+<p>それぞれのIMEで変換学習機能を無効化して検証を行っています。</p>
 <p>アニメ、ソシャゲ、野球、アイドル、社会問題、工学、哲学などの分野で調査しました。（2023年11月）</p>
 <h3 id="shui-xing-nomo-nu">水星の魔女</h3>
 <p>2022年にやっていたアニメのタイトルです。</p>
@@ -522,7 +529,7 @@
 </table>
 <p>水星の魔女以外にもいろいろなアニメや登場人物などを変換してみましたが、Google日本語入力の方が強い傾向がありました。</p>
 <h3 id="wu-qi-mi-tu-mukimeito">無期迷途 （むきめいと）</h3>
-<p>ちょっと知られている難読ソシャゲタイトルですね。</p>
+<p>難読ソシャゲタイトルですね。</p>
 <table style="border-collapse: collapse; width: 100%;" border="1">
 <tbody>
 <tr>
@@ -575,7 +582,7 @@
 </tr>
 </tbody>
 </table>
-<p>野球などスポーツ選手関連はATOKの方が強い傾向があるようです。</p>
+<p>他にも検証したのですが、スポーツ選手関連はATOKの方が強い傾向があるようです。</p>
 <h3>井上和（いのうえなぎ）</h3>
 </div>
 <p>2023年に人気のあるアイドルである乃木坂４６から読みづらそうなアイドルを選びました。</p>
@@ -598,7 +605,8 @@
 </tr>
 </tbody>
 </table>
-<p>こちらでもATOKの勝利です。<br>ちなみに同じアイドルグループの池田瑛紗という名前はどちらのIMEも変換できませんでした。</p>
+<p>こちらでもATOKの勝利です。</p>
+<p>ちなみに同じアイドルグループの池田瑛紗という名前はどちらのIMEも変換できませんでした。</p>
 <p>ATOKが得意なもの。Google日本語変換が得意なものが見えてきた気がします。</p>
 <h3>配属ガチャ（はいぞくがちゃ）</h3>
 <p>Wikipediaのインターネットスラングの関連ページからピックアップしました。</p>
@@ -630,9 +638,9 @@
 <p>数理最適化の本、ベイズ統計学の本、利己的な遺伝子、純粋理性批判などの本を開いて適当に見かけた熟語を入れて変換できるか試していったのですが圧倒的にGoogle日本語入力が強いようでした。</p>
 <p>推測するに、Google日本語入力は大学で学ぶような専門用語に強い傾向がありそうです。</p>
 <h2>まとめ</h2>
-<p>アニメ、ソシャゲ、野球、アイドル、社会問題、工学、哲学などの用語を変換する能力の調査のまとめです。</p>
+<p>各種IMEについて調査したまとめです。</p>
 <h3>Mac標準のIME</h3>
-<p>クラウド機能の存在しないMac標準のIMEは単語集録数が少なく、ATOKとGoogle日本語入力に全く歯が立たないようでした。</p>
+<p>Mac標準のIMEはクラウド機能の存在が存在しないので単語集録数が少なく、ATOKとGoogle日本語入力に全く歯が立たないようでした。</p>
 <h3>Google日本語入力</h3>
 <p>ATOKとの比較で下記のような強みが存在します。</p>
 <ul>
@@ -643,11 +651,13 @@
 </ul>
 <h3>ATOK</h3>
 <p>スポーツやアイドルなどの分野ではGoogle日本語入力よりも変換できる単語が多いです。そのため、テレビなどのマスメディアで流行っている単語に強いのではないかと思います。</p>
-<p>これは想像ですが、出版や報道などの業界に特化して作られているのではないかと思います。</p>
-<h3>結論</h3>
+<p>これは想像ですが、ATOKは出版や報道などの業界に特化して作られているのではないかと思います。</p>
+<h3>収録単語数に対する結論</h3>
 <p>総合的に見るとGoogle日本語入力の方が単語を変換する能力が高いようでした。</p>
+<p>（ただ、あくまでも収録単語の話で日本語の入力精度はATOKのほうが高いです）</p>
 <h2>感想</h2>
-<p>私の用途ではGoogle日本語入力の方が快適に文章が書けそうです。<br>振り返ってみると、ATOKでは文章の変換が一発で決まることが少なく息苦しさがあるような気もします。</p>
+<p>私の利用用途ではGoogle日本語入力の方が快適に文章が書けそうです。</p>
+<p>振り返ってみると、ATOKでは文章の変換が一発で決まることが少なく息苦しさがありました。</p>
 <p>変換能力とは関係ないのですが、ATOKは多機能IMEなためか用途がわかりづらいウィンドウがマウスの周りに登場したりして邪魔な点。Windows版のインターフェースがダサいところが気になります。</p>
 <p>せっかく契約したので数ヶ月ほどATOKを使ってみようと思うのですが、最終的にはGoogle日本語入力に戻りそうです。<br><br></p>
             ]]>
