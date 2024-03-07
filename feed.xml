@@ -3,7 +3,7 @@
     <title>塩の惑星</title>
     <link href="https://corkborg.github.io/feed.xml" rel="self" />
     <link href="https://corkborg.github.io" />
-    <updated>2024-03-06T23:01:50+09:00</updated>
+    <updated>2024-03-07T14:06:49+09:00</updated>
     <author>
         <name>ミズソバ</name>
     </author>
@@ -412,7 +412,7 @@
             <category term="Mac"/>
             <category term="AppleSilicon"/>
 
-        <updated>2023-11-26T01:59:02+09:00</updated>
+        <updated>2024-03-07T14:06:49+09:00</updated>
             <summary>
                 <![CDATA[
                         <img src="https://corkborg.github.io/media/posts/18/sukurinsiyotuto-2023-11-20-13.24.24.png" alt="リバース：1999" />
@@ -428,7 +428,8 @@
 <h2>MacにはiOSアプリをインストールする機能がある</h2>
 <figure class="post__image post__image--center"><img loading="lazy"  src="https://corkborg.github.io/media/posts/18/sukurinsiyotuto-2023-11-20-3.04.14.png" alt="Appストア画面 リバース1999検索結果" width="501" height="280" sizes="(max-width: 1200px) 100vw, 1200px" srcset="https://corkborg.github.io/media/posts/18/responsive/sukurinsiyotuto-2023-11-20-3.04.14-xs.png 300w ,https://corkborg.github.io/media/posts/18/responsive/sukurinsiyotuto-2023-11-20-3.04.14-sm.png 480w ,https://corkborg.github.io/media/posts/18/responsive/sukurinsiyotuto-2023-11-20-3.04.14-md.png 749w ,https://corkborg.github.io/media/posts/18/responsive/sukurinsiyotuto-2023-11-20-3.04.14-xl.png 1200w"></figure>
 <p>これはApple Silicon Mac（最近のMac）限定の話です。<br>MacはiOSのアプリをMacにインストールする機能が標準で存在します。<br><a href="https://support.apple.com/ja-jp/guide/app-store/fird2c7092da/mac" target="_blank" rel="noopener noreferrer">Apple公式: Appleシリコンを搭載したMacでiPhoneアプリおよびiPadアプリを使用する</a></p>
-<p>リバース：1999でApp Storeを検索してみたところMacで遊べそうな雰囲気が漂っていたのでインストールしてみました。</p>
+<p>そのため、アプリ会社の方で制限をかけていなければiOSのアプリを遊ぶことができます。</p>
+<p>リバース：1999をApp Storeで検索してみたところMacで遊べそうな雰囲気が漂っていたのでインストールしてみました。</p>
 <figure class="post__image" ><figure class="post__image post__image--center"><img loading="lazy"  src="https://corkborg.github.io/media/posts/18/sukurinsiyotuto-2023-11-20-3.12.35.png" alt="リバース1999 launchpad" width="2006" height="754" sizes="(max-width: 1200px) 100vw, 1200px" srcset="https://corkborg.github.io/media/posts/18/responsive/sukurinsiyotuto-2023-11-20-3.12.35-xs.png 300w ,https://corkborg.github.io/media/posts/18/responsive/sukurinsiyotuto-2023-11-20-3.12.35-sm.png 480w ,https://corkborg.github.io/media/posts/18/responsive/sukurinsiyotuto-2023-11-20-3.12.35-md.png 749w ,https://corkborg.github.io/media/posts/18/responsive/sukurinsiyotuto-2023-11-20-3.12.35-xl.png 1200w"></figure>
 <figcaption >Launchpadのゲームメニューに登録される</figcaption>
 </figure>
@@ -458,11 +459,11 @@
             <category term="日本語入力"/>
             <category term="レビュー"/>
 
-        <updated>2024-03-06T23:01:50+09:00</updated>
+        <updated>2024-03-06T23:05:01+09:00</updated>
             <summary>
                 <![CDATA[
                         <img src="https://corkborg.github.io/media/posts/17/atok-2.jpg" alt="ATOK passport logo" />
-                    Google検索で得た情報などを使って収録単語を増やしていて流行り言葉が反映される速度が非常に速い特徴があります。 ただ、日本語を正しく変換する能力は若干低く、送り仮名などが上手く変換できない場合があること。堅い文章を書く際に変換候補がフランク過ぎることが気になっていました。 Google日本語入力並みの圧倒的な単語収録数があり、日本語を正しく変換できるIMEはないかと思い調べるとATOKという有料のIMEがヒットしました。 ATOKは日本語入力の精度が高い特徴があり、ATOK Expressというクラウド機能で大量の用語を日々IMEに反映してくれるようです。&hellip;
+                    このIMEはGoogle検索などで得た情報を使って収録単語を増やす特徴があり、世間で流行っている用語が反映される速度が非常に速い特徴があります。 ただ、日本語を正しく変換する能力は若干低く、送り仮名などが上手く変換できない場合があること。堅い文章を書く際にフランクな変換が行われることがある所が気になっていました。 Google日本語入力並みの圧倒的な単語収録数があり、日本語を正しく変換できるIMEはないかと思い調べるとATOKという有料のIMEがヒットしました。 ATOKは日本語入力の精度が高い特徴があり、ATOK Expressというクラウド機能で大量の用語を日々IMEに反映してくれるようです。&hellip;
                 ]]>
             </summary>
         <content type="html">
@@ -470,10 +471,9 @@
                     <p><img src="https://corkborg.github.io/media/posts/17/atok-2.jpg" class="type:primaryImage" alt="ATOK passport logo" /></p>
                 <p> </p>
 <div><span style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);">Google日本語入力は専門用語、ゲーム用語、インターネット用語などを変換することに高い能力を持つ無料のIME（日本語入力ツール）です。</span></div>
-<p><span style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);">Google検索で得た情報などを使って収録単語を増やしていて流行り言葉が反映される速度が非常に速い特徴があります。</span></p>
-<p><span style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);">ただ、日本語を正しく変換する能力は若干低く、送り仮名などが上手く変換できない場合があること。堅い文章を書く際に変換候補がフランク過ぎることが気になっていました。</span></p>
-<p>Google日本語入力並みの圧倒的な単語収録数があり、日本語を正しく変換できるIMEはないかと思い<span style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);">調べるとATOKという</span><strong style="font-family: var(--editor-font-family); font-size: inherit;">有料の</strong><span style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);">IMEがヒットしました。</span></p>
-<p> </p>
+<p><span style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);">このIMEはGoogle検索などで得た情報を使って収録単語を増やす特徴があり、世間で流行っている用語が反映される速度が非常に速い特徴があります。</span></p>
+<p><span style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);">ただ、日本語を正しく変換する能力は若干低く、送り仮名などが上手く変換できない場合があること。堅い文章を書く際にフランクな変換が行われることがある所が気になっていました。</span></p>
+<p>Google日本語入力並みの圧倒的な単語収録数があり、日本語を正しく変換できるIMEはないかと思い<span style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);">調べるとATOKという</span><strong><span style="font-family: var(--editor-font-family); font-size: inherit;">有料の</span></strong><span style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);"><strong>IME</strong>がヒットしました。</span></p>
 <p><span style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);">ATOKは日本語入力の精度が高い特徴があり、ATOK Expressというクラウド機能で大量の用語を日々IMEに反映してくれるようです。</span></p>
 <p><span style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);">早速、ATOKを購入してクラウド機能でGoogle日本語入力の単語収録数に対抗できるか調査を行いました。</span></p>
 <div id="post-entry">
