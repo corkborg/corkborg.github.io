@@ -3,12 +3,108 @@
     <title>塩の惑星</title>
     <link href="https://corkborg.github.io/feed.xml" rel="self" />
     <link href="https://corkborg.github.io" />
-    <updated>2024-03-07T14:06:49+09:00</updated>
+    <updated>2024-03-24T17:04:08+09:00</updated>
     <author>
         <name>ミズソバ</name>
     </author>
     <id>https://corkborg.github.io</id>
 
+    <entry>
+        <title>timmのconvnextv2でトレーニング済みモデルを使って画像分析してみる</title>
+        <author>
+            <name>ミズソバ</name>
+        </author>
+        <link href="https://corkborg.github.io/image-recognition-using-timm-convnextv2/"/>
+        <id>https://corkborg.github.io/image-recognition-using-timm-convnextv2/</id>
+        <media:content url="https://corkborg.github.io/media/posts/29/PXL_20231110_105029635.jpg" medium="image" />
+            <category term="画像認識"/>
+
+        <updated>2024-03-24T16:09:18+09:00</updated>
+            <summary>
+                <![CDATA[
+                        <img src="https://corkborg.github.io/media/posts/29/PXL_20231110_105029635.jpg" alt="" />
+                    timmとはPyTorch向けのライブラリで、画像認識系の深層学習のモデルの定義を用意してくれている感じのものになっています。 対応しているサポートしているモデルを見ると2024年現在ではvit, resnet, swin, convnextなどあるようです。&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                    <p><img src="https://corkborg.github.io/media/posts/29/PXL_20231110_105029635.jpg" class="type:primaryImage" alt="" /></p>
+                <p><a href="https://timm.fast.ai/" target="_blank" rel="noopener noreferrer">timm</a>とはPyTorch向けのライブラリで、画像認識系の深層学習のモデルの定義を用意してくれている感じのものになっています。</p>
+<p>対応しているサポートしているモデルを見ると2024年現在ではvit, resnet, swin, convnextなどあるようです。</p>
+<p>このtimmではすでにトレーニング済みのモデルが用意されていてそれを使うことができます。個人的にtimmに対応した学習済みモデルをつかってそれをfine-tuning（微調整）して見たいと思ったので、とりあえずtimmを動かしてみることにしました。</p>
+<h2>ConvNeXt V2</h2>
+<p>今回使っているConvNeXT V2という手法は、昔から存在するCNNという画像認識手法を現代的なTransformerなどに似せることでモデルサイズが小さいものの認識精度が非常に高いようです。</p>
+<p>手法の詳細はこっちに書いてありますが、あまり理解していません。<br><a href="https://arxiv.org/abs/2301.00808">https://arxiv.org/abs/2301.00808</a></p>
+<h2>画像認識をしてみる</h2>
+<p>まずPythonに必要なものをインストールします。</p>
+<pre class="language-bash"><code>pip install torch timm pillow torchvision</code></pre>
+<p>学習済みモデルはImageNet-1kというデータセットを使っているようなので、ラベルの情報が必要です。こちらにラベルをまとめてくれている人がいるのでダウンロードしてlabels.pyという名前に変更します。<br><a href="https://gist.github.com/yrevar/942d3a0ac09ec9e5eb3a" target="_blank" rel="noopener noreferrer">https://gist.github.com/yrevar/942d3a0ac09ec9e5eb3a</a></p>
+<p>適当なPythonソースコードを作成します。</p>
+<pre class="language-python"><code>import sys
+from itertools import zip_longest
+
+import timm
+import torch
+from PIL import Image
+from timm.data import resolve_data_config
+from timm.data.transforms_factory import create_transform
+
+
+# 下記からダウンロードしたラベルをlabels.pyとして保存して使用する
+# https://gist.github.com/yrevar/942d3a0ac09ec9e5eb3a
+from labels import labels
+
+model = timm.create_model('convnextv2_tiny.fcmae', pretrained=True)
+# model = timm.create_model("convnextv2_huge.fcmae_ft_in22k_in1k_512", pretrained=True)
+model.eval()
+
+# モデル向けに画像を変換してくれる関数を作成
+transform = create_transform(**resolve_data_config(model.pretrained_cfg, model=model), is_training=False)
+
+# 変換する
+image = Image.open(sys.argv[1]).convert('RGB')
+image = transform(image).unsqueeze(0)
+
+# 推論
+out = model(image)
+
+probabilities = out.softmax(dim=1)
+
+# 上位５つの推論結果を取得
+top5_probabilities, top5_class_indices = torch.topk(probabilities * 100, k=5)
+
+for c, v in zip_longest(top5_class_indices[0], top5_probabilities[0]):
+    label_id = c.item()  # ラベルのid
+    label_name = labels[label_id]  # ラベルの英名
+    label_probability = v.item()  # 確率
+    print(label_id, label_name, label_probability)</code></pre>
+<p>適当な画像で推論してみます。</p>
+<pre class="language-bash"><code>python predict.py image.jpg</code></pre>
+<p>ImageNet-1kは小さいデータセットなので動物などわかりやすい画像で試してみるのが良さそうです。</p>
+<figure class="post__image post__image--center"><img loading="lazy"  src="https://corkborg.github.io/media/posts/29/sukurinsiyotuto-2024-03-24-16.40.09.png" alt="ImageNet-1K dataset records" width="359" height="206" sizes="(max-width: 1200px) 100vw, 1200px" srcset="https://corkborg.github.io/media/posts/29/responsive/sukurinsiyotuto-2024-03-24-16.40.09-xs.png 300w ,https://corkborg.github.io/media/posts/29/responsive/sukurinsiyotuto-2024-03-24-16.40.09-sm.png 480w ,https://corkborg.github.io/media/posts/29/responsive/sukurinsiyotuto-2024-03-24-16.40.09-md.png 749w ,https://corkborg.github.io/media/posts/29/responsive/sukurinsiyotuto-2024-03-24-16.40.09-xl.png 1200w"></figure>
+<p>ただ、めちゃめちゃな結果が返ってくると思います。試しに使用した</p>
+<div>
+<div>convnextv2_tiny.fcmaeというモデルが非力だからだと思ます。</div>
+<div> </div>
+<div>コメントを解除して大きめで精度の良いモデルを有効化します（2GBくらいあります）。</div>
+<div>
+<pre class="language-bash"><code>model = timm.create_model("convnextv2_huge.fcmae_ft_in22k_in1k_512", pretrained=True)</code></pre>
+</div>
+</div>
+<p>金魚の画像を投入してみた結果です。</p>
+<pre class="language-bash"><code>1 goldfish, Carassius auratus 94.67620086669922
+0 tench, Tinca tinca 0.06656727194786072
+392 rock beauty, Holocanthus tricolor 0.029753919690847397
+393 anemone fish 0.018587201833724976
+580 greenhouse, nursery, glasshouse 0.016277609393000603</code></pre>
+<p>うまく推論できていそうです。（金魚は学名だとCarassius auratusと言うのか…）</p>
+<h2>timmの詳細</h2>
+<p>timmの使い方はここに書いてあります。<br><a href="https://huggingface.co/docs/hub/timm" target="_blank" rel="noopener noreferrer">https://huggingface.co/docs/hub/timm</a></p>
+<p>timmの推論済みConvNeXTモデルの詳細は下記に書いてあります。<br><a href="https://huggingface.co/timm/convnextv2_tiny.fcmae" target="_blank" rel="noopener noreferrer">https://huggingface.co/timm/convnextv2_tiny.fcmae</a></p>
+<p> </p>
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>バイクパークでバイク駐車場の契約を完全リモートで行った話</title>
         <author>
@@ -85,7 +181,7 @@
         <media:content url="https://corkborg.github.io/media/posts/27/DSC_1245.JPG" medium="image" />
             <category term="ゲーム"/>
 
-        <updated>2024-02-28T00:47:27+09:00</updated>
+        <updated>2024-02-17T18:42:55+09:00</updated>
             <summary>
                 <![CDATA[
                         <img src="https://corkborg.github.io/media/posts/27/DSC_1245.JPG" alt="2024年 PS Vita パタポン２のスタート画面" />
@@ -145,7 +241,7 @@
         <media:content url="https://corkborg.github.io/media/posts/24/sukurinsiyotuto-2024-02-04-20.20.00.png" medium="image" />
             <category term="ネットワーク"/>
 
-        <updated>2024-02-28T12:31:20+09:00</updated>
+        <updated>2024-02-04T20:13:35+09:00</updated>
             <summary>
                 <![CDATA[
                         <img src="https://corkborg.github.io/media/posts/24/sukurinsiyotuto-2024-02-04-20.20.00.png" alt="EdgeRouter X SFP" />
@@ -199,7 +295,7 @@
             <category term="レビュー"/>
             <category term="ネットワーク"/>
 
-        <updated>2024-02-04T20:15:30+09:00</updated>
+        <updated>2024-01-26T02:03:01+09:00</updated>
             <summary>
                 <![CDATA[
                         <img src="https://corkborg.github.io/media/posts/22/DSC_0981_01.JPG" alt="auひかりマンション  タイプG（G.fast）" />
@@ -256,7 +352,7 @@
         <media:content url="https://corkborg.github.io/media/posts/20/DSC_0930.JPG" medium="image" />
             <category term="カメラ"/>
 
-        <updated>2024-02-04T20:18:04+09:00</updated>
+        <updated>2023-12-10T19:16:18+09:00</updated>
             <summary>
                 <![CDATA[
                         <img src="https://corkborg.github.io/media/posts/20/DSC_0930.JPG" alt="EN-EL15b" />
@@ -328,7 +424,7 @@
             <category term="Mac"/>
             <category term="AppleSilicon"/>
 
-        <updated>2024-02-28T00:49:21+09:00</updated>
+        <updated>2023-11-25T14:07:43+09:00</updated>
             <summary>
                 <![CDATA[
                         <img src="https://corkborg.github.io/media/posts/19/DSC_0581_02.JPG" alt="電気代が安いM1 MacBook Pro" />
@@ -412,7 +508,7 @@
             <category term="Mac"/>
             <category term="AppleSilicon"/>
 
-        <updated>2024-03-07T14:06:49+09:00</updated>
+        <updated>2023-11-20T03:23:11+09:00</updated>
             <summary>
                 <![CDATA[
                         <img src="https://corkborg.github.io/media/posts/18/sukurinsiyotuto-2023-11-20-13.24.24.png" alt="リバース：1999" />
@@ -430,8 +526,8 @@
 <p>これはApple Silicon Mac（最近のMac）限定の話です。<br>MacはiOSのアプリをMacにインストールする機能が標準で存在します。<br><a href="https://support.apple.com/ja-jp/guide/app-store/fird2c7092da/mac" target="_blank" rel="noopener noreferrer">Apple公式: Appleシリコンを搭載したMacでiPhoneアプリおよびiPadアプリを使用する</a></p>
 <p>そのため、アプリ会社の方で制限をかけていなければiOSのアプリを遊ぶことができます。</p>
 <p>リバース：1999をApp Storeで検索してみたところMacで遊べそうな雰囲気が漂っていたのでインストールしてみました。</p>
-<figure class="post__image" ><figure class="post__image post__image--center"><img loading="lazy"  src="https://corkborg.github.io/media/posts/18/sukurinsiyotuto-2023-11-20-3.12.35.png" alt="リバース1999 launchpad" width="2006" height="754" sizes="(max-width: 1200px) 100vw, 1200px" srcset="https://corkborg.github.io/media/posts/18/responsive/sukurinsiyotuto-2023-11-20-3.12.35-xs.png 300w ,https://corkborg.github.io/media/posts/18/responsive/sukurinsiyotuto-2023-11-20-3.12.35-sm.png 480w ,https://corkborg.github.io/media/posts/18/responsive/sukurinsiyotuto-2023-11-20-3.12.35-md.png 749w ,https://corkborg.github.io/media/posts/18/responsive/sukurinsiyotuto-2023-11-20-3.12.35-xl.png 1200w"></figure>
-<figcaption >Launchpadのゲームメニューに登録される</figcaption>
+<figure class="post__image" ><figure class="post__image"><img loading="lazy"  src="https://corkborg.github.io/media/posts/18/sukurinsiyotuto-2023-11-20-3.12.35.png" alt="リバース1999をMacにインストールできた" width="2006" height="754" sizes="(max-width: 1200px) 100vw, 1200px" srcset="https://corkborg.github.io/media/posts/18/responsive/sukurinsiyotuto-2023-11-20-3.12.35-xs.png 300w ,https://corkborg.github.io/media/posts/18/responsive/sukurinsiyotuto-2023-11-20-3.12.35-sm.png 480w ,https://corkborg.github.io/media/posts/18/responsive/sukurinsiyotuto-2023-11-20-3.12.35-md.png 749w ,https://corkborg.github.io/media/posts/18/responsive/sukurinsiyotuto-2023-11-20-3.12.35-xl.png 1200w"></figure>
+<figcaption > Launchpadのゲームメニューに登録される</figcaption>
 </figure>
 <figure class="post__image post__image--center"><img loading="lazy"  src="https://corkborg.github.io/media/posts/18/sukurinsiyotuto-2023-11-20-3.13.07.png" alt="リバース1999  タイトル画面" width="581" height="452" sizes="(max-width: 1200px) 100vw, 1200px" srcset="https://corkborg.github.io/media/posts/18/responsive/sukurinsiyotuto-2023-11-20-3.13.07-xs.png 300w ,https://corkborg.github.io/media/posts/18/responsive/sukurinsiyotuto-2023-11-20-3.13.07-sm.png 480w ,https://corkborg.github.io/media/posts/18/responsive/sukurinsiyotuto-2023-11-20-3.13.07-md.png 749w ,https://corkborg.github.io/media/posts/18/responsive/sukurinsiyotuto-2023-11-20-3.13.07-xl.png 1200w"></figure>
 <p>起動することができました！<br>iPad版で起動しているようで3:4のウィンドウになっています。リバース：1999は16:9のゲームなので上下の余白が少し気になります。<br>ただ大きな画面でプレイできて良い感じです。</p>
@@ -444,7 +540,6 @@
 <figcaption >ウィルダネス編集画面</figcaption>
 </figure>
 <p>リバース1999はMacでも遊ぶことができるようでした。</p>
-<p> </p>
             ]]>
         </content>
     </entry>
@@ -459,7 +554,7 @@
             <category term="日本語入力"/>
             <category term="レビュー"/>
 
-        <updated>2024-03-06T23:05:01+09:00</updated>
+        <updated>2023-11-20T00:38:38+09:00</updated>
             <summary>
                 <![CDATA[
                         <img src="https://corkborg.github.io/media/posts/17/atok-2.jpg" alt="ATOK passport logo" />
@@ -656,7 +751,7 @@
 <p>総合的に見るとGoogle日本語入力の方が単語を変換する能力が高いようでした。</p>
 <p>（ただ、あくまでも収録単語の話で日本語の入力精度はATOKのほうが高いです）</p>
 <h2>感想</h2>
-<p>私の利用用途ではGoogle日本語入力の方が快適に文章が書けそうです。</p>
+<p>専門用語が多く、日本語の精度はそこまでこだわらない。私の利用用途ではGoogle日本語入力の方が快適に文章が書けそうです。</p>
 <p>振り返ってみると、ATOKでは文章の変換が一発で決まることが少なく息苦しさがありました。</p>
 <p>変換能力とは関係ないのですが、ATOKは多機能IMEなためか用途がわかりづらいウィンドウがマウスの周りに登場したりして邪魔な点。Windows版のインターフェースがダサいところが気になります。</p>
 <p>せっかく契約したので数ヶ月ほどATOKを使ってみようと思うのですが、最終的にはGoogle日本語入力に戻りそうです。<br><br></p>
@@ -673,7 +768,7 @@
         <media:content url="https://corkborg.github.io/media/posts/12/sukurinsiyotuto-2023-10-15-19.27.01.png" medium="image" />
             <category term="旅行"/>
 
-        <updated>2023-11-21T03:27:38+09:00</updated>
+        <updated>2023-10-11T17:11:31+09:00</updated>
             <summary>
                 <![CDATA[
                         <img src="https://corkborg.github.io/media/posts/12/sukurinsiyotuto-2023-10-15-19.27.01.png" alt="さるびあ丸 3F 4F" />
@@ -717,84 +812,6 @@
 </ul>
 <p>よい旅を！</p>
 <figure class="post__image post__image--center"><img loading="lazy"  src="https://corkborg.github.io/media/posts/12/PXL_20231007_210704190.jpg" alt="三代目さるびあ丸 岡田港" width="4032" height="2268" sizes="(max-width: 1200px) 100vw, 1200px" srcset="https://corkborg.github.io/media/posts/12/responsive/PXL_20231007_210704190-xs.jpg 300w ,https://corkborg.github.io/media/posts/12/responsive/PXL_20231007_210704190-sm.jpg 480w ,https://corkborg.github.io/media/posts/12/responsive/PXL_20231007_210704190-md.jpg 749w ,https://corkborg.github.io/media/posts/12/responsive/PXL_20231007_210704190-xl.jpg 1200w"></figure>
-<p> </p>
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>画像にタグ付けするWD14 taggerをwebui無しで動かす</title>
-        <author>
-            <name>ミズソバ</name>
-        </author>
-        <link href="https://corkborg.github.io/wd14-tagger-standalone/"/>
-        <id>https://corkborg.github.io/wd14-tagger-standalone/</id>
-            <category term="生成AI"/>
-
-        <updated>2024-01-27T14:59:11+09:00</updated>
-            <summary>
-                <![CDATA[
-                    stable-diffusion-webui-wd14-taggerはStable DiffusionでLoraを作成する際の定番プラグインで、イラストの中に書かれた要素を分析してタグとして出力することができます。 このプラグインはStable Diffusion webui向けのものなので使用するにはwebuiを起動する必要があります。&hellip;
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                <p><a href="https://github.com/picobyte/stable-diffusion-webui-wd14-tagger" title="https://github.com/picobyte/stable-diffusion-webui-wd14-tagger" target="_blank" rel="noopener noreferrer">stable-diffusion-webui-wd14-tagger</a>はStable DiffusionでLoraを作成する際の定番プラグインで、イラストの中に書かれた要素を分析してタグとして出力することができます。</p>
-<p>このプラグインはStable Diffusion webui向けのものなので使用するにはwebuiを起動する必要があります。<br>ただ、タグをつける作業ではwebuiがなくても問題ない場合も多いので単体で動かすコマンドを用意しました。</p>
-<h2>コード</h2>
-<p>作ったコードは下記です。Python3があれば動きます。<br><a href="https://github.com/corkborg/wd14-tagger-standalone" target="_blank" rel="noopener noreferrer">https://github.com/corkborg/wd14-tagger-standalone</a></p>
-<p><a href="https://github.com/picobyte/stable-diffusion-webui-wd14-tagger" title="https://github.com/picobyte/stable-diffusion-webui-wd14-tagger" target="_blank" rel="noopener noreferrer"></a>webui-wd14-taggerの方から動作に必要なコードだけを抜き出して作りました。</p>
-<h2>動かし方</h2>
-<p>Windowsでの動かし方は下記です。（開発時はMacを使っていたのでそっちでも動きます）<br>Python3やgitコマンドが事前にインストールされている必要があります。</p>
-<pre>git clone <a href="https://github.com/corkborg/wd14-tagger-standalone.git">https://github.com/corkborg/wd14-tagger-standalone.git</a><br>cd wd14-tagger-standalone<br><br><code># 必要なライブラリのインストール</code><br><code>python -m venv venv</code><br><code>venv/Scripts/activate</code><br><code>pip install -r requirements.txt</code><br><br><code># コマンド使用前にはactivateを忘れずに</code><br><code>venv/Scripts/activate </code><br><br><code># ヘルプの確認</code><br><code>python run.py --help</code><br><br><code># シングルファイルの推論</code><br><code>python run.py --file path¥image.jpg</code><br><br><code># ディレクトリ内のファイルを一括推論</code><br><code>python run.py --dir path</code></pre>
-<h2>動作確認</h2>
-<p>こちらのサイトさんからずんだモンさんの画像をダウンロードしました。<br><a href="https://zunko.jp/" target="_blank" rel="noopener noreferrer">https://zunko.jp/</a></p>
-<p><img loading="lazy" src="https://zunko.jp/images/chara_zm.png" width="214" height="302" data-is-external-image="true"></p>
-<p>こんな感じになりました。</p>
-<pre><code>&gt;  python run.py --model wd-v1-4-moat-tagger.v2 --file chara_zm.png</code><br><code>solo, green_footwear, short_sleeves, green_hair, suspenders, shirt, white_shirt, green_shorts, suspender_shorts, shorts, white_background, full_body, 1girl, smile, simple_background, open_mouth, puffy_sleeves, looking_at_viewer, puffy_short_sleeves, standing, short_hair, puffy_shorts, orange_eyes, yellow_eyes, :d, hair_between_eyes, boots</code></pre>
-<p><a href="#INTERNAL_LINK#/post/null"></a>単体で使うことができました。</p>
-<h2>一気に画像にタグ付けをする</h2>
-<p>多くの場合一枚一枚画像にタグ付けせずに一気に複数枚画像にタグ付けすると思います。<br>このコマンドではディレクトリを指定すると一括推論を行って画像ごとにキャプションファイルを作成します。</p>
-<p>下記の例ではgazou_fileディレクトリ内の画像すべてに対してタグの予想をおこなって画像ファイル名 + ext(拡張子)でキャプションファイルを作っています。</p>
-<pre><code>python3 run.py --dir ./gazou_file --ext .txt</code></pre>
-<h2>推論モデルの変更方法</h2>
-<p>コマンドのオプションから推論モデルを変更することができます。</p>
-<pre class="notranslate"><code>python run.py --file image.jpg --model wd14-vit.v1
-python run.py --file image.jpg --model wd14-vit.v2
-python run.py --file image.jpg --model wd14-convnext.v1
-python run.py --file image.jpg --model wd14-convnext.v2
-python run.py --file image.jpg --model wd14-convnextv2.v1
-python run.py --file image.jpg --model wd14-swinv2-v1
-python run.py --file image.jpg --model wd-v1-4-moat-tagger.v2
-python run.py --file image.jpg --model mld-caformer.dec-5-97527
-python run.py --file image.jpg --model mld-tresnetd.6-30000</code></pre>
-<p>推論モデルはいくつか存在してそれぞれのモデルで特色があります。</p>
-<h4>wd14-swinv2系</h4>
-<p>SmilingWolfさんが作成したモデルで、SwinTransformerと呼ばれる機械学習の手法で作られています。<br>SwinTransformerは後述のVisionTransformerに比べて新しい手法です</p>
-<p>SmilingWolfさんのモデルの中ではmoatと並んで新しめのモデルで<strong>おすすめです</strong>。</p>
-<h4>wd-v1-4-moat-tagger系</h4>
-<p>SmilingWolfさんが作成したモデルで、MObile convolution and ATtention（moat）という機械学習の手法で作られたモデルです。<br>Transformer系は大量の学習データが無いと精度が上がりづらいので、比較的少数の画像で学習するCNN系の手法をTransformerに応用する流れの一つのようです。</p>
-<p>SmilingWolfさんのモデルの中ではmoatと並んで新しめのモデルで<strong>おすすめです</strong>。<br>こちらの<a href="https://note.com/den2_nova/n/ndd9e2570572b">サイト</a>が参考になります。</p>
-<h4>mld系</h4>
-<p>通常使われるSmilingWolfさんのモデルとは違いkiriyamaXさんが作成したモデルです（ml-danbooruと呼ばれている？）。</p>
-<p>細かく絵の要素を読み取ろうとしてくれるので、学習したいものによってはこっちのほうが向いているかもしれないです。<br>ただ、細かく絵の要素を読み取ろうとするためか誤りも多い印象です。</p>
-<p>少し各タグの確率が高くつく傾向があるので足切り（スレッショルド）を上げたほうが良いです。</p>
-<pre>python run.py --file image.jpg --model mld-caformer.dec-5-97527 --threshold 0.5<br>python run.py --file image.jpg --model mld-tresnetd.6-30000 --threshold 0.5</pre>
-<p>リポジトリです。<br><a href="https://huggingface.co/kiriyamaX/mld-caformer">kiriyamaX/mld-caformer</a></p>
-<h4>wd14-convnext系</h4>
-<p>SmilingWolfさんが作成したモデルで、CNN系の推論モデルです。<br>画像を認識するモデルの中では昔から存在する一番標準的な手法です</p>
-<h4>wd14-vit系</h4>
-<p>SmilingWolfさんが作成したモデルで、VisionTransformer（Vit）系のモデルです。<br>機械学習の分野ではTransformerはCNNに比べて成果が上がっている手法ですがtaggerではそこまですごい差は無いように見えます。</p>
-<p>マネキンと人間を見分ける精度が良いので個人的によく使っています。</p>
-<h2>その他</h2>
-<h3>タグの足切り</h3>
-<p>taggerでは画像に対してすべてのタグの一致率を出して確率の高い物だけを残すようになっています。<br>確率が高いと判断するタグの足切りラインをthresholdオプションで決めることができます。</p>
-<p>デフォルトではwebuiと同じく一律35%以上の一致率のタグだけを残しています。<br>これはコマンドライン引数で変更することができます。</p>
-<div>
-<pre># 25%に変更<br>python3 run.py --threshold 0.25 --file image.jpg</pre>
-</div>
-<h3>高速化</h3>
-<p>今回は用意したコードはCPU上で推論処理を動かしています。<br>m1 macでも一瞬で返ってくるのでそんなに問題ないとは思っているのですが、もっと早く動かしたい場合はGPUなどを使うように改造したほうが良いかもしれないです。</p>
-<p> </p>
 <p> </p>
             ]]>
         </content>

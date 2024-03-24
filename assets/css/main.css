@@ -149,7 +149,6 @@ article.post-only {
    color: gray;
    font-size: 12px;
    text-align: center;
-   margin-top: -10px;
 }
 
 
@@ -377,7 +376,9 @@ img {
 /* Post images*/
 .post__image--left {}
 .post__image--right {}
-.post__image--center {}
+.post__image--center {
+   text-align: center;
+}
 .post__image--wide {}
 .post__image--full  {}
 

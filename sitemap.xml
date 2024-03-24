@@ -26,7 +26,7 @@
 </url>
 <url>
 <loc>https://corkborg.github.io/atok-vs-google-japanese-input/</loc>
-<lastmod>2024-03-06T23:05:01+09:00</lastmod>
+<lastmod>2024-03-07T21:01:38+09:00</lastmod>
 <image:image>
 <image:loc>https://corkborg.github.io/media/posts/17/atok-2.jpg</image:loc>
 <image:title><![CDATA[ATOK passport logo]]></image:title>
@@ -114,15 +114,27 @@
 </url>
 <url>
 <loc>https://corkborg.github.io/how-to-create-multiplayer-server-project-zomboid/</loc>
-<lastmod>2024-01-01T02:44:46+09:00</lastmod>
+<lastmod>2024-03-24T16:26:35+09:00</lastmod>
 <image:image>
 <image:loc>https://corkborg.github.io/media/posts/7/image-6.png</image:loc>
 <image:title><![CDATA[project zomboid]]></image:title>
 </image:image>
 </url>
 <url>
+<loc>https://corkborg.github.io/image-recognition-using-timm-convnextv2/</loc>
+<lastmod>2024-03-24T17:04:08+09:00</lastmod>
+<image:image>
+<image:loc>https://corkborg.github.io/media/posts/29/PXL_20231110_105029635.jpg</image:loc>
+<image:title><![CDATA[]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://corkborg.github.io/media/posts/29/sukurinsiyotuto-2024-03-24-16.40.09.png</image:loc>
+<image:title><![CDATA[ImageNet-1K dataset records]]></image:title>
+</image:image>
+</url>
+<url>
 <loc>https://corkborg.github.io/install-reverse1999-on-mac/</loc>
-<lastmod>2024-03-07T14:06:49+09:00</lastmod>
+<lastmod>2024-03-08T01:14:41+09:00</lastmod>
 <image:image>
 <image:loc>https://corkborg.github.io/media/posts/18/sukurinsiyotuto-2023-11-20-13.24.24.png</image:loc>
 <image:title><![CDATA[リバース：1999]]></image:title>
@@ -133,7 +145,7 @@
 </image:image>
 <image:image>
 <image:loc>https://corkborg.github.io/media/posts/18/sukurinsiyotuto-2023-11-20-3.12.35.png</image:loc>
-<image:title><![CDATA[リバース1999 launchpad]]></image:title>
+<image:title><![CDATA[リバース1999をMacにインストールできた]]></image:title>
 </image:image>
 <image:image>
 <image:loc>https://corkborg.github.io/media/posts/18/sukurinsiyotuto-2023-11-20-3.13.07.png</image:loc>
@@ -205,7 +217,7 @@
 </url>
 <url>
 <loc>https://corkborg.github.io/steam-games-support-apple-silicon/</loc>
-<lastmod>2024-03-07T14:04:45+09:00</lastmod>
+<lastmod>2024-03-07T21:23:33+09:00</lastmod>
 <image:image>
 <image:loc>https://corkborg.github.io/media/posts/8/image-8.png</image:loc>
 <image:title><![CDATA[]]></image:title>
@@ -253,6 +265,6 @@
 </url>
 <url>
 <loc>https://corkborg.github.io/wd14-tagger-standalone/</loc>
-<lastmod>2024-01-27T14:59:11+09:00</lastmod>
+<lastmod>2024-03-24T17:00:42+09:00</lastmod>
 </url>
 </urlset>
