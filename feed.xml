@@ -3,7 +3,7 @@
     <title>塩の惑星</title>
     <link href="https://corkborg.github.io/feed.xml" rel="self" />
     <link href="https://corkborg.github.io" />
-    <updated>2024-03-25T02:42:00+09:00</updated>
+    <updated>2024-03-25T22:13:46+09:00</updated>
     <author>
         <name>ミズソバ</name>
     </author>
@@ -115,24 +115,24 @@
             <summary>
                 <![CDATA[
                         <img src="https://corkborg.github.io/media/posts/29/fish_kingyo2.png" alt="" />
-                    timmとはPyTorch向けのライブラリで、画像認識系の深層学習のモデル定義を事前に用意してくれている感じのライブラリになっています。 対応しているサポートしているモデルを見ると2024年現在ではvit, resnet, swin, convnextなどあるようです。&hellip;
+                    timmとはPyTorch向けのライブラリで、画像認識系の深層学習の実装を用意してくれている感じのライブラリになっています。 対応している手法を見てみると2024年現在ではvit, resnet, swin, convnextなどをサポートしているようです。&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
                     <p><img src="https://corkborg.github.io/media/posts/29/fish_kingyo2.png" class="type:primaryImage" alt="" /></p>
-                <p><a href="https://timm.fast.ai/" target="_blank" rel="noopener noreferrer">timm</a>とはPyTorch向けのライブラリで、画像認識系の深層学習のモデル定義を事前に用意してくれている感じのライブラリになっています。</p>
-<p>対応しているサポートしているモデルを見ると2024年現在ではvit, resnet, swin, convnextなどあるようです。</p>
-<p>主にtimmはモデルをトレーニングする際に使うと思うのですが、すでにトレーニング済みのモデルが用意されていてそれを使うことができます。</p>
+                <p><a href="https://timm.fast.ai/" target="_blank" rel="noopener noreferrer">timm</a>とはPyTorch向けのライブラリで、画像認識系の深層学習の実装を用意してくれている感じのライブラリになっています。</p>
+<p>対応している手法を見てみると2024年現在ではvit, resnet, swin, convnextなどをサポートしているようです。</p>
+<p>主にtimmは新たにモデルをトレーニングして作成する際に使うと思うのですが、すでにトレーニング済みのモデルが用意されていて試しにそれを使うこともできます。</p>
 <p>個人的にtimmの学習済みモデルをfine-tuning（微調整）して見たいと思ったので、とりあえずモデルを動かしてみることにしました。</p>
 <h2>ConvNeXt V2</h2>
-<p>今回使っているConvNeXT V2という手法は、昔から存在するCNNという画像認識手法を現代的なTransformerなどに似せた物のようです。</p>
-<p>ConvNeXtmはモデルサイズが小さいものの認識精度が非常に高いようです。</p>
+<p>今回使っているConvNeXT V2という手法は、昔から存在するCNNという画像認識手法を活用した2022年に提案された新しい手法です。画像認識の分野では新しいTransformer系よりも精度が良いようです（2022年くらいでは）。</p>
+<p>ConvNeXtはCNN系なので精度比でモデルサイズが小さくて済むようです。そのためメモリにも優しいと思われます。</p>
 <p>手法の技術的な詳細はこれらのサイトに書いてありますが筆者はあまり理解していません。<br><a href="https://arxiv.org/abs/2301.00808">https://arxiv.org/abs/2301.00808</a><br><a href="https://arxiv.org/abs/2201.03545" target="_blank" rel="noopener noreferrer">https://arxiv.org/abs/2201.03545</a></p>
 <h2>画像認識をしてみる</h2>
 <p>まずPythonに必要なものをインストールします。</p>
 <pre class="language-bash"><code>pip install torch timm pillow torchvision</code></pre>
-<p>学習済みモデルはImageNet-1kというデータセットを使っているようなので、ラベルの情報が必要です。こちらにラベルをまとめてくれている人がいるのでダウンロードしてlabels.pyという名前に変更します。<br><a href="https://gist.github.com/yrevar/942d3a0ac09ec9e5eb3a" target="_blank" rel="noopener noreferrer">https://gist.github.com/yrevar/942d3a0ac09ec9e5eb3a</a></p>
+<p>学習済みモデルはImageNet-1kというデータセットを使っているようなので、ラベルの情報が必要です。こちらにImageNet-1kのラベルをまとめてくれている人がいるのでダウンロードしてlabels.pyという名前に変更します。<br><a href="https://gist.github.com/yrevar/942d3a0ac09ec9e5eb3a" target="_blank" rel="noopener noreferrer">https://gist.github.com/yrevar/942d3a0ac09ec9e5eb3a</a></p>
 <p>適当なPythonソースコードを作成します。</p>
 <pre class="language-python"><code>import sys
 from itertools import zip_longest
@@ -176,10 +176,10 @@ for c, v in zip_longest(top5_class_indices[0], top5_probabilities[0]):
 <p>適当な画像で推論してみます。</p>
 <pre class="language-bash"><code>python predict.py image.jpg</code></pre>
 <p>ImageNet-1kは小さいデータセットなので動物などわかりやすい画像で試してみるのが良さそうです。</p>
-<figure class="post__image post__image--center"><img loading="lazy"  src="https://corkborg.github.io/media/posts/29/sukurinsiyotuto-2024-03-24-16.40.09.png" alt="ImageNet-1K dataset records" width="359" height="206" sizes="(max-width: 1200px) 100vw, 1200px" srcset="https://corkborg.github.io/media/posts/29/responsive/sukurinsiyotuto-2024-03-24-16.40.09-xs.png 300w ,https://corkborg.github.io/media/posts/29/responsive/sukurinsiyotuto-2024-03-24-16.40.09-sm.png 480w ,https://corkborg.github.io/media/posts/29/responsive/sukurinsiyotuto-2024-03-24-16.40.09-md.png 749w ,https://corkborg.github.io/media/posts/29/responsive/sukurinsiyotuto-2024-03-24-16.40.09-xl.png 1200w"></figure>
+<figure class="post__image post__image--center"><img loading="lazy"  src="https://corkborg.github.io/media/posts/29/sukurinsiyotuto-2024-03-24-16.40.09.png" alt="ImageNet-1K dataset records" width="523" height="300" sizes="(max-width: 1200px) 100vw, 1200px" srcset="https://corkborg.github.io/media/posts/29/responsive/sukurinsiyotuto-2024-03-24-16.40.09-xs.png 300w ,https://corkborg.github.io/media/posts/29/responsive/sukurinsiyotuto-2024-03-24-16.40.09-sm.png 480w ,https://corkborg.github.io/media/posts/29/responsive/sukurinsiyotuto-2024-03-24-16.40.09-md.png 749w ,https://corkborg.github.io/media/posts/29/responsive/sukurinsiyotuto-2024-03-24-16.40.09-xl.png 1200w"></figure>
 <p>ただ、めちゃめちゃな結果が返ってくると思います。試しに使用した。</p>
 <div>
-<div>convnextv2_tiny.fcmaeというモデルが非力だからです。</div>
+<div>convnextv2_tiny.fcmaeという学習済みモデルが非力だからです。</div>
 <div> </div>
 <div>コメントを解除して大きめで精度の良いモデルを有効化します（2GBくらいあります）。</div>
 <div>
@@ -188,11 +188,10 @@ model = timm.create_model("convnextv2_huge.fcmae_ft_in22k_in1k_512", pretrained=
 </div>
 </div>
 <p>金魚の画像を投入してみた結果です。</p>
-<pre class="language-bash"><code>1 goldfish, Carassius auratus 94.67620086669922
-0 tench, Tinca tinca 0.06656727194786072
-392 rock beauty, Holocanthus tricolor 0.029753919690847397
-393 anemone fish 0.018587201833724976
-580 greenhouse, nursery, glasshouse 0.016277609393000603</code></pre>
+<pre class="language-bash"><code>1 goldfish, Carassius auratus 85.73846435546875
+392 rock beauty, Holocanthus tricolor 8.172449111938477
+393 anemone fish 0.17695628106594086
+973 coral reef 0.15994583070278168</code></pre>
 <p>うまく推論できていそうです。（金魚は学名だとCarassius auratusと言うのか…）</p>
 <h2>timmの詳細</h2>
 <p>timmの使い方はここに書いてあります。<br><a href="https://huggingface.co/docs/hub/timm" target="_blank" rel="noopener noreferrer">https://huggingface.co/docs/hub/timm</a></p>
