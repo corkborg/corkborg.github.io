@@ -3,12 +3,74 @@
     <title>塩の惑星</title>
     <link href="https://corkborg.github.io/feed.xml" rel="self" />
     <link href="https://corkborg.github.io" />
-    <updated>2024-03-28T01:00:07+09:00</updated>
+    <updated>2024-03-28T16:22:07+09:00</updated>
     <author>
         <name>ミズソバ</name>
     </author>
     <id>https://corkborg.github.io</id>
 
+    <entry>
+        <title>使いやすいエディターで静的サイト生成できるPubliiがおすすめな話</title>
+        <author>
+            <name>ミズソバ</name>
+        </author>
+        <link href="https://corkborg.github.io/publii-is-good-website-generator/"/>
+        <id>https://corkborg.github.io/publii-is-good-website-generator/</id>
+        <media:content url="https://corkborg.github.io/media/posts/31/freetiers-post-featured-image.jpeg" medium="image" />
+
+        <updated>2024-03-28T01:30:19+09:00</updated>
+            <summary>
+                <![CDATA[
+                        <img src="https://corkborg.github.io/media/posts/31/freetiers-post-featured-image.jpeg" alt="Publii" />
+                    最近はVercel、Netlify、Github Pageなどを活用してHTML、CSSだけをホスティングするシンプルなWebサイトが流行っていますよね。 これらの利点は運用料金の安さです。一般的なWebサイトのようにサーバやデータベースなどを用意すると個人にしては運用費がかかりますが、静的サイトだと月額無料から数百円で運用できます。 かく言うこのサイト（塩の惑星）も現在はGithub Pageというホスティングサービスを使っていてお金がかかっていません。&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                    <p><img src="https://corkborg.github.io/media/posts/31/freetiers-post-featured-image.jpeg" class="type:primaryImage" alt="Publii" /></p>
+                <p>最近はVercel、Netlify、Github Pageなどを活用してHTML、CSSだけをホスティングするシンプルなWebサイトが流行っていますよね。</p>
+<p>これらの利点は運用料金の安さです。一般的なWebサイトのようにサーバやデータベースなどを用意すると個人にしては運用費がかかりますが、静的サイトだと月額無料から数百円で運用できます。</p>
+<p>かく言うこのサイト（塩の惑星）も現在はGithub Pageというホスティングサービスを使っていてお金がかかっていません。</p>
+<figure class="post__image post__image--center"><img loading="lazy"  src="https://corkborg.github.io/media/posts/31/Ming-Cheng-Wei-She-Ding-huairu-1711609800667.drawio.png" alt="PubliiからGithub Pageに連携する図" width="611" height="285" sizes="(max-width: 1200px) 100vw, 1200px" srcset="https://corkborg.github.io/media/posts/31/responsive/Ming-Cheng-Wei-She-Ding-huairu-1711609800667.drawio-xs.png 300w ,https://corkborg.github.io/media/posts/31/responsive/Ming-Cheng-Wei-She-Ding-huairu-1711609800667.drawio-sm.png 480w ,https://corkborg.github.io/media/posts/31/responsive/Ming-Cheng-Wei-She-Ding-huairu-1711609800667.drawio-md.png 749w ,https://corkborg.github.io/media/posts/31/responsive/Ming-Cheng-Wei-She-Ding-huairu-1711609800667.drawio-xl.png 1200w"></figure>
+<h2>なぜ無料のサイトサービスではなく静的サイトジェネレータなのか？</h2>
+<p>BloggerやGoogle Pageなどの無料のWebサイトサービスでは決まった形のWebサイトしか作れません。</p>
+<p>静的サイトジェネレータはHTMLやCSSの知識があればカスタマイズの幅は無限大です。デザインにこだわる人は静的サイトジェネレータがおすすめです。</p>
+<p>私はJavaScriptを使ったサイトを作りたかったので静的サイトジェネレータを検討し始めました。</p>
+<h2>一般的な静的サイトジェネレータで文章を打つのは辛い</h2>
+<p>著名な静的サイトジェネレータといえば、NextJSやHUGOなどですがこれらはプログラミングしたい人には良いですが、文章をたくさん書く場合には辛いです。</p>
+<p>Markdown、HTML…嫌いじゃないですがこれらでたくさんの記事を書きたくないです。</p>
+<h2>Publii: 静的サイトジェネレータなのにGUIエディタが使える</h2>
+<figure class="post__image post__image--center" ><img loading="lazy" src="https://corkborg.github.io/media/posts/31/sukurinsiyotuto-2024-03-28-1.30.41.png" alt="Publiiの編集画面. Notion風のリッチなエディタ" width="524" height="310" sizes="(max-width: 1200px) 100vw, 1200px" srcset="https://corkborg.github.io/media/posts/31/responsive/sukurinsiyotuto-2024-03-28-1.30.41-xs.png 300w ,https://corkborg.github.io/media/posts/31/responsive/sukurinsiyotuto-2024-03-28-1.30.41-sm.png 480w ,https://corkborg.github.io/media/posts/31/responsive/sukurinsiyotuto-2024-03-28-1.30.41-md.png 749w ,https://corkborg.github.io/media/posts/31/responsive/sukurinsiyotuto-2024-03-28-1.30.41-xl.png 1200w">
+<figcaption >Publiiの編集画面. Notion風のリッチなエディタ</figcaption>
+</figure>
+<p>PubliiはMacやWindowsにインストールして使うアプリ形式になっています。</p>
+<p>Publiiのアプリ上でページを書くとPubliiが静的サイト生成を行いアップロードしてくれます。</p>
+<p>文章編集機能は非常に充実していて、大文字、斜線、リンク、見出し、リスト、画像。なにもかの操作が非常にスムーズです。</p>
+<p>もちろんHTMLを直書きしたりすることもできます。</p>
+<h2>Publii: SEO対策機能もバッチリ</h2>
+<figure class="post__image post__image--center"><img loading="lazy"  src="https://corkborg.github.io/media/posts/31/sukurinsiyotuto-2024-03-28-2.24.24.png" alt="Publii SEO設定画面" width="1906" height="1008" sizes="(max-width: 1200px) 100vw, 1200px" srcset="https://corkborg.github.io/media/posts/31/responsive/sukurinsiyotuto-2024-03-28-2.24.24-xs.png 300w ,https://corkborg.github.io/media/posts/31/responsive/sukurinsiyotuto-2024-03-28-2.24.24-sm.png 480w ,https://corkborg.github.io/media/posts/31/responsive/sukurinsiyotuto-2024-03-28-2.24.24-md.png 749w ,https://corkborg.github.io/media/posts/31/responsive/sukurinsiyotuto-2024-03-28-2.24.24-xl.png 1200w"></figure>
+<p>PubliiにはSEO関連の機能が充実しています。</p>
+<p>画像の圧縮、JSON-LDはもちろんのこと、noindex設定、Slugなど細かく設定できます。</p>
+<p>このサイトは内容が雑多な感じですが、Google検索での平均掲載順位が１5位くらいのようで問題なさそうです。</p>
+<h2>Publiiの今のところの弱点はテーマが少ないこと</h2>
+<figure class="post__image post__image--center"><img loading="lazy"  src="https://corkborg.github.io/media/posts/31/sukurinsiyotuto-2024-03-28-2.09.40.png" alt="Publiiのマーケットプレイス" width="423" height="337" sizes="(max-width: 1200px) 100vw, 1200px" srcset="https://corkborg.github.io/media/posts/31/responsive/sukurinsiyotuto-2024-03-28-2.09.40-xs.png 300w ,https://corkborg.github.io/media/posts/31/responsive/sukurinsiyotuto-2024-03-28-2.09.40-sm.png 480w ,https://corkborg.github.io/media/posts/31/responsive/sukurinsiyotuto-2024-03-28-2.09.40-md.png 749w ,https://corkborg.github.io/media/posts/31/responsive/sukurinsiyotuto-2024-03-28-2.09.40-xl.png 1200w"></figure>
+<p>ブログサービスといえば豊富なテーマが重要です。Publiiもテーマ機能があるのですが、テーマ数が多くないです（有料の物を入れても少ない）。</p>
+<p><a href="https://marketplace.getpublii.com/themes/" target="_blank" rel="noopener noreferrer"></a><a href="https://marketplace.getpublii.com/themes/" target="_blank" rel="noopener noreferrer">Publii Themes</a></p>
+<p>数少ないテーマもアメリカで流行っているサイト風で、日本向けでは使いづらい気がします。</p>
+<p>テーマが少ない理由はまだPubliiが世間にはあまり知られていないマイナーな存在だからではないかと思います。</p>
+<h3>テーマの自作</h3>
+<p>塩の惑星ではPubliiのテーマを自作しています。この作業はなかなか骨が折れました。</p>
+<p>特にHTML、CSSが得意ではない人にはハードルが高い作業でしょう…。</p>
+<p>テーマ開発については現状下記の２つくらいしか情報がないと思います。</p>
+<p><a href="https://getpublii.com/dev/" target="_blank" rel="noopener noreferrer">Publii公式のテーマ開発ガイド（英語）</a><br><a href="https://github.com/SimonPadbury/Publii-Bootstrap-Starter/blob/master/TUTORIALS/00-introduction.md" target="_blank" rel="noopener noreferrer">Publii公式のテーマ開発チュートリアル（英語）</a></p>
+<h2>最後に</h2>
+<p>Publiiは使いやすいサイトジェネレータです。Notion風のエディターでWebサイトやブログなどを作りたいと思っている人にはすごくおすすめです。</p>
+<p><a href="https://getpublii.com/" target="_blank" rel="noopener noreferrer">Publii公式サイト</a></p>
+<p>Publiiがもっと流行ると良いなと思っているので、Publiiの使用を検討していて気になる点がある人、Publiiのテーマ開発で困っている人などは力になれるかもしれないのでぜひ塩の惑星に<a href="https://corkborg.github.io/contact/">問い合わせ</a>て見てください。</p>
+<p> </p>
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>硬いアオミドロ（糸状ゴケ）を対策する方法について個人的な経験から解説</title>
         <author>
@@ -640,221 +702,6 @@ model = timm.create_model("convnextv2_huge.fcmae_ft_in22k_in1k_512", pretrained=
 <figcaption >ウィルダネス編集画面</figcaption>
 </figure>
 <p>リバース1999はMacでも遊ぶことができるようでした。</p>
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>ATOK日本語入力はクラウド機能を使ってもGoogle日本語入力に勝てなかった話</title>
-        <author>
-            <name>ミズソバ</name>
-        </author>
-        <link href="https://corkborg.github.io/atok-vs-google-japanese-input/"/>
-        <id>https://corkborg.github.io/atok-vs-google-japanese-input/</id>
-        <media:content url="https://corkborg.github.io/media/posts/17/atok-2.jpg" medium="image" />
-            <category term="日本語入力"/>
-            <category term="レビュー"/>
-
-        <updated>2023-11-20T00:38:38+09:00</updated>
-            <summary>
-                <![CDATA[
-                        <img src="https://corkborg.github.io/media/posts/17/atok-2.jpg" alt="ATOK passport logo" />
-                    このIMEはGoogle検索などで得た情報を使って収録単語を増やす特徴があり、世間で流行っている用語が反映される速度が非常に速い特徴があります。 ただ、日本語を正しく変換する能力は若干低く、送り仮名などが上手く変換できない場合があること。堅い文章を書く際にフランクな変換が行われることがある所が気になっていました。 Google日本語入力並みの圧倒的な単語収録数があり、日本語を正しく変換できるIMEはないかと思い調べるとATOKという有料のIMEがヒットしました。 ATOKは日本語入力の精度が高い特徴があり、ATOK Expressというクラウド機能で大量の用語を日々IMEに反映してくれるようです。&hellip;
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                    <p><img src="https://corkborg.github.io/media/posts/17/atok-2.jpg" class="type:primaryImage" alt="ATOK passport logo" /></p>
-                <p> </p>
-<div><span style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);">Google日本語入力は専門用語、ゲーム用語、インターネット用語などを変換することに高い能力を持つ無料のIME（日本語入力ツール）です。</span></div>
-<p><span style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);">このIMEはGoogle検索などで得た情報を使って収録単語を増やす特徴があり、世間で流行っている用語が反映される速度が非常に速い特徴があります。</span></p>
-<p><span style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);">ただ、日本語を正しく変換する能力は若干低く、送り仮名などが上手く変換できない場合があること。堅い文章を書く際にフランクな変換が行われることがある所が気になっていました。</span></p>
-<p>Google日本語入力並みの圧倒的な単語収録数があり、日本語を正しく変換できるIMEはないかと思い<span style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);">調べるとATOKという</span><strong><span style="font-family: var(--editor-font-family); font-size: inherit;">有料の</span></strong><span style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);"><strong>IME</strong>がヒットしました。</span></p>
-<p><span style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);">ATOKは日本語入力の精度が高い特徴があり、ATOK Expressというクラウド機能で大量の用語を日々IMEに反映してくれるようです。</span></p>
-<p><span style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);">早速、ATOKを購入してクラウド機能でGoogle日本語入力の単語収録数に対抗できるか調査を行いました。</span></p>
-<div id="post-entry">
-<h2 id="atoktoha">ATOKとは</h2>
-<figure class="post__image"><img loading="lazy"  src="https://corkborg.github.io/media/posts/17/ATOK_logo.jpg" alt="" width="139" height="139" sizes="(max-width: 1200px) 100vw, 1200px" srcset="https://corkborg.github.io/media/posts/17/responsive/ATOK_logo-xs.jpg 300w ,https://corkborg.github.io/media/posts/17/responsive/ATOK_logo-sm.jpg 480w ,https://corkborg.github.io/media/posts/17/responsive/ATOK_logo-md.jpg 749w ,https://corkborg.github.io/media/posts/17/responsive/ATOK_logo-xl.jpg 1200w"></figure>
-<p>今どき、ATOKの名前を知っている人はあまりいないと思います。</p>
-<p>私も詳しく知らない世代なのですが、パーソナルコンピュータの初期の時期から存在する高品質の有料IMEです。</p>
-<p>昔はOSに標準搭載されたIMEが貧弱だったので、ATOKのような品質の高いIMEの需要が高かったようです。</p>
-<p>今の時代はWindows、Macに標準搭載されたIMEでもそれなりの変換精度があります。そのため、ATOKは知る人ぞ知るIMEになってしまいました。</p>
-<p>ただ、ATOKは日本語入力に特化した日本企業が作っているソフトなため日本語入力の精度は現在でも非常に高いです。</p>
-<p>そのため、日本語の表現に非常にこだわる方は今でもATOKを使うのがおすすめです。</p>
-<h2 id="atoknoliao-jin">ATOKの料金</h2>
-<p>ATOKはサブスクリプションモデルになっています。</p>
-<p>プランには月額600円のプロフェッショナルと、月額300円のベーシックコースがあります。どちらも10台までATOKをインストールできます。</p>
-<p>プロフェッショナルの方では下記のような機能がベーシックにプラスして使えます。</p>
-<ul>
-<li>iOS版のATOK</li>
-<li>クラウド文章校正というWebサービス</li>
-<li>IMEの辞書機能（多分変換中に定義を教えてくれるやつ）</li>
-<li>辞書の見出し語を変換対象にできる（厳しい熟語とか）</li>
-</ul>
-<p>辞書機能は広辞苑や大辞林などの辞書として使えるようです。ただ、出版業界などで本格的な日本語を書くような人でなければどの機能も必要ないような気がするので<strong>300円のベーシックコースがおすすめです</strong>。</p>
-<p>300 * 12ヶ月 = 3600円<br>毎日使うものだと考えると大した金額ではないですね。</p>
-<h2 id="liu-xing-riyan-xie-wobian-huan-suru">流行り言葉を変換する</h2>
-<p>Google日本語入力とATOKの比較を行います。一部Mac標準のIMEも比較しています。</p>
-<p>それぞれのIMEで変換学習機能を無効化して検証を行っています。</p>
-<p>アニメ、ソシャゲ、野球、アイドル、社会問題、工学、哲学などの分野で調査しました。（2023年11月）</p>
-<h3 id="shui-xing-nomo-nu">水星の魔女</h3>
-<p>2022年にやっていたアニメのタイトルです。</p>
-<table style="border-collapse: collapse; width: 100%; height: 230.234px;" border="1">
-<tbody>
-<tr style="height: 50.3594px;">
-<td style="width: 33.2855%; height: 50.3594px;">IME</td>
-<td style="width: 33.2855%; height: 50.3594px;">変換</td>
-<td style="width: 33.2866%; height: 50.3594px;">予測変換</td>
-</tr>
-<tr style="height: 50.3594px;">
-<td style="width: 33.2855%; height: 50.3594px;">ATOK</td>
-<td style="width: 33.2855%; height: 50.3594px;"><strong>変換できた🎉</strong></td>
-<td style="width: 33.2866%; height: 50.3594px;"><strong>予測されなかった😰</strong></td>
-</tr>
-<tr style="height: 50.3594px;">
-<td style="width: 33.2855%; height: 50.3594px;">Google日本語入力</td>
-<td style="width: 33.2855%; height: 50.3594px;"><strong>変換できた🎉</strong></td>
-<td style="width: 33.2866%; height: 50.3594px;"><strong>予測された🎉</strong></td>
-</tr>
-<tr style="height: 79.1562px;">
-<td style="width: 33.2855%; height: 79.1562px;">Mac標準</td>
-<td style="width: 33.2855%; height: 79.1562px;"><strong>変換できるが、固有名詞として認識していない</strong></td>
-<td style="width: 33.2866%; height: 79.1562px;"><strong> </strong></td>
-</tr>
-</tbody>
-</table>
-<p>水星の魔女以外にもいろいろなアニメや登場人物などを変換してみましたが、Google日本語入力の方が強い傾向がありました。</p>
-<h3 id="wu-qi-mi-tu-mukimeito">無期迷途 （むきめいと）</h3>
-<p>難読ソシャゲタイトルですね。</p>
-<table style="border-collapse: collapse; width: 100%;" border="1">
-<tbody>
-<tr>
-<td style="width: 33.2855%;">IME</td>
-<td style="width: 33.2855%;">変換</td>
-<td style="width: 33.2866%;">予測変換</td>
-</tr>
-<tr>
-<td style="width: 33.2855%;">ATOK</td>
-<td style="width: 33.2855%;"><strong>変換できず😰</strong></td>
-<td style="width: 33.2866%;"> </td>
-</tr>
-<tr>
-<td style="width: 33.2855%;">Google日本語入力</td>
-<td style="width: 33.2855%;"><strong>変換できた🎉</strong></td>
-<td style="width: 33.2866%;"><strong>予測された🎉</strong></td>
-</tr>
-<tr>
-<td style="width: 33.2855%;">Mac標準</td>
-<td style="width: 33.2855%;"><strong>変換できず😰</strong></td>
-<td style="width: 33.2866%;"><strong> </strong></td>
-</tr>
-</tbody>
-</table>
-さすがGoogle日本語入力ですね。<br>一応、迷途（めいと）という言葉はマイナーながら日本語の熟語なので、日本に強いATOKではなんとか変換できるかと思ったのですが無理そうでした。
-<h3 id="xia-cun-hai-xiang-simomura-kaito">下村 海翔 （しもむら かいと）</h3>
-<p> <img loading="lazy" src="https://3.bp.blogspot.com/-EOOQW3oWmRo/UkJLCNQZeGI/AAAAAAAAYMc/wbtefCW0Msc/s800/sport_baseball_set.png" alt="野球のボール・グローブ・バットのイラスト | かわいいフリー素材集 いらすとや" width="143" height="155" data-is-external-image="true"></p>
-<p>2023年の野球のドラフトを見て名前を読みづらそうな選手を選びました。</p>
-<table style="border-collapse: collapse; width: 100%; height: 204.438px;" border="1">
-<tbody>
-<tr style="height: 50.3594px;">
-<td style="width: 33.2855%; height: 50.3594px;">IME</td>
-<td style="width: 33.2855%; height: 50.3594px;">変換</td>
-<td style="width: 33.2866%; height: 50.3594px;">予測変換</td>
-</tr>
-<tr style="height: 50.3594px;">
-<td style="width: 33.2855%; height: 50.3594px;">ATOK</td>
-<td style="width: 33.2855%; height: 50.3594px;"><strong>変換できた🎉</strong></td>
-<td style="width: 33.2866%; height: 50.3594px;"><strong>予測された🎉</strong></td>
-</tr>
-<tr style="height: 50.3594px;">
-<td style="width: 33.2855%; height: 50.3594px;">Google日本語入力</td>
-<td style="width: 33.2855%; height: 50.3594px;"><strong>変換できなかった😰</strong></td>
-<td style="width: 33.2866%; height: 50.3594px;"> </td>
-</tr>
-<tr style="height: 53.3594px;">
-<td style="width: 33.2855%; height: 53.3594px;">Mac標準</td>
-<td style="width: 33.2855%; height: 53.3594px;"><strong>変換できず😰</strong></td>
-<td style="width: 33.2866%; height: 53.3594px;"> </td>
-</tr>
-</tbody>
-</table>
-<p>他にも検証したのですが、スポーツ選手関連はATOKの方が強い傾向があるようです。</p>
-<h3>井上和（いのうえなぎ）</h3>
-</div>
-<p>2023年に人気のあるアイドルである乃木坂４６から読みづらそうなアイドルを選びました。</p>
-<table style="border-collapse: collapse; width: 100%; height: 201.438px;" border="1">
-<tbody>
-<tr style="height: 50.3594px;">
-<td style="width: 33.2855%; height: 50.3594px;">IME</td>
-<td style="width: 33.2855%; height: 50.3594px;">変換</td>
-<td style="width: 33.2866%; height: 50.3594px;">予測変換</td>
-</tr>
-<tr style="height: 50.3594px;">
-<td style="width: 33.2855%; height: 50.3594px;">ATOK</td>
-<td style="width: 33.2855%; height: 50.3594px;"><strong>変換できた🎉</strong></td>
-<td style="width: 33.2866%; height: 50.3594px;"><strong>予測された🎉</strong></td>
-</tr>
-<tr style="height: 50.3594px;">
-<td style="width: 33.2855%; height: 50.3594px;">Google日本語入力</td>
-<td style="width: 33.2855%; height: 50.3594px;"><strong>変換できなかった😰</strong></td>
-<td style="width: 33.2866%; height: 50.3594px;"> </td>
-</tr>
-</tbody>
-</table>
-<p>こちらでもATOKの勝利です。</p>
-<p>ちなみに同じアイドルグループの池田瑛紗という名前はどちらのIMEも変換できませんでした。</p>
-<p>ATOKが得意なもの。Google日本語変換が得意なものが見えてきた気がします。</p>
-<h3>配属ガチャ（はいぞくがちゃ）</h3>
-<p>Wikipediaのインターネットスラングの関連ページからピックアップしました。</p>
-<table style="border-collapse: collapse; width: 100%; height: 179.875px;" border="1">
-<tbody>
-<tr style="height: 50.3594px;">
-<td style="width: 33.2855%; height: 50.3594px;">IME</td>
-<td style="width: 33.2855%; height: 50.3594px;">変換</td>
-<td style="width: 33.2866%; height: 50.3594px;">予測変換</td>
-</tr>
-<tr style="height: 79.1562px;">
-<td style="width: 33.2855%; height: 79.1562px;">ATOK</td>
-<td style="width: 33.2855%; height: 79.1562px;"><strong>変換できなかった😰</strong></td>
-<td style="width: 33.2866%; height: 79.1562px;"> </td>
-</tr>
-<tr style="height: 50.3594px;">
-<td style="width: 33.2855%; height: 50.3594px;">Google日本語入力</td>
-<td style="width: 33.2855%; height: 50.3594px;"><strong>変換できた🎉</strong></td>
-<td style="width: 33.2866%; height: 50.3594px;"><strong>予測された🎉</strong></td>
-</tr>
-</tbody>
-</table>
-<p>ATOKもWikipediaに載る程度のインターネットスラングだと変換できるものもあるのですが、Google日本語入力の方が変換できる単語が多かったです。</p>
-<h3>ニュース関連の単語はGoogle日本語入力の方が強かった</h3>
-<figure class="post__image"><img loading="lazy"  src="https://corkborg.github.io/media/posts/17/sukurinsiyotuto-2023-11-20-2.08.09.png" alt="" width="267" height="127" sizes="(max-width: 1200px) 100vw, 1200px" srcset="https://corkborg.github.io/media/posts/17/responsive/sukurinsiyotuto-2023-11-20-2.08.09-xs.png 300w ,https://corkborg.github.io/media/posts/17/responsive/sukurinsiyotuto-2023-11-20-2.08.09-sm.png 480w ,https://corkborg.github.io/media/posts/17/responsive/sukurinsiyotuto-2023-11-20-2.08.09-md.png 749w ,https://corkborg.github.io/media/posts/17/responsive/sukurinsiyotuto-2023-11-20-2.08.09-xl.png 1200w"></figure>
-<p>センシティブな用語が多いので乗せませんが、ニュースや新書に載るような社会問題系の単語はGoogle日本語入力のほうが強いようでした。</p>
-<h3>工学、哲学、生物などの専門用語はGoogle日本語入力の方が圧倒的に強かった</h3>
-<figure class="post__image"><img loading="lazy"  src="https://corkborg.github.io/media/posts/17/situkariXue-huShu-Li-Zui-Shi-Hua.png" alt="" width="257" height="158" sizes="(max-width: 1200px) 100vw, 1200px" srcset="https://corkborg.github.io/media/posts/17/responsive/situkariXue-huShu-Li-Zui-Shi-Hua-xs.png 300w ,https://corkborg.github.io/media/posts/17/responsive/situkariXue-huShu-Li-Zui-Shi-Hua-sm.png 480w ,https://corkborg.github.io/media/posts/17/responsive/situkariXue-huShu-Li-Zui-Shi-Hua-md.png 749w ,https://corkborg.github.io/media/posts/17/responsive/situkariXue-huShu-Li-Zui-Shi-Hua-xl.png 1200w"></figure>
-<p>数理最適化の本、ベイズ統計学の本、利己的な遺伝子、純粋理性批判などの本を開いて適当に見かけた熟語を入れて変換できるか試していったのですが圧倒的にGoogle日本語入力が強いようでした。</p>
-<p>推測するに、Google日本語入力は大学で学ぶような専門用語に強い傾向がありそうです。</p>
-<h2>まとめ</h2>
-<p>各種IMEについて調査したまとめです。</p>
-<h3>Mac標準のIME</h3>
-<p>Mac標準のIMEはクラウド機能の存在が存在しないので単語集録数が少なく、ATOKとGoogle日本語入力に全く歯が立たないようでした。</p>
-<h3>Google日本語入力</h3>
-<p>ATOKとの比較で下記のような強みが存在します。</p>
-<ul>
-<li><strong>大学で勉強するような専門用語の変換で圧倒的な能力を持つ</strong></li>
-<li>流行のアニメ、ソーシャルゲームの用語に強い</li>
-<li>流行のネットスラングにそれなりに強い</li>
-<li>スポーツやテレビアイドルには弱い</li>
-</ul>
-<h3>ATOK</h3>
-<p>スポーツやアイドルなどの分野ではGoogle日本語入力よりも変換できる単語が多いです。そのため、テレビなどのマスメディアで流行っている単語に強いのではないかと思います。</p>
-<p>これは想像ですが、ATOKは出版や報道などの業界に特化して作られているのではないかと思います。</p>
-<h3>収録単語数に対する結論</h3>
-<p>総合的に見るとGoogle日本語入力の方が単語を変換する能力が高いようでした。</p>
-<p>（ただ、あくまでも収録単語の話で日本語の入力精度はATOKのほうが高いです）</p>
-<h2>感想</h2>
-<p>専門用語が多く、日本語の精度はそこまでこだわらない。私の利用用途ではGoogle日本語入力の方が快適に文章が書けそうです。</p>
-<p>振り返ってみると、ATOKでは文章の変換が一発で決まることが少なく息苦しさがありました。</p>
-<p>変換能力とは関係ないのですが、ATOKは多機能IMEなためか用途がわかりづらいウィンドウがマウスの周りに登場したりして邪魔な点。Windows版のインターフェースがダサいところが気になります。</p>
-<p>せっかく契約したので数ヶ月ほどATOKを使ってみようと思うのですが、最終的にはGoogle日本語入力に戻りそうです。<br><br></p>
             ]]>
         </content>
     </entry>
