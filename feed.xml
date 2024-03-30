@@ -3,12 +3,150 @@
     <title>塩の惑星</title>
     <link href="https://corkborg.github.io/feed.xml" rel="self" />
     <link href="https://corkborg.github.io" />
-    <updated>2024-03-28T16:22:07+09:00</updated>
+    <updated>2024-03-31T00:09:13+09:00</updated>
     <author>
         <name>ミズソバ</name>
     </author>
     <id>https://corkborg.github.io</id>
 
+    <entry>
+        <title>日本語や漢字の日付をPythonのdatetimeに変換するライブラリを作った</title>
+        <author>
+            <name>ミズソバ</name>
+        </author>
+        <link href="https://corkborg.github.io/created-kanji-to-time/"/>
+        <id>https://corkborg.github.io/created-kanji-to-time/</id>
+        <media:content url="https://corkborg.github.io/media/posts/35/Ming-Cheng-Wei-She-Ding-huairu-1711796415700.drawio-1.png" medium="image" />
+            <category term="日本語周り"/>
+            <category term="Python"/>
+
+        <updated>2024-03-30T19:21:34+09:00</updated>
+            <summary>
+                <![CDATA[
+                        <img src="https://corkborg.github.io/media/posts/35/Ming-Cheng-Wei-She-Ding-huairu-1711796415700.drawio-1.png" alt="" />
+                    日本語で書かれた日付のデータをPythonのdatetime、timedeltaに変換するライブラリを作成したので紹介します。 kanji_to_timeという名前のライブラリです。 https://github.com/corkborg/kanji_to_time https://pypi.org/project/kanji-to-time/ こんな感じでインストールできます。&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                    <p><img src="https://corkborg.github.io/media/posts/35/Ming-Cheng-Wei-She-Ding-huairu-1711796415700.drawio-1.png" class="type:primaryImage" alt="" /></p>
+                <p>日本語で書かれた日付のデータをPythonのdatetime、timedeltaに変換するライブラリを作成したので紹介します。</p>
+<p>kanji_to_timeという名前のライブラリです。</p>
+<p><a href="https://github.com/corkborg/kanji_to_time" target="_blank" rel="noopener noreferrer">https://github.com/corkborg/kanji_to_time</a><br><a href="https://pypi.org/project/kanji-to-time/" target="_blank" rel="noopener noreferrer">https://pypi.org/project/kanji-to-time/</a></p>
+<p>こんな感じでインストールできます。</p>
+<pre class="language-bash"><code>pip install kanji_to_time</code></pre>
+<h2>こんな変換ができます</h2>
+<p>半角、漢字混じり、漢数字、全角数字などを変換できます。</p>
+<pre class="language-python"><code>&gt;&gt;&gt; import kanji_to_time as ktt
+&gt;&gt;&gt; text = "2024年4月5日22時30分4秒"
+&gt;&gt;&gt; ktt.to_datetime(text)
+datetime.datetime(2024, 4, 5, 22, 30, 4)</code></pre>
+<pre class="language-python"><code>&gt;&gt;&gt; ktt.to_timedelta("マイナス七〇億分")
+datetime.timedelta(days=-4861112, seconds=76800)</code></pre>
+<p>旧字の漢数字などにも対応しています。</p>
+<pre class="language-python"><code>&gt;&gt;&gt; ktt.to_datetime("弐零弐参年伍月肆日")
+datetime.datetime(2023, 5, 4, 0, 0)</code></pre>
+<p>今のところ億の位まで対応しています。</p>
+<pre class="language-python"><code>&gt;&gt;&gt; ktt.to_timedelta("3億二三万千７十１秒間")
+datetime.timedelta(days=3474, seconds=77471)</code></pre>
+<h2>機能ポイント</h2>
+<p>半角全角漢数字が混じっていても変換することができます。</p>
+<p>timedelta変換の場合20秒、20秒間のように位の後ろに間が付いていても同様に変換することができます。</p>
+<h2>どうやって作ったか？</h2>
+<p>時間の変換は思ったよりルールが多くて解決するのが難しいです。</p>
+<p>最初はPythonの正規表現ライブラリreを使って解決しようと思ったのですが、実装している途中で大変複雑で誰も理解できないようなコードになってしまうことに気づきました。</p>
+<p>手間を惜しまなければこういうルールのある文章（文法）を相手にする際にはパーサージェネレータを使ったほうが良いです。Pythonでおすすめのパーサージェネレータを調べた所Larkというものがヒットしたので使用しました。</p>
+<p><a href="Larkの公式ドキュメント">https://lark-parser.readthedocs.io/en/stable/</a></p>
+<p>数字の周りの文法ルールだけを抜き出して紹介します。</p>
+<p>kanji_digitという文字を読むだけの文法のルールをmixed_numberという親の文法ルールが活用することで文法を木構造で表現することができています。</p>
+<pre class="language-javascript"><code>number: signed? kanji_num_parser
+kanji_num_parser: unit_oku? unit_man? unit_sen? unit_juu? mixed_number?
+
+signed: "-" | /ー/ | /マイナス/ | /ひく/ | /引く/
+
+unit_oku: mixed_number "億"
+unit_man: mixed_number? "万"
+unit_sen: mixed_number? "千"
+unit_juu: mixed_number? "十"
+
+mixed_number: (zenkaku_digit | kanji_digit | DIGIT)+
+kanji_unit: "十" | "百" | "千" | "万" | "億"
+kanji_digit: /一/ | /壱/
+           | /二/ | /弐/
+           | /三/ | /参/
+           | /四/ | /肆/
+           | /五/ | /伍/
+           | /六/ | /陸/
+           | /七/ | /漆/
+           | /八/ | /捌/
+           | /九/ | /玖/
+           | /〇/ | /ゼロ/ | /零/
+           | /○/ | /◯/ // 一応丸もサポートしておく
+zenkaku_digit: /０/ | /１/ | /２/ | /３/ | /４/ | /５/ | /６/ | /７/ | /８/ | /９/</code></pre>
+<p><a href="https://github.com/corkborg/kanji_to_time/blob/main/kanji_to_time/grammer/kanji_to_time.lark">https://github.com/corkborg/kanji_to_time/blob/main/kanji_to_time/grammer/kanji_to_time.lark</a></p>
+<p>このLarkの文法構造に合わせて変換を行うPythonのコードを書いてやればうまく変換することができます。</p>
+<h2>一応漢数字の変換もできる</h2>
+<p>Larkの文法定義を見てもらうとわかるのですが、数値変換だけの文法ルールが存在するので数値変換だけを行うこともできます。</p>
+<p>一応調査用に漢数字から数値に変換する機能もあります。</p>
+<pre class="language-python"><code>&gt;&gt;&gt; ktt.to_number("八千七十二")
+8072</code></pre>
+<p>ただ、漢数字の数値変換についてはKanjizeという優れたライブラリが存在するのでこの用途だけであればこちらを使ったほうが良いと思います。<br><a href="https://github.com/nagataaaas/Kanjize" target="_blank" rel="noopener noreferrer">https://github.com/nagataaaas/Kanjize</a></p>
+<h2>サポート</h2>
+<p>このような日付を変換する際にはぜひ使ってみてください。</p>
+<p>不具合などに気づいたらissuesに投稿してもらえると嬉しいです。<br><a href="https://github.com/corkborg/kanji_to_time/issues" target="_blank" rel="noopener noreferrer">https://github.com/corkborg/kanji_to_time/issues</a></p>
+<p> </p>
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>RaspberryPi 5の性能はSandyBridge i5-2500に近いことに気づいた</title>
+        <author>
+            <name>ミズソバ</name>
+        </author>
+        <link href="https://corkborg.github.io/raspberrypi-5-vs-intel-core-i5-2500/"/>
+        <id>https://corkborg.github.io/raspberrypi-5-vs-intel-core-i5-2500/</id>
+        <media:content url="https://corkborg.github.io/media/posts/33/soc.webp" medium="image" />
+            <category term="ネットワーク"/>
+
+        <updated>2024-03-29T00:32:00+09:00</updated>
+            <summary>
+                <![CDATA[
+                        <img src="https://corkborg.github.io/media/posts/33/soc.webp" alt="" />
+                    最近、RaspberryPi5が日本で発売されましたね。 当時は早いと言われていたRaspberryPi4よりも二倍以上も性能が高いようです。 公式によるRaspberryPi5のベンチマーク ただ、RaspberryPi同士の比較ではどれくらい実用的な性能を持っているのかわかりません。 そこでSandyBridgeに目をつけました。&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                    <p><img src="https://corkborg.github.io/media/posts/33/soc.webp" class="type:primaryImage" alt="" /></p>
+                <p>最近、RaspberryPi5が日本で発売されましたね。</p>
+<p>当時は早いと言われていたRaspberryPi4よりも二倍以上も性能が高いようです。</p>
+<p><a href="https://www.raspberrypi.com/news/benchmarking-raspberry-pi-5/">公式によるRaspberryPi5のベンチマーク</a></p>
+<p>ただ、RaspberryPi同士の比較ではどれくらい実用的な性能を持っているのかわかりません。<br>そこでSandyBridgeに目をつけました。</p>
+<h2>SandyBridge</h2>
+<p> </p>
+<p>SandyBridgeは2011年頃のCPUで、通常はあまり性能向上に寄与しない省電力周りの設計改善を極めたら非常に性能が向上したことで話題になったIntelのCPUシリーズです。</p>
+<p>今となっては１０年以上も昔のCPUですが、根強いファンが多く未だに使っている人がそれなりにいるようです。私も数年前までファイルサーバとしてSandyBridge i5-2500を使っていました。</p>
+<p><a href="https://dic.nicovideo.jp/a/sandy%E3%81%A7%E5%8D%81%E5%88%86%E3%81%8A%E3%81%98%E3%81%95%E3%82%93">Sandyで十分おじさん</a></p>
+<p>流石に今は使ってないですが…。</p>
+<h2>Geekbench6での比較</h2>
+<p>RaspberryPi5で検索して一番にヒットするものは、Geekbench5なのでGeekbench6の結果を探しました。オーバクロックしていない2.4GHzで動作させているRasberryPi5の結果を選びました。</p>
+<figure class="post__image"><img loading="lazy"  src="https://corkborg.github.io/media/posts/33/sukurinsiyotuto-2024-03-30-0.41.49.png" alt="" width="1716" height="594" sizes="(max-width: 1200px) 100vw, 1200px" srcset="https://corkborg.github.io/media/posts/33/responsive/sukurinsiyotuto-2024-03-30-0.41.49-xs.png 300w ,https://corkborg.github.io/media/posts/33/responsive/sukurinsiyotuto-2024-03-30-0.41.49-sm.png 480w ,https://corkborg.github.io/media/posts/33/responsive/sukurinsiyotuto-2024-03-30-0.41.49-md.png 749w ,https://corkborg.github.io/media/posts/33/responsive/sukurinsiyotuto-2024-03-30-0.41.49-xl.png 1200w"></figure>
+<figure class="post__image"><img loading="lazy"  src="https://corkborg.github.io/media/posts/33/sukurinsiyotuto-2024-03-30-0.42.22.png" alt="" width="1736" height="584" sizes="(max-width: 1200px) 100vw, 1200px" srcset="https://corkborg.github.io/media/posts/33/responsive/sukurinsiyotuto-2024-03-30-0.42.22-xs.png 300w ,https://corkborg.github.io/media/posts/33/responsive/sukurinsiyotuto-2024-03-30-0.42.22-sm.png 480w ,https://corkborg.github.io/media/posts/33/responsive/sukurinsiyotuto-2024-03-30-0.42.22-md.png 749w ,https://corkborg.github.io/media/posts/33/responsive/sukurinsiyotuto-2024-03-30-0.42.22-xl.png 1200w"></figure>
+<p><a href="https://browser.geekbench.com/v5/cpu/21773016"></a><a href="https://browser.geekbench.com/v5/cpu/21773016">Geekbench6 Raspberry Pi 5 Model B Rev 1.0</a><br><a href="https://browser.geekbench.com/v5/cpu/21773016"></a><a href="https://browser.geekbench.com/processors/intel-core-i5-2500">Geekbench6 i5-2500</a></p>
+<p>シングルコア性能だとRaspberryPi 5のほうが何割か早いです。<br>マルチコア性能だとi5-2500のほうが少し早いようです。</p>
+<p>RaspberryPi5とi5-2500の性能は拮抗していそうです。</p>
+<h2>i5-2500から考えるRaspberryPi5の性能</h2>
+<p>RaspberryPi5とても早いですね。</p>
+<p>PCとしてもサーバとしても実用に近いスペックなのではないかと思います。私はi5-2500で5人位が使用するMinecraftサーバーなどを運用したことがあるのでそのようなタスクはこなせそうな気がします。</p>
+<p>昔、RaspberryPi400というPCを買ったのですが性能がイマイチだったので、5ベースのRaspberryPi500とか発売して欲しいですね。</p>
+<h3>SandyBridgeの性能は発売当初より落ちている？</h3>
+<p>SandyBridgeとほかのCPUの比較する際に一つ注意するポイントが一つあります。</p>
+<p>2018年頃にIntelのCPUではSpectre/Meltdownなど脆弱性が発見されました。</p>
+<p>この問題の対策で各OSではパッチが当てられました。このパッチによってSandyBridgeでは発売当時に比べてCPUの性能がだいぶ落ちています。</p>
+<p> </p>
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>使いやすいエディターで静的サイト生成できるPubliiがおすすめな話</title>
         <author>
@@ -571,137 +709,6 @@ model = timm.create_model("convnextv2_huge.fcmae_ft_in22k_in1k_512", pretrained=
 <p>※EN-EL15aだけ持っていないので掲載していません</p>
 <figure class="post__image post__image--center"><img loading="lazy"  src="https://corkborg.github.io/media/posts/20/PXL_20240127_051629149.MP.jpg" alt="EN-EL15, EN-EL15b, EN-EL15cのバッテリー容量などの詳細スペック" width="326" height="579" sizes="(max-width: 1200px) 100vw, 1200px" srcset="https://corkborg.github.io/media/posts/20/responsive/PXL_20240127_051629149.MP-xs.jpg 300w ,https://corkborg.github.io/media/posts/20/responsive/PXL_20240127_051629149.MP-sm.jpg 480w ,https://corkborg.github.io/media/posts/20/responsive/PXL_20240127_051629149.MP-md.jpg 749w ,https://corkborg.github.io/media/posts/20/responsive/PXL_20240127_051629149.MP-xl.jpg 1200w"></figure>
 <p> </p>
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>ゲーミングPCは電気代が高い！電気代が安いApple Silicon Macのゲームでの省電力能力を検証</title>
-        <author>
-            <name>ミズソバ</name>
-        </author>
-        <link href="https://corkborg.github.io/energy-saving-battle-gaming-pc-vs-apple-silicon-mac/"/>
-        <id>https://corkborg.github.io/energy-saving-battle-gaming-pc-vs-apple-silicon-mac/</id>
-        <media:content url="https://corkborg.github.io/media/posts/19/DSC_0581_02.JPG" medium="image" />
-            <category term="ゲーム"/>
-            <category term="Mac"/>
-            <category term="AppleSilicon"/>
-
-        <updated>2023-11-25T14:07:43+09:00</updated>
-            <summary>
-                <![CDATA[
-                        <img src="https://corkborg.github.io/media/posts/19/DSC_0581_02.JPG" alt="電気代が安いM1 MacBook Pro" />
-                    昨今は電気代の値上げが激しいです。 私はゲーミングPCであらゆるPC作業を行っていたのですが、電力計を買って電気代を計測してみたところ、軽めの作業でも驚くほど電気を消費していることがわかりました。 このままでは電気代がものすごいことになってしまうので、軽めの作業をApple SIliconのM1 MacBook&hellip;
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                    <p><img src="https://corkborg.github.io/media/posts/19/DSC_0581_02.JPG" class="type:primaryImage" alt="電気代が安いM1 MacBook Pro" /></p>
-                <p>昨今は電気代の値上げが激しいです。<br>私はゲーミングPCであらゆるPC作業を行っていたのですが、電力計を買って電気代を計測してみたところ、軽めの作業でも驚くほど電気を消費していることがわかりました。</p>
-<p>このままでは電気代がものすごいことになってしまうので、軽めの作業をApple SIliconのM1 MacBook Airで行うようにしました。<br>読みどおりApple Siliconは電力消費が少ないので大幅に電気代を抑えることができました。</p>
-<p>最近は、ゲームでもMacに対応している場合は、なるべくそちらで遊ぶようにしています。<br>ただ、ゲームというの処理が重く、いくら省電力なApple Siliconといえど電力をたくさん消費しなければならないのではないか？</p>
-<p>そこで、消費電力や電気代について調査を行ってみました。</p>
-<h2>Apple Silicon Macはなぜ電気代が安い？</h2>
-<figure class="post__image post__image--center"><img loading="lazy"  src="https://corkborg.github.io/media/posts/19/Apple_new-M1-chip_11102020.jpg.news_app_ed.jpg" alt="" width="215" height="215" sizes="(max-width: 1200px) 100vw, 1200px" srcset="https://corkborg.github.io/media/posts/19/responsive/Apple_new-M1-chip_11102020.jpg.news_app_ed-xs.jpg 300w ,https://corkborg.github.io/media/posts/19/responsive/Apple_new-M1-chip_11102020.jpg.news_app_ed-sm.jpg 480w ,https://corkborg.github.io/media/posts/19/responsive/Apple_new-M1-chip_11102020.jpg.news_app_ed-md.jpg 749w ,https://corkborg.github.io/media/posts/19/responsive/Apple_new-M1-chip_11102020.jpg.news_app_ed-xl.jpg 1200w"></figure>
-<p>簡単に説明すると、Apple Silicon Macでは省電力さが重要なスマートフォンと同じ技術を多く使用しているからです。</p>
-<p>たとえば、Macで以前まで使用されていたIntelのCPUはPCやサーバの世界では圧倒的なシェアがありますが、スマートフォンの世界ではほとんどシェアがありません。<br>これは、Intel系のCPUの基礎設計がスマートフォンの基準に沿った消費電力まで落とせるようにできないからです。</p>
-<p>以前は、スマートフォンのCPUはIntel系のものに比べると非力でPC用途では無理だと思われていました。<br>ただ、現在ではPCと遜色ない性能が出せるようになり、電力あたりの性能がIntelよりもずっと効率がよい事がわかり始めています。</p>
-<p>CPUの他にも、GPUなど様々な面でApple Silicon Macはスマートフォン譲りの省電力技術が使用されています。</p>
-<h2>検証：マインクラフトで遊んでみた</h2>
-<p>残念なことにApple Silicon Macに対応しているゲームはあまり多くありません。<br>そこで、有名で検証しやすいゲームとしてマインクラフトを使用します。</p>
-<p><a href="https://corkborg.github.io/steam-games-support-apple-silicon/" target="_blank" rel="noopener noreferrer"></a>Apple Siliconで遊べるゲームに興味がある方は、是非こちらも見てみてください。<br><a href="https://corkborg.github.io/factorio-support-applesilicon/" target="_blank" rel="noopener noreferrer">Apple Silicon Macで遊べるゲームリスト. M1 Macで検証してみた</a></p>
-<h4>マインクラフトの設定</h4>
-<ul>
-<li>バージョン 1.20.2 （バニラ）</li>
-<li>フルスクリーン（おおよそどちらもWQHDくらい）</li>
-<li>フレームレート：30FPS（フレーム落ちしないように余裕を持った数値に）</li>
-<li>描画距離：32チャンク</li>
-<li>演算距離：32チャンク</li>
-<li>グラフィックス：最高設定</li>
-<li>ワールドを新規作成して遊ぶ</li>
-</ul>
-<figure class="post__image"><img loading="lazy"  src="https://corkborg.github.io/media/posts/19/sukurinsiyotuto-2023-11-25-143618.png" alt="" width="890" height="543" sizes="(max-width: 1200px) 100vw, 1200px" srcset="https://corkborg.github.io/media/posts/19/responsive/sukurinsiyotuto-2023-11-25-143618-xs.png 300w ,https://corkborg.github.io/media/posts/19/responsive/sukurinsiyotuto-2023-11-25-143618-sm.png 480w ,https://corkborg.github.io/media/posts/19/responsive/sukurinsiyotuto-2023-11-25-143618-md.png 749w ,https://corkborg.github.io/media/posts/19/responsive/sukurinsiyotuto-2023-11-25-143618-xl.png 1200w"></figure>
-<h4>ゲーミングPCでの検証</h4>
-<p>スペックは下記のような感じです。</p>
-<ul>
-<li>Ryzen 5600G</li>
-<li>GeForce RTX 4070 Ti 12GB</li>
-<li>グラボの電力設定：標準</li>
-<li>WQHDの液晶一つ</li>
-<li>再起動後検証</li>
-</ul>
-<figure class="post__image" ><figure class="post__image"><img loading="lazy"  src="https://corkborg.github.io/media/posts/19/2023-11-25_14.42.44-2.png" alt="WindowsでのMinecraftプレイ" width="2560" height="1440" sizes="(max-width: 1200px) 100vw, 1200px" srcset="https://corkborg.github.io/media/posts/19/responsive/2023-11-25_14.42.44-2-xs.png 300w ,https://corkborg.github.io/media/posts/19/responsive/2023-11-25_14.42.44-2-sm.png 480w ,https://corkborg.github.io/media/posts/19/responsive/2023-11-25_14.42.44-2-md.png 749w ,https://corkborg.github.io/media/posts/19/responsive/2023-11-25_14.42.44-2-xl.png 1200w"></figure>
-<figcaption >FOVの設定リセットし忘れていた</figcaption>
-</figure>
-<p>フレームレートですが28〜30FPSの間で安定していました。</p>
-<p>気になる消費電力ですが…最大190W。思った以上に低い！<br>最新ゲームだと400Wくらいの電力消費しているのでマインクラフトは省電力のようでした。</p>
-<h4>Apple Silicon Macでの検証</h4>
-<p>こんな感じの条件にしました</p>
-<ul>
-<li>M1 MacBook Air</li>
-<li>マウスとキーボードを接続</li>
-<li>本体付属の液晶 2560x1600 （WQHDよりも少し大きい）</li>
-<li>少しバッテリーを消費した状態で開始</li>
-<li>再起動後検証</li>
-</ul>
-<figure class="post__image" ><img loading="lazy" src="https://corkborg.github.io/media/posts/19/2023-11-25_15.02.47.png" alt="Apple SiliconでのMacプレイのスクショ" width="2880" height="1800" sizes="(max-width: 1200px) 100vw, 1200px" srcset="https://corkborg.github.io/media/posts/19/responsive/2023-11-25_15.02.47-xs.png 300w ,https://corkborg.github.io/media/posts/19/responsive/2023-11-25_15.02.47-sm.png 480w ,https://corkborg.github.io/media/posts/19/responsive/2023-11-25_15.02.47-md.png 749w ,https://corkborg.github.io/media/posts/19/responsive/2023-11-25_15.02.47-xl.png 1200w">
-<figcaption >Apple Silicon Macでのプレイ</figcaption>
-</figure>
-<p>描画設定がもりもりな感じでしたが、フレームレートは28〜30FPSで安定しました。</p>
-<p>気になる消費電力は…最大40Wでした。そして、充電が完了して以降は最大30W程度の消費電力でした。<br>ゲーミングPCもなかなか悪くない数値でしたがこちらは一層省電力ですね。</p>
-<h2>まとめ：Apple Siliconはゲーム用途でも電気代が安い</h2>
-<p>ゲームをプレイする場合、Apple Silicon MacはゲーミングPCと比べて大体6分の1〜4分の1程度の電力に抑えられるようでした。</p>
-<p>毎日4時間くらいゲームをプレイすると考えて計算すると…<br>現在の東京電力ではゲーミングPCで月当たり700円程度かかります。対してM1 MacBook Airだと月当たり100円から150円程度で済みます。</p>
-<p>ただ、これは純粋なゲームのみを起動した状態での調査＆計算なので、ゲーム中にブラウザでYoutubeを見たりゲーム以外のアプリを起動しているともっと電気代がかかります。<br>（自分の経験では意外とブラウザはガンガン電力消費します）<br>それらの作業もApple Siliconの方が省電力なので実際には電気代にはもっと差が出ると思われます。</p>
-<p> </p>
-<p> </p>
-<p> </p>
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>リバース1999を対応してないMacにインストールして遊んでみた</title>
-        <author>
-            <name>ミズソバ</name>
-        </author>
-        <link href="https://corkborg.github.io/install-reverse1999-on-mac/"/>
-        <id>https://corkborg.github.io/install-reverse1999-on-mac/</id>
-        <media:content url="https://corkborg.github.io/media/posts/18/sukurinsiyotuto-2023-11-20-13.24.24.png" medium="image" />
-            <category term="ゲーム"/>
-            <category term="Mac"/>
-            <category term="AppleSilicon"/>
-
-        <updated>2023-11-20T03:23:11+09:00</updated>
-            <summary>
-                <![CDATA[
-                        <img src="https://corkborg.github.io/media/posts/18/sukurinsiyotuto-2023-11-20-13.24.24.png" alt="リバース：1999" />
-                    最近、リバース：1999をプレイし始めました。 このゲームはストーリー重視のソーシャルゲームでビジュアルがとても綺麗です。 いつもはスマートフォンでプレイしているのですが、大きな画面で綺麗なビジュアルを楽しみたいと思うようになりました。 普段はM1 Mac&hellip;
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                    <p><img src="https://corkborg.github.io/media/posts/18/sukurinsiyotuto-2023-11-20-13.24.24.png" class="type:primaryImage" alt="リバース：1999" /></p>
-                <p>最近、リバース：1999をプレイし始めました。</p>
-<p>このゲームはストーリー重視のソーシャルゲームでビジュアルがとても綺麗です。<br>いつもはスマートフォンでプレイしているのですが、大きな画面で綺麗なビジュアルを楽しみたいと思うようになりました。</p>
-<p>普段はM1 Mac Book Air作業しているのでMacでプレイできたらなと思っていました。リバース1999はAndroid、iPhone、iPad、WindowsをサポートしているのですがMacは特にサポートしていないようです。</p>
-<h2>MacにはiOSアプリをインストールする機能がある</h2>
-<figure class="post__image post__image--center"><img loading="lazy"  src="https://corkborg.github.io/media/posts/18/sukurinsiyotuto-2023-11-20-3.04.14.png" alt="Appストア画面 リバース1999検索結果" width="501" height="280" sizes="(max-width: 1200px) 100vw, 1200px" srcset="https://corkborg.github.io/media/posts/18/responsive/sukurinsiyotuto-2023-11-20-3.04.14-xs.png 300w ,https://corkborg.github.io/media/posts/18/responsive/sukurinsiyotuto-2023-11-20-3.04.14-sm.png 480w ,https://corkborg.github.io/media/posts/18/responsive/sukurinsiyotuto-2023-11-20-3.04.14-md.png 749w ,https://corkborg.github.io/media/posts/18/responsive/sukurinsiyotuto-2023-11-20-3.04.14-xl.png 1200w"></figure>
-<p>これはApple Silicon Mac（最近のMac）限定の話です。<br>MacはiOSのアプリをMacにインストールする機能が標準で存在します。<br><a href="https://support.apple.com/ja-jp/guide/app-store/fird2c7092da/mac" target="_blank" rel="noopener noreferrer">Apple公式: Appleシリコンを搭載したMacでiPhoneアプリおよびiPadアプリを使用する</a></p>
-<p>そのため、アプリ会社の方で制限をかけていなければiOSのアプリを遊ぶことができます。</p>
-<p>リバース：1999をApp Storeで検索してみたところMacで遊べそうな雰囲気が漂っていたのでインストールしてみました。</p>
-<figure class="post__image" ><figure class="post__image"><img loading="lazy"  src="https://corkborg.github.io/media/posts/18/sukurinsiyotuto-2023-11-20-3.12.35.png" alt="リバース1999をMacにインストールできた" width="2006" height="754" sizes="(max-width: 1200px) 100vw, 1200px" srcset="https://corkborg.github.io/media/posts/18/responsive/sukurinsiyotuto-2023-11-20-3.12.35-xs.png 300w ,https://corkborg.github.io/media/posts/18/responsive/sukurinsiyotuto-2023-11-20-3.12.35-sm.png 480w ,https://corkborg.github.io/media/posts/18/responsive/sukurinsiyotuto-2023-11-20-3.12.35-md.png 749w ,https://corkborg.github.io/media/posts/18/responsive/sukurinsiyotuto-2023-11-20-3.12.35-xl.png 1200w"></figure>
-<figcaption > Launchpadのゲームメニューに登録される</figcaption>
-</figure>
-<figure class="post__image post__image--center"><img loading="lazy"  src="https://corkborg.github.io/media/posts/18/sukurinsiyotuto-2023-11-20-3.13.07.png" alt="リバース1999  タイトル画面" width="581" height="452" sizes="(max-width: 1200px) 100vw, 1200px" srcset="https://corkborg.github.io/media/posts/18/responsive/sukurinsiyotuto-2023-11-20-3.13.07-xs.png 300w ,https://corkborg.github.io/media/posts/18/responsive/sukurinsiyotuto-2023-11-20-3.13.07-sm.png 480w ,https://corkborg.github.io/media/posts/18/responsive/sukurinsiyotuto-2023-11-20-3.13.07-md.png 749w ,https://corkborg.github.io/media/posts/18/responsive/sukurinsiyotuto-2023-11-20-3.13.07-xl.png 1200w"></figure>
-<p>起動することができました！<br>iPad版で起動しているようで3:4のウィンドウになっています。リバース：1999は16:9のゲームなので上下の余白が少し気になります。<br>ただ大きな画面でプレイできて良い感じです。</p>
-<h2>遊んでみた結果</h2>
-<p>普通に遊ぶことができ、特に問題になるような点は見つかりませんでした。</p>
-<figure class="post__image" ><figure class="post__image post__image--center"><img loading="lazy"  src="https://corkborg.github.io/media/posts/18/sukurinsiyotuto-2023-11-21-3.04.04.png" alt="リバース1999 戦闘 on Mac" width="2162" height="1640" sizes="(max-width: 1200px) 100vw, 1200px" srcset="https://corkborg.github.io/media/posts/18/responsive/sukurinsiyotuto-2023-11-21-3.04.04-xs.png 300w ,https://corkborg.github.io/media/posts/18/responsive/sukurinsiyotuto-2023-11-21-3.04.04-sm.png 480w ,https://corkborg.github.io/media/posts/18/responsive/sukurinsiyotuto-2023-11-21-3.04.04-md.png 749w ,https://corkborg.github.io/media/posts/18/responsive/sukurinsiyotuto-2023-11-21-3.04.04-xl.png 1200w"></figure>
-<figcaption >特に問題なく戦闘をすることができました</figcaption>
-</figure>
-<figure class="post__image" ><figure class="post__image post__image--center"><img loading="lazy"  src="https://corkborg.github.io/media/posts/18/sukurinsiyotuto-2023-11-20-3.19.06.png" alt="リバース1999 ウィルダネス" width="1058" height="821" sizes="(max-width: 1200px) 100vw, 1200px" srcset="https://corkborg.github.io/media/posts/18/responsive/sukurinsiyotuto-2023-11-20-3.19.06-xs.png 300w ,https://corkborg.github.io/media/posts/18/responsive/sukurinsiyotuto-2023-11-20-3.19.06-sm.png 480w ,https://corkborg.github.io/media/posts/18/responsive/sukurinsiyotuto-2023-11-20-3.19.06-md.png 749w ,https://corkborg.github.io/media/posts/18/responsive/sukurinsiyotuto-2023-11-20-3.19.06-xl.png 1200w"></figure>
-<figcaption >ウィルダネス編集画面</figcaption>
-</figure>
-<p>リバース1999はMacでも遊ぶことができるようでした。</p>
             ]]>
         </content>
     </entry>
