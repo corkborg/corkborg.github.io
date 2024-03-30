@@ -3,7 +3,7 @@
     <title>塩の惑星</title>
     <link href="https://corkborg.github.io/feed.xml" rel="self" />
     <link href="https://corkborg.github.io" />
-    <updated>2024-03-31T01:12:47+09:00</updated>
+    <updated>2024-03-31T03:32:33+09:00</updated>
     <author>
         <name>ミズソバ</name>
     </author>
@@ -53,12 +53,12 @@ datetime.timedelta(days=3474, seconds=77471)</code></pre>
 <p>半角全角漢数字が混じっていても変換することができます。</p>
 <p>timedelta変換の場合20秒、20秒間のように位の後ろに間が付いていても同様に変換することができます。</p>
 <h2>どうやって作ったか？</h2>
-<p>時間の変換は思ったよりルールが多くて解決するのが難しいです。</p>
-<p>最初はPythonの正規表現ライブラリreを使って解決しようと思ったのですが、実装している途中で大変複雑で誰も理解できないようなコードになってしまうことに気づきました。</p>
-<p>手間を惜しまなければこういうルールのある文章（文法）を相手にする際にはパーサージェネレータを使ったほうが良いです。Pythonでおすすめのパーサージェネレータを調べた所Larkというものがヒットしたので使用しました。</p>
+<p>当初、日本語や漢字時間変換そんなに難しいコードを書かなくても解決できるだろうと考えていました。</p>
+<p>しかし、単純そうに見えて時間の変換はルールが多くてシンプルなコードでは実現できないことがわかりました。</p>
+<p>このようなルールがある文章を処理する場合、一番手軽なのは正規表現です。私も当初はreを使って解決しようと思ったのですが、実装している途中で正規表現で実現すると大変複雑で自分ですら理解できないようなコードになってしまうことに気づきました。</p>
+<p>手間を惜しまなければ、このようなルールが複雑な文章（文法）を相手にする際にはパーサージェネレータを使ったほうが良いです。Pythonでおすすめのパーサージェネレータを調べた所Larkというものがヒットしたのでこれを使用して作成しました。</p>
 <p><a href="Larkの公式ドキュメント">https://lark-parser.readthedocs.io/en/stable/</a></p>
-<p>数字の周りの文法ルールだけを抜き出して紹介します。</p>
-<p>kanji_digitという文字を読むだけの文法のルールをmixed_numberという親の文法ルールが活用することで文法を木構造で表現することができています。</p>
+<p>今回は、kanji_to_timeのパーサの中でも数字の周りの文法ルールだけを抜き出して紹介します。</p>
 <pre class="language-javascript"><code>number: signed? kanji_num_parser
 kanji_num_parser: unit_oku? unit_man? unit_sen? unit_juu? mixed_number?
 
@@ -83,16 +83,18 @@ kanji_digit: /一/ | /壱/
            | /〇/ | /ゼロ/ | /零/
            | /○/ | /◯/ // 一応丸もサポートしておく
 zenkaku_digit: /０/ | /１/ | /２/ | /３/ | /４/ | /５/ | /６/ | /７/ | /８/ | /９/</code></pre>
-<p><a href="https://github.com/corkborg/kanji_to_time/blob/main/kanji_to_time/grammer/kanji_to_time.lark">https://github.com/corkborg/kanji_to_time/blob/main/kanji_to_time/grammer/kanji_to_time.lark</a></p>
-<p>このLarkの文法構造に合わせて変換を行うPythonのコードを書いてやればうまく変換することができます。</p>
+<p>kanji_digitという文字を読むだけの文法のルールをがありますが、このルールはmixed_numberというルールに参照されています。このように局所的な文法ルールが大域的な文法ルールで参照されることで、文法を木構造で表現することができます。</p>
+<p>上記のルールでは最終的にnumberという一番大域的なルールにそれぞれのルールが参照されている形になっています。</p>
+<p>Larkの文法ルールを用意したら、Python側でルールを実際に変換するコードを書いてやれば複雑なルールの文章を構造的にプログラミング言語の型に変換することができます。大変便利ですね。</p>
+<p>全体のkanji_to_timeの文法ルール全体はここから見れます。<br><a href="https://github.com/corkborg/kanji_to_time/blob/main/kanji_to_time/grammer/kanji_to_time.lark">https://github.com/corkborg/kanji_to_time/blob/main/kanji_to_time/grammer/kanji_to_time.lark</a></p>
 <h2>一応漢数字の変換もできる</h2>
 <p>Larkの文法定義を見てもらうとわかるのですが、数値変換だけの文法ルールが存在するので数値変換だけを行うこともできます。</p>
 <p>一応調査用に漢数字から数値に変換する機能もあります。</p>
 <pre class="language-python"><code>&gt;&gt;&gt; ktt.to_number("八千七十二")
 8072</code></pre>
-<p>ただ、漢数字の数値変換についてはKanjizeという優れたライブラリが存在するのでこの用途だけであればこちらを使ったほうが良いと思います。<br><a href="https://github.com/nagataaaas/Kanjize" target="_blank" rel="noopener noreferrer">https://github.com/nagataaaas/Kanjize</a></p>
+<p>ただ、漢数字の数値変換についてはKanjizeという優れた先行ライブラリが存在するのでこの用途だけであればこちらを使ったほうが良いと思います。<br><a href="https://github.com/nagataaaas/Kanjize" target="_blank" rel="noopener noreferrer">https://github.com/nagataaaas/Kanjize</a></p>
 <h2>サポート</h2>
-<p>このような日付を変換する際にはぜひ使ってみてください。</p>
+<p>このような日付文字列を変換する際にはぜひ使ってみてください。</p>
 <p>不具合などに気づいたらissuesに投稿してもらえると嬉しいです。<br><a href="https://github.com/corkborg/kanji_to_time/issues" target="_blank" rel="noopener noreferrer">https://github.com/corkborg/kanji_to_time/issues</a></p>
 <p> </p>
             ]]>
