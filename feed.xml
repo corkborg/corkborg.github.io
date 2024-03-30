@@ -3,7 +3,7 @@
     <title>塩の惑星</title>
     <link href="https://corkborg.github.io/feed.xml" rel="self" />
     <link href="https://corkborg.github.io" />
-    <updated>2024-03-31T00:09:13+09:00</updated>
+    <updated>2024-03-31T01:12:47+09:00</updated>
     <author>
         <name>ミズソバ</name>
     </author>
@@ -123,7 +123,6 @@ zenkaku_digit: /０/ | /１/ | /２/ | /３/ | /４/ | /５/ | /６/ | /７/ | /
 <p><a href="https://www.raspberrypi.com/news/benchmarking-raspberry-pi-5/">公式によるRaspberryPi5のベンチマーク</a></p>
 <p>ただ、RaspberryPi同士の比較ではどれくらい実用的な性能を持っているのかわかりません。<br>そこでSandyBridgeに目をつけました。</p>
 <h2>SandyBridge</h2>
-<p> </p>
 <p>SandyBridgeは2011年頃のCPUで、通常はあまり性能向上に寄与しない省電力周りの設計改善を極めたら非常に性能が向上したことで話題になったIntelのCPUシリーズです。</p>
 <p>今となっては１０年以上も昔のCPUですが、根強いファンが多く未だに使っている人がそれなりにいるようです。私も数年前までファイルサーバとしてSandyBridge i5-2500を使っていました。</p>
 <p><a href="https://dic.nicovideo.jp/a/sandy%E3%81%A7%E5%8D%81%E5%88%86%E3%81%8A%E3%81%98%E3%81%95%E3%82%93">Sandyで十分おじさん</a></p>
@@ -200,7 +199,7 @@ zenkaku_digit: /０/ | /１/ | /２/ | /３/ | /４/ | /５/ | /６/ | /７/ | /
 <p>塩の惑星ではPubliiのテーマを自作しています。この作業はなかなか骨が折れました。</p>
 <p>特にHTML、CSSが得意ではない人にはハードルが高い作業でしょう…。</p>
 <p>テーマ開発については現状下記の２つくらいしか情報がないと思います。</p>
-<p><a href="https://getpublii.com/dev/" target="_blank" rel="noopener noreferrer">Publii公式のテーマ開発ガイド（英語）</a><br><a href="https://github.com/SimonPadbury/Publii-Bootstrap-Starter/blob/master/TUTORIALS/00-introduction.md" target="_blank" rel="noopener noreferrer">Publii公式のテーマ開発チュートリアル（英語）</a></p>
+<p><a href="https://getpublii.com/dev/" target="_blank" rel="noopener noreferrer">Publii公式のテーマ開発ガイド（英語）</a><br><a href="https://github.com/SimonPadbury/Publii-Bootstrap-Starter/blob/master/TUTORIALS/00-introduction.md" target="_blank" rel="noopener noreferrer">SimonPadburyさんのテーマ開発チュートリアル（英語）</a></p>
 <h2>最後に</h2>
 <p>Publiiは使いやすいサイトジェネレータです。Notion風のエディターでWebサイトやブログなどを作りたいと思っている人にはすごくおすすめです。</p>
 <p><a href="https://getpublii.com/" target="_blank" rel="noopener noreferrer">Publii公式サイト</a></p>

@@ -94,7 +94,7 @@ header {
    grid-area: main;
 }
 
-#main-wrapper-for-post {
+#main-wrapper-with-sidebar {
    grid-area: main;
 
    display: grid;
@@ -105,7 +105,7 @@ header {
 }
 
 @media screen and (max-width: 700px) {
-   #main-wrapper-for-post {
+   #main-wrapper-with-sidebar {
       grid-template-columns: auto;
       grid-template-areas:
          "main-left"
@@ -114,9 +114,9 @@ header {
    }
 }
 
-/*#main-wrapper-for-post-left {
+#main-wrapper-with-sidebar-left {
    grid-area: main-left;
-}*/
+}
 
 .menu-navbar {
    background-color: white;
