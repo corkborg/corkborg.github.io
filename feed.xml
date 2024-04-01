@@ -3,7 +3,7 @@
     <title>塩の惑星</title>
     <link href="https://corkborg.github.io/feed.xml" rel="self" />
     <link href="https://corkborg.github.io" />
-    <updated>2024-03-31T03:32:33+09:00</updated>
+    <updated>2024-04-01T21:51:08+09:00</updated>
     <author>
         <name>ミズソバ</name>
     </author>
@@ -24,14 +24,17 @@
             <summary>
                 <![CDATA[
                         <img src="https://corkborg.github.io/media/posts/35/Ming-Cheng-Wei-She-Ding-huairu-1711796415700.drawio-1.png" alt="" />
-                    日本語で書かれた日付のデータをPythonのdatetime、timedeltaに変換するライブラリを作成したので紹介します。 kanji_to_timeという名前のライブラリです。 https://github.com/corkborg/kanji_to_time https://pypi.org/project/kanji-to-time/ こんな感じでインストールできます。&hellip;
+                    日本語文章を解析しているときに地味に困る物の一つに漢字等の日本語で書かれた年月日があります。 今回は、日本語で書かれた日付のデータをPythonのdatetime、timedeltaに変換するライブラリを作成したので紹介します。 ※ datetimeは日時、timedeltaは時間（時間差）を取り扱うPython標準オブジェクトです kanji_to_timeという名前のライブラリです。&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
                     <p><img src="https://corkborg.github.io/media/posts/35/Ming-Cheng-Wei-She-Ding-huairu-1711796415700.drawio-1.png" class="type:primaryImage" alt="" /></p>
-                <p>日本語で書かれた日付のデータをPythonのdatetime、timedeltaに変換するライブラリを作成したので紹介します。</p>
-<p>kanji_to_timeという名前のライブラリです。</p>
+                <p>日本語文章を解析しているときに地味に困る物の一つに漢字等の日本語で書かれた年月日があります。</p>
+<p>今回は、日本語で書かれた日付のデータをPythonのdatetime、timedeltaに変換するライブラリを作成したので紹介します。</p>
+<p>※ datetimeは日時、timedeltaは時間（時間差）を取り扱うPython標準オブジェクトです</p>
+<hr>
+<p><strong>kanji_to_time</strong>という名前のライブラリです。</p>
 <p><a href="https://github.com/corkborg/kanji_to_time" target="_blank" rel="noopener noreferrer">https://github.com/corkborg/kanji_to_time</a><br><a href="https://pypi.org/project/kanji-to-time/" target="_blank" rel="noopener noreferrer">https://pypi.org/project/kanji-to-time/</a></p>
 <p>こんな感じでインストールできます。</p>
 <pre class="language-bash"><code>pip install kanji_to_time</code></pre>
@@ -50,40 +53,44 @@ datetime.datetime(2023, 5, 4, 0, 0)</code></pre>
 <pre class="language-python"><code>&gt;&gt;&gt; ktt.to_timedelta("3億二三万千７十１秒間")
 datetime.timedelta(days=3474, seconds=77471)</code></pre>
 <h2>機能ポイント</h2>
-<p>半角全角漢数字が混じっていても変換することができます。</p>
-<p>timedelta変換の場合20秒、20秒間のように位の後ろに間が付いていても同様に変換することができます。</p>
+<ul>
+<li>数値部分の文字数が可変でも変換可能です（ゼロ埋めの必要が無い）</li>
+<li>半角全角漢数字が混じっていても変換することができます。</li>
+<li>20秒、20秒間のように位の後ろに間が付いていても同様に変換することができます（timdelta変換のみ）。</li>
+</ul>
 <h2>どうやって作ったか？</h2>
-<p>当初、日本語や漢字時間変換そんなに難しいコードを書かなくても解決できるだろうと考えていました。</p>
+<p>当初、そんなに難しいコードを書かなくても解決できるだろうと考えていました。</p>
 <p>しかし、単純そうに見えて時間の変換はルールが多くてシンプルなコードでは実現できないことがわかりました。</p>
 <p>このようなルールがある文章を処理する場合、一番手軽なのは正規表現です。私も当初はreを使って解決しようと思ったのですが、実装している途中で正規表現で実現すると大変複雑で自分ですら理解できないようなコードになってしまうことに気づきました。</p>
-<p>手間を惜しまなければ、このようなルールが複雑な文章（文法）を相手にする際にはパーサージェネレータを使ったほうが良いです。Pythonでおすすめのパーサージェネレータを調べた所Larkというものがヒットしたのでこれを使用して作成しました。</p>
-<p><a href="Larkの公式ドキュメント">https://lark-parser.readthedocs.io/en/stable/</a></p>
+<p>手間を惜しまなければ、ルールが複雑な文章（文法）を相手にする際にはパーサージェネレータを使ったほうが良いです。Pythonでおすすめのパーサージェネレータを調べた所Larkというものがヒットしたのでこれを使用して作成しました。</p>
+<p><a href="https://lark-parser.readthedocs.io/en/stable/">Larkの公式ドキュメント</a></p>
 <p>今回は、kanji_to_timeのパーサの中でも数字の周りの文法ルールだけを抜き出して紹介します。</p>
-<pre class="language-javascript"><code>number: signed? kanji_num_parser
-kanji_num_parser: unit_oku? unit_man? unit_sen? unit_juu? mixed_number?
+<pre class="language-javascript"><code>number: (MINUS | PLUS)? mixed_number_with_unit
+mixed_number_with_unit: unit_oku? unit_man? unit_sen? unit_juu? mixed_number?
 
-signed: "-" | /ー/ | /マイナス/ | /ひく/ | /引く/
+MINUS: "-" | "ー" | "マイナス" | "ひく" | "引く"
+PLUS: "+" | "＋" | "プラス" | "たす" | "足す"
 
-unit_oku: mixed_number "億"
-unit_man: mixed_number? "万"
+unit_oku: mixed_number "億" // 億は数値が必須
+unit_man: mixed_number "万" // 万は数値が必須
 unit_sen: mixed_number? "千"
 unit_juu: mixed_number? "十"
 
-mixed_number: (zenkaku_digit | kanji_digit | DIGIT)+
-kanji_unit: "十" | "百" | "千" | "万" | "億"
-kanji_digit: /一/ | /壱/
-           | /二/ | /弐/
-           | /三/ | /参/
-           | /四/ | /肆/
-           | /五/ | /伍/
-           | /六/ | /陸/
-           | /七/ | /漆/
-           | /八/ | /捌/
-           | /九/ | /玖/
-           | /〇/ | /ゼロ/ | /零/
-           | /○/ | /◯/ // 一応丸もサポートしておく
-zenkaku_digit: /０/ | /１/ | /２/ | /３/ | /４/ | /５/ | /６/ | /７/ | /８/ | /９/</code></pre>
-<p>kanji_digitという文字を読むだけの文法のルールをがありますが、このルールはmixed_numberというルールに参照されています。このように局所的な文法ルールが大域的な文法ルールで参照されることで、文法を木構造で表現することができます。</p>
+mixed_number: (ZENKAKU_DIGIT | KANJI_DIGIT | DIGIT)+ // 漢字混合で小数点のサポートは行わない
+KANJI_DIGIT: "一" | "壱"
+           | "二" | "弐"
+           | "三" | "参"
+           | "四" | "肆"
+           | "五" | "伍"
+           | "六" | "陸"
+           | "七" | "漆"
+           | "八" | "捌"
+           | "九" | "玖"
+           | "〇" | "ゼロ" | "零"
+           | "○" | "◯" // 一応丸もサポートしておく
+ZENKAKU_DIGIT: "０" | "１" | "２" | "３" | "４" | "５" | "６" | "７" | "８" | "９"</code></pre>
+<p>KANJI_DIGITという漢数字を読むだけの文法のルールをがありますが、このルールはmixed_numberというルールに参照されています。そして、mixed_numberはkanji_digitの他に全角、半角数値も参照していてそれらを統合しています。</p>
+<p>このように局所的な文法ルールが大域的な文法ルールで参照されることで、文法を木構造で表現することができます。</p>
 <p>上記のルールでは最終的にnumberという一番大域的なルールにそれぞれのルールが参照されている形になっています。</p>
 <p>Larkの文法ルールを用意したら、Python側でルールを実際に変換するコードを書いてやれば複雑なルールの文章を構造的にプログラミング言語の型に変換することができます。大変便利ですね。</p>
 <p>全体のkanji_to_timeの文法ルール全体はここから見れます。<br><a href="https://github.com/corkborg/kanji_to_time/blob/main/kanji_to_time/grammer/kanji_to_time.lark">https://github.com/corkborg/kanji_to_time/blob/main/kanji_to_time/grammer/kanji_to_time.lark</a></p>
@@ -256,7 +263,7 @@ zenkaku_digit: /０/ | /１/ | /２/ | /３/ | /４/ | /５/ | /６/ | /７/ | /
 <h2>対策編</h2>
 <h3>アオミドロを侵入させない</h3>
 <p>水槽というのは閉鎖された空間なので侵入させなければ基本的にどんなコケでも繁殖することはありません。</p>
-<p>珪藻くらいそこら中にあふれている物だとバイオ研究室並の慎重さを持って作業を行わないと防げないとは思いますが、少なくともアオミドロに関しては私の水槽でも慎重に取り扱っている物は肥料を投入しても発生することはありません。</p>
+<p>珪藻、藍藻くらいそこら中にあふれている物だとバイオ研究室並の慎重さを持って作業を行わないと防げないとは思いますが、少なくともアオミドロに関しては私の水槽でも慎重に取り扱っている物は肥料を投入しても発生することはありません。</p>
 <p>アオミドロが侵入する要因になるものは、ソイル、砂利、水、生物（主に貝）、<strong>水草、</strong>流木、<strong>手、</strong>ピンセットなど水槽の中で活用されるすべての物が対象です。</p>
 <p>アオミドロは栄養が足りないときや、外敵が多い時はほとんど目に見えない状態で水草の隙間などに挟まっていたりするので、アオミドロがいなそうに見える水槽から物を移して来る時も慎重に考えて作業を行ったほうが良いです。</p>
 <p>無菌培養物を除くと、短時間で市販の水草からアオミドロを完全に取り除く確実な方法は無いです。そのため、アオミドロはいずれ水槽に侵入する前提で考えたほうが良いかもしれないです。</p>
@@ -546,13 +553,13 @@ model = timm.create_model("convnextv2_huge.fcmae_ft_in22k_in1k_512", pretrained=
             <summary>
                 <![CDATA[
                         <img src="https://corkborg.github.io/media/posts/24/sukurinsiyotuto-2024-02-04-20.20.00.png" alt="EdgeRouter X SFP" />
-                    EdgeRouter X SFPを使用しているのですが最近調子が悪いです。 LANケーブルを多数つなげると再起動してしまい。２本しかケーブルをつなげることができません。 ACアダプターが弱っていることが原因だと思うので交換することにしました。&hellip;
+                    EdgeRouter X SFPを何年か使用しているのですが最近調子が悪いです。 LANケーブルを多数つなげると再起動してしまい。２本しかケーブルをつなげることができません。 ACアダプターが弱っていることが原因だと思うので交換することにしました。&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
                     <p><img src="https://corkborg.github.io/media/posts/24/sukurinsiyotuto-2024-02-04-20.20.00.png" class="type:primaryImage" alt="EdgeRouter X SFP" /></p>
-                <p>EdgeRouter X SFPを使用しているのですが最近調子が悪いです。<br>LANケーブルを多数つなげると再起動してしまい。２本しかケーブルをつなげることができません。<br>ACアダプターが弱っていることが原因だと思うので交換することにしました。</p>
+                <p>EdgeRouter X SFPを何年か使用しているのですが最近調子が悪いです。<br>LANケーブルを多数つなげると再起動してしまい。２本しかケーブルをつなげることができません。<br>ACアダプターが弱っていることが原因だと思うので交換することにしました。</p>
 <h2>EdgeRouter X SFPに元々ついてたACアダプタは電圧が低かった</h2>
 <figure class="post__image"><img loading="lazy"  src="https://corkborg.github.io/media/posts/24/PXL_20240204_102932486.MP.jpg" alt="EdgeRouter X SFPに付属していたACアダプタ 12V 1A" width="137" height="243" sizes="(max-width: 1200px) 100vw, 1200px" srcset="https://corkborg.github.io/media/posts/24/responsive/PXL_20240204_102932486.MP-xs.jpg 300w ,https://corkborg.github.io/media/posts/24/responsive/PXL_20240204_102932486.MP-sm.jpg 480w ,https://corkborg.github.io/media/posts/24/responsive/PXL_20240204_102932486.MP-md.jpg 749w ,https://corkborg.github.io/media/posts/24/responsive/PXL_20240204_102932486.MP-xl.jpg 1200w"></figure>
 <p>EdgeRouterに標準で付属しているACアダプタは日本では使えないので、輸入業者経由でEdgeRouterを買った場合適当に日本向けのACアダプタをつけてくれます。</p>
@@ -567,7 +574,7 @@ model = timm.create_model("convnextv2_huge.fcmae_ft_in22k_in1k_512", pretrained=
 <ul>
 <li>24V 2.5A（ただ、機械自体は9Vから26Vまで許容可能です）</li>
 <li>ソケットはDCジャックで内径が2.1mm 外径が5mm</li>
-<li><strong style="font-family: var(--editor-font-family); font-size: inherit;">DCジャックは内側が+、外側が−のセンタープラス</strong></li>
+<li><strong style="font-family: var(--editor-font-family); font-size: inherit;">DCジャックの極性は内側が+、外側が−のセンタープラス</strong></li>
 </ul>
 <h4>極性に注意</h4>
 <p>極性を間違えると壊れる可能性が高いので注意しましょう。ACアダプタでは独特の記号で説明されていることが多いです。</p>
@@ -600,7 +607,7 @@ model = timm.create_model("convnextv2_huge.fcmae_ft_in22k_in1k_512", pretrained=
             <summary>
                 <![CDATA[
                         <img src="https://corkborg.github.io/media/posts/22/DSC_0981_01.JPG" alt="auひかりマンション  タイプG（G.fast）" />
-                    集合住宅の光回線では、建物まで光ファイバーを引き込み、その回線を分配して各部屋に配線する必要があります。 回線を分配する際に一番理想的な方式は光配線方式ですが、建物によっては電話線で各部屋に分配します。 電話線で部屋に回線分配する方法には昔からのVDSL方式と新しめのG.fast方式があります。 VDSL方式はNTTで一般的で回線速度が100Mbpsを下回る場合が多く、あまり早いとは言えません。 G.fast方式は1Gbpsを目指して作られた規格です。auひかりのマンション&hellip;
+                    集合住宅の光回線では、建物まで光ファイバーを引き込み、その回線を分配して各部屋に配線する必要があります。 回線を分配する際に一番理想的な方式は光配線方式ですが、建物によっては電話線で各部屋に分配します。 電話線で部屋に回線分配する方法には昔からのVDSL方式と新しめのG.fast方式があります。 VDSL方式はNTTで一般的で回線速度が100Mbpsを下回る場合が多く、あまり早いとは言えません。 G.fast方式は1Gbpsを目指して作られた規格です。&hellip;
                 ]]>
             </summary>
         <content type="html">
@@ -609,7 +616,7 @@ model = timm.create_model("convnextv2_huge.fcmae_ft_in22k_in1k_512", pretrained=
                 <p>集合住宅の光回線では、建物まで光ファイバーを引き込み、その回線を分配して各部屋に配線する必要があります。</p>
 <p>回線を分配する際に一番理想的な方式は光配線方式ですが、建物によっては電話線で各部屋に分配します。</p>
 <p>電話線で部屋に回線分配する方法には昔からのVDSL方式と新しめのG.fast方式があります。<br>VDSL方式はNTTで一般的で回線速度が100Mbpsを下回る場合が多く、あまり早いとは言えません。</p>
-<p>G.fast方式は1Gbpsを目指して作られた規格です。auひかりのマンション タイプGで使用していて上り下りの合計が最大830Mbpsになるようです。</p>
+<p>G.fast方式は1Gbpsを目指して作られた規格です。<br>auひかりでは、マンション タイプGで採用していて上り下りの合計が最大830Mbpsになるように設計しているようです。</p>
 <figure class="post__image" ><figure class="post__image post__image--center"><img loading="lazy"  src="https://corkborg.github.io/media/posts/22/in_mansion_img_optical_fiber_05-2.webp" alt="auひかりマンション  タイプG（G.fast）" width="310" height="392" sizes="(max-width: 1200px) 100vw, 1200px" srcset="https://corkborg.github.io/media/posts/22/responsive/in_mansion_img_optical_fiber_05-2-xs.webp 300w ,https://corkborg.github.io/media/posts/22/responsive/in_mansion_img_optical_fiber_05-2-sm.webp 480w ,https://corkborg.github.io/media/posts/22/responsive/in_mansion_img_optical_fiber_05-2-md.webp 749w ,https://corkborg.github.io/media/posts/22/responsive/in_mansion_img_optical_fiber_05-2-xl.webp 1200w"></figure>
 <figcaption >auひかり公式より</figcaption>
 </figure>
@@ -618,24 +625,26 @@ model = timm.create_model("convnextv2_huge.fcmae_ft_in22k_in1k_512", pretrained=
 <h2>回線速度</h2>
 <p>実際に回線の速度計測を行いました。</p>
 <p>auひかり タイプGでプロバイダはSo-net。<br>東京都のマンションの７階です。</p>
-<p>回線速度の計測ではおなじみのfast.comのコマンドライン版を使用しました。</p>
-<pre data-pm-slice="1 1 []"><code>$ fast --upload
-    380 Mbps ↓ / 92 Mbps ↑<br><br>$ fast --upload
+<p>回線速度の計測ではおなじみの<a href="https://fast.com/" target="_blank" rel="noopener noreferrer">fast.com</a>のコマンドライン版を使用しました。</p>
+<pre class="language-bash"><code>$ fast --upload
+    380 Mbps ↓ / 92 Mbps ↑
+
+$ fast --upload
     380 Mbps ↓ / 96 Mbps ↑</code></pre>
 <p><strong>ダウンロード速度が380Mbps</strong><br><strong>アップロード速度が90Mbps</strong><br>だいたいこれくらいの速度になりました。</p>
-<p>ダウンロード速度はVDSLに比べると大分良い速度が出ています。<br>ただ、アップロード速度は同じ程度ですね。</p>
-<p>カタログスペックに比べると数百Mbps落ちるダウンロード速度ですがG.fastは電話線の長さに応じて伝送速度が落ちるので、マンションのMDF室（分配する所）からの距離が関係しているのか思います。</p>
+<p>ダウンロード速度はVDSLに比べると大分良い速度が出ています。<br>ただ、アップロード速度は同等程度ですね。</p>
+<p>カタログスペックに比べると数百Mbps落ちるダウンロード速度ですがG.fastは電話線の長さに応じて伝送速度が落ちます。そのため、マンションのMDF室（分配する所）から部屋までの距離が関係しているのか思います。</p>
 <h2>回線の安定感</h2>
-<p>品質の悪い回線では通信内容が通信中に失われてしまう場合があります（パケットロスと言います）。</p>
+<p>いくら瞬間的な回線速度が早くても、通信品質の悪い回線では通信内容が通信中に失われて使用感が最悪になってしまう場合があります（パケットロスと言います）。</p>
 <p>パケットロスが発生したかどうかこの回線で使用していた各PCで確認してみたのですが特に問題なさそうです。</p>
 <p>回線の問題に繊細なビデオ通話等も行ったのですが通信上の問題が発生することはなかったです。</p>
-<p>建物の電話線の状態によると思いますが、G.fast自体が不安定な規格ではないことがわかります。</p>
+<p>この結果からG.fast自体が不安定な規格ではないことがわかります。</p>
+<p>もしも、G.fastで通信品質に問題を抱えている人は電話線の状態が良くない可能性がありそうです。</p>
 <h2>まとめ</h2>
 <p>VDSLに比べてG.fast方式はだいぶ良いですね。電話線しか引き込めない物件であれば大分おすすめです。</p>
 <p><span style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);">ただ、G.fast方式も光配線方式に比べると遅いので引き込めるのであれば光ファイバーを引き込む工事をしてもらったほうが良さそうです。</span></p>
 <p><span style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);">私も折をみて戸建て契約で光ファイバーに切り替えようかと思っています。</span></p>
 <p>ちなみに、一般家庭向けにG.fast方式を日本で提供している事業者は今のところauひかりだけだと思います。</p>
-<p> </p>
 <p> </p>
 <p> </p>
 <p> </p>

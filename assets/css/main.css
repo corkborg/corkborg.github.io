@@ -16,6 +16,7 @@ a:visited {
    --main-bg-color: rgb(223 227 228);
    --main-content-color: rgb(251, 252, 252);
    --main-text-color: rgb(26 26 26);
+   --main-subtext-color: rgb(96, 94, 94);
    --main-accent-color: #df5c45;
    --serif-font: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
    --sans-serif-font: "新ゴ L","Shin Go Light",'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;
@@ -438,7 +439,18 @@ img {
 .post__toc {}
 
 /* Separator - option represented by the <hr> element, available by all editors; additionally the block editor generates three classes for <hr> element to have a different look */
-hr {}
+hr {
+   border-style: none;
+   text-align: center;
+   letter-spacing: 1rem;
+}
+hr::before,
+.separator::before {
+  content: "***";
+  color: var(--main-subtext-color);
+  font-size: 1.5rem;
+  font-weight: bold;
+}
 .separator--dot {}
 .separator--dots {}
 .separator--long-line {}
