@@ -3,7 +3,7 @@
     <title>塩の惑星</title>
     <link href="https://corkborg.github.io/feed.xml" rel="self" />
     <link href="https://corkborg.github.io" />
-    <updated>2024-04-02T02:48:05+09:00</updated>
+    <updated>2024-04-08T13:34:03+09:00</updated>
     <author>
         <name>ミズソバ</name>
     </author>
@@ -52,7 +52,7 @@
 <h2>植物を植えてみた</h2>
 <figure class="post__image post__image--center"><img loading="lazy"  src="https://corkborg.github.io/media/posts/36/DSC_1541-2.JPG" alt="" width="1000" height="665" sizes="(max-width: 1200px) 100vw, 1200px" srcset="https://corkborg.github.io/media/posts/36/responsive/DSC_1541-2-xs.JPG 300w ,https://corkborg.github.io/media/posts/36/responsive/DSC_1541-2-sm.JPG 480w ,https://corkborg.github.io/media/posts/36/responsive/DSC_1541-2-md.JPG 749w ,https://corkborg.github.io/media/posts/36/responsive/DSC_1541-2-xl.JPG 1200w"></figure>
 <p>これが植える予定の植物です。カラジウムの遠い親戚です。</p>
-<p>この植物は乾燥した環境でもギリギリ大きく育つものの、そのような環境だと年中葉の調子が悪くなります。そして、湿度が高いと新しい根が葉柄を突き抜け空気中に出てきて面白いので湿度が高い環境を探していました。</p>
+<p>この植物は通常の湿度でもギリギリ大きく育つものの、そのような環境だと年中葉の調子が悪くなります。そして、湿度が高いと新しい根が葉柄を突き抜け空気中に出てきて面白いので湿度が高い環境を探していました。</p>
 <p>育てやすさとは裏腹に植え替え時に軟腐病にとてもかかりやすいので、苗の土はそのままに殺菌剤を染み込ませた後にCELLに植え込みました。</p>
 <figure class="post__image post__image--center"><img loading="lazy"  src="https://corkborg.github.io/media/posts/36/DSC_1544.JPG" alt="植物を植えたADA CELL" width="437" height="657" sizes="(max-width: 1200px) 100vw, 1200px" srcset="https://corkborg.github.io/media/posts/36/responsive/DSC_1544-xs.JPG 300w ,https://corkborg.github.io/media/posts/36/responsive/DSC_1544-sm.JPG 480w ,https://corkborg.github.io/media/posts/36/responsive/DSC_1544-md.JPG 749w ,https://corkborg.github.io/media/posts/36/responsive/DSC_1544-xl.JPG 1200w"></figure>
 <p>そういえば、CELLには鉢底石とトロピカルリバーソイルという土が付いてきます。</p>
@@ -78,7 +78,7 @@
         <id>https://corkborg.github.io/created-kanji-to-time/</id>
         <media:content url="https://corkborg.github.io/media/posts/35/Ming-Cheng-Wei-She-Ding-huairu-1711796415700.drawio-1.png" medium="image" />
             <category term="日本語周り"/>
-            <category term="Python"/>
+            <category term="プログラミング"/>
 
         <updated>2024-03-30T19:21:34+09:00</updated>
             <summary>
@@ -136,7 +136,7 @@ unit_man: mixed_number "万" // 万は数値が必須
 unit_sen: mixed_number? "千"
 unit_juu: mixed_number? "十"
 
-mixed_number: (ZENKAKU_DIGIT | KANJI_DIGIT | DIGIT)+ // 漢字混合で小数点のサポートは行わない
+mixed_number: (ZENKAKU_DIGIT | KANJI_DIGIT | DIGIT)+
 KANJI_DIGIT: "一" | "壱"
            | "二" | "弐"
            | "三" | "参"
@@ -223,6 +223,7 @@ ZENKAKU_DIGIT: "０" | "１" | "２" | "３" | "４" | "５" | "６" | "７" | "
         <link href="https://corkborg.github.io/publii-is-good-website-generator/"/>
         <id>https://corkborg.github.io/publii-is-good-website-generator/</id>
         <media:content url="https://corkborg.github.io/media/posts/31/freetiers-post-featured-image.jpeg" medium="image" />
+            <category term="プログラミング"/>
 
         <updated>2024-03-28T01:30:19+09:00</updated>
             <summary>
@@ -317,7 +318,7 @@ ZENKAKU_DIGIT: "０" | "１" | "２" | "３" | "４" | "５" | "６" | "７" | "
 <p>アオミドロは破片が少しでも残っていると増え始めるので手で対処するのが難しいです</p>
 <h3>貝はほとんど食べない</h3>
 <p>石巻貝、ヒメタニシ、カワニナ、レッドラムズホーンなどを飼育しています。</p>
-<p>これらは多くのコケは積極的に食べてくれるのですが、このアオミドロに関してはお腹が減っていてもアオミドロについてはほとんど食べてくれないです。</p>
+<p>これらの貝は、お腹が減っていてもアオミドロについてはほとんど食べてくれないです。</p>
 <h3>エビでも食べないもの、食べるものがいる</h3>
 <p>家ではトゲナシヌマエビ、ミナミヌマエビを主に飼育しているのですが、これらはあまり食べないようでした。</p>
 <p>後述しますが、ヤマトヌマエビ、アルジーライムシュリンプは効果がありそうです。</p>
@@ -360,7 +361,7 @@ ZENKAKU_DIGIT: "０" | "１" | "２" | "３" | "４" | "５" | "６" | "７" | "
 <p>餌をやりすぎるとコケを食べなくなったりするので餌はあまりあげないほうが良いです。</p>
 <p>それなりに大きくなるのと、気性が荒い面があるトラブルメーカーでもあるので導入は慎重に検討したほうが良いです。</p>
 <h3>人手でアオミドロを取る</h3>
-<p>やはりアオミドロ自体を喜んで食べる生体はいないようです。今まで挙げた生体もアオミドロを減らすというよりも抑えたり、発生を予防したりする面が強いです。</p>
+<p>やはりアオミドロ自体を喜んで食べる生体はいないようです。今まで挙げた生体もアオミドロを減らすというよりは、成長を抑えたり、発生を予防したりする面が強いです。</p>
 <p>そのため、アオミドロ対策の生体がアオミドロを食べる傍ら、水槽が安定するまではそれなりの頻度人手でアオミドロを取ることが重要になります。</p>
 <h2>まとめ</h2>
 <p>アオミドロ対策には下記の３つがおすすめです。</p>
@@ -383,7 +384,7 @@ ZENKAKU_DIGIT: "０" | "１" | "２" | "３" | "４" | "５" | "６" | "７" | "
         <link href="https://corkborg.github.io/image-recognition-using-timm-convnextv2/"/>
         <id>https://corkborg.github.io/image-recognition-using-timm-convnextv2/</id>
         <media:content url="https://corkborg.github.io/media/posts/29/fish_kingyo2.png" medium="image" />
-            <category term="画像認識"/>
+            <category term="プログラミング"/>
 
         <updated>2024-03-24T16:09:18+09:00</updated>
             <summary>
