@@ -16,7 +16,7 @@ a:visited {
    --main-bg-color: rgb(223 227 228);
    --main-content-color: rgb(251, 252, 252);
    --main-text-color: rgb(26 26 26);
-   --main-accent-color: #df5c45;
+   --main-accent-color: #cfbcb9;
    --serif-font: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
    --sans-serif-font: "新ゴ L","Shin Go Light",'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;
 }
@@ -64,6 +64,14 @@ blockquote {
    font-weight: 700;
    font-size: 10px;
    column-gap: 10px;
+}
+
+@media screen and (max-width: 700px) {
+   .pagination {
+      font-size: 13px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+   }
 }
 
 .modified-time {
