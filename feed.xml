@@ -3,7 +3,7 @@
     <title>塩の惑星</title>
     <link href="https://corkborg.github.io/feed.xml" rel="self" />
     <link href="https://corkborg.github.io" />
-    <updated>2024-06-03T02:21:52+09:00</updated>
+    <updated>2024-06-03T02:39:06+09:00</updated>
     <author>
         <name>ミズソバ</name>
     </author>
@@ -16,15 +16,18 @@
         </author>
         <link href="https://corkborg.github.io/google-seo-leak-2024/"/>
         <id>https://corkborg.github.io/google-seo-leak-2024/</id>
+        <media:content url="https://corkborg.github.io/media/posts/42/sukurinsiyotuto-2024-06-03-2.24.29.png" medium="image" />
 
         <updated>2024-06-02T15:35:47+09:00</updated>
             <summary>
                 <![CDATA[
+                        <img src="https://corkborg.github.io/media/posts/42/sukurinsiyotuto-2024-06-03-2.24.29.png" alt="GoogleAPI PerDocDataのページ" />
                     最近（2024年5月）、Googleから検索に関連する内部APIのソースコードや内部文章がリークされたと話題ですね。 Google検索の検索順位はサイト運営する人には重要で、SEOなど検索アルゴリズムを逆手に取って検索順位をあげようと試みたりする場合があります。 その為、注目が集まっているのだと思います。 今回の流出を調べてみてわかったことは、Google検索の内部の重要なソースコードを何者かがリークしたと言うよりは、社内で使われているAPIの定義を誤って外部に見えるようしてしまった感じのようです。 Google側の温度感はそこまで高く無いように見えていて、流出した情報は未だに正式な手段で入手できる状況です。&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
+                    <p><img src="https://corkborg.github.io/media/posts/42/sukurinsiyotuto-2024-06-03-2.24.29.png" class="type:primaryImage" alt="GoogleAPI PerDocDataのページ" /></p>
                 <p>最近（2024年5月）、Googleから検索に関連する内部APIのソースコードや内部文章がリークされたと話題ですね。</p>
 <p>Google検索の検索順位はサイト運営する人には重要で、SEOなど検索アルゴリズムを逆手に取って検索順位をあげようと試みたりする場合があります。<br>その為、注目が集まっているのだと思います。</p>
 <p>今回の流出を調べてみてわかったことは、Google検索の内部の重要なソースコードを何者かがリークしたと言うよりは、社内で使われているAPIの定義を誤って外部に見えるようしてしまった感じのようです。<br>Google側の温度感はそこまで高く無いように見えていて、流出した情報は未だに正式な手段で入手できる状況です。</p>
@@ -686,11 +689,11 @@ for c, v in zip_longest(top5_class_indices[0], top5_probabilities[0]):
 <pre class="language-bash"><code>python predict.py image.jpg</code></pre>
 <p>ImageNet-1kは小さいデータセットなので動物などわかりやすい画像で試してみるのが良さそうです。</p>
 <figure class="post__image post__image--center"><img loading="lazy"  src="https://corkborg.github.io/media/posts/29/sukurinsiyotuto-2024-03-24-16.40.09.png" alt="ImageNet-1K dataset records" width="523" height="300" sizes="(max-width: 1200px) 100vw, 1200px" srcset="https://corkborg.github.io/media/posts/29/responsive/sukurinsiyotuto-2024-03-24-16.40.09-xs.png 300w ,https://corkborg.github.io/media/posts/29/responsive/sukurinsiyotuto-2024-03-24-16.40.09-sm.png 480w ,https://corkborg.github.io/media/posts/29/responsive/sukurinsiyotuto-2024-03-24-16.40.09-md.png 749w ,https://corkborg.github.io/media/posts/29/responsive/sukurinsiyotuto-2024-03-24-16.40.09-xl.png 1200w"></figure>
-<p>ただ、めちゃめちゃな結果が返ってくると思います。試しに使用した。</p>
+<p>めちゃめちゃな結果が返ってきたと思います。</p>
+<p>試しに使用した<span style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);">学習済みモデル（</span><span style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);">convnextv2_tiny.fcmae）が非力だからです。</span></p>
 <div>
-<div>convnextv2_tiny.fcmaeという学習済みモデルが非力だからです。</div>
 <div> </div>
-<div>コメントを解除して大きめで精度の良いモデルを有効化します（2GBくらいあります）。</div>
+<div>ソースコードのコメントを解除して大きめで精度の良いモデルを有効化します（モデルサイズが2GBくらいあります）。</div>
 <div>
 <pre class="language-bash"><code># model = timm.create_model('convnextv2_tiny.fcmae', pretrained=True)
 model = timm.create_model("convnextv2_huge.fcmae_ft_in22k_in1k_512", pretrained=True)</code></pre>
