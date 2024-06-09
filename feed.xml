@@ -3,12 +3,94 @@
     <title>塩の惑星</title>
     <link href="https://corkborg.github.io/feed.xml" rel="self" />
     <link href="https://corkborg.github.io" />
-    <updated>2024-06-04T17:22:58+09:00</updated>
+    <updated>2024-06-10T00:04:56+09:00</updated>
     <author>
         <name>ミズソバ</name>
     </author>
     <id>https://corkborg.github.io</id>
 
+    <entry>
+        <title>水深20mまでのRICOH WG-6を40m級のダイビングで使うとどうなるか？</title>
+        <author>
+            <name>ミズソバ</name>
+        </author>
+        <link href="https://corkborg.github.io/richoh-wg-6-on-40m-dive/"/>
+        <id>https://corkborg.github.io/richoh-wg-6-on-40m-dive/</id>
+        <media:content url="https://corkborg.github.io/media/posts/41/024.JPG" medium="image" />
+
+        <updated>2024-06-09T14:27:00+09:00</updated>
+            <summary>
+                <![CDATA[
+                        <img src="https://corkborg.github.io/media/posts/41/024.JPG" alt="アドバンスドウォータダイビング" />
+                    RICOH WG-6をスキューバダイビングで使っています。 WG-6はアウトドア向けのコンパクトカメラで水深20mまでの防水性能があります。 WG-6 -&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                    <p><img src="https://corkborg.github.io/media/posts/41/024.JPG" class="type:primaryImage" alt="アドバンスドウォータダイビング" /></p>
+                <p>RICOH WG-6をスキューバダイビングで使っています。</p>
+<p>WG-6はアウトドア向けのコンパクトカメラで水深20mまでの防水性能があります。<br><a href="https://www.ricoh-imaging.co.jp/japan/products/wg-6/spec/index.html" target="_blank" rel="noopener noreferrer" style="font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);">WG-6 - 製品仕様</a></p>
+<p>今回の記事は防水カメラを性能以上の深度で使うどどうなるか書きます。</p>
+<p>結論から言うと性能を超えた水深でもある程度までは割と使えました。</p>
+<h2>スキューバダイビングと潜水深度</h2>
+<p>スキューバダイビングでは初心者向けのライセンスと、中級者向けのライセンスがあります。自分が取得したPADIで言うと下記のようになっています。</p>
+<table style="border-collapse: collapse; width: 100%;" border="1">
+<tbody>
+<tr>
+<td style="width: 57.7636%;">体験ダイビングなど（無免許）</td>
+<td style="width: 42.379%;">水深12mまで</td>
+</tr>
+<tr>
+<td style="width: 57.7636%;">PADI オープン･ウォーター</td>
+<td style="width: 42.379%;">水深18mまで</td>
+</tr>
+<tr>
+<td style="width: 57.7636%;">PADI アドヴァンスド・オープン・ウォーター</td>
+<td style="width: 42.379%;">水深30m-40mまで</td>
+</tr>
+</tbody>
+</table>
+<p>オープン・ウォーターまではWG-6で余裕なのですが、アドバンスドの免許を取得してダイビングを行う場合WG-6が耐えられる水深を超えている感じになります。</p>
+<h2>余談: WG-6をダイビング向けに購入するのはおすすめしない</h2>
+<figure class="post__image post__image--center"><img loading="lazy"  src="https://corkborg.github.io/media/posts/41/DSC_1871.JPG" alt="" width="4528" height="3016" sizes="(max-width: 1200px) 100vw, 1200px" srcset="https://corkborg.github.io/media/posts/41/responsive/DSC_1871-xs.JPG 300w ,https://corkborg.github.io/media/posts/41/responsive/DSC_1871-sm.JPG 480w ,https://corkborg.github.io/media/posts/41/responsive/DSC_1871-md.JPG 749w ,https://corkborg.github.io/media/posts/41/responsive/DSC_1871-xl.JPG 1200w"></figure>
+<p>ちなみに、この記事はスキューバダイビングでWG-6をおすすめする記事ではありません。<br>もしもスキューバダイビングでこのようなカメラの購入を検討している場合はOM SYSYEMのTG-7などがおすすめです。</p>
+<p>TG-7本体は水深15mまでの防水性能ですが、ハウジング（防水ケース）を装着することで45mまで行けるようになります。</p>
+<p>対して、WG-6はハウジングが存在しないので20mが限界です。先々スキューバダイビングが面白くなりアドバンスドの免許を取る可能性がある場合、いずれWG-6は使わなくなってしまうでしょう。</p>
+<p>自分はダイビング以外の用途で以前からWG-6を持っていたのでスキューバダイビングに使用しました。水中での写真の写りは満足しているのでハウジングが存在しないことが惜しまれます…。</p>
+<h2>30m級のダイビングに持ち込んでわかったこと</h2>
+<p>30m級だと意外と動きます。</p>
+<p>ただ、不思議なことに気づきました。液晶のちょうど中央に小さな汚れのようなものが見えます。雰囲気としては液晶保護シートの中に空気が残ってしまったときのようなものです。</p>
+<p>それでも写真が撮れるので使っていたのですが、だんだん気づきてきました。</p>
+<p>これは、液晶の保護パネルが水圧で押されて液晶パネルと接触してしまっているようでした。</p>
+<p>結構な歪みなので30m級のダイビングで使い続けていると液晶の保護パネルが割れてしまうかもしれないです。</p>
+<h2>40m級のダイビングに持ち込んでわかったこと</h2>
+<p>30mでやめておけばよいのに、40mで使ってみるとどうなるか興味が湧きました。</p>
+<p>使ってみると、やはり液晶の歪みがよりひどくなったのですが他の問題が発生しました。</p>
+<p>カメラが起動しない…。</p>
+<p>一瞬起動したり、水深が少し上がると使えるので壊れてはいなそうなので何が起きているのだろうと色々触っていると、電源ボタンを押した感触が薄いことに気づきました。</p>
+<p>どうやら、水圧でボタンが押し込まれてしまって起動できなくなってしまったようでした。</p>
+<p>WG-6を40mで使ったのはこの一回だけですが、その後も使えているので故障はしなかったようです。意外と頑丈ですね。</p>
+<h2>余談：WG-6で撮れる写真について</h2>
+<figure class="post__image post__image--center"><img loading="lazy"  src="https://corkborg.github.io/media/posts/41/054-3.JPG" alt="" width="5184" height="3456" sizes="(max-width: 1200px) 100vw, 1200px" srcset="https://corkborg.github.io/media/posts/41/responsive/054-3-xs.JPG 300w ,https://corkborg.github.io/media/posts/41/responsive/054-3-sm.JPG 480w ,https://corkborg.github.io/media/posts/41/responsive/054-3-md.JPG 749w ,https://corkborg.github.io/media/posts/41/responsive/054-3-xl.JPG 1200w"></figure>
+<figure class="post__image post__image--center" ><img loading="lazy" src="https://corkborg.github.io/media/posts/41/114-3.JPG" alt="" width="5184" height="3456" sizes="(max-width: 1200px) 100vw, 1200px" srcset="https://corkborg.github.io/media/posts/41/responsive/114-3-xs.JPG 300w ,https://corkborg.github.io/media/posts/41/responsive/114-3-sm.JPG 480w ,https://corkborg.github.io/media/posts/41/responsive/114-3-md.JPG 749w ,https://corkborg.github.io/media/posts/41/responsive/114-3-xl.JPG 1200w">
+<figcaption >ピントが微妙に合っていない…</figcaption>
+</figure>
+<p>WG-6を40mで使うのはあまり良くなさそうだったので、後日Canon S110とハウジングを中古で購入しました（セットで1万円程度で安かったので）。ただ、取れた写真は微妙で、WG-6などダイビングに注力しているカメラとの実力差を思い知らされました。</p>
+<p>水深の問題を除くと、ライトが無くてもきれいな写真が撮れるWG-6は良いカメラだと思います。</p>
+<h2>まとめ</h2>
+<ul>
+<li>WG-6の仕様では耐えられる水深は20mまで</li>
+<li>30m級のダイビングだと普通に撮影はできたが壊れる可能性が心配される</li>
+<li>40m級のダイビングではWG-6は全然使えない</li>
+</ul>
+<p>という感じでした。</p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>Google検索アルゴリズムの流出？と言われている物を実際に見てみた</title>
         <author>
@@ -707,72 +789,6 @@ model = timm.create_model("convnextv2_huge.fcmae_ft_in22k_in1k_512", pretrained=
 <h2>timmの詳細</h2>
 <p>timmの使い方はここに書いてあります。<br><a href="https://huggingface.co/docs/hub/timm" target="_blank" rel="noopener noreferrer">https://huggingface.co/docs/hub/timm</a></p>
 <p>timmの推論済みConvNeXTモデルの詳細は下記に書いてあります。<br><a href="https://huggingface.co/timm/convnextv2_tiny.fcmae" target="_blank" rel="noopener noreferrer">https://huggingface.co/timm/convnextv2_tiny.fcmae</a></p>
-<p> </p>
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>バイクパークでバイク駐車場の契約を完全リモートで行った話</title>
-        <author>
-            <name>ミズソバ</name>
-        </author>
-        <link href="https://corkborg.github.io/sign-contract-bikepark-81989-remotely/"/>
-        <id>https://corkborg.github.io/sign-contract-bikepark-81989-remotely/</id>
-        <media:content url="https://corkborg.github.io/media/posts/23/P3200130.JPG" medium="image" />
-            <category term="バイク"/>
-
-        <updated>2024-02-28T23:22:00+09:00</updated>
-            <summary>
-                <![CDATA[
-                        <img src="https://corkborg.github.io/media/posts/23/P3200130.JPG" alt="ここは今回契約した駐車場ではない" />
-                    だいぶ前にバイクパーク（https://81989.jp/）という全国でバイク駐輪場を運営している不動産会社さんで契約しました。 ここの駐輪場はネットで問い合わせをすることができ、不動産会社に訪れなくても電話と郵便で契約することができたのでその体験記を書きます。 都内に引っ越した際にバイク駐輪場を探していたのですが、競争が激しくなかなか良い駐車場が見つかりませんでした。 そんななかバイクパークというサイトでは他の不動産紹介サイトに載っていない駐車場を取り扱っていること、Google Mapで見る感じ最近までバイク駐輪場がなかった場所に駐輪場を新しく作っている事に気づきました。&hellip;
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                    <p><img src="https://corkborg.github.io/media/posts/23/P3200130.JPG" class="type:primaryImage" alt="ここは今回契約した駐車場ではない" /></p>
-                <p>だいぶ前にバイクパーク（<a href="https://81989.jp/" target="_blank" rel="noopener noreferrer">https://81989.jp/</a>）という全国でバイク駐輪場を運営している不動産会社さんで契約しました。<br>ここの駐輪場はネットで問い合わせをすることができ、不動産会社に訪れなくても電話と郵便で契約することができたのでその体験記を書きます。</p>
-<h2>空きの駐輪場が見つからない</h2>
-<p>都内に引っ越した際にバイク駐輪場を探していたのですが、競争が激しくなかなか良い駐車場が見つかりませんでした。</p>
-<p>そんななかバイクパークというサイトでは他の不動産紹介サイトに載っていない駐車場を取り扱っていること、Google Mapで見る感じ最近までバイク駐輪場がなかった場所に駐輪場を新しく作っている事に気づきました。</p>
-<p>このサイトは比較的競争が激しくないかもしれないと思い駐車場の空き状況を問い合わせを行った所、読みが当たったのか結構空きがあり契約を進める事にしました。</p>
-<h2>契約の流れ</h2>
-<p>サイトで駐車場を選ぶ → 空き状況問い合わせ → メールで空き状況返送 → <br>電話で駐車場申し込み → 初期費用振込 → <br>バイクパークから契約書類郵送 → 契約書を記入して送付 → <strong>契約完了</strong></p>
-<h3>サイトで駐車場を選ぶ<a href="https://81989.jp/"></a></h3>
-<p>まず<a href="https://81989.jp/">バイクパークのサイト</a><a target="_blank" rel="noopener noreferrer"></a>で駐車場を選びます。いくつか良さそうな駐車場を選んだら管理番号をメモしておきます。</p>
-<p>その後サイト内の問い合わせフォームに必要事項を記入して空き状況の問い合わせを行います。</p>
-<p>問い合わせ時に記入したメールアドレスに空き状況が記載されたメールが届きます。<br>メール内に申し込みを行う場合は電話でと書いてあるので問題なければ電話を行います。</p>
-<h3>電話で駐車場申し込み</h3>
-<p>電話で駐車場を申し込むさいにはいくつか契約に必要な事項を聞かれます。</p>
-<ul>
-<li>契約する駐車場の管理番号</li>
-<li>希望の駐車スペース番号</li>
-<li>バイクの車種</li>
-<li>契約予定日</li>
-<li>引き落としに使用する銀行口座の会社</li>
-<li>緊急連絡先（２つ）</li>
-</ul>
-<p><strong>緊急連絡先が２つ必要になります</strong>。<br>片方は会社でも良いらしいので、私は親族と勤務している会社の２つを緊急連絡先に設定しました。<br>電話に出ない等がなければ基本緊急連絡先に連絡することはないという話でした。</p>
-<h3>初期費用振込</h3>
-<p>申し込みを行うと初期費用の振込のためのメールが送られてきます。</p>
-<p>メールに添付されたPDFの内容をもとに銀行振り込みを行います。<br>私は銀行のスマホ振込アプリから振込を行いました。</p>
-<h3>契約書</h3>
-<p>審査に問題がなければ、バイクパークから契約書類が一式送られてきます。</p>
-<p>主には下記のようなものです。</p>
-<ul>
-<li>契約書</li>
-<li>賃貸借契約書</li>
-<li>振込用紙</li>
-<li>返送用のゆうパックが送られてきます。</li>
-</ul>
-<p>各書類の記入方法はわかりやすい説明書類が入っているのでそれに沿って記載を行います。</p>
-<p>賃貸借契約書に使うための印鑑と、振込用に銀行印が必要になると思います。</p>
-<p>それぞれ記入したらゆうパックで返送します。</p>
-<p>契約完了です。</p>
-<h2>最後に</h2>
-<p>家にいながら素早く契約完了できて良かったです。</p>
-<p> </p>
-<p> </p>
 <p> </p>
             ]]>
         </content>
