@@ -3,7 +3,7 @@
     <title>塩の惑星</title>
     <link href="https://corkborg.github.io/feed.xml" rel="self" />
     <link href="https://corkborg.github.io" />
-    <updated>2024-07-09T13:24:51+09:00</updated>
+    <updated>2024-07-09T15:13:22+09:00</updated>
     <author>
         <name>ミズソバ</name>
     </author>
@@ -46,12 +46,12 @@
 <p>現在、IPv6に対応した回線は普及していないのでサーバ運用を行うにはIPv4のほうが断然便利です。</p>
 <p>完全に調査不足だったのですがソフトバンク光10GはIPv6のみでインターネットに接続しているようでした。</p>
 <p>IPv6のみのインターネットの回線の場合基本的にIPv6アドレスでサーバ運用することになります。<br>IPv6はそこまで普及していないので、外からアクセスすることが難しくなります（喫茶店のwifiなどがIPv6に対応してない）。</p>
-<h2>PPPoE接続はできなかった</h2>
-<p>10Gではない通常のソフトバンク光もIPv6ですがPPPoE（IPv4）という接続方法を使うことでIPv4でのインターネと接続ができるようです。</p>
+<h2>PPPoE接続（IPv4）はできなかった</h2>
+<p>10Gではない通常のソフトバンク光もIPv6ですがPPPoEという接続方法を使うことでIPv4だけでインターネットに接続ができるようです。</p>
 <p><a href="https://www.softbank.jp/internet/support/sbhikari/connect/pppoe/hgw/">ホームゲートウェイ（N）のユーザー認証設定（PPPoE）をする</a></p>
-<p>ただ、試してみたものの接続できませんでした。ソフトバンク光10GはPPPoEに対応してないのではないかと思います。</p>
+<p>ただ、試してみたものの接続できませんでした。ソフトバンク光10GはPPPoEに対応してないのではないかと思います（多分通常のソフトバンク光と回線の提供方法が違う）。</p>
 <h2>運良くIPv4専有のMAP-Eだった</h2>
-<p>IPv6とIPv4は本来相互に接続できない技術なのですが、それだと困るのでIPv6からIPv4のインターネットにアクセスするための技術がいくつかあります。</p>
+<p>本来、IPv6とIPv4は相互に接続できない技術なのですが、それだと困るのでIPv6からIPv4のインターネットにアクセスするための技術がいくつかあります。</p>
 <ul>
 <li>DS-Lite （サーバ運用は絶望的）</li>
 <li>MAP-E（サーバ運用ができるが専有じゃない場合は癖がある）</li>
@@ -59,13 +59,14 @@
 <p>このような技術のなかでもソフトバンク光10GはMAP-Eという技術を使用しているようです。</p>
 <p>このMAP-EはシンプルにIPv4の通信をホームゲートウェイに中継してくれるので、残りの制御はONU側で実施します。</p>
 <figure class="post__image post__image--center"><img loading="lazy"  src="https://corkborg.github.io/media/posts/46/Ming-Cheng-Wei-She-Ding-huairu-1718208893207.drawio-2.png" alt="ソフトバンク10GのIPoEのMAP-Eについての図" width="980" height="520" sizes="(max-width: 1200px) 100vw, 1200px" srcset="https://corkborg.github.io/media/posts/46/responsive/Ming-Cheng-Wei-She-Ding-huairu-1718208893207.drawio-2-xs.png 300w ,https://corkborg.github.io/media/posts/46/responsive/Ming-Cheng-Wei-She-Ding-huairu-1718208893207.drawio-2-sm.png 480w ,https://corkborg.github.io/media/posts/46/responsive/Ming-Cheng-Wei-She-Ding-huairu-1718208893207.drawio-2-md.png 749w ,https://corkborg.github.io/media/posts/46/responsive/Ming-Cheng-Wei-She-Ding-huairu-1718208893207.drawio-2-xl.png 1200w"></figure>
-<p>細かい事を無視すると<strong>ソフトバンク光10GだとIPv4とIPv6のアドレスがホームゲートウェイに振られている</strong>、デュアルスタックに近い状態です。</p>
+<p>ソフトバンク光10GはMAP-Eの中でもIPv4アドレスをまるまる専有させてくれる方式でした、そのため細かい事を無視すると<strong>IPv4、IPv6両方のアドレスがホームゲートウェイに振られている</strong>、デュアルスタックに近い状態です。</p>
 <p>なので、割り当てられたIPv4アドレスに対してポート開放やNAT設定もホームゲートウェイ側で実施することができます。</p>
 <p>当初IPv6で絶望しかけてましたが一転ソフトバンク光良いじゃんと思いました。</p>
-<h3>余談: 専有じゃないプロバイダ</h3>
+<h3>余談: MAP-Eだけど専有じゃないプロバイダ</h3>
 <p>同じMAP-E方式でも専有ではないプロバイダが存在します。</p>
-<p>一つのIPアドレスのポートをつくつかに分割して、そのポート宛の通信をMAP-Eがホームゲートウェイに送る方法です（最近ではNUROもこの方式に移行中とか）。</p>
-<p>このようなプロバイダでもサーバ運用はできなくはないのですが、ポートの割り振り方法が難しく、設定したいポートが使えない可能性が高かったりして使いづらいです。</p>
+<p>専有ではない場合一つのIPアドレスを複数人で使用します（最近ではNUROもこの方式に移行中とか）。</p>
+<p>この方法では一つのIPに紐づいた6万程度のポートをいくつかに分割して、分割したポート事に人に割当を行い。MAP-Eはポートを見て通信をホームゲートウェイに送る方法です</p>
+<p>このようなプロバイダでもサーバ運用はできなくはないのですが、ポートの割り振り方法を解析するのが難しく、うまくわかったとしても設定したいポートが使えない可能性が高かったりして使いづらいです。</p>
 <h2>まとめ</h2>
 <p><strong>ソフトバンク光10Gはまあまあ快適に自宅サーバ運用ができる！</strong></p>
 <p>家電量販店の割引に目がくらんでソフトバンク光10Gに迂闊に契約してしまい、一時はIPv6周りで苦しんだのですが、サーバ運用という意味では良い結果になったのと勉強になりました。</p>
