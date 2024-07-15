@@ -3,12 +3,85 @@
     <title>塩の惑星</title>
     <link href="https://corkborg.github.io/feed.xml" rel="self" />
     <link href="https://corkborg.github.io" />
-    <updated>2024-07-10T12:38:43+09:00</updated>
+    <updated>2024-07-15T15:29:56+09:00</updated>
     <author>
         <name>ミズソバ</name>
     </author>
     <id>https://corkborg.github.io</id>
 
+    <entry>
+        <title>RaspberryPi4で5GbEの高速インターネットアダプタを使ってみた</title>
+        <author>
+            <name>ミズソバ</name>
+        </author>
+        <link href="https://corkborg.github.io/raspberrypi-4de5gbenogao-su-intanetutoadaputawoshi-tutemita/"/>
+        <id>https://corkborg.github.io/raspberrypi-4de5gbenogao-su-intanetutoadaputawoshi-tutemita/</id>
+        <media:content url="https://corkborg.github.io/media/posts/48/DSC_1879.jpeg" medium="image" />
+
+        <updated>2024-07-10T13:17:06+09:00</updated>
+            <summary>
+                <![CDATA[
+                        <img src="https://corkborg.github.io/media/posts/48/DSC_1879.jpeg" alt="QNA-UC5G1TとRaspberryPi400" />
+                    RaspberryPi5の時代に今更なのですが、RaspberryPi4にUSBの5GbEのネットワークアダプタを接続してベンチマークを行ってみました。 RaspberryPi4は標準では1GbE（秒間125MB転送）しかできないのでどれくらい伸びるのか見てみたいと思います。 QNAPの5GbEを使います。 QNAPの10GbEはthunderboltに対応したUSBポートのみ対応なのに対してこちらは、USB 3.2&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                    <p><img src="https://corkborg.github.io/media/posts/48/DSC_1879.jpeg" class="type:primaryImage" alt="QNA-UC5G1TとRaspberryPi400" /></p>
+                <p>RaspberryPi5の時代に今更なのですが、RaspberryPi4にUSBの5GbEのネットワークアダプタを接続してベンチマークを行ってみました。</p>
+<p>RaspberryPi4は標準では1GbE（秒間125MB転送）しかできないのでどれくらい伸びるのか見てみたいと思います。</p>
+<h2>QNAP QNA-UC5G1T</h2>
+<figure class="post__image"><img loading="lazy"  src="https://corkborg.github.io/media/posts/48/sukurinsiyotuto-2024-07-15-14.54.33.png" alt="QNA-UC5G1Tの前面" width="2076" height="1356" sizes="(max-width: 1200px) 100vw, 1200px" srcset="https://corkborg.github.io/media/posts/48/responsive/sukurinsiyotuto-2024-07-15-14.54.33-xs.png 300w ,https://corkborg.github.io/media/posts/48/responsive/sukurinsiyotuto-2024-07-15-14.54.33-sm.png 480w ,https://corkborg.github.io/media/posts/48/responsive/sukurinsiyotuto-2024-07-15-14.54.33-md.png 749w ,https://corkborg.github.io/media/posts/48/responsive/sukurinsiyotuto-2024-07-15-14.54.33-xl.png 1200w"></figure>
+<p>QNAPの5GbEを使います。</p>
+<p>QNAPの10GbEはthunderboltに対応したUSBポートのみ対応なのに対してこちらは、USB 3.2 Gen1に対応していれば使用することができます。</p>
+<p>5GbEのネットワークアダプタはどれも結構熱くなりますが、QNA-UC5G1Tは金属筐体で覆われているので放熱性が良いほうかもしれないです。</p>
+<p>長期間普段遣いしたこともありますが、あまり困ったことはありませんでした。</p>
+<p><a href="https://www.qnap.com/ja-jp/product/qna-uc5g1t">QNA-UC5G1T - QNAP公式</a></p>
+<h2>RaspberryPi 400</h2>
+<p>キーボードとコンピュータが一体化した、RaspberryPiの中でもパーソナルコンピューター用途に特化したものです。</p>
+<p>中身はRaspberryPi4とほぼ同じはずです（少しCPUが早いらしいですが）</p>
+<p>一時期、普段遣いしようと思って使っていたのですが、動作がもっさりしていてため押し入れに入っていました。<br>どんなに良いMicroSDカードでもアプリケーションの動きに対して遅すぎて要所要所で時間がかかってしまうところとかが原因かなと思っています。快適に使うにはSSDなどに対応する必要がありそうです。</p>
+<p>見た目はニューロマンサーという小説に出てくるオノ=センダイ・サイバースペース7みたいでカッコいいんですけどね…。</p>
+<h2>接続</h2>
+<figure class="post__image"><img loading="lazy"  src="https://corkborg.github.io/media/posts/48/PXL_20240615_123259370.2.jpg" alt="" width="1820" height="1024" sizes="(max-width: 1200px) 100vw, 1200px" srcset="https://corkborg.github.io/media/posts/48/responsive/PXL_20240615_123259370.2-xs.jpg 300w ,https://corkborg.github.io/media/posts/48/responsive/PXL_20240615_123259370.2-sm.jpg 480w ,https://corkborg.github.io/media/posts/48/responsive/PXL_20240615_123259370.2-md.jpg 749w ,https://corkborg.github.io/media/posts/48/responsive/PXL_20240615_123259370.2-xl.jpg 1200w"></figure>
+<p>こんな感じで接続しています。</p>
+<p>左から、QNA-UC5G1T、電源、HDMIという感じです。</p>
+<h2>ベンチマーク</h2>
+<p>10GbEに対応したサーバーに対してiperf3を行うことで転送速度のベンチマークを行いました。</p>
+<p>結果としては大体1.8Gbps程度出るようです。（毎秒225MB転送）</p>
+<p>RaspberryPi 4の非力さだとUSB経由では1Gも超えられないのではないかと思っていたのでなかなか出ますね。</p>
+<pre class="language-bash"><code>raspberrypi400:~ $ iperf3 -c benchmark.local
+Connecting to host benchmark.local, port 5201
+[  5] local raspberrypi400.local port 51338 connected to benchmark.local port 5201
+[ ID] Interval           Transfer     Bitrate         Retr  Cwnd
+[  5]   0.00-1.00   sec   213 MBytes  1.78 Gbits/sec    5    841 KBytes
+[  5]   1.00-2.00   sec   214 MBytes  1.80 Gbits/sec    2   1012 KBytes
+[  5]   2.00-3.00   sec   218 MBytes  1.83 Gbits/sec    1   1.13 MBytes
+[  5]   3.00-4.00   sec   214 MBytes  1.79 Gbits/sec    0   1.27 MBytes
+[  5]   4.00-5.00   sec   221 MBytes  1.86 Gbits/sec    0   1.39 MBytes
+[  5]   5.00-6.00   sec   221 MBytes  1.85 Gbits/sec    1   1.50 MBytes
+[  5]   6.00-7.00   sec   219 MBytes  1.84 Gbits/sec    0   1.60 MBytes
+[  5]   7.00-8.00   sec   212 MBytes  1.78 Gbits/sec    0   1.70 MBytes
+[  5]   8.00-9.00   sec   221 MBytes  1.86 Gbits/sec    0   1.79 MBytes
+[  5]   9.00-10.00  sec   215 MBytes  1.80 Gbits/sec    0   1.88 MBytes
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bitrate         Retr
+[  5]   0.00-10.00  sec  2.12 GBytes  1.82 Gbits/sec    9             sender
+[  5]   0.00-10.04  sec  2.12 GBytes  1.81 Gbits/sec                  receiver</code></pre>
+<h2>消費電力</h2>
+<p>QNA-UC5G1T接続してベンチマークをした前後のRasberryPiの消費電力を見ていきます。</p>
+<figure class="post__image" ><figure class="post__image post__image--center"><img loading="lazy"  src="https://corkborg.github.io/media/posts/48/sukurinsiyotuto-2024-07-15-15.06.35-2.png" alt="QNA-UC5G1T接続前のRasberryPi4消費電力 5.02V 0.52A" width="1504" height="862" sizes="(max-width: 1200px) 100vw, 1200px" srcset="https://corkborg.github.io/media/posts/48/responsive/sukurinsiyotuto-2024-07-15-15.06.35-2-xs.png 300w ,https://corkborg.github.io/media/posts/48/responsive/sukurinsiyotuto-2024-07-15-15.06.35-2-sm.png 480w ,https://corkborg.github.io/media/posts/48/responsive/sukurinsiyotuto-2024-07-15-15.06.35-2-md.png 749w ,https://corkborg.github.io/media/posts/48/responsive/sukurinsiyotuto-2024-07-15-15.06.35-2-xl.png 1200w"></figure>
+<figcaption >QNA-UC5G1T接続前のRasberryPi4消費電力</figcaption>
+</figure>
+<figure class="post__image" ><figure class="post__image post__image--center"><img loading="lazy"  src="https://corkborg.github.io/media/posts/48/sukurinsiyotuto-2024-07-15-15.07.10.png" alt="QNA-UC5G1Tを接続しベンチーマーク実施後のRasberryPi4消費電力 4.94V 1.20A" width="884" height="636" sizes="(max-width: 1200px) 100vw, 1200px" srcset="https://corkborg.github.io/media/posts/48/responsive/sukurinsiyotuto-2024-07-15-15.07.10-xs.png 300w ,https://corkborg.github.io/media/posts/48/responsive/sukurinsiyotuto-2024-07-15-15.07.10-sm.png 480w ,https://corkborg.github.io/media/posts/48/responsive/sukurinsiyotuto-2024-07-15-15.07.10-md.png 749w ,https://corkborg.github.io/media/posts/48/responsive/sukurinsiyotuto-2024-07-15-15.07.10-xl.png 1200w"></figure>
+<figcaption >QNA-UC5G1Tを接続しベンチーマーク実施後のRasberryPi4消費電力</figcaption>
+</figure>
+<p>一度消費電力が1.2Aに行った後、RasberryPiからネットワークカードを外してもあまり消費電力が落ちないことからあまり確実とは言えない情報ですが、0.6A程度消費電力が増加しているように見えます。</p>
+<p>電圧が結構降下してしまうので、5Vをきっちり出力する電源よりも、RaspberryPi向けに5.2Vの出力に対応したUSBを使用したほうが良さそうです。</p>
+<p> </p>
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>大容量回線ソフトバンク光10GでIPv6,IPv4の自宅サーバ運用をしてみた</title>
         <author>
@@ -23,13 +96,13 @@
             <summary>
                 <![CDATA[
                         <img src="https://corkborg.github.io/media/posts/46/DSC_1877_02.JPG" alt="ソフトバンク光10GのルータとONU" />
-                    ソフトバンク光10Gを契約しました。このプランはなんと10GbEと言われる最大10Gbpsの転送速度インターネットにアクセスすることができます。 実際には計測した感じだと3Gbps程度しか出ないのですが、多少お金を追加するだけで1Gbps超えできるので満足しています。 自宅サーバといっても不特定多数の人にサービスを提供するようなものすごい物ではありません。 私は、外からNAS（ファイルサーバ）にアクセスしたり、知り合いと遊ぶゲームサーバなどの用途で自宅サーバを運用することが多いです。 Project&hellip;
+                    ソフトバンク光10Gを契約しました。このプランはなんと最大10Gbpsの転送速度インターネットにアクセスできる仕組みになっています。 実際には計測した感じだと3Gbps程度しか出ないのですが、多少お金を追加するだけで1Gbps超えできるので満足しています。 自宅サーバといっても不特定多数の人にサービスを提供するようなものすごい物ではありません。 私は、外からNAS（ファイルサーバ）にアクセスしたり、知り合いと遊ぶゲームサーバなどの用途で自宅サーバを運用することが多いです。 Project&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
                     <p><img src="https://corkborg.github.io/media/posts/46/DSC_1877_02.JPG" class="type:primaryImage" alt="ソフトバンク光10GのルータとONU" /></p>
-                <p>ソフトバンク光10Gを契約しました。このプランはなんと10GbEと言われる最大10Gbpsの転送速度インターネットにアクセスすることができます。</p>
+                <p>ソフトバンク光10Gを契約しました。このプランはなんと最大10Gbpsの転送速度インターネットにアクセスできる仕組みになっています。</p>
 <p>実際には計測した感じだと3Gbps程度しか出ないのですが、多少お金を追加するだけで1Gbps超えできるので満足しています。</p>
 <h2>自宅サーバを運用したい</h2>
 <p>自宅サーバといっても不特定多数の人にサービスを提供するようなものすごい物ではありません。</p>
@@ -324,7 +397,7 @@
             <summary>
                 <![CDATA[
                         <img src="https://corkborg.github.io/media/posts/38/ants_line_01.png" alt="" />
-                    私はアリを３年飼育しています。 飼育する前はアリのコロニーを飼育することは熱帯魚並に面白くて見てて飽きないんじゃないかと思っていました。 実際に飼育してみるとアリはペットとしての面白みが少ない生き物だなと感じます。 例えば、強いこだわりもなく熱帯魚とアリを飼育するのを迷っている人がいるとしたら、基本的に熱帯魚のほうを私はおすすめします。 今回は、アリの飼育が何故そこまで面白くないのか解説します。&hellip;
+                    私はアリを３年飼育しています。 飼育する前はアリのコロニーを飼育することは熱帯魚並に面白くて見てて飽きないんじゃないかと思っていました。 実際に飼育してみるとアリはペットとしての面白みが少ない生き物だなと感じます。 例えば、強いこだわりもなく熱帯魚とアリを飼育するのを迷っている人がいるとしたら、基本的に熱帯魚のほうを私はおすすめします（普通そんな人いないが…）。 今回は、アリの飼育が何故そこまで面白くないのか解説します。&hellip;
                 ]]>
             </summary>
         <content type="html">
@@ -332,7 +405,7 @@
                     <p><img src="https://corkborg.github.io/media/posts/38/ants_line_01.png" class="type:primaryImage" alt="" /></p>
                 <p>私はアリを３年飼育しています。</p>
 <p>飼育する前はアリのコロニーを飼育することは熱帯魚並に面白くて見てて飽きないんじゃないかと思っていました。<br>実際に飼育してみるとアリはペットとしての面白みが少ない生き物だなと感じます。</p>
-<p>例えば、強いこだわりもなく熱帯魚とアリを飼育するのを迷っている人がいるとしたら、基本的に熱帯魚のほうを私はおすすめします。</p>
+<p>例えば、強いこだわりもなく熱帯魚とアリを飼育するのを迷っている人がいるとしたら、基本的に熱帯魚のほうを私はおすすめします（普通そんな人いないが…）。</p>
 <p>今回は、アリの飼育が何故そこまで面白くないのか解説します。<br>この記事を読んだうえでも、アリ飼育への興味を失わない人はアリを飼うべきでしょう。</p>
 <p>ちなみにアリを手放したりする予定は無いです。ペットとして面白くないだけで苦労して育てた愛着と責任感があります。</p>
 <h2 class="p3">飼っているアリ</h2>
@@ -380,7 +453,9 @@
 <p>多分アリの屋外での行動範囲に比べると飼育キット全体が小さすぎるんでしょうね。<br>アリは飼育キットの中ではあんまり動きません。面白くないです。</p>
 <p>巣を小突いたり、ライト当てたりちょっかいを出すと驚いてアリも騒ぎ始めますが、本来観察したかったことはそういうことなのでしょうか。</p>
 <h2>飼育用アリの巣は地味</h2>
-<figure class="post__image"><img loading="lazy"  src="https://corkborg.github.io/media/posts/38/DSC_1844.JPG" alt="イトウオオアリの飼育セット" width="1000" height="665" sizes="(max-width: 1200px) 100vw, 1200px" srcset="https://corkborg.github.io/media/posts/38/responsive/DSC_1844-xs.JPG 300w ,https://corkborg.github.io/media/posts/38/responsive/DSC_1844-sm.JPG 480w ,https://corkborg.github.io/media/posts/38/responsive/DSC_1844-md.JPG 749w ,https://corkborg.github.io/media/posts/38/responsive/DSC_1844-xl.JPG 1200w"></figure>
+<figure class="post__image" ><figure class="post__image post__image--center"><img loading="lazy"  src="https://corkborg.github.io/media/posts/38/DSC_1844.JPG" alt="イトウオオアリの飼育セット" width="1000" height="665" sizes="(max-width: 1200px) 100vw, 1200px" srcset="https://corkborg.github.io/media/posts/38/responsive/DSC_1844-xs.JPG 300w ,https://corkborg.github.io/media/posts/38/responsive/DSC_1844-sm.JPG 480w ,https://corkborg.github.io/media/posts/38/responsive/DSC_1844-md.JPG 749w ,https://corkborg.github.io/media/posts/38/responsive/DSC_1844-xl.JPG 1200w"></figure>
+<figcaption >ゴテゴテせずシンプルなので飼育キットの中では気に入っています</figcaption>
+</figure>
 <p>アリといえば土の中に巣を作るイメージがありますが、アリ飼育では通常土で飼ったりはしません。</p>
 <p>なぜなら、アリの巣は汚れがたまるものでそのままにしておくと見た目が汚くなったり、病気になったりします。そのため、たまに巣を新しくしてやる必要がありますが、土を巣をひっくり返してアリを新しい巣に入れ替えしてあげるのはだいぶ骨が折れると思います。</p>
 <p>そのため、石膏巣やプラスチック巣など決まった形の巣で育てることが多いです。そうなると、アリが巣を掘ったりすがたを見れないのであまり面白くないです。</p>
@@ -684,104 +759,6 @@ ZENKAKU_DIGIT: "０" | "１" | "２" | "３" | "４" | "５" | "６" | "７" | "
 <p>Publiiは使いやすいサイトジェネレータです。Notion風のエディターでWebサイトやブログなどを作りたいと思っている人にはすごくおすすめです。</p>
 <p><a href="https://getpublii.com/" target="_blank" rel="noopener noreferrer">Publii公式サイト</a></p>
 <p>Publiiがもっと流行ると良いなと思っているので、Publiiの使用を検討していて気になる点がある人、Publiiのテーマ開発で困っている人などは力になれるかもしれないのでぜひ塩の惑星に<a href="https://corkborg.github.io/contact/">問い合わせ</a>て見てください。</p>
-<p> </p>
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>硬いアオミドロ（糸状ゴケ）を対策する方法について個人的な経験から解説</title>
-        <author>
-            <name>ミズソバ</name>
-        </author>
-        <link href="https://corkborg.github.io/spirogyra-measures-in-aquarium/"/>
-        <id>https://corkborg.github.io/spirogyra-measures-in-aquarium/</id>
-        <media:content url="https://corkborg.github.io/media/posts/28/PXL_20240303_104751641.jpeg" medium="image" />
-            <category term="植物"/>
-            <category term="アクアリウム"/>
-
-        <updated>2024-03-25T02:42:00+09:00</updated>
-            <summary>
-                <![CDATA[
-                        <img src="https://corkborg.github.io/media/posts/28/PXL_20240303_104751641.jpeg" alt="アオミドロに絡まれるクリプトコリネ" />
-                    アクアリウムで困る物といえコケ。ほとんどのものは割とどうにかなるのですが、アオミドロについては手を焼かされてきたので、情報整理も兼ねて対策方法について色々紹介します。 アオミドロと言っても近縁の種が500種ほどいるようです。それぞれ特徴が違い、対処方法も異なることがあり、読者の方が悩んでいるものと違うと良くないので紹介します。 私の家のアオミドロはどこかの通販で買った水草についてきたものです。アクアリウムショップでも非常に似ているものを見かける気がするので日本の水草流通網では一般的な物なのではないかと思っています。 アオミドロというとヌルヌルしててとろろ状のものもいますが、このアオミドロは硬くあまりヌルヌルしていないです。 大きい集合体になると目立ちますが、一本一本は光のあたり具合によっては見えないようなサイズです。&hellip;
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                    <p><img src="https://corkborg.github.io/media/posts/28/PXL_20240303_104751641.jpeg" class="type:primaryImage" alt="アオミドロに絡まれるクリプトコリネ" /></p>
-                <p>アクアリウムで困る物といえコケ。ほとんどのものは割とどうにかなるのですが、アオミドロについては手を焼かされてきたので、情報整理も兼ねて対策方法について色々紹介します。</p>
-<h2>対処したアオミドロについて</h2>
-<p>アオミドロと言っても近縁の種が500種ほどいるようです。それぞれ特徴が違い、対処方法も異なることがあり、読者の方が悩んでいるものと違うと良くないので紹介します。</p>
-<p>私の家のアオミドロはどこかの通販で買った水草についてきたものです。アクアリウムショップでも非常に似ているものを見かける気がするので日本の水草流通網では一般的な物なのではないかと思っています。</p>
-<p>アオミドロというとヌルヌルしててとろろ状のものもいますが、このアオミドロは硬くあまりヌルヌルしていないです。</p>
-<figure class="post__image post__image--center" ><figure class="post__image"><img loading="lazy"  src="https://corkborg.github.io/media/posts/28/PXL_20240303_104814278.jpg" alt="硬いアオミドロ（糸状ゴケ）" width="438" height="778" sizes="(max-width: 1200px) 100vw, 1200px" srcset="https://corkborg.github.io/media/posts/28/responsive/PXL_20240303_104814278-xs.jpg 300w ,https://corkborg.github.io/media/posts/28/responsive/PXL_20240303_104814278-sm.jpg 480w ,https://corkborg.github.io/media/posts/28/responsive/PXL_20240303_104814278-md.jpg 749w ,https://corkborg.github.io/media/posts/28/responsive/PXL_20240303_104814278-xl.jpg 1200w"></figure>
-<figcaption >定着できていないときは多少柔らかくなる</figcaption>
-</figure>
-<figure class="post__image post__image--center" ><figure class="post__image"><img loading="lazy"  src="https://corkborg.github.io/media/posts/28/S20240229_001.jpg" alt="硬いアオミドロ（糸状ゴケ）" width="447" height="335" sizes="(max-width: 1200px) 100vw, 1200px" srcset="https://corkborg.github.io/media/posts/28/responsive/S20240229_001-xs.jpg 300w ,https://corkborg.github.io/media/posts/28/responsive/S20240229_001-sm.jpg 480w ,https://corkborg.github.io/media/posts/28/responsive/S20240229_001-md.jpg 749w ,https://corkborg.github.io/media/posts/28/responsive/S20240229_001-xl.jpg 1200w"></figure>
-<figcaption >コケにしては硬い</figcaption>
-</figure>
-<figure class="post__image post__image--center" ><figure class="post__image"><img loading="lazy"  src="https://corkborg.github.io/media/posts/28/S20240307_015.jpg" alt="硬いアオミドロ（糸状ゴケ）200倍画像" width="521" height="293" sizes="(max-width: 1200px) 100vw, 1200px" srcset="https://corkborg.github.io/media/posts/28/responsive/S20240307_015-xs.jpg 300w ,https://corkborg.github.io/media/posts/28/responsive/S20240307_015-sm.jpg 480w ,https://corkborg.github.io/media/posts/28/responsive/S20240307_015-md.jpg 749w ,https://corkborg.github.io/media/posts/28/responsive/S20240307_015-xl.jpg 1200w"></figure>
-<figcaption >アオミドロの細胞には螺旋模様があるようだが手持ちのルーペではそこまで見えなかった</figcaption>
-</figure>
-<h3>手で完璧に取り除くのが難しい</h3>
-<p>大きい集合体になると目立ちますが、一本一本は光のあたり具合によっては見えないようなサイズです。</p>
-<p>アオミドロは破片が少しでも残っていると増え始めるので手で対処するのが難しいです</p>
-<h3>貝はほとんど食べない</h3>
-<p>石巻貝、ヒメタニシ、カワニナ、レッドラムズホーンなどを飼育しています。</p>
-<p>これらの貝は、お腹が減っていてもアオミドロについてはほとんど食べてくれないです。</p>
-<h3>エビでも食べないもの、食べるものがいる</h3>
-<p>家ではトゲナシヌマエビ、ミナミヌマエビを主に飼育しているのですが、これらはあまり食べないようでした。</p>
-<p>後述しますが、ヤマトヌマエビ、アルジーライムシュリンプは効果がありそうです。</p>
-<h2>対策編</h2>
-<h3>アオミドロを侵入させない</h3>
-<p>水槽というのは閉鎖された空間なので侵入させなければ基本的にどんなコケでも繁殖することはありません。</p>
-<p>珪藻、藍藻くらいそこら中にあふれている物だとバイオ研究室並の慎重さを持って作業を行わないと防げないとは思いますが、少なくともアオミドロに関しては私の水槽でも慎重に取り扱っている物は肥料を投入しても発生することはありません。</p>
-<p>アオミドロが侵入する要因になるものは、ソイル、砂利、水、生物（主に貝）、<strong>水草、</strong>流木、<strong>手、</strong>ピンセットなど水槽の中で活用されるすべての物が対象です。</p>
-<p>アオミドロは栄養が足りないときや、外敵が多い時はほとんど目に見えない状態で水草の隙間などに挟まっていたりするので、アオミドロがいなそうに見える水槽から物を移して来る時も慎重に考えて作業を行ったほうが良いです。</p>
-<p>無菌培養物を除くと、短時間で市販の水草からアオミドロを完全に取り除く確実な方法は無いです。そのため、水草を入れ替えたりする趣味がある人はアオミドロはいずれ水槽に侵入する前提で考えたほうが良いかもしれないです。</p>
-<h3>アオミドロは定着できないと弱い</h3>
-<p>まだ小さくて浮遊しているアオミドロは定着できないと、急速に大きくなることができないようです。そのため、定着させないようにすることは効果があるようです。</p>
-<p>アオミドロが定着しやすい所はザラザラした所が多いようで、特にウィローモスに定着しやすいです。そのため、流木からウィローモスを剥がしたりザラザラしたものを減らすことでアオミドロの成長をだいぶ抑えることができます。</p>
-<p>この性質は後述のプレコなどにも関係しているのではないかと思います。</p>
-<h3>外部式フィルターがおすすめ</h3>
-<p>アオミドロは水槽内を漂って拡散するので、それを軽減できるフィルターは重要です。<br>なるべく吸入部にはスポンジを設置せず、浮遊しているアオミドロがそのままフィルターに吸い込まれるようにしたほうが良いです。</p>
-<p>そして、外部式フィルターがおすすめです。</p>
-<p>たとえば、外掛けフィルターは光が入りフィルター部でアオミドロが生存できてしまうようです。内部で繁殖したアオミドロは再拡散されます。そして外部式フィルターは複雑な構造をしていることが多いのでフィルター以外にも様々なパーツの隙間にアオミドロが入り込んでしまうようです。</p>
-<p>外部式フィルターはフィルター部が暗いためアオミドロが繁殖できません。そして、フィルタ内部が長いのでアオミドロが出口から拡散されづらいです。</p>
-<p>アオミドロをフィルター内部に吸い込めず、水槽内の部品が複雑であったり、水槽のライトや外部の光が入ってしまうフィルターは基本的にやめたほうが良さそうです。</p>
-<h3>ヤマトヌマエビ、アルジーライムシュリンプ</h3>
-<figure class="post__image post__image--center"><img loading="lazy"  src="https://corkborg.github.io/media/posts/28/PXL_20240303_102443320.MP-2.jpg" alt="" width="583" height="328" sizes="(max-width: 1200px) 100vw, 1200px" srcset="https://corkborg.github.io/media/posts/28/responsive/PXL_20240303_102443320.MP-2-xs.jpg 300w ,https://corkborg.github.io/media/posts/28/responsive/PXL_20240303_102443320.MP-2-sm.jpg 480w ,https://corkborg.github.io/media/posts/28/responsive/PXL_20240303_102443320.MP-2-md.jpg 749w ,https://corkborg.github.io/media/posts/28/responsive/PXL_20240303_102443320.MP-2-xl.jpg 1200w"></figure>
-<p>アオミドロは基本的にどのコケ対策生体もそんなに食べないのですが、そんな中でもエビはそれなりに食べるのでおすすめです。</p>
-<p>効果が高い種類はヤマトヌマエビとアルジーライムシュリンプの二種です。どちらというとヤマトヌマエビのほうが総合的なコケ処理能力は高いですが、アオミドロ対策についてはアルジーライムシュリンプがおすすめです。</p>
-<p>ヤマトヌマエビは微妙にコケをえり好みするようで、アオミドロを避けたりします。</p>
-<p>アルジーライムシュリンプも食べないときは食べないのですが、避けたりはしません。ノッていると結構なスピードで食べてくれます。</p>
-<p>エビが気まぐれに食べたりする理由ですが、アオミドロを食べているというよりもアオミドロに付着している微生物を食べるついでにアオミドロを食べている感じなのではないかと思います。</p>
-<p>生体のいない水槽で少し置いておいたアオミドロを入れると即座に群がってきて数分で食べ切ってくれることがありますが、水槽内で食べ残されたアオミドロなどは食べきるまで結構時間がかかります。多分アオミドロに付着した微生物を大体食べてしまって美味しく無くなったのだと思います。</p>
-<h4>TIPS: 複数種エビの混泳は基本的にどの種でもやめたほうが良い</h4>
-<p>複数種のヌマエビを同じ水槽にいれても、あまり他種に干渉しないように見えるので問題なさそうに見えるのですが、穏健な種でも地味に他種のエビを攻撃します。そのため、力が弱い種類のエビから徐々に数が減っていきます。</p>
-<p>そして、アルジーライムシュリンプはミナミヌマエビやチェリーシュリンプと交雑してしまいます。コケ取り能力も落ちてしまうのでエビの混泳は避けたほうが良いです。</p>
-<p><strong>水槽内のヌマエビは一種に統一</strong>しましょう。</p>
-<h3>プレコ</h3>
-<p>プレコはほとんどアオミドロを食べません。ただ、プレコがいなくなった水槽で数カ月後に突然アオミドロが繁殖し始めたことを何回か経験したことがあります。そのため、プレコはアオミドロ対策では重要な生体だと思います。</p>
-<p>推測では先で説明した"アオミドロは定着できないと弱い問題"と関連が深いのではないかと推測しています。</p>
-<p>プレコは流木や水草、ガラス面などを積極的に舐め回します。そうすると、浮遊しているアオミドロはなかなか定着することができません。そうなると、アオミドロは大きく成長することができなくなります。</p>
-<h3>サイアミーズフライングフォックス</h3>
-<p>サイアミーズフライングフォックスは気まぐれに細長い植物性の物に噛みついて食べる癖があるようです。そのため、アオミドロも結構たくさん食べることがあります。</p>
-<p>ただ、無理してまで食べるようなものではないようで、サイアミーズフライングフォックス泳ぎやすいスペースに食べやすい感じに生えているアオミドロじゃないと食べません。</p>
-<p>餌をやりすぎるとコケを食べなくなったりするので餌はあまりあげないほうが良いです（食べ過ぎでお腹が膨らまない位に調整）。</p>
-<p>ただ、それなりに気性が荒い面があるトラブルメーカーでもあり、大きくなるほどにその傾向が強くなるので導入は慎重に検討したほうが良いです。</p>
-<h3>人手でアオミドロを取る</h3>
-<p>やはりアオミドロ自体を喜んで食べる生体はいないようです。今まで挙げた生体もアオミドロを減らすというよりは、成長を抑えたり、発生を予防したりする面が強いです。</p>
-<p>そのため、アオミドロ対策の生体がアオミドロを食べる傍ら、水槽が安定するまではそれなりの頻度人手でアオミドロを取ることが重要になります。</p>
-<h2>まとめ</h2>
-<p>アオミドロ対策には下記の３つがおすすめです。</p>
-<ul>
-<li>外部式フィルターをガンガン回す</li>
-<li>ヤマトヌマエビ or アルジーライムシュリンプを投入する</li>
-<li>プレコを投入する</li>
-</ul>
-<p>上記を行ったうえで人手で取るのが重要です。</p>
-<p> </p>
 <p> </p>
             ]]>
         </content>
