@@ -3,7 +3,7 @@
     <title>塩の惑星</title>
     <link href="https://corkborg.github.io/feed.xml" rel="self" />
     <link href="https://corkborg.github.io" />
-    <updated>2024-07-15T15:29:56+09:00</updated>
+    <updated>2024-07-15T15:34:35+09:00</updated>
     <author>
         <name>ミズソバ</name>
     </author>
@@ -14,9 +14,10 @@
         <author>
             <name>ミズソバ</name>
         </author>
-        <link href="https://corkborg.github.io/raspberrypi-4de5gbenogao-su-intanetutoadaputawoshi-tutemita/"/>
-        <id>https://corkborg.github.io/raspberrypi-4de5gbenogao-su-intanetutoadaputawoshi-tutemita/</id>
+        <link href="https://corkborg.github.io/using-5gbe-nic-adapter-with-raspberrypi4/"/>
+        <id>https://corkborg.github.io/using-5gbe-nic-adapter-with-raspberrypi4/</id>
         <media:content url="https://corkborg.github.io/media/posts/48/DSC_1879.jpeg" medium="image" />
+            <category term="ネットワーク"/>
 
         <updated>2024-07-10T13:17:06+09:00</updated>
             <summary>

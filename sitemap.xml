@@ -301,30 +301,6 @@
 </image:image>
 </url>
 <url>
-<loc>https://corkborg.github.io/raspberrypi-4de5gbenogao-su-intanetutoadaputawoshi-tutemita/</loc>
-<lastmod>2024-07-15T15:29:56+09:00</lastmod>
-<image:image>
-<image:loc>https://corkborg.github.io/media/posts/48/DSC_1879.jpeg</image:loc>
-<image:title><![CDATA[QNA-UC5G1TとRaspberryPi400]]></image:title>
-</image:image>
-<image:image>
-<image:loc>https://corkborg.github.io/media/posts/48/sukurinsiyotuto-2024-07-15-14.54.33.png</image:loc>
-<image:title><![CDATA[QNA-UC5G1Tの前面]]></image:title>
-</image:image>
-<image:image>
-<image:loc>https://corkborg.github.io/media/posts/48/PXL_20240615_123259370.2.jpg</image:loc>
-<image:title><![CDATA[]]></image:title>
-</image:image>
-<image:image>
-<image:loc>https://corkborg.github.io/media/posts/48/sukurinsiyotuto-2024-07-15-15.06.35-2.png</image:loc>
-<image:title><![CDATA[QNA-UC5G1T接続前のRasberryPi4消費電力 5.02V 0.52A]]></image:title>
-</image:image>
-<image:image>
-<image:loc>https://corkborg.github.io/media/posts/48/sukurinsiyotuto-2024-07-15-15.07.10.png</image:loc>
-<image:title><![CDATA[QNA-UC5G1Tを接続しベンチーマーク実施後のRasberryPi4消費電力 4.94V 1.20A]]></image:title>
-</image:image>
-</url>
-<url>
 <loc>https://corkborg.github.io/raspberrypi-5-vs-intel-core-i5-2500/</loc>
 <lastmod>2024-03-31T00:35:35+09:00</lastmod>
 <image:image>
@@ -482,6 +458,30 @@
 <image:image>
 <image:loc>https://corkborg.github.io/media/posts/27/2024-02-23-200416.jpg</image:loc>
 <image:title><![CDATA[パタポン PlayStation Store購入画面]]></image:title>
+</image:image>
+</url>
+<url>
+<loc>https://corkborg.github.io/using-5gbe-nic-adapter-with-raspberrypi4/</loc>
+<lastmod>2024-07-15T15:34:35+09:00</lastmod>
+<image:image>
+<image:loc>https://corkborg.github.io/media/posts/48/DSC_1879.jpeg</image:loc>
+<image:title><![CDATA[QNA-UC5G1TとRaspberryPi400]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://corkborg.github.io/media/posts/48/sukurinsiyotuto-2024-07-15-14.54.33.png</image:loc>
+<image:title><![CDATA[QNA-UC5G1Tの前面]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://corkborg.github.io/media/posts/48/PXL_20240615_123259370.2.jpg</image:loc>
+<image:title><![CDATA[]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://corkborg.github.io/media/posts/48/sukurinsiyotuto-2024-07-15-15.06.35-2.png</image:loc>
+<image:title><![CDATA[QNA-UC5G1T接続前のRasberryPi4消費電力 5.02V 0.52A]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://corkborg.github.io/media/posts/48/sukurinsiyotuto-2024-07-15-15.07.10.png</image:loc>
+<image:title><![CDATA[QNA-UC5G1Tを接続しベンチーマーク実施後のRasberryPi4消費電力 4.94V 1.20A]]></image:title>
 </image:image>
 </url>
 <url>
