@@ -3,7 +3,7 @@
     <title>塩の惑星</title>
     <link href="https://corkborg.github.io/feed.xml" rel="self" />
     <link href="https://corkborg.github.io" />
-    <updated>2024-12-16T23:50:29+09:00</updated>
+    <updated>2024-12-16T23:56:21+09:00</updated>
     <author>
         <name>ミズソバ</name>
     </author>
@@ -46,14 +46,16 @@
 <p>M1 MacBook AirはsRGBで100%程度、Display P3だと90%以上のカバー率があることが多いようです。</p>
 <p>今回、Amazonで交換用液晶を買いましたが色周りのスペックが書いてありませんでした。せめてsRGB 100%近い再現度は合ってくれと思いながら購入しました。</p>
 <h2>交換した液晶をカラーキャリブレーション</h2>
-<figure class="post__image"><img loading="lazy"  src="https://corkborg.github.io/media/posts/52/PXL_20241216_141034572.MP.jpg" alt="datacolor SpyderX" width="3716" height="2120" sizes="(max-width: 1200px) 100vw, 1200px" srcset="https://corkborg.github.io/media/posts/52/responsive/PXL_20241216_141034572.MP-xs.jpg 300w ,https://corkborg.github.io/media/posts/52/responsive/PXL_20241216_141034572.MP-sm.jpg 480w ,https://corkborg.github.io/media/posts/52/responsive/PXL_20241216_141034572.MP-md.jpg 749w ,https://corkborg.github.io/media/posts/52/responsive/PXL_20241216_141034572.MP-xl.jpg 1200w"></figure>
+<figure class="post__image" ><img loading="lazy" src="https://corkborg.github.io/media/posts/52/PXL_20241216_141034572.MP.jpg" alt="datacolor SpyderX" width="3716" height="2120" sizes="(max-width: 1200px) 100vw, 1200px" srcset="https://corkborg.github.io/media/posts/52/responsive/PXL_20241216_141034572.MP-xs.jpg 300w ,https://corkborg.github.io/media/posts/52/responsive/PXL_20241216_141034572.MP-sm.jpg 480w ,https://corkborg.github.io/media/posts/52/responsive/PXL_20241216_141034572.MP-md.jpg 749w ,https://corkborg.github.io/media/posts/52/responsive/PXL_20241216_141034572.MP-xl.jpg 1200w">
+<figcaption >カラーキャリブレーター（SpyderX）</figcaption>
+</figure>
 <p>どんなに性能の良い高級液晶でもカラーキャリブレーションをしなければ色がズレズレで正しい色を表示することができません。</p>
-<p>Macは工場出荷時点でカラーキャリブレーションを一度実施しています。なので1年くらいは正しい色を表示できます。</p>
+<p>Macは工場出荷時点でカラーキャリブレーションを一度実施しています。なのである程度の期間は正しい色を表示できます。</p>
 <p>今回の場合は自前で用意した液晶なのでSpyder Xというキャリブレーターで自力のキャリブレーションを実施しました。</p>
 <p>結果として、デフォルトの色味は緑色にかなりズレていたようでした。</p>
 <p>Macの液晶を交換する場合カラーキャリブレーターも用意したほうが良いと思います。</p>
 <p><a href="https://www.datacolor.com/spyder/ja/spyderx2/" target="_blank" rel="noopener noreferrer">Datacolor Spyder 公式サイト</a></p>
-<h2>交換液晶の性能はとても良かった</h2>
+<h2>交換液晶は性能がとても良かった</h2>
 <p>キャリブレーションを行うと再現可能な色の性能も計測することができます。</p>
 <p>結果<strong>sRGBのカバー率100%、Display P3のカバー率99%</strong>とかなり良い性能でした。</p>
 <p>特にDisplay P3は交換前の液晶でも99%までは行ってなかったはずなので液晶交換で性能が上がっているという事になります。</p>
