@@ -3,7 +3,7 @@
     <title>塩の惑星</title>
     <link href="https://corkborg.github.io/feed.xml" rel="self" />
     <link href="https://corkborg.github.io" />
-    <updated>2024-12-16T23:56:21+09:00</updated>
+    <updated>2024-12-27T14:29:56+09:00</updated>
     <author>
         <name>ミズソバ</name>
     </author>
@@ -101,13 +101,14 @@
             <![CDATA[
                     <p><img src="https://corkborg.github.io/media/posts/49/DSC_1898.JPG" class="type:primaryImage" alt="本物と偽物のApple Pencil. 奥側が偽物、手前が本物" /></p>
                 <p>Apple Pencil二世代を壊してしてしまいました。</p>
-<p>Apple PencilはAppleに修理依頼しても交換対応になってしまうことが多いです。<br>ただ、最新のiPad Proで使用できないいわゆる型落ちのApple Pencil にフルプライス払うのも馬鹿らしいと思い中古で安い物を購入しようと考えました。</p>
+<p>Apple PencilはAppleに修理依頼しても交換対応になってしまうことが多いです。</p>
+<p>ただ、最新のiPad Proで使用できないいわゆる型落ちのApple Pencil にフルプライス払うのも馬鹿らしいと思い中古で安い物を購入しようと考えました。</p>
 <p>フリマアプリを使って購入してみたのですが、なんとApple Pencilの偽物が届いてしまいました。</p>
 <p>このトラブル自体はどうにか解消できたのですが、相当精巧な偽物で驚いたので記事にしました。</p>
 <h2>偽物は筆圧に対応してない</h2>
 <p>あまりにも高度な偽物なので筆圧機能に対応してないことに気づかなかったらそのまま使っていたかも知れないです。</p>
 <p>他にダブルタップなどの機能に対応してないようです。</p>
-<p>他のメーカーから出てるApple Pencil互換品でも筆圧に対応しているものは皆無なのでApple以外が筆圧に対応したペンを製造するのはかなり難易度が高いのではないかと思います。</p>
+<p>他のメーカーから正式に出ているApple Pencil互換品でも筆圧に対応しているものは皆無なのでApple以外が筆圧に対応したペンを製造するのはかなり難易度が高いのではないかと思います。</p>
 <h2>Apple Pencilの偽物と本物の比較</h2>
 <p>偽物と本物を比較してみましょう。</p>
 <figure class="post__image post__image--center"><img loading="lazy"  src="https://corkborg.github.io/media/posts/49/DSC_1897.JPG" alt="一番上の一本が偽物で、下2つが本物のApple Pencil" width="1000" height="665" sizes="(max-width: 1200px) 100vw, 1200px" srcset="https://corkborg.github.io/media/posts/49/responsive/DSC_1897-xs.JPG 300w ,https://corkborg.github.io/media/posts/49/responsive/DSC_1897-sm.JPG 480w ,https://corkborg.github.io/media/posts/49/responsive/DSC_1897-md.JPG 749w ,https://corkborg.github.io/media/posts/49/responsive/DSC_1897-xl.JPG 1200w"></figure>
@@ -133,7 +134,7 @@
 <li>ペン先を取り除いたApple Pencil 内部</li>
 <li>iPadの情報から電子的な確認</li>
 </ul>
-<p>流石にApple Pencil内部のシリアルまで一致させるのは難しいと思っていたのですがすべて一致していました。</p>
+<p>流石に製造コストの問題でApple Pencil内部のシリアルまで一致させるのは難しいと思っていたのですがすべて一致していました。</p>
 <p>こんな事できることに驚きが隠せません。</p>
 <figure class="post__image post__image--center"><img loading="lazy"  src="https://corkborg.github.io/media/posts/49/24-08-18-17-02-18-1136.2.png" alt="偽物のApple Pencilのシリアル情報" width="1292" height="768" sizes="(max-width: 1200px) 100vw, 1200px" srcset="https://corkborg.github.io/media/posts/49/responsive/24-08-18-17-02-18-1136.2-xs.png 300w ,https://corkborg.github.io/media/posts/49/responsive/24-08-18-17-02-18-1136.2-sm.png 480w ,https://corkborg.github.io/media/posts/49/responsive/24-08-18-17-02-18-1136.2-md.png 749w ,https://corkborg.github.io/media/posts/49/responsive/24-08-18-17-02-18-1136.2-xl.png 1200w"></figure>
 <p>製造元とモデル番号は本物と同一ですが、ファームウェアバージョンとハードウェアバージョンが本物とはだいぶ異なります（フォーマットが全く別物感）。</p>
