@@ -3,7 +3,7 @@
     <title>塩の惑星</title>
     <link href="https://corkborg.github.io/feed.xml" rel="self" />
     <link href="https://corkborg.github.io" />
-    <updated>2025-02-11T16:54:43+09:00</updated>
+    <updated>2025-02-11T17:47:25+09:00</updated>
     <author>
         <name>ミズソバ</name>
     </author>
@@ -79,17 +79,17 @@
             <summary>
                 <![CDATA[
                         <img src="https://corkborg.github.io/media/posts/52/sukurinsiyotuto-2024-12-16-15.56.35.2.png" alt="自力交換したM1 MacBook Airの色カバー率" />
-                    M1 MacBook Airを使っているのですが液晶の右下を割ってしまい縦横に縞が入るようになってしまいました。 イヤホンのケーブルを挟んで閉じてしまったのが問題だったようです。 色々検討したのですが古いMacにあまりお金をかけたくなかったので交換用の液晶を注文して自力で交換することにしました。&hellip;
+                    M1 MacBook Airを使っていて液晶の右下を割ってしまい、縦横に縞が入るようになってしまいました。 原因ははっきり覚えてはいないのですが、イヤホンのケーブルを挟んだまま閉じてしまったことだと思います。 Appleの修理サービスなど修理方法を色々検討したのですが、古いMacにあまりお金をかけたくなかったので交換用の液晶部品を自分自身で交換することにしました。&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
                     <p><img src="https://corkborg.github.io/media/posts/52/sukurinsiyotuto-2024-12-16-15.56.35.2.png" class="type:primaryImage" alt="自力交換したM1 MacBook Airの色カバー率" /></p>
-                <p>M1 MacBook Airを使っているのですが液晶の右下を割ってしまい縦横に縞が入るようになってしまいました。</p>
+                <p>M1 MacBook Airを使っていて液晶の右下を割ってしまい、縦横に縞が入るようになってしまいました。</p>
 <figure class="post__image post__image--center"><img loading="lazy"  src="https://corkborg.github.io/media/posts/52/PXL_20241215_095846480.jpg" alt="液晶が割れたm1 macbook air" width="197" height="350" sizes="(max-width: 1200px) 100vw, 1200px" srcset="https://corkborg.github.io/media/posts/52/responsive/PXL_20241215_095846480-xs.jpg 300w ,https://corkborg.github.io/media/posts/52/responsive/PXL_20241215_095846480-sm.jpg 480w ,https://corkborg.github.io/media/posts/52/responsive/PXL_20241215_095846480-md.jpg 749w ,https://corkborg.github.io/media/posts/52/responsive/PXL_20241215_095846480-xl.jpg 1200w"></figure>
-<p>イヤホンのケーブルを挟んで閉じてしまったのが問題だったようです。</p>
-<p>色々検討したのですが古いMacにあまりお金をかけたくなかったので交換用の液晶を注文して自力で交換することにしました。</p>
-<p>これが修理を完了した後のMacです。<strong>交換パーツはサードパーティ品（純正ではない</strong><strong>）</strong>のようでAppleのロゴが無くなってしまいました。</p>
+<p>原因ははっきり覚えてはいないのですが、イヤホンのケーブルを挟んだまま閉じてしまったことだと思います。</p>
+<p>Appleの修理サービスなど修理方法を色々検討したのですが、古いMacにあまりお金をかけたくなかったので交換用の液晶部品を自分自身で交換することにしました。</p>
+<p>これが修理を完了した後のMacです。<strong>交換パーツはサードパーティ品（純正ではない</strong><strong>）</strong>のようで天板からAppleのロゴが無くなってしまいました。</p>
 <figure class="post__image post__image--center"><img loading="lazy"  src="https://corkborg.github.io/media/posts/52/PXL_20241216_065059444.jpg" alt="液晶交換でロゴを失ったM1 MacBook Air" width="3900" height="2120" sizes="(max-width: 1200px) 100vw, 1200px" srcset="https://corkborg.github.io/media/posts/52/responsive/PXL_20241216_065059444-xs.jpg 300w ,https://corkborg.github.io/media/posts/52/responsive/PXL_20241216_065059444-sm.jpg 480w ,https://corkborg.github.io/media/posts/52/responsive/PXL_20241216_065059444-md.jpg 749w ,https://corkborg.github.io/media/posts/52/responsive/PXL_20241216_065059444-xl.jpg 1200w"></figure>
 <p><a href="https://jp.ifixit.com/Guide/MacBook+Air+13%E3%82%A4%E3%83%B3%E3%83%81Late+2020+%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%81%AE%E4%BA%A4%E6%8F%9B/142554" target="_blank" rel="noopener noreferrer">MacBook+Air+13インチLate+2020+スクリーンの交換 - iFixit</a></p>
 <h2>色再現度（色域カバー率）を確認する</h2>
@@ -603,22 +603,23 @@ Connecting to host benchmark.local, port 5201
             <summary>
                 <![CDATA[
                         <img src="https://corkborg.github.io/media/posts/38/ants_line_01.png" alt="" />
-                    私はアリを３年飼育しています。 飼育する前はアリのコロニーを飼育することは熱帯魚並に面白くて見てて飽きないんじゃないかと思っていました。 実際に飼育してみるとアリはペットとしての面白みが少ない生き物だなと感じます。 例えば、強いこだわりもなく熱帯魚とアリを飼育するのを迷っている人がいるとしたら、基本的に熱帯魚のほうを私はおすすめします（普通そんな人いないが…）。 今回は、アリの飼育が何故そこまで面白くないのか解説します。&hellip;
+                    私はアリを３年飼育しています。 飼育する前「アリのコロニーを育てるのは、熱帯魚並に面白くて、見てて飽きないのではないか」と思っていました。 しかし、実際に飼育してみると、アリはペットとしての面白みが少ない生き物だなと感じます。 例えば、強いこだわりもなく熱帯魚とアリを飼育するのを迷っている人がいるとしたら、基本的に熱帯魚のほうを私はおすすめします（とはいえ、そんな人はあまりいないと思いますが…）。 今回は、アリの飼育が何故そこまで面白くないのか解説します。&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
                     <p><img src="https://corkborg.github.io/media/posts/38/ants_line_01.png" class="type:primaryImage" alt="" /></p>
                 <p>私はアリを３年飼育しています。</p>
-<p>飼育する前はアリのコロニーを飼育することは熱帯魚並に面白くて見てて飽きないんじゃないかと思っていました。<br>実際に飼育してみるとアリはペットとしての面白みが少ない生き物だなと感じます。</p>
-<p>例えば、強いこだわりもなく熱帯魚とアリを飼育するのを迷っている人がいるとしたら、基本的に熱帯魚のほうを私はおすすめします（普通そんな人いないが…）。</p>
-<p>今回は、アリの飼育が何故そこまで面白くないのか解説します。<br>この記事を読んだうえでも、アリ飼育への興味を失わない人はアリを飼うべきでしょう。</p>
-<p>ちなみにアリを手放したりする予定は無いです。ペットとして面白くないだけで苦労して育てた愛着と責任感があります。</p>
+<p>飼育する前「アリのコロニーを育てるのは、熱帯魚並に面白くて、見てて飽きないのではないか」と思っていました。<br>しかし、実際に飼育してみると、アリはペットとしての面白みが少ない生き物だなと感じます。</p>
+<p>例えば、強いこだわりもなく熱帯魚とアリを飼育するのを迷っている人がいるとしたら、基本的に熱帯魚のほうを私はおすすめします（とはいえ、そんな人はあまりいないと思いますが…）。</p>
+<p>今回は、アリの飼育が何故そこまで面白くないのか解説します。</p>
+<p>それでもなお、アリ飼育への興味を失わない人はアリを飼うべきでしょう。</p>
+<p>ちなみに、アリを手放したりする予定はありません。ペットとしての面白みに欠けるとは言え、苦労して育てた愛着と責任感があります。</p>
 <h2 class="p3">飼っているアリ</h2>
 <figure class="post__image" ><figure class="post__image post__image--center"><img loading="lazy"  src="https://corkborg.github.io/media/posts/38/DSC_1842.JPG" alt="アリの飼育セット" width="1000" height="734" sizes="(max-width: 1200px) 100vw, 1200px" srcset="https://corkborg.github.io/media/posts/38/responsive/DSC_1842-xs.JPG 300w ,https://corkborg.github.io/media/posts/38/responsive/DSC_1842-sm.JPG 480w ,https://corkborg.github.io/media/posts/38/responsive/DSC_1842-md.JPG 749w ,https://corkborg.github.io/media/posts/38/responsive/DSC_1842-xl.JPG 1200w"></figure>
 <figcaption >アリを飼っている風景</figcaption>
 </figure>
-<p>アリは種類によって生態が異なり面白さも変わります。<br>そのため参考までに私が飼っているアリを紹介します。</p>
+<p>アリは種類により生態が異なるため、それによって面白さも変わります。<br>今回は参考までに、私が飼っているアリを紹介します。</p>
 <table style="border-collapse: collapse; width: 100%; height: 518.203px;" border="1">
 <tbody>
 <tr style="height: 136.75px;">
@@ -647,50 +648,54 @@ Connecting to host benchmark.local, port 5201
 </tr>
 </tbody>
 </table>
-<p>私はこれらの新女王アリが街灯に集まっているところを捕まえて飼育を開始しました。</p>
+<p>これらありの女王アリですが、私は家の付近の街灯に集まっているところ見つけて捕まえました。</p>
 <h2>新女王がコロニーをある程度成長させるまでは楽しい</h2>
-<p>捕獲した新女王アリが働きアリを徐々に生んでいって、コロニーが形成される姿を見るのは楽しいです。<br>この頃は、一歩間違えると女王アリも死んでしまったりするので飼育者も必死です。</p>
-<p>それ以降は、しっかり飼育していればただ安定して増えていくだけなのでマンネリ化します。</p>
+<p>捕獲した新女王アリが働きアリを増やしていき、初期のコロニーを形成する姿を見るのはとても楽しいです。</p>
+<p>この時期は一歩間違えると女王アリも死んでしまう場合もあるので飼育者も必死です。</p>
+<p>ただそれ以降は、しっかり飼育してるかぎり安定してコロニーが大きくなっていくだけなのでマンネリ化していきます。</p>
 <h2 class="p3">飼育しているアリはあんまり動かない</h2>
 <figure class="post__image" ><figure class="post__image post__image--center"><img loading="lazy"  src="https://corkborg.github.io/media/posts/38/DSC_1845_02.JPG" alt="ライトを当てられて餌場でウロウロし始めたイトウオオアリ達" width="1000" height="665" sizes="(max-width: 1200px) 100vw, 1200px" srcset="https://corkborg.github.io/media/posts/38/responsive/DSC_1845_02-xs.JPG 300w ,https://corkborg.github.io/media/posts/38/responsive/DSC_1845_02-sm.JPG 480w ,https://corkborg.github.io/media/posts/38/responsive/DSC_1845_02-md.JPG 749w ,https://corkborg.github.io/media/posts/38/responsive/DSC_1845_02-xl.JPG 1200w"></figure>
 <figcaption >ライトを当てられて餌場でウロウロし始めたイトウオオアリ達</figcaption>
 </figure>
-<p>働きアリの法則と言ったりしますが、アリの9割位は巣の中でじっとしています。<br>残りの働き者アリはどうかと言うと、餌場のあたりでじっとしています。</p>
-<p>多分アリの屋外での行動範囲に比べると飼育キット全体が小さすぎるんでしょうね。<br>アリは飼育キットの中ではあんまり動きません。面白くないです。</p>
-<p>巣を小突いたり、ライト当てたりちょっかいを出すと驚いてアリも騒ぎ始めますが、本来観察したかったことはそういうことなのでしょうか。</p>
+<p>「働きアリの法則」と言うことがありますが、実際のところ、アリの9割ほどは巣の中でじっとしています。<br>では、残りの働き者アリはどうかと言うと、餌場のあたりでじっとしています。</p>
+<p>おそらく、アリの屋外での行動範囲に比べると飼育キット全体が小さすぎるんでしょう。<br>そのため、アリは飼育キットの中ではあまり動かず、正直面白くないです。</p>
+<p>巣を小突いたり、ライト当てたりすれば驚いてアリも騒ぎ始めますが、本来観察したかったことはそういう姿なのでしょうか。</p>
 <h2>飼育用アリの巣は地味</h2>
 <figure class="post__image" ><figure class="post__image post__image--center"><img loading="lazy"  src="https://corkborg.github.io/media/posts/38/DSC_1844.JPG" alt="イトウオオアリの飼育セット" width="1000" height="665" sizes="(max-width: 1200px) 100vw, 1200px" srcset="https://corkborg.github.io/media/posts/38/responsive/DSC_1844-xs.JPG 300w ,https://corkborg.github.io/media/posts/38/responsive/DSC_1844-sm.JPG 480w ,https://corkborg.github.io/media/posts/38/responsive/DSC_1844-md.JPG 749w ,https://corkborg.github.io/media/posts/38/responsive/DSC_1844-xl.JPG 1200w"></figure>
 <figcaption >ゴテゴテせずシンプルなので飼育キットの中では気に入っています</figcaption>
 </figure>
-<p>アリといえば土の中に巣を作るイメージがありますが、アリ飼育では通常土で飼ったりはしません。</p>
-<p>なぜなら、アリの巣は汚れがたまるものでそのままにしておくと見た目が汚くなったり、病気になったりします。そのため、たまに巣を新しくしてやる必要がありますが、土を巣をひっくり返してアリを新しい巣に入れ替えしてあげるのはだいぶ骨が折れると思います。</p>
-<p>そのため、石膏巣やプラスチック巣など決まった形の巣で育てることが多いです。そうなると、アリが巣を掘ったりすがたを見れないのであまり面白くないです。</p>
-<p>ただ、土でアリを育てたとしても半月位ガンガン掘ったら後は変化が少ないはずなのでそんなに面白くないと思います。</p>
+<p>アリといえば土の中に巣を作るイメージがありますが、アリ飼育では土で飼ったりすることはほとんどありません。</p>
+<p>なぜなら、アリの巣は汚れがたまるもので、そのままにしておくと見た目が汚くなったり、病気が蔓延したりします。</p>
+<p>そのため、時折巣を新しくしてあげる必要がありますが、土の巣をひっくり返してアリを新しい巣に入れ替える作業は、だいぶ骨が折れると思います。</p>
+<p>その代わりに、石膏巣やプラスチック巣など決まった形の巣で育てることが多いです。そうなると、アリが巣を掘ったりすがたを見れないのであまり面白くないです。</p>
+<p>とはいえ、仮に土でアリを育てたとしても、最初の半月位盛んに掘るものの、それ以降は大きな変化がなく、結局それほど面白くないかもしれません。</p>
 <h2><span style="color: #000000;">餌やりが地味</span></h2>
 <figure class="post__image" ><figure class="post__image post__image--center"><img loading="lazy"  src="https://corkborg.github.io/media/posts/38/DSC_1846.JPG" alt="アリの餌入れ" width="1000" height="789" sizes="(max-width: 1200px) 100vw, 1200px" srcset="https://corkborg.github.io/media/posts/38/responsive/DSC_1846-xs.JPG 300w ,https://corkborg.github.io/media/posts/38/responsive/DSC_1846-sm.JPG 480w ,https://corkborg.github.io/media/posts/38/responsive/DSC_1846-md.JPG 749w ,https://corkborg.github.io/media/posts/38/responsive/DSC_1846-xl.JPG 1200w"></figure>
 <figcaption >アリの餌入れに餌を入れてピンセットで餌場に置きます</figcaption>
 </figure>
-<p>アリを飼う上で一番楽しいのは餌やりです。</p>
-<p>匂いなのか振動なのか餌を置くとアリが出てきたりします。出てこないこともあります。</p>
-<p>ただ、そんなに積極的に餌を食べたりしません。少し蜜を吸ったりして巣に帰ったり帰らなかったりします。たまに仲間がワラワラでてくることもありますが、出てこないことも多いです。</p>
+<p>アリを飼う上で一番楽しいのはなんといっても餌やりです。</p>
+<p>匂いなのか振動なのか餌を置くとアリが出てきたりします。出てこないこともありますが。</p>
+<p>とはいえ、そんなに積極的に餌を食べたりしません。少し蜜を吸って巣に帰ったり帰らなかったりします。時折仲間がワラワラでてくることもありますが、出てこないこともあります。</p>
 <p>次の日になると餌が減っていたり、減ってなかったりします。</p>
+<p>思ったよりもアリの行動は気まぐれで地味です。</p>
 <h2>活餌は楽しいが</h2>
 <p>活餌というのは生きている餌です。イモムシなどをアリの餌場にいれるとアリが攻撃して餌として持ち帰ってくれます。</p>
-<p>アリが攻撃してる姿を見るのは面白いです。普通の餌よりも美味しいのかワラワラ出てきます。</p>
-<p>ただ、相手の強さによってはアリが数匹死ぬことがあります。そして、活餌は寄生虫や感染症のリスクがあるためアリの健康を損なう場合があります。そして、巣が汚れます。</p>
-<p>活餌はたまにしかあげません。</p>
+<p>やはり、アリが他の生き物を攻撃してる姿を見るのは面白いです。いつもあげている餌よりも美味しいのかワラワラと巣からアリが出てきます。</p>
+<p>しかし、餌の強さによってはアリが数匹死ぬことがあります。</p>
+<p>そして、活餌は寄生虫や感染症を持っている場合があるためアリの健康を損なう場合があります。また、巣が汚れやすいため同様に感染症などが広がる場合があります。</p>
+<p>そのため、活餌はたまにしかあげません。</p>
 <h2 class="p3">行動を目撃するには長い時間が必要</h2>
 <p>私にはあまり動いているように見えないですが、毎日観察して巣の状況を見ているとアリは結構色々なことをしているようです。</p>
 <p>卵を移動させたり、幼虫を餌場に連れて行ったり、繭を巻いたり、餌を持ち帰ったり。<br>ただ、それを目撃するには長い時間アリを観察する必要があります。</p>
 <p>アリの種類によっては夜行性の場合もあり、昼はほとんど活動しないものもいます。そうなると人によっては時間が合わない場合もあるでしょう。</p>
 <h2 class="p3">巣が薄暗い</h2>
-<p>アリは明るいところでも育てられるのですが、あまり明るいとホースの中で暮らし始めたり奇怪なことをし始めます。</p>
+<p>アリは明るいところでも育てられるのですが、あまり明るいとホースの中で暮らし始めたり奇怪なことします。</p>
 <p>暮らせるには暮らせるけど明るいところは嫌いなんだと思います。そのため、多少暗いところで飼育してやろうという気になってきます。</p>
 <p>薄暗いと巣の中が見づらくなり観察する気が減ります。<br>ちなみに、ライトを当てるとどのアリも基本嫌がります。イトウオオアリはお腹を壁に合ってて音を立てながら警戒してきます。</p>
 <p>小さいアリほど薄暗いと観察し辛いので大きいアリが良いです。</p>
 <h2 class="p4">夏に弱い</h2>
-<p>これは面白くないポイントではないのですが、アリ飼育のうえで見落としがちな注意ポイントです。</p>
-<p>アリは30度を超えるような環境では死んでしまったり、体調不良になってしまうことがあります。そのため、夏場は４６時中エアコンがあたっているような環境が必要になります。</p>
+<p>これは面白くないポイントではないのですが、アリ飼育のうえで見落としがちな注意として紹介します。</p>
+<p>アリは30度を超えるような環境では死んでしまったり、体調不良になってしまいます。そのため、夏場は４６時中エアコンが運転しているような環境が必要になります。</p>
 <h2>アリ飼育をまとめると</h2>
 <p>アリ飼育の地味さが伝わったでしょうか。</p>
 <p>アリの飼育は観葉植物に似ているような気がします。変化を直接観測することは難しいものの、毎日少し観察していると着実になにか変化していっている感じの生き物だと思います。</p>
