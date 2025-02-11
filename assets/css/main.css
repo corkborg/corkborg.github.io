@@ -160,7 +160,7 @@ main {
    flex-wrap: wrap;
 }
 
-article {
+.post-only {
    background-color: var(--main-content-color);
    filter: drop-shadow(0 5px 10px rgba(0, 0, 50, .1));
 }
@@ -212,6 +212,8 @@ article.post-list {
    display: grid;
    grid-template-rows: min-content min-content 1fr auto;
    grid-template-columns: auto;
+   background-color: var(--main-content-color);
+   filter: drop-shadow(0 5px 10px rgba(0, 0, 50, .1));
 }
 
 article.post-list h2 {
