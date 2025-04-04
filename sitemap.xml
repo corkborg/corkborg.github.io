@@ -366,7 +366,7 @@
 </url>
 <url>
 <loc>https://corkborg.github.io/raspberrypi-5-vs-intel-core-i5-2500/</loc>
-<lastmod>2024-03-31T00:35:35+09:00</lastmod>
+<lastmod>2025-03-26T14:04:50+09:00</lastmod>
 <image:image>
 <image:loc>https://corkborg.github.io/media/posts/33/soc.webp</image:loc>
 <image:title><![CDATA[]]></image:title>
@@ -398,6 +398,18 @@
 <image:image>
 <image:loc>https://corkborg.github.io/media/posts/24/PXL_20240204_105832124.jpg</image:loc>
 <image:title><![CDATA[EdgeRouter X SFPに24V 2.5AのACアダプタを接続]]></image:title>
+</image:image>
+</url>
+<url>
+<loc>https://corkborg.github.io/review-picosh/</loc>
+<lastmod>2025-04-05T05:50:44+09:00</lastmod>
+<image:image>
+<image:loc>https://corkborg.github.io/media/posts/58/sukurinsiyotuto-2025-04-05-4.46.54.png</image:loc>
+<image:title><![CDATA[pico.sh管理画面]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://corkborg.github.io/media/posts/58/sukurinsiyotuto-2025-04-05-5.03.15.png</image:loc>
+<image:title><![CDATA[]]></image:title>
 </image:image>
 </url>
 <url>
@@ -486,7 +498,7 @@
 </url>
 <url>
 <loc>https://corkborg.github.io/spirogyra-measures-in-aquarium/</loc>
-<lastmod>2024-07-10T12:54:27+09:00</lastmod>
+<lastmod>2025-03-20T14:31:34+09:00</lastmod>
 <image:image>
 <image:loc>https://corkborg.github.io/media/posts/28/PXL_20240303_104751641.jpeg</image:loc>
 <image:title><![CDATA[アオミドロに絡まれるクリプトコリネ]]></image:title>
