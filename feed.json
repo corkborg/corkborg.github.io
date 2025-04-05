@@ -13,7 +13,7 @@
         {
             "id": "https://corkborg.github.io/review-picosh/",
             "url": "https://corkborg.github.io/review-picosh/",
-            "title": "2コマンドでアカウント登録からWebページを公開ができるpico.shの紹介",
+            "title": "2コマンドでアカウント登録からWebページ公開ができるpico.sh紹介",
             "summary": "HTMLを作った際にそれをWebから見れるようにしたいですよね。 ただ、意外とWebページを公開する事ってめんどくさいです。 例えば、レンタルサーバを借りると毎月お金がかかります。GitHub Pageは無料ですがGitやGitHub Actionsの設定がかなりめんどくさいです。&hellip;",
             "content_html": "<p>HTMLを作った際にそれをWebから見れるようにしたいですよね。<br>ただ、意外とWebページを公開する事ってめんどくさいです。</p>\n<p>例えば、レンタルサーバを借りると毎月お金がかかります。GitHub Pageは無料ですがGitやGitHub Actionsの設定がかなりめんどくさいです。</p>\n<p>そこで今回はsshコマンドを使うだけで最速でアカウント登録ができ、ssh（関連）コマンドで即Webページを公開できてしまう超お手軽レンタルサーバpico.shを紹介します。</p>\n<h2>pico.shの特徴</h2>\n<ul>\n<li>アカウント登録が超簡単</li>\n<li><strong>30MB</strong>までWebページを公開できる</li>\n<li>ドメインが付与される</li>\n<li>自動でTLSの設定が行われる</li>\n<li>必要なのはsshコマンドだけ（Macには標準で入ってる）</li>\n</ul>\n<p><a href=\"https://pico.sh/\" target=\"_blank\" rel=\"noopener noreferrer\">https://pico.sh/</a></p>\n<h2>使い方</h2>\n<p><a href=\"https://pico.sh/getting-started\" target=\"_blank\" rel=\"noopener noreferrer\">https://pico.sh/getting-started</a></p>\n<p>ターミナルで二回コマンドを打つだけで公開できます。</p>\n<h3>アカウント登録</h3>\n<p>pico.shにsshの公開鍵を登録します。手順はターミナルを開きそこでssh pico.shするだけでOKです。</p>\n<p>※ sshというコマンドを今まで一度も使ったことがない人の場合鍵を用意する必要があります。ssh-keygenなどで別途調べて見てください。</p>\n<pre class=\"language-bash\"><code>ssh pico.sh</code></pre>\n<p>こんな感じの表示が出たら登録完了です。</p>\n<figure class=\"post__image\"><img loading=\"lazy\"  src=\"https://corkborg.github.io/media/posts/58/sukurinsiyotuto-2025-04-05-5.03.15.png\" alt=\"\" width=\"2546\" height=\"416\" sizes=\"(max-width: 1200px) 100vw, 1200px\" srcset=\"https://corkborg.github.io/media/posts/58/responsive/sukurinsiyotuto-2025-04-05-5.03.15-xs.png 300w ,https://corkborg.github.io/media/posts/58/responsive/sukurinsiyotuto-2025-04-05-5.03.15-sm.png 480w ,https://corkborg.github.io/media/posts/58/responsive/sukurinsiyotuto-2025-04-05-5.03.15-md.png 749w ,https://corkborg.github.io/media/posts/58/responsive/sukurinsiyotuto-2025-04-05-5.03.15-xl.png 1200w\"></figure>\n<h3>Webページのアップロード</h3>\n<p>用意したHTMLをアップロードします。</p>\n<p>ターミナルで下記のようなコマンドを実行します。</p>\n<pre class=\"language-bash\"><code>rsync index.html pgs.sh:/example/</code></pre>\n<p>１階層目のディレクトリがプロジェクト名として使用されるので、何らかの名前を入れる必要があります。<br>上のコマンドではexampleがプロジェクト名。</p>\n<p>このような感じでWebページを公開することができました。<br><a href=\"https://corkborg-example.pgs.sh/\" target=\"_blank\" rel=\"noopener noreferrer\">https://corkborg-example.pgs.sh/</a></p>\n<p>たった2コマンドでアカウント登録からWebページの公開までできてしまいました。</p>\n<h2>有料プラン</h2>\n<p>月2ドルのPICO+という有料プランがあります。</p>\n<p>Webページのアクセス解析が行えるようになるのと、ストレージの上限が10GBになるようです。</p>\n<p><a href=\"https://pico.sh/plus\" target=\"_blank\" rel=\"noopener noreferrer\">https://pico.sh/plus</a></p>\n<h2>まとめ</h2>\n<p>とてもお手軽にWebページを公開することができてしまいました。<br>これ以上に早い手順で公開できる方法はこの世に存在しないと思います。</p>\n<p>pico.sh超便利ですね。おすすめです。</p>\n<p> </p>\n<p> </p>\n<p> </p>",
             "image": "https://corkborg.github.io/media/posts/58/sukurinsiyotuto-2025-04-05-4.46.54.png",
@@ -25,7 +25,7 @@
                    "ネットワーク"
             ],
             "date_published": "2025-04-05T05:22:07+09:00",
-            "date_modified": "2025-04-05T05:58:38+09:00"
+            "date_modified": "2025-04-05T15:13:42+09:00"
         },
         {
             "id": "https://corkborg.github.io/size-compare-nex-7-vs-em-5/",
