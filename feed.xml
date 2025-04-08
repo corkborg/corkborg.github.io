@@ -3,7 +3,7 @@
     <title>塩の惑星</title>
     <link href="https://corkborg.github.io/feed.xml" rel="self" />
     <link href="https://corkborg.github.io" />
-    <updated>2025-04-05T15:13:42+09:00</updated>
+    <updated>2025-04-08T19:48:30+09:00</updated>
     <author>
         <name>ミズソバ</name>
     </author>
@@ -24,14 +24,14 @@
             <summary>
                 <![CDATA[
                         <img src="https://corkborg.github.io/media/posts/58/sukurinsiyotuto-2025-04-05-4.46.54.png" alt="pico.sh管理画面" />
-                    HTMLを作った際にそれをWebから見れるようにしたいですよね。 ただ、意外とWebページを公開する事ってめんどくさいです。 例えば、レンタルサーバを借りると毎月お金がかかります。GitHub Pageは無料ですがGitやGitHub Actionsの設定がかなりめんどくさいです。&hellip;
+                    HTMLを作った際にそれをWebから見れるようにしたいですよね。 ただ、意外とWebページを公開するのってめんどくさいです。 例えば、レンタルサーバを借りると毎月お金がかかります。GitHub Pageは無料ですがGitやGitHub Actionsの設定をするのがかなりめんどくさいです。&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
                     <p><img src="https://corkborg.github.io/media/posts/58/sukurinsiyotuto-2025-04-05-4.46.54.png" class="type:primaryImage" alt="pico.sh管理画面" /></p>
-                <p>HTMLを作った際にそれをWebから見れるようにしたいですよね。<br>ただ、意外とWebページを公開する事ってめんどくさいです。</p>
-<p>例えば、レンタルサーバを借りると毎月お金がかかります。GitHub Pageは無料ですがGitやGitHub Actionsの設定がかなりめんどくさいです。</p>
+                <p>HTMLを作った際にそれをWebから見れるようにしたいですよね。<br>ただ、意外とWebページを公開するのってめんどくさいです。</p>
+<p>例えば、レンタルサーバを借りると毎月お金がかかります。GitHub Pageは無料ですがGitやGitHub Actionsの設定をするのがかなりめんどくさいです。</p>
 <p>そこで今回はsshコマンドを使うだけで最速でアカウント登録ができ、ssh（関連）コマンドで即Webページを公開できてしまう超お手軽レンタルサーバpico.shを紹介します。</p>
 <h2>pico.shの特徴</h2>
 <ul>
@@ -46,7 +46,11 @@
 <p><a href="https://pico.sh/getting-started" target="_blank" rel="noopener noreferrer">https://pico.sh/getting-started</a></p>
 <p>ターミナルで二回コマンドを打つだけで公開できます。</p>
 <h3>アカウント登録</h3>
-<p>pico.shにsshの公開鍵を登録します。手順はターミナルを開きそこでssh pico.shするだけでOKです。</p>
+<p>pico.shにsshの公開鍵を登録します。</p>
+<ul>
+<li>ターミナルを開きそこでssh pico.shする</li>
+<li>アカウント名を求められるのでアルファベットで適当な名前を入力</li>
+</ul>
 <p>※ sshというコマンドを今まで一度も使ったことがない人の場合鍵を用意する必要があります。ssh-keygenなどで別途調べて見てください。</p>
 <pre class="language-bash"><code>ssh pico.sh</code></pre>
 <p>こんな感じの表示が出たら登録完了です。</p>
