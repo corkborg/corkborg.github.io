@@ -3,12 +3,70 @@
     <title>塩の惑星</title>
     <link href="https://corkborg.github.io/feed.xml" rel="self" />
     <link href="https://corkborg.github.io" />
-    <updated>2025-04-08T19:48:30+09:00</updated>
+    <updated>2025-04-19T22:25:00+09:00</updated>
     <author>
         <name>ミズソバ</name>
     </author>
     <id>https://corkborg.github.io</id>
 
+    <entry>
+        <title>VitalをMac版FL Studioにインストールする方法</title>
+        <author>
+            <name>ミズソバ</name>
+        </author>
+        <link href="https://corkborg.github.io/install-vital-for-fl-studio-mac/"/>
+        <id>https://corkborg.github.io/install-vital-for-fl-studio-mac/</id>
+        <media:content url="https://corkborg.github.io/media/posts/59/sukurinsiyotuto-2025-04-19-21.36.58-2.jpg" medium="image" />
+            <category term="Mac"/>
+
+        <updated>2025-04-19T21:44:09+09:00</updated>
+            <summary>
+                <![CDATA[
+                        <img src="https://corkborg.github.io/media/posts/59/sukurinsiyotuto-2025-04-19-21.36.58-2.jpg" alt="VITAL" />
+                    無料のウェーブテーブルシンセサイザーVitalをMacのFL Studioで使えるようにする方法を紹介します。 Vitalの公式ホームページにアクセスします https://vital.audio/ Vital（Early&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                    <p><img src="https://corkborg.github.io/media/posts/59/sukurinsiyotuto-2025-04-19-21.36.58-2.jpg" class="type:primaryImage" alt="VITAL" /></p>
+                <p>無料のウェーブテーブルシンセサイザーVitalをMacのFL Studioで使えるようにする方法を紹介します。</p>
+<h2>VitalをMacにインストールする</h2>
+<p>Vitalの公式ホームページにアクセスします<br><a href="https://vital.audio/" target="_blank" rel="noopener noreferrer">https://vital.audio/</a></p>
+<figure class="post__image"><img loading="lazy"  src="https://corkborg.github.io/media/posts/59//sukurinsiyotuto-2025-04-19-21.33.29.jpg" alt="" width="2328" height="1494" sizes="(max-width: 1200px) 100vw, 1200px" srcset="https://corkborg.github.io/media/posts/59//responsive/sukurinsiyotuto-2025-04-19-21.33.29-xs.jpg 300w ,https://corkborg.github.io/media/posts/59//responsive/sukurinsiyotuto-2025-04-19-21.33.29-sm.jpg 480w ,https://corkborg.github.io/media/posts/59//responsive/sukurinsiyotuto-2025-04-19-21.33.29-md.jpg 749w ,https://corkborg.github.io/media/posts/59//responsive/sukurinsiyotuto-2025-04-19-21.33.29-xl.jpg 1200w"></figure>
+<ul>
+<li>右上のGET VITALに移動します。</li>
+<li>プランを選択する必要がありますがFreeプランを選択します（後ほどアップグレードもできるので）</li>
+<li>アカウントの作成を求められるのでメールとパスワードを入れます</li>
+</ul>
+<figure class="post__image"><img loading="lazy"  src="https://corkborg.github.io/media/posts/59//sukurinsiyotuto-2025-04-19-21.35.39.jpg" alt="" width="2204" height="1496" sizes="(max-width: 1200px) 100vw, 1200px" srcset="https://corkborg.github.io/media/posts/59//responsive/sukurinsiyotuto-2025-04-19-21.35.39-xs.jpg 300w ,https://corkborg.github.io/media/posts/59//responsive/sukurinsiyotuto-2025-04-19-21.35.39-sm.jpg 480w ,https://corkborg.github.io/media/posts/59//responsive/sukurinsiyotuto-2025-04-19-21.35.39-md.jpg 749w ,https://corkborg.github.io/media/posts/59//responsive/sukurinsiyotuto-2025-04-19-21.35.39-xl.jpg 1200w"></figure>
+<p>Vital（Early access）とVitalを選ぶ事ができます。</p>
+<p>Early access版はいわゆるベータなので新機能を試したいなどが無ければ通常のVitalの「MacOS(pkg)」を選びます。</p>
+<figure class="post__image"><img loading="lazy"  src="https://corkborg.github.io/media/posts/59//sukurinsiyotuto-2025-04-19-21.40.56.png" alt="" width="218" height="232" sizes="(max-width: 1200px) 100vw, 1200px" srcset="https://corkborg.github.io/media/posts/59//responsive/sukurinsiyotuto-2025-04-19-21.40.56-xs.png 300w ,https://corkborg.github.io/media/posts/59//responsive/sukurinsiyotuto-2025-04-19-21.40.56-sm.png 480w ,https://corkborg.github.io/media/posts/59//responsive/sukurinsiyotuto-2025-04-19-21.40.56-md.png 749w ,https://corkborg.github.io/media/posts/59//responsive/sukurinsiyotuto-2025-04-19-21.40.56-xl.png 1200w"></figure>
+<p>ダウンロードされてきたpkgファイルを開いてインストールを行います。<br>インストール時に何か注意するべき事項はないです。</p>
+<h2>FL StudioでVITALを選択できるようにする</h2>
+<p>VITALはMac標準のプラグインディレクトリにインストールされたのですがこのままではFL Studioで認識できないので操作を行います。</p>
+<figure class="post__image"><img loading="lazy"  src="https://corkborg.github.io/media/posts/59/sukurinsiyotuto-2025-04-19-21.55.13.2.jpg" alt="FL Studio Manage Pluginの選択方法" width="1314" height="632" sizes="(max-width: 1200px) 100vw, 1200px" srcset="https://corkborg.github.io/media/posts/59/responsive/sukurinsiyotuto-2025-04-19-21.55.13.2-xs.jpg 300w ,https://corkborg.github.io/media/posts/59/responsive/sukurinsiyotuto-2025-04-19-21.55.13.2-sm.jpg 480w ,https://corkborg.github.io/media/posts/59/responsive/sukurinsiyotuto-2025-04-19-21.55.13.2-md.jpg 749w ,https://corkborg.github.io/media/posts/59/responsive/sukurinsiyotuto-2025-04-19-21.55.13.2-xl.jpg 1200w"></figure>
+<p>FLStudioを開いてADD -&gt; Manage Pluginsを押します。<br>（右の方にあるやつです。More Pluginsと間違えないように）</p>
+<figure class="post__image"><img loading="lazy"  src="https://corkborg.github.io/media/posts/59/sukurinsiyotuto-2025-04-19-21.49.54.png" alt="FL Studio Plugin Manager" width="2138" height="1356" sizes="(max-width: 1200px) 100vw, 1200px" srcset="https://corkborg.github.io/media/posts/59/responsive/sukurinsiyotuto-2025-04-19-21.49.54-xs.png 300w ,https://corkborg.github.io/media/posts/59/responsive/sukurinsiyotuto-2025-04-19-21.49.54-sm.png 480w ,https://corkborg.github.io/media/posts/59/responsive/sukurinsiyotuto-2025-04-19-21.49.54-md.png 749w ,https://corkborg.github.io/media/posts/59/responsive/sukurinsiyotuto-2025-04-19-21.49.54-xl.png 1200w"></figure>
+<p>プラグインマネージャーの右上のFind installed pluginsを押してプラグインのスキャンを行います。</p>
+<figure class="post__image"><img loading="lazy"  src="https://corkborg.github.io/media/posts/59/sukurinsiyotuto-2025-04-19-21.55.27.png" alt="" width="1470" height="146" sizes="(max-width: 1200px) 100vw, 1200px" srcset="https://corkborg.github.io/media/posts/59/responsive/sukurinsiyotuto-2025-04-19-21.55.27-xs.png 300w ,https://corkborg.github.io/media/posts/59/responsive/sukurinsiyotuto-2025-04-19-21.55.27-sm.png 480w ,https://corkborg.github.io/media/posts/59/responsive/sukurinsiyotuto-2025-04-19-21.55.27-md.png 749w ,https://corkborg.github.io/media/posts/59/responsive/sukurinsiyotuto-2025-04-19-21.55.27-xl.png 1200w"></figure>
+<p>スキャンが完了するとVitalが出てきます。星マークを押すとFLのプラグイン選択画面に追加されます。</p>
+<p>VITALはAU版とVST版がありますがどちらもそんなに変わりません。今回はレイテンシーで多少有利なAU版を選びました。</p>
+<h2>Vitalが起動できるか確認する</h2>
+<p>FLStudioの画面に戻ってプラグイン選択画面でVITALと入力します。<br>ここでVitalが出てこない場合Plugin Managerで星マーク（★）を選択し忘れてるかもしれないです。</p>
+<figure class="post__image"><img loading="lazy"  src="https://corkborg.github.io/media/posts/59/sukurinsiyotuto-2025-04-19-22.00.25.jpg" alt="" width="1478" height="1674" sizes="(max-width: 1200px) 100vw, 1200px" srcset="https://corkborg.github.io/media/posts/59/responsive/sukurinsiyotuto-2025-04-19-22.00.25-xs.jpg 300w ,https://corkborg.github.io/media/posts/59/responsive/sukurinsiyotuto-2025-04-19-22.00.25-sm.jpg 480w ,https://corkborg.github.io/media/posts/59/responsive/sukurinsiyotuto-2025-04-19-22.00.25-md.jpg 749w ,https://corkborg.github.io/media/posts/59/responsive/sukurinsiyotuto-2025-04-19-22.00.25-xl.jpg 1200w"></figure>
+<p>Vitalを選択してチャンネルラックに追加します。</p>
+<figure class="post__image"><img loading="lazy"  src="https://corkborg.github.io/media/posts/59/sukurinsiyotuto-2025-04-19-22.02.16.png" alt="FL Studio Channel Rack" width="940" height="492" sizes="(max-width: 1200px) 100vw, 1200px" srcset="https://corkborg.github.io/media/posts/59/responsive/sukurinsiyotuto-2025-04-19-22.02.16-xs.png 300w ,https://corkborg.github.io/media/posts/59/responsive/sukurinsiyotuto-2025-04-19-22.02.16-sm.png 480w ,https://corkborg.github.io/media/posts/59/responsive/sukurinsiyotuto-2025-04-19-22.02.16-md.png 749w ,https://corkborg.github.io/media/posts/59/responsive/sukurinsiyotuto-2025-04-19-22.02.16-xl.png 1200w"></figure>
+<p>チャンネルラックから選択するとログインを求められるので、Vitalをダウンロードする際に登録したメールとパスワードを入力します。</p>
+<p>ログインが完了するとシンセ画面が出てきます。</p>
+<figure class="post__image"><img loading="lazy"  src="https://corkborg.github.io/media/posts/59/sukurinsiyotuto-2025-04-19-22.08.44.png" alt="VITALがFL Studioで起動している様子" width="2330" height="1330" sizes="(max-width: 1200px) 100vw, 1200px" srcset="https://corkborg.github.io/media/posts/59/responsive/sukurinsiyotuto-2025-04-19-22.08.44-xs.png 300w ,https://corkborg.github.io/media/posts/59/responsive/sukurinsiyotuto-2025-04-19-22.08.44-sm.png 480w ,https://corkborg.github.io/media/posts/59/responsive/sukurinsiyotuto-2025-04-19-22.08.44-md.png 749w ,https://corkborg.github.io/media/posts/59/responsive/sukurinsiyotuto-2025-04-19-22.08.44-xl.png 1200w"></figure>
+<p>音が出ればインストール成功です。</p>
+<h2>最後に</h2>
+<p>M1 Macbook Airを使っていますが普通に動きました。<br>シンセ画面のDPIが合ってなくて画面が大きく感じますが。</p>
+<p> </p>
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>2コマンドでアカウント登録からWebページ公開ができるpico.sh紹介</title>
         <author>
@@ -651,122 +709,6 @@ Connecting to host benchmark.local, port 5201
 <p>この日はだいぶ降っていてかなりカメラがびしょびしょになりました。３０分程度使用しました。</p>
 <h2>使い終わった後</h2>
 <p>雨の中で使用した後は雨を拭いて、風通しの良いところに置いて乾かしています。<br>半年程度経っていますが、今のところレンズの中にカビ、クモリのような物は発生していないです。</p>
-<p> </p>
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>アリの飼育は思ったよりも面白くなかった</title>
-        <author>
-            <name>ミズソバ</name>
-        </author>
-        <link href="https://corkborg.github.io/raising-ants-less-interesting/"/>
-        <id>https://corkborg.github.io/raising-ants-less-interesting/</id>
-        <media:content url="https://corkborg.github.io/media/posts/38/ants_line_01.png" medium="image" />
-            <category term="アリ"/>
-
-        <updated>2024-05-20T11:56:58+09:00</updated>
-            <summary>
-                <![CDATA[
-                        <img src="https://corkborg.github.io/media/posts/38/ants_line_01.png" alt="" />
-                    私はアリを３年飼育しています。 飼育する前「アリのコロニーを育てるのは、熱帯魚並に面白くて、見てて飽きないのではないか」と思っていました。 しかし、実際に飼育してみると、アリはペットとしての面白みが少ない生き物だなと感じます。 例えば、強いこだわりもなく熱帯魚とアリを飼育するのを迷っている人がいるとしたら、基本的に熱帯魚のほうを私はおすすめします（とはいえ、そんな人はあまりいないと思いますが…）。 今回は、アリの飼育が何故そこまで面白くないのか解説します。&hellip;
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                    <p><img src="https://corkborg.github.io/media/posts/38/ants_line_01.png" class="type:primaryImage" alt="" /></p>
-                <p>私はアリを３年飼育しています。</p>
-<p>飼育する前「アリのコロニーを育てるのは、熱帯魚並に面白くて、見てて飽きないのではないか」と思っていました。<br>しかし、実際に飼育してみると、アリはペットとしての面白みが少ない生き物だなと感じます。</p>
-<p>例えば、強いこだわりもなく熱帯魚とアリを飼育するのを迷っている人がいるとしたら、基本的に熱帯魚のほうを私はおすすめします（とはいえ、そんな人はあまりいないと思いますが…）。</p>
-<p>今回は、アリの飼育が何故そこまで面白くないのか解説します。</p>
-<p>それでもなお、アリ飼育への興味を失わない人はアリを飼うべきでしょう。</p>
-<p>ちなみに、アリを手放したりする予定はありません。ペットとしての面白みに欠けるとは言え、苦労して育てた愛着と責任感があります。</p>
-<h2 class="p3">飼っているアリ</h2>
-<figure class="post__image" ><figure class="post__image post__image--center"><img loading="lazy"  src="https://corkborg.github.io/media/posts/38/DSC_1842.JPG" alt="アリの飼育セット" width="1000" height="734" sizes="(max-width: 1200px) 100vw, 1200px" srcset="https://corkborg.github.io/media/posts/38/responsive/DSC_1842-xs.JPG 300w ,https://corkborg.github.io/media/posts/38/responsive/DSC_1842-sm.JPG 480w ,https://corkborg.github.io/media/posts/38/responsive/DSC_1842-md.JPG 749w ,https://corkborg.github.io/media/posts/38/responsive/DSC_1842-xl.JPG 1200w"></figure>
-<figcaption >アリを飼っている風景</figcaption>
-</figure>
-<p>アリは種類により生態が異なるため、それによって面白さも変わります。<br>今回は参考までに、私が飼っているアリを紹介します。</p>
-<table style="border-collapse: collapse; width: 100%; height: 518.203px;" border="1">
-<tbody>
-<tr style="height: 136.75px;">
-<td style="width: 28.5614%; height: 136.75px;">イトウオオアリ</td>
-<td style="width: 71.5813%; height: 136.75px;">
-<p>枯れ枝の中などに住むアリ。<br>３匹の女王アリで一緒に暮らしている。<br>働きアリのサイズが様々で面白いが、基本小さくて観察し辛い（4mm位）。</p>
-</td>
-</tr>
-<tr style="height: 136.75px;">
-<td style="width: 28.5614%; height: 136.75px;">ミカドオオアリ</td>
-<td style="width: 71.5813%; height: 136.75px;">
-<p>枯れ枝の中などに住むアリ。<br>サイズが大きいアリ。<br>大きいので観察し易いが、夜行性なのであまり動いている姿を見ない。</p>
-</td>
-</tr>
-<tr style="height: 107.953px;">
-<td style="width: 28.5614%; height: 107.953px;">アシナガアリ</td>
-<td style="width: 71.5813%; height: 107.953px;">
-<p>土の中などに住むアリ。<br>足が長くて歩く姿が面白い。<br>少し肉食性が強い。冬の寒さにやたらと強い。<br>餌がない場合は巣からあまり出てこない。</p>
-</td>
-</tr>
-<tr style="height: 136.75px;">
-<td style="width: 28.5614%; height: 136.75px;">クロヤマアリ</td>
-<td style="width: 71.5813%; height: 136.75px;">
-<p>公園の土などに住むアリ。<br>振動に敏感ですぐパニックになるのでめんどくさい。<br>オーソドックス過ぎて面白い特徴が少ない。</p>
-</td>
-</tr>
-</tbody>
-</table>
-<p>これらありの女王アリですが、私は家の付近の街灯に集まっているところ見つけて捕まえました。</p>
-<h2>新女王がコロニーをある程度成長させるまでは楽しい</h2>
-<p>捕獲した新女王アリが働きアリを増やしていき、初期のコロニーを形成する姿を見るのはとても楽しいです。</p>
-<p>この時期は一歩間違えると女王アリも死んでしまう場合もあるので飼育者も必死です。</p>
-<p>ただそれ以降は、しっかり飼育してるかぎり安定してコロニーが大きくなっていくだけなのでマンネリ化していきます。</p>
-<h2 class="p3">飼育しているアリはあんまり動かない</h2>
-<figure class="post__image" ><figure class="post__image post__image--center"><img loading="lazy"  src="https://corkborg.github.io/media/posts/38/DSC_1845_02.JPG" alt="ライトを当てられて餌場でウロウロし始めたイトウオオアリ達" width="1000" height="665" sizes="(max-width: 1200px) 100vw, 1200px" srcset="https://corkborg.github.io/media/posts/38/responsive/DSC_1845_02-xs.JPG 300w ,https://corkborg.github.io/media/posts/38/responsive/DSC_1845_02-sm.JPG 480w ,https://corkborg.github.io/media/posts/38/responsive/DSC_1845_02-md.JPG 749w ,https://corkborg.github.io/media/posts/38/responsive/DSC_1845_02-xl.JPG 1200w"></figure>
-<figcaption >ライトを当てられて餌場でウロウロし始めたイトウオオアリ達</figcaption>
-</figure>
-<p>「働きアリの法則」と言うことがありますが、実際のところ、アリの9割ほどは巣の中でじっとしています。<br>では、残りの働き者アリはどうかと言うと、餌場のあたりでじっとしています。</p>
-<p>おそらく、アリの屋外での行動範囲に比べると飼育キット全体が小さすぎるんでしょう。<br>そのため、アリは飼育キットの中ではあまり動かず、正直面白くないです。</p>
-<p>巣を小突いたり、ライト当てたりすれば驚いてアリも騒ぎ始めますが、本来観察したかったことはそういう姿なのでしょうか。</p>
-<h2>飼育用アリの巣は地味</h2>
-<figure class="post__image" ><figure class="post__image post__image--center"><img loading="lazy"  src="https://corkborg.github.io/media/posts/38/DSC_1844.JPG" alt="イトウオオアリの飼育セット" width="1000" height="665" sizes="(max-width: 1200px) 100vw, 1200px" srcset="https://corkborg.github.io/media/posts/38/responsive/DSC_1844-xs.JPG 300w ,https://corkborg.github.io/media/posts/38/responsive/DSC_1844-sm.JPG 480w ,https://corkborg.github.io/media/posts/38/responsive/DSC_1844-md.JPG 749w ,https://corkborg.github.io/media/posts/38/responsive/DSC_1844-xl.JPG 1200w"></figure>
-<figcaption >ゴテゴテせずシンプルなので飼育キットの中では気に入っています</figcaption>
-</figure>
-<p>アリといえば土の中に巣を作るイメージがありますが、アリ飼育では土で飼ったりすることはほとんどありません。</p>
-<p>なぜなら、アリの巣は汚れがたまるもので、そのままにしておくと見た目が汚くなったり、病気が蔓延したりします。</p>
-<p>そのため、時折巣を新しくしてあげる必要がありますが、土の巣をひっくり返してアリを新しい巣に入れ替える作業は、だいぶ骨が折れると思います。</p>
-<p>その代わりに、石膏巣やプラスチック巣など決まった形の巣で育てることが多いです。そうなると、アリが巣を掘ったりすがたを見れないのであまり面白くないです。</p>
-<p>とはいえ、仮に土でアリを育てたとしても、最初の半月位盛んに掘るものの、それ以降は大きな変化がなく、結局それほど面白くないかもしれません。</p>
-<h2><span style="color: #000000;">餌やりが地味</span></h2>
-<figure class="post__image" ><figure class="post__image post__image--center"><img loading="lazy"  src="https://corkborg.github.io/media/posts/38/DSC_1846.JPG" alt="アリの餌入れ" width="1000" height="789" sizes="(max-width: 1200px) 100vw, 1200px" srcset="https://corkborg.github.io/media/posts/38/responsive/DSC_1846-xs.JPG 300w ,https://corkborg.github.io/media/posts/38/responsive/DSC_1846-sm.JPG 480w ,https://corkborg.github.io/media/posts/38/responsive/DSC_1846-md.JPG 749w ,https://corkborg.github.io/media/posts/38/responsive/DSC_1846-xl.JPG 1200w"></figure>
-<figcaption >アリの餌入れに餌を入れてピンセットで餌場に置きます</figcaption>
-</figure>
-<p>アリを飼う上で一番楽しいのはなんといっても餌やりです。</p>
-<p>匂いなのか振動なのか餌を置くとアリが出てきたりします。出てこないこともありますが。</p>
-<p>とはいえ、そんなに積極的に餌を食べたりしません。少し蜜を吸って巣に帰ったり帰らなかったりします。時折仲間がワラワラでてくることもありますが、出てこないこともあります。</p>
-<p>次の日になると餌が減っていたり、減ってなかったりします。</p>
-<p>思ったよりもアリの行動は気まぐれで地味です。</p>
-<h2>活餌は楽しいが</h2>
-<p>活餌というのは生きている餌です。イモムシなどをアリの餌場にいれるとアリが攻撃して餌として持ち帰ってくれます。</p>
-<p>やはり、アリが他の生き物を攻撃してる姿を見るのは面白いです。いつもあげている餌よりも美味しいのかワラワラと巣からアリが出てきます。</p>
-<p>しかし、餌の強さによってはアリが数匹死ぬことがあります。</p>
-<p>そして、活餌は寄生虫や感染症を持っている場合があるためアリの健康を損なう場合があります。また、巣が汚れやすいため同様に感染症などが広がる場合があります。</p>
-<p>そのため、活餌はたまにしかあげません。</p>
-<h2 class="p3">行動を目撃するには長い時間が必要</h2>
-<p>私にはあまり動いているように見えないですが、毎日観察して巣の状況を見ているとアリは結構色々なことをしているようです。</p>
-<p>卵を移動させたり、幼虫を餌場に連れて行ったり、繭を巻いたり、餌を持ち帰ったり。<br>ただ、それを目撃するには長い時間アリを観察する必要があります。</p>
-<p>アリの種類によっては夜行性の場合もあり、昼はほとんど活動しないものもいます。そうなると人によっては時間が合わない場合もあるでしょう。</p>
-<h2 class="p3">巣が薄暗い</h2>
-<p>アリは明るいところでも育てられるのですが、あまり明るいとホースの中で暮らし始めたり奇怪なことします。</p>
-<p>暮らせるには暮らせるけど明るいところは嫌いなんだと思います。そのため、多少暗いところで飼育してやろうという気になってきます。</p>
-<p>薄暗いと巣の中が見づらくなり観察する気が減ります。<br>ちなみに、ライトを当てるとどのアリも基本嫌がります。イトウオオアリはお腹を壁に合ってて音を立てながら警戒してきます。</p>
-<p>小さいアリほど薄暗いと観察し辛いので大きいアリが良いです。</p>
-<h2 class="p4">夏に弱い</h2>
-<p>これは面白くないポイントではないのですが、アリ飼育のうえで見落としがちな注意として紹介します。</p>
-<p>アリは30度を超えるような環境では死んでしまったり、体調不良になってしまいます。そのため、夏場は４６時中エアコンが運転しているような環境が必要になります。</p>
-<h2>アリ飼育をまとめると</h2>
-<p>アリ飼育の地味さが伝わったでしょうか。</p>
-<p>アリの飼育は観葉植物に似ているような気がします。変化を直接観測することは難しいものの、毎日少し観察していると着実になにか変化していっている感じの生き物だと思います。</p>
-<h3>アリ飼育キット</h3>
-<p>ちなみに飼育キットは基本ここで買っています。<br><a href="https://aliceinunder.theshop.jp/" target="_blank" rel="noopener noreferrer">あり巣 in Underground - https://aliceinunder.theshop.jp/</a><a href="https://aliceinunder.theshop.jp/" target="_blank" rel="noopener noreferrer"></a></p>
 <p> </p>
             ]]>
         </content>
