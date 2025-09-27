@@ -3,7 +3,7 @@
     <title>塩の惑星</title>
     <link href="https://corkborg.github.io/feed.xml" rel="self" />
     <link href="https://corkborg.github.io" />
-    <updated>2025-09-28T00:09:21+09:00</updated>
+    <updated>2025-09-28T00:14:15+09:00</updated>
     <author>
         <name>ミズソバ</name>
     </author>
@@ -117,7 +117,7 @@
         </content>
     </entry>
     <entry>
-        <title>2コマンドでアカウント登録からWebページ公開ができるpico.sh紹介</title>
+        <title>2コマンドで無料ホームページを作れるpico.sh紹介</title>
         <author>
             <name>ミズソバ</name>
         </author>
@@ -131,15 +131,13 @@
             <summary>
                 <![CDATA[
                         <img src="https://corkborg.github.io/media/posts/58/sukurinsiyotuto-2025-04-05-4.46.54.png" alt="pico.sh管理画面" />
-                    HTMLを作った際にそれをWebから見れるようにしたいですよね。 ただ、意外とWebページを公開するのってめんどくさいです。 例えば、レンタルサーバを借りると毎月お金がかかります。GitHub Pageは無料ですがGitやGitHub Actionsの設定をするのがかなりめんどくさいです。&hellip;
+                    HTMLを用意してターミナルで2コマンド打つだけで無料ホームページを公開できるpico.shを紹介します。 https://pico.sh/ 事前にHTMLファイルを用意しておきます。 https://pico.sh/getting-started pico.shにsshの公開鍵を登録します。&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
                     <p><img src="https://corkborg.github.io/media/posts/58/sukurinsiyotuto-2025-04-05-4.46.54.png" class="type:primaryImage" alt="pico.sh管理画面" /></p>
-                <p>HTMLを作った際にそれをWebから見れるようにしたいですよね。<br>ただ、意外とWebページを公開するのってめんどくさいです。</p>
-<p>例えば、レンタルサーバを借りると毎月お金がかかります。GitHub Pageは無料ですがGitやGitHub Actionsの設定をするのがかなりめんどくさいです。</p>
-<p>そこで今回はsshコマンドを使うだけで最速でアカウント登録ができ、ssh（関連）コマンドで即Webページを公開できてしまう超お手軽レンタルサーバpico.shを紹介します。</p>
+                <p>HTMLを用意してターミナルで2コマンド打つだけで無料ホームページを公開できるpico.shを紹介します。</p>
 <h2>pico.shの特徴</h2>
 <ul>
 <li>アカウント登録が超簡単</li>
@@ -150,8 +148,8 @@
 </ul>
 <p><a href="https://pico.sh/" target="_blank" rel="noopener noreferrer">https://pico.sh/</a></p>
 <h2>使い方</h2>
+<p>事前にHTMLファイルを用意しておきます。</p>
 <p><a href="https://pico.sh/getting-started" target="_blank" rel="noopener noreferrer">https://pico.sh/getting-started</a></p>
-<p>ターミナルで二回コマンドを打つだけで公開できます。</p>
 <h3>アカウント登録</h3>
 <p>pico.shにsshの公開鍵を登録します。</p>
 <ul>
