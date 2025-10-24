@@ -3,106 +3,12 @@
     <title>塩の惑星</title>
     <link href="https://corkborg.github.io/feed.xml" rel="self" />
     <link href="https://corkborg.github.io" />
-    <updated>2025-10-12T15:15:21+09:00</updated>
+    <updated>2025-10-08T00:32:44+09:00</updated>
     <author>
         <name>ミズソバ</name>
     </author>
     <id>https://corkborg.github.io</id>
 
-    <entry>
-        <title> AirVPNをプロキシとして使用する方法</title>
-        <author>
-            <name>ミズソバ</name>
-        </author>
-        <link href="https://corkborg.github.io/airvpnwoproxytositeshi-yong-surufang-fa/"/>
-        <id>https://corkborg.github.io/airvpnwoproxytositeshi-yong-surufang-fa/</id>
-
-        <updated>2025-10-02T23:58:46+09:00</updated>
-            <summary>
-                <![CDATA[
-                    AirVPNのVPNサーバをプロキシとして使用する方法を紹介します。 注意点として、スクレイピング用途でVPNを使用するとBANされる可能性が高いのでそのような使い方は避けましょう。 AirVPNではVPNの接続方式としてOpenVPNとWireGuardの２つが提供されています。 WireGuardのVPNをプロキシとして提供するWireproxyというものがあるのでそれを使ってプロキシ化します。 AirVPNにアクセス&hellip;
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                <p>AirVPNのVPNサーバをプロキシとして使用する方法を紹介します。</p>
-<p>注意点として、スクレイピング用途でVPNを使用するとBANされる可能性が高いのでそのような使い方は避けましょう。</p>
-<h2>概要</h2>
-<figure class="post__image"><img loading="lazy"  src="https://corkborg.github.io/media/posts/66/Ming-Cheng-Wei-She-Ding-huairu-1759417202034.drawio.png" alt="" width="771" height="192" sizes="(max-width: 1200px) 100vw, 1200px" srcset="https://corkborg.github.io/media/posts/66/responsive/Ming-Cheng-Wei-She-Ding-huairu-1759417202034.drawio-xs.png 300w ,https://corkborg.github.io/media/posts/66/responsive/Ming-Cheng-Wei-She-Ding-huairu-1759417202034.drawio-sm.png 480w ,https://corkborg.github.io/media/posts/66/responsive/Ming-Cheng-Wei-She-Ding-huairu-1759417202034.drawio-md.png 749w ,https://corkborg.github.io/media/posts/66/responsive/Ming-Cheng-Wei-She-Ding-huairu-1759417202034.drawio-xl.png 1200w"></figure>
-<p>AirVPNではVPNの接続方式としてOpenVPNとWireGuardの２つが提供されています。</p>
-<p>WireGuardのVPNをプロキシとして提供するWireproxyというものがあるのでそれを使ってプロキシ化します。</p>
-<h2>手順</h2>
-<h3>AirVPNからWireGuardの設定ファイルをダウンロード</h3>
-<p>AirVPNにアクセス -&gt; Client Area -&gt; Config Generatorにアクセス</p>
-<p><a href="https://airvpn.org/generator/" target="_blank" rel="noopener noreferrer">https://airvpn.org/generator/</a></p>
-<p>Choose protocolsでWireguardを有効化。適当に使用したい国のサーバをチェックしてページ下部のgenerateを押す。</p>
-<figure class="post__image"><img loading="lazy"  src="https://corkborg.github.io/media/posts/66/sukurinsiyotuto-2025-10-03-0.22.42.png" alt="" width="215" height="252" sizes="(max-width: 1200px) 100vw, 1200px" srcset="https://corkborg.github.io/media/posts/66/responsive/sukurinsiyotuto-2025-10-03-0.22.42-xs.png 300w ,https://corkborg.github.io/media/posts/66/responsive/sukurinsiyotuto-2025-10-03-0.22.42-sm.png 480w ,https://corkborg.github.io/media/posts/66/responsive/sukurinsiyotuto-2025-10-03-0.22.42-md.png 749w ,https://corkborg.github.io/media/posts/66/responsive/sukurinsiyotuto-2025-10-03-0.22.42-xl.png 1200w"></figure>
-<p>こんな感じのファイルがダウンロードされます。</p>
-<h3>Wireproxyのインストール</h3>
-<p>こちらを参考にコンパイルとインストールを行います。</p>
-<p><a href="https://github.com/whyvl/wireproxy?tab=readme-ov-file#build-instruction">https://github.com/whyvl/wireproxy?tab=readme-ov-file#build-instruction</a></p>
-<p>ビルド後、以下のコマンドが通ればOKです。</p>
-<pre class="language-bash"><code>wireproxy --version</code></pre>
-<h3>設定ファイルの用意</h3>
-<p>proxy.confというファイルにこのような設定を書きます。</p>
-<pre class="language-ini"><code>WGConfig = wg0.conf
-[Socks5]
-BindAddress = 0.0.0.0:1080
-[http]
-BindAddress = 0.0.0.0:1081</code></pre>
-<p>先程ダウンロードしたAirVPNの設定ファイルをwg0.confに改名します。</p>
-<pre class="language-bash"><code>wireproxy -c proxy.conf</code></pre>
-<p>起動します。</p>
-<p>curlコマンドでproxy無しと有りでipが変わっていれば成功です。</p>
-<pre class="language-bash"><code>curl ifconfig.io  # proxy無し
-curl -x "http://127.0.0.1:1081" ifconfig.io  # proxy有り
-curl -x "sock5://127.0.0.1:1080" ifconfig.io</code></pre>
-<h3>おまけ: Docker化</h3>
-<p>wireproxyをDocker化します。AirVPNはdeviceの設定を適切に行うとVPNを5デバイスまで同時使用することが出来ます。なので、docker化することで数台分のproxyサーバを用意することが出来ます。</p>
-<pre class="language-ini"><code>WGConfig = /etc/wireguard/wg0.conf
-[Socks5]
-BindAddress = 0.0.0.0:1080
-[http]
-BindAddress = 0.0.0.0:1081</code></pre>
-<p>Dockerfile</p>
-<pre class="language-docker"><code>FROM golang:1.22.1-bookworm AS builder
-
-RUN apt update &amp;&amp; apt install git
-WORKDIR /srv
-RUN git clone --branch prefix https://github.com/corkborg/wireproxy.git &amp;&amp; cd wireproxy &amp;&amp; make
-
-FROM ubuntu:22.04 AS app
-
-RUN apt-get update &amp;&amp; apt-get install -y iproute2 wireguard openssh-client curl openresolv git
-
-COPY --from=builder /srv/wireproxy/wireproxy /srv/wireproxy
-RUN install /srv/wireproxy /usr/local/bin
-WORKDIR /srv
-
-CMD wireproxy -c proxy.conf</code></pre>
-<p>compse.yaml</p>
-<pre class="language-yaml"><code>services:
-  device1:
-    build: .
-    volumes:
-      - ./conf/AirVPN_Japan_UDP-1637-Entry3.conf:/etc/wireguard/wg0.conf
-      - ./conf/proxy.conf:/srv/proxy.conf
-    ports:
-      - 1111:1181
-    restart: always
-  device2:
-    build: .
-    volumes:
-      - ./conf/AirVPN_United-States_UDP-1637-Entry3.conf:/etc/wireguard/wg0.conf
-      - ./conf/proxy.conf:/srv/proxy.conf
-    ports:
-      - 1112:1181
-    restart: always</code></pre>
-<pre class="language-bash"><code>curl -x "http://127.0.0.1:1111" ifconfig.io
-curl -x "http://127.0.0.1:1112" ifconfig.io</code></pre>
-            ]]>
-        </content>
-    </entry>
     <entry>
         <title>CapCut Proの領収書を手にれる方法</title>
         <author>
@@ -724,6 +630,70 @@ Connecting to host benchmark.local, port 5201
 <p> </p>
 <p> </p>
 <p> </p>
+<p> </p>
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>Google検索アルゴリズムの流出？と言われている物を実際に見てみた</title>
+        <author>
+            <name>ミズソバ</name>
+        </author>
+        <link href="https://corkborg.github.io/google-seo-leak-2024/"/>
+        <id>https://corkborg.github.io/google-seo-leak-2024/</id>
+        <media:content url="https://corkborg.github.io/media/posts/42/sukurinsiyotuto-2024-06-03-2.24.29.png" medium="image" />
+            <category term="プログラミング"/>
+
+        <updated>2024-06-02T15:35:47+09:00</updated>
+            <summary>
+                <![CDATA[
+                        <img src="https://corkborg.github.io/media/posts/42/sukurinsiyotuto-2024-06-03-2.24.29.png" alt="GoogleAPI PerDocDataのページ" />
+                    最近（2024年5月）、Googleから検索に関連する内部APIのソースコードや内部文章がリークされたと話題ですね。 Google検索の検索順位はサイト運営する人には重要で、SEOなど検索アルゴリズムを逆手に取って検索順位をあげようと試みたりする場合があります。 その為、注目が集まっているのだと思います。 今回の流出を調べてみてわかったことは、Google検索の内部の重要なソースコードを何者かがリークしたと言うよりは、社内で使われているAPIの定義を誤って外部に見えるようしてしまった感じのようです。 Google側の温度感はそこまで高く無いように見えていて、流出した情報は未だに正式な手段で入手できる状況です。&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                    <p><img src="https://corkborg.github.io/media/posts/42/sukurinsiyotuto-2024-06-03-2.24.29.png" class="type:primaryImage" alt="GoogleAPI PerDocDataのページ" /></p>
+                <p>最近（2024年5月）、Googleから検索に関連する内部APIのソースコードや内部文章がリークされたと話題ですね。</p>
+<p>Google検索の検索順位はサイト運営する人には重要で、SEOなど検索アルゴリズムを逆手に取って検索順位をあげようと試みたりする場合があります。<br>その為、注目が集まっているのだと思います。</p>
+<p>今回の流出を調べてみてわかったことは、Google検索の内部の重要なソースコードを何者かがリークしたと言うよりは、社内で使われているAPIの定義を誤って外部に見えるようしてしまった感じのようです。<br>Google側の温度感はそこまで高く無いように見えていて、流出した情報は未だに正式な手段で入手できる状況です。</p>
+<p>そして、流出したものはあくまでも<strong>API</strong>についての文章であって、Google検索内部の仕組みについては依然不明なので、分かる事としてはGoogle内部のシステムの構造や、Googleの組織構造などくらいです。</p>
+<h2>Google APIとは</h2>
+<p>Googleでは顧客向けにAPIを公開していて、APIを使うことで顧客のシステムにGoogleの機能を利用する事ができるようになっています。</p>
+<p>Googleはこの考え方を社内向けにも応用していて、Google内部の人も社内の機能を使いたいと考えたら、Google内部の向けのAPIを使用してその機能を利用するような仕組みになっているようです（こういう形態はマイクロサービスと言う概念と関係があります）。</p>
+<p>つまり、Googleでは社外向けのAPIも社内向けのAPIも同一の仕組みで取り扱っていて、社外向けのAPIを抜粋して外部に公開する仕組みがあるようで、それらのフローで問題が起きたようです。</p>
+<p><a href="https://github.com/googleapis/elixir-google-api">https://github.com/googleapis/elixir-google-api</a></p>
+<h2>Googleが誤って公開してしまったもの</h2>
+<p>今回誤って公開されてしまったものは、ContentWarehouseと呼ばれるものです。</p>
+<p>Warehouseは直訳すると倉庫ですが、IT業界では一般的に大規模なデータを処理することに特化したデータベースの事を指します。</p>
+<p>これらはコンテンツ情報（Webサイトなど）を処理する大規模なデータベースにアクセスするためのAPIのように見えます。</p>
+<p>ただし、今回公開されてしまったものはContentWarehouse API内部のソースコード…ではなく、APIで取り扱うことが可能な<strong>データの構造（モデル）</strong>の定義です。</p>
+<h2>実際のデータ</h2>
+<p>こちらが、Googleが誤って公開してしまったGitHubのPRです。<br><a href="https://github.com/googleapis/elixir-google-api/pull/11021">https://github.com/googleapis/elixir-google-api/pull/11021</a></p>
+<p>こちらが、誤って公開した物を削除するPRです。<br><a href="https://github.com/googleapis/elixir-google-api/pull/11378"></a><a href="https://github.com/googleapis/elixir-google-api/pull/11378">https://github.com/googleapis/elixir-google-api/pull/11378</a></p>
+<p>GitHubでは一度誤って公開した情報を完全に消すにはファイルの削除だけでなく、Gitの履歴から削除するとともにリポジトリを作り直したりする必要があります。これらの対応をGoogleは行っていません。</p>
+<p>削除する直前のコミットidは <code>e6a95f9335bf2fcb3cef77d99eecf3e0ca8d65c7</code>です。<br>Gitに詳しい方であれば上記IDをチェックアウトしてもらえば該当の定義を見ることができると思います。</p>
+<h2>データ構造（モデル）の定義とは</h2>
+<p>モデルというものはAPI間や機能間でデータをやり取りするために、転送する予定のデータの内容を事前に取り決めをしておくためのものです。</p>
+<p>つまり、このAPIのモデルの定義を見るとGoogle検索がContentWarehouseにアクセスする際に送っている情報が推測できる可能性があります。</p>
+<p>ただ、このようなデータ構造の定義書というのはいくつかの点で注意する必要があります。例を挙げると</p>
+<ul>
+<li>過去に使われていたものが互換性の問題で残されている</li>
+<li>送っているけど内部では使われていない物</li>
+<li>システムでは使う予定はないが記録として併記されていると嬉しい物</li>
+<li>メソッド名やコメントが実態を表していない場合</li>
+<li>開発版の可能性</li>
+<li>データ構造が複数の機能に参照されていて片方には必要の無い情報（Google広告向けなど）</li>
+</ul>
+<p>これらは、どこの組織のシステムでも割とよくあることで特殊な事例ではありません。そのため、APIのドキュメントだけでは内部の動きを物語る確実な証拠にはならない感じです。</p>
+<p>今回のAPIドキュメントに書いてある内容をそのまま鵜呑みにするのは良くないと思います。</p>
+<h2>APIデータの見方</h2>
+<p>ソースコードを直接見てもよいのですが該当のドキュメントはElixirというプログラミング言語で書かれていてExDocという機能でHTMLを生成できます。</p>
+<p>Elixirをインストールした後に下記の様にコマンドを実行すると今回の件のHTMLドキュメントが生成されます。</p>
+<pre>cd clients/content_warehouse/<br>mix deps.get<br>mix docs</pre>
+<p>docsディレクトリにHTMLが生成されます。<br>index.htmlを開くとこんな感じです。</p>
+<figure class="post__image"><img loading="lazy"  src="https://corkborg.github.io/media/posts/42//sukurinsiyotuto-2024-06-02-14.03.53.png" alt="" width="1846" height="670" sizes="(max-width: 1200px) 100vw, 1200px" srcset="https://corkborg.github.io/media/posts/42//responsive/sukurinsiyotuto-2024-06-02-14.03.53-xs.png 300w ,https://corkborg.github.io/media/posts/42//responsive/sukurinsiyotuto-2024-06-02-14.03.53-sm.png 480w ,https://corkborg.github.io/media/posts/42//responsive/sukurinsiyotuto-2024-06-02-14.03.53-md.png 749w ,https://corkborg.github.io/media/posts/42//responsive/sukurinsiyotuto-2024-06-02-14.03.53-xl.png 1200w"></figure>
+<p>PerDocDataというデータ構造がGoogle検索のAPIリクエストを集約している物のように見えるのでそこから見ていくと面白いかもしれません。</p>
 <p> </p>
             ]]>
         </content>
