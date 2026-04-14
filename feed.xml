@@ -3,7 +3,7 @@
     <title>塩の惑星</title>
     <link href="https://corkborg.github.io/feed.xml" rel="self" />
     <link href="https://corkborg.github.io" />
-    <updated>2025-10-08T00:32:44+09:00</updated>
+    <updated>2025-12-16T12:48:34+09:00</updated>
     <author>
         <name>ミズソバ</name>
     </author>
@@ -19,7 +19,7 @@
         <media:content url="https://corkborg.github.io/media/posts/65/sukurinsiyotuto-2025-09-26-20.18.38.png" medium="image" />
 
         <updated>2025-09-26T20:15:54+09:00</updated>
-            <summary>
+            <summary type="html">
                 <![CDATA[
                         <img src="https://corkborg.github.io/media/posts/65/sukurinsiyotuto-2025-09-26-20.18.38.png" alt="CapCut編集画面" />
                     ショート動画製作といえばBydeDance公式のCapCutですよね。 CapCutには有料版のProが存在します。 昨今、TikTokを活用した副業等が流行っていると思うのですが、会計処理に必要なCapCut Proの領収書を入手する方法はあまり知られていません（というより誤った情報が掲載されていることが多い）。 そこで今回はCapCut&hellip;
@@ -66,7 +66,7 @@
             <category term="Mac"/>
 
         <updated>2025-04-19T21:44:09+09:00</updated>
-            <summary>
+            <summary type="html">
                 <![CDATA[
                         <img src="https://corkborg.github.io/media/posts/59/sukurinsiyotuto-2025-04-19-21.36.58-2.jpg" alt="VITAL" />
                     無料のウェーブテーブルシンセサイザーVitalをMacのFL Studioで使えるようにする方法を紹介します。 Vitalの公式ホームページにアクセスします https://vital.audio/ Vital（Early&hellip;
@@ -128,7 +128,7 @@
             <category term="ネットワーク"/>
 
         <updated>2025-04-05T05:22:07+09:00</updated>
-            <summary>
+            <summary type="html">
                 <![CDATA[
                         <img src="https://corkborg.github.io/media/posts/58/sukurinsiyotuto-2025-04-05-4.46.54.png" alt="pico.sh管理画面" />
                     HTMLを用意してターミナルで2コマンド打つだけで無料ホームページを公開できるpico.shを紹介します。 https://pico.sh/ 事前にHTMLファイルを用意しておきます。 https://pico.sh/getting-started pico.shにsshの公開鍵を登録します。&hellip;
@@ -191,7 +191,7 @@
             <category term="カメラ"/>
 
         <updated>2025-02-10T17:55:28+09:00</updated>
-            <summary>
+            <summary type="html">
                 <![CDATA[
                         <img src="https://corkborg.github.io/media/posts/55/DSC_2314.2.JPG" alt="" />
                     今更ながら2012年発売のSONY NEX-7を手に入れました。 NEX-7はセンサー（フィルム）サイズがAPS-Cで現行のα6700などの超旧世代機と言えます。 超旧世代とは言え2430万画素もあり、Eマウントレンズ。いわゆるSONYの現行のレンズが使えるため中古価格の割には実用性と性能が高いです（ボディが2万円でした）。 NEX-7は現行のαシリーズと比べてもコンパクト性が高くそこがとても優れているポイントなので、今回はマイクロフォーサーズのOM-D&hellip;
@@ -247,7 +247,7 @@
             <category term="Apple製品"/>
 
         <updated>2024-12-15T22:47:10+09:00</updated>
-            <summary>
+            <summary type="html">
                 <![CDATA[
                         <img src="https://corkborg.github.io/media/posts/52/sukurinsiyotuto-2024-12-16-15.56.35.2.png" alt="自力交換したM1 MacBook Airの色カバー率" />
                     液晶の右下を割ってしまい縦横に縞が入るようになってしまいました。M1 MacBook Airです。 はっきりと覚えてはいないのですが、イヤホンのケーブルを挟んでしまった事が破損の原因だと思われます。 Appleの修理サービスに送る。など、治す方法を色々検討したのですが、この古いMacにあまりお金をかけたくなかったので交換用の液晶部品を購入し、自力で交換することにしました。&hellip;
@@ -311,7 +311,7 @@
         </content>
     </entry>
     <entry>
-        <title>Apple Pencilの偽物の作りが非常に高度で驚いた話</title>
+        <title>偽物Apple Pencilの作りが非常に高度で驚いた話</title>
         <author>
             <name>ミズソバ</name>
         </author>
@@ -321,7 +321,7 @@
             <category term="Apple製品"/>
 
         <updated>2024-08-18T18:18:26+09:00</updated>
-            <summary>
+            <summary type="html">
                 <![CDATA[
                         <img src="https://corkborg.github.io/media/posts/49/DSC_1898.JPG" alt="本物と偽物のApple Pencil. 奥側が偽物、手前が本物" />
                     Apple Pencil二世代を壊してしてしまいました。 Apple PencilはAppleに修理依頼しても交換対応になってしまうことが多いです。つまり新品を購入するのと同じ値段がかかります。 現在、Apple&hellip;
@@ -398,7 +398,7 @@
             <category term="ネットワーク"/>
 
         <updated>2024-07-10T13:17:06+09:00</updated>
-            <summary>
+            <summary type="html">
                 <![CDATA[
                         <img src="https://corkborg.github.io/media/posts/48/DSC_1879.jpeg" alt="QNA-UC5G1TとRaspberryPi400" />
                     RaspberryPi5の時代に今更なのですが、RaspberryPi4にUSBの5GbEのネットワークアダプタを接続してベンチマークを行ってみました。 RaspberryPi4は標準では1GbE（秒間125MB転送）しかできないのでどれくらい伸びるのか見てみたいと思います。 QNAPの5GbEを使います。 QNAPの10GbEはthunderboltに対応したUSBポートのみ対応なのに対してこちらは、USB 3.2&hellip;
@@ -414,7 +414,7 @@
 <p>QNAPの5GbEを使います。</p>
 <p>QNAPの10GbEはthunderboltに対応したUSBポートのみ対応なのに対してこちらは、USB 3.2 Gen1に対応していれば使用することができます。</p>
 <p>5GbEのネットワークアダプタはどれも結構熱くなりますが、QNA-UC5G1Tは金属筐体で覆われているので放熱性が良いほうかもしれないです。</p>
-<p>長期間普段遣いしたこともありますが、あまり困ったことはありませんでした。</p>
+<p>長期間普段遣いしたこともありますが、困ったことはありませんでした。</p>
 <p><a href="https://www.qnap.com/ja-jp/product/qna-uc5g1t">QNA-UC5G1T - QNAP公式</a></p>
 <h2>RaspberryPi 400</h2>
 <p>キーボードとコンピュータが一体化した、RaspberryPiの中でもパーソナルコンピューター用途に特化したものです。</p>
@@ -455,8 +455,8 @@ Connecting to host benchmark.local, port 5201
 <figure class="post__image" ><figure class="post__image post__image--center"><img loading="lazy"  src="https://corkborg.github.io/media/posts/48/sukurinsiyotuto-2024-07-15-15.07.10.png" alt="QNA-UC5G1Tを接続しベンチーマーク実施後のRasberryPi4消費電力 4.94V 1.20A" width="884" height="636" sizes="(max-width: 1200px) 100vw, 1200px" srcset="https://corkborg.github.io/media/posts/48/responsive/sukurinsiyotuto-2024-07-15-15.07.10-xs.png 300w ,https://corkborg.github.io/media/posts/48/responsive/sukurinsiyotuto-2024-07-15-15.07.10-sm.png 480w ,https://corkborg.github.io/media/posts/48/responsive/sukurinsiyotuto-2024-07-15-15.07.10-md.png 749w ,https://corkborg.github.io/media/posts/48/responsive/sukurinsiyotuto-2024-07-15-15.07.10-xl.png 1200w"></figure>
 <figcaption >QNA-UC5G1Tを接続しベンチーマーク実施後のRasberryPi4消費電力</figcaption>
 </figure>
-<p>一度消費電力が1.2Aに行った後、RasberryPiからネットワークカードを外してもあまり消費電力が落ちないことからあまり確実とは言えない情報ですが、0.6A程度消費電力が増加しているように見えます。</p>
-<p>電圧が結構降下してしまうので、5Vをきっちり出力する電源よりも、RaspberryPi向けに5.2Vの出力に対応したUSBを使用したほうが良さそうです。</p>
+<p>一度消費電力が1.2Aに行った後、RasberryPiからネットワークカードを外しても消費電力が落ちないことから確実とは言えない情報ですが、0.6A程度消費電力が増加しているように見えます。</p>
+<p>ネットワークアダプタを接続すると電圧が降下してしまうので、5Vをきっちり出力する電源よりも、RaspberryPi向けで多い5.2Vの出力に対応した電源を使用したほうが良さそうです。</p>
 <p> </p>
             ]]>
         </content>
@@ -472,7 +472,7 @@ Connecting to host benchmark.local, port 5201
             <category term="ネットワーク"/>
 
         <updated>2024-06-12T22:31:53+09:00</updated>
-            <summary>
+            <summary type="html">
                 <![CDATA[
                         <img src="https://corkborg.github.io/media/posts/46/DSC_1877_02.JPG" alt="ソフトバンク光10GのルータとONU" />
                     ソフトバンク光10Gを契約しました。このプランはなんと最大10Gbpsの転送速度でインターネットにアクセスできる仕組みになっています。 実際に計測した感じでは3Gbps程度しか出ないですが、多少お金を追加するだけで1Gbps超えできるので満足しています。 自宅サーバといっても不特定多数の人にサービスを提供するようなものすごい物ではありません。 私は、外からNAS（ファイルサーバ）にアクセスしたり、知り合いと遊ぶゲームサーバなどの用途で自宅サーバを運用することが多いです。 Project&hellip;
@@ -561,7 +561,7 @@ Connecting to host benchmark.local, port 5201
             <category term="カメラ"/>
 
         <updated>2024-06-09T14:27:00+09:00</updated>
-            <summary>
+            <summary type="html">
                 <![CDATA[
                         <img src="https://corkborg.github.io/media/posts/41/024.JPG" alt="30mのダイビング。RICOH WG-6で撮影" />
                     RICOH WG-6をスキューバダイビングで使っています。 WG-6はアウトドア向けのコンパクトカメラで水深20mまでの防水性能があります。 WG-6 -&hellip;
@@ -645,7 +645,7 @@ Connecting to host benchmark.local, port 5201
             <category term="プログラミング"/>
 
         <updated>2024-06-02T15:35:47+09:00</updated>
-            <summary>
+            <summary type="html">
                 <![CDATA[
                         <img src="https://corkborg.github.io/media/posts/42/sukurinsiyotuto-2024-06-03-2.24.29.png" alt="GoogleAPI PerDocDataのページ" />
                     最近（2024年5月）、Googleから検索に関連する内部APIのソースコードや内部文章がリークされたと話題ですね。 Google検索の検索順位はサイト運営する人には重要で、SEOなど検索アルゴリズムを逆手に取って検索順位をあげようと試みたりする場合があります。 その為、注目が集まっているのだと思います。 今回の流出を調べてみてわかったことは、Google検索の内部の重要なソースコードを何者かがリークしたと言うよりは、社内で使われているAPIの定義を誤って外部に見えるようしてしまった感じのようです。 Google側の温度感はそこまで高く無いように見えていて、流出した情報は未だに正式な手段で入手できる状況です。&hellip;
